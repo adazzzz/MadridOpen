@@ -1491,8 +1491,8 @@ function isLiveMatchStatus(status) {
 }
 
 function compareRanking(a, b) {
-  const rankA = getEffectiveNumericRanking(a.ranking, a.rankingTag);
-  const rankB = getEffectiveNumericRanking(b.ranking, b.rankingTag);
+  const rankA = getPlayerSinglesSortRanking(a);
+  const rankB = getPlayerSinglesSortRanking(b);
 
   if (rankA !== null && rankB !== null) {
     return rankA - rankB;
@@ -1507,6 +1507,11 @@ function compareRanking(a, b) {
   }
 
   return 0;
+}
+
+function getPlayerSinglesSortRanking(player) {
+  const primaryTag = normalizeRankingTag(player?.rankingTag);
+  return getEffectiveNumericRanking(player?.singlesRanking ?? (primaryTag === "D" ? null : player?.ranking));
 }
 
 function compareCourtName(left, right) {
@@ -1719,7 +1724,7 @@ function renderLinkedPlayer(player, discipline = "") {
 }
 
 function renderPlayerListRanking(player) {
-  const ranking = formatPlayerRankings(player);
+  const ranking = formatPlayerRankingsForList(player);
   if (ranking === "未收录") {
     return "";
   }
@@ -1729,7 +1734,7 @@ function renderPlayerListRanking(player) {
 
 function renderPlayerListTopline(player) {
   const tour = String(player?.tour || "").trim().toUpperCase();
-  const ranking = formatPlayerRankings(player);
+  const ranking = formatPlayerRankingsForList(player);
   const country = formatCountryForList(player?.country);
   const parts = [];
 
@@ -1748,6 +1753,24 @@ function renderPlayerListTopline(player) {
   }
 
   return parts.join(" ") || '<span class="player-list-country">-</span>';
+}
+
+function formatPlayerRankingsForList(player) {
+  const singlesCount = Number(player?.singlesCount || 0);
+  const doublesCount = Number(player?.doublesCount || 0);
+  const hasSingles = singlesCount > 0;
+  const hasDoubles = doublesCount > 0;
+
+  if (hasSingles && !hasDoubles) {
+    return formatPlayerRankingForDiscipline(player, "singles") || "未收录";
+  }
+
+  if (hasDoubles && !hasSingles) {
+    const doubles = formatPlayerRankingForDiscipline(player, "doubles");
+    return doubles ? `双 ${doubles}` : "未收录";
+  }
+
+  return formatPlayerRankings(player);
 }
 
 function renderPlayerListTourBadge(tour, label) {
