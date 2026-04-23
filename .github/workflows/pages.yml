@@ -18,7 +18,7 @@ permissions:
 
 concurrency:
   group: pages
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   deploy:
@@ -36,6 +36,7 @@ jobs:
           python-version: "3.11"
 
       - name: Refresh data snapshot
+        if: github.event_name != 'push'
         run: python3 scripts/update_data.py
 
       - name: Setup Pages
