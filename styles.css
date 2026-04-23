@@ -196,9 +196,9 @@ button:hover {
 }
 
 .sidebar-toggle {
-  position: fixed;
-  left: 0;
-  top: 190px;
+  position: absolute;
+  left: -58px;
+  top: 52px;
   z-index: 24;
   display: inline-flex;
   align-items: center;
@@ -288,7 +288,7 @@ button:hover {
 .players-panel {
   padding: 18px;
   max-height: calc(100vh - 190px);
-  overflow: hidden;
+  overflow: visible;
   position: sticky;
   top: 20px;
   align-self: start;
