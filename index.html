@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Madrid Open Player Hub</title>
-    <link rel="stylesheet" href="./styles.css?v=2026042401" />
+    <link rel="stylesheet" href="./styles.css?v=2026042402" />
   </head>
   <body>
     <div class="bg-layer" aria-hidden="true"></div>
@@ -18,7 +18,7 @@
         </div>
       </div>
       <div class="header-actions">
-        <p id="buildVersion" class="build-version">v2026042401</p>
+        <p id="buildVersion" class="build-version">v2026042402</p>
         <p id="refreshStatus">快照时间：加载中，10-20min数据刷新</p>
         <button id="reloadBtn" type="button" aria-label="重新加载数据" title="重新加载数据">↻</button>
       </div>
@@ -32,10 +32,13 @@
           <div class="sidebar-topbar">
             <button id="playersSidebarToggle" class="sidebar-toggle" type="button" aria-label="折叠球员侧栏">收起</button>
           </div>
-          <label class="search-box" for="playerSearch">
-            <span>按球员检索</span>
-            <input id="playerSearch" type="search" placeholder="输入姓名 / 国家 / ATP / WTA / 排名，例如 Zheng / CHN / ATP / 12" />
-          </label>
+          <div class="search-box">
+            <label for="playerSearch">按球员检索</label>
+            <div class="search-control">
+              <input id="playerSearch" type="search" enterkeyhint="search" placeholder="输入姓名 / 国家 / ATP / WTA / 排名，例如 Zheng / CHN / ATP / 12" />
+              <button id="playerSearchClear" class="search-clear" type="button" hidden aria-label="清除球员检索">×</button>
+            </div>
+          </div>
           <div id="playerList" class="player-list" role="list"></div>
         </aside>
 
@@ -190,6 +193,6 @@
       </p>
     </footer>
 
-    <script type="module" src="./app.js?v=2026042401"></script>
+    <script type="module" src="./app.js?v=2026042402"></script>
   </body>
 </html>

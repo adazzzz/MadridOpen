@@ -4,12 +4,16 @@ const SIDEBAR_STORAGE_KEYS = {
   players: "madrid-open-sidebar-players",
   courts: "madrid-open-sidebar-courts"
 };
+const SELECTION_STORAGE_KEYS = {
+  player: "madrid-open-active-player",
+  court: "madrid-open-active-court"
+};
 
 const state = {
   data: null,
   filteredPlayers: [],
-  activePlayerId: null,
-  activeCourtId: null,
+  activePlayerId: getStoredSelection("player"),
+  activeCourtId: getStoredSelection("court"),
   activeView: getStoredView(),
   sidebarCollapsed: {
     players: getStoredSidebarState("players"),
@@ -119,6 +123,7 @@ const dom = {
   playersSidebarExpand: document.querySelector("#playersSidebarExpand"),
   courtsSidebarExpand: document.querySelector("#courtsSidebarExpand"),
   playerSearch: document.querySelector("#playerSearch"),
+  playerSearchClear: document.querySelector("#playerSearchClear"),
   playerList: document.querySelector("#playerList"),
   emptyState: document.querySelector("#emptyState"),
   playerDetail: document.querySelector("#playerDetail"),
@@ -157,14 +162,28 @@ function boot() {
 
   if (dom.playerSearch) {
     dom.playerSearch.addEventListener("input", (event) => {
-      state.query = event.target.value.trim();
-      filterPlayers();
-      renderPlayerList();
+      applyPlayerSearch(event.target.value);
+    });
 
-      if (!state.filteredPlayers.some((player) => player.id === state.activePlayerId)) {
-        state.activePlayerId = state.filteredPlayers[0]?.id ?? null;
-        renderDetail();
+    dom.playerSearch.addEventListener("search", () => {
+      dom.playerSearch.blur();
+    });
+
+    dom.playerSearch.addEventListener("keydown", (event) => {
+      if (event.key === "Enter") {
+        dom.playerSearch.blur();
       }
+    });
+  }
+
+  if (dom.playerSearchClear) {
+    dom.playerSearchClear.addEventListener("click", () => {
+      if (!dom.playerSearch) {
+        return;
+      }
+      dom.playerSearch.value = "";
+      applyPlayerSearch("");
+      dom.playerSearch.blur();
     });
   }
 
@@ -261,6 +280,25 @@ function bindSidebarControls(view) {
   }
 }
 
+function applyPlayerSearch(value) {
+  state.query = String(value || "").trim();
+  renderPlayerSearchClear();
+  filterPlayers();
+  renderPlayerList();
+
+  if (!state.filteredPlayers.some((player) => player.id === state.activePlayerId)) {
+    state.activePlayerId = state.filteredPlayers[0]?.id ?? null;
+    storeActiveSelection("player", state.activePlayerId);
+    renderDetail();
+  }
+}
+
+function renderPlayerSearchClear() {
+  if (dom.playerSearchClear) {
+    dom.playerSearchClear.hidden = !state.query;
+  }
+}
+
 async function loadData(force = false) {
   setStatus("快照时间：加载中，10-20min数据刷新");
 
@@ -277,9 +315,11 @@ async function loadData(force = false) {
 
     if (!state.activePlayerId || !state.data.playerById[state.activePlayerId]) {
       state.activePlayerId = state.data.players[0]?.id ?? null;
+      storeActiveSelection("player", state.activePlayerId);
     }
     if (!state.activeCourtId || !state.data.courtById[state.activeCourtId]) {
       state.activeCourtId = state.data.courts[0]?.id ?? null;
+      storeActiveSelection("court", state.activeCourtId);
     }
 
     filterPlayers();
@@ -505,6 +545,7 @@ function renderPlayerList() {
 
     button.addEventListener("click", () => {
       state.activePlayerId = player.id;
+      storeActiveSelection("player", player.id);
       renderPlayerList();
       renderDetail();
     });
@@ -2086,6 +2127,7 @@ function openPlayer(playerId) {
   }
 
   state.activePlayerId = playerId;
+  storeActiveSelection("player", playerId);
   state.activeView = "players";
   renderPlayerList();
   renderDetail();
@@ -2098,6 +2140,7 @@ function openCourt(courtId) {
   }
 
   state.activeCourtId = courtId;
+  storeActiveSelection("court", courtId);
   state.activeView = "courts";
   renderCourtList();
   renderCourtDetail();
@@ -2116,6 +2159,30 @@ function getStoredView() {
 function storeActiveView(view) {
   try {
     window.localStorage.setItem(VIEW_STORAGE_KEY, view);
+  } catch {
+    // Ignore storage failures and fall back to in-memory state.
+  }
+}
+
+function getStoredSelection(type) {
+  try {
+    return window.localStorage.getItem(SELECTION_STORAGE_KEYS[type]) || null;
+  } catch {
+    return null;
+  }
+}
+
+function storeActiveSelection(type, id) {
+  try {
+    const key = SELECTION_STORAGE_KEYS[type];
+    if (!key) {
+      return;
+    }
+    if (id) {
+      window.localStorage.setItem(key, id);
+    } else {
+      window.localStorage.removeItem(key);
+    }
   } catch {
     // Ignore storage failures and fall back to in-memory state.
   }
