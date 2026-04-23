@@ -198,9 +198,8 @@ button:hover {
 .sidebar-toggle {
   position: fixed;
   left: 0;
-  top: 50%;
+  top: 190px;
   z-index: 24;
-  transform: translateY(-50%);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -221,7 +220,6 @@ button:hover {
 }
 
 .sidebar-toggle:hover {
-  transform: translateY(-50%);
   background: #fff;
 }
 
