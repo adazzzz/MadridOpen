@@ -32,6 +32,10 @@ ATP_OFFICIAL_RANKINGS_URL_TEMPLATE = (
     "https://www.atptour.com/en/rankings/singles"
     "?DateWeek=Current+Week&RankRange={rank_range}&Region=all&SortAscending=True&SortField=LastName"
 )
+ATP_OFFICIAL_DOUBLES_RANKINGS_URL_TEMPLATE = (
+    "https://www.atptour.com/en/rankings/doubles"
+    "?DateWeek=Current+Week&RankRange={rank_range}&Region=all&SortAscending=True&SortField=LastName"
+)
 ATP_OFFICIAL_RANK_RANGE_VALUES = [
     "1-100",
     "100-200",
@@ -137,10 +141,16 @@ WTA_XML_PLAYER_ID_RE = re.compile(
     flags=re.I,
 )
 WTA_PROFILE_SINGLES_JSON_RANK_RE = re.compile(
-    r'(?i)"(?:singlesRanking|currentSinglesRanking|singles_rank(?:ing)?)"\s*:\s*"?(\d{1,4})"?'
+    r'(?i)(?:"(?:singlesRanking|currentSinglesRanking|singles_rank(?:ing)?)"\s*:\s*"?(\d{1,4})"?)|(?:["&]quot;singles["&]quot;\s*:\s*\{[^{}]{0,300}?["&]quot;rank["&]quot;\s*:\s*["&]quot;(\d{1,4})["&]quot;)'
+)
+WTA_PROFILE_DOUBLES_JSON_RANK_RE = re.compile(
+    r'(?i)(?:"(?:doublesRanking|currentDoublesRanking|doubles_rank(?:ing)?)"\s*:\s*"?(\d{1,4})"?)|(?:["&]quot;doubles["&]quot;\s*:\s*\{[^{}]{0,300}?["&]quot;rank["&]quot;\s*:\s*["&]quot;(\d{1,4})["&]quot;)'
 )
 WTA_PROFILE_SINGLES_TEXT_RANK_RE = re.compile(
     r"(?i)(?:current\s+)?singles\s+rank(?:ing)?[^0-9#]{0,40}#?\s*(\d{1,4})"
+)
+WTA_PROFILE_DOUBLES_TEXT_RANK_RE = re.compile(
+    r"(?i)(?:current\s+)?doubles\s+rank(?:ing)?[^0-9#]{0,40}#?\s*(\d{1,4})"
 )
 WTA_PROFILE_LINK_RE = re.compile(
     r'href="(?:https?://www\.wtatennis\.com)?/players/(?P<id>\d+)/(?:[^"]+)"[^>]*>(?P<name>.*?)</a>',
@@ -149,6 +159,18 @@ WTA_PROFILE_LINK_RE = re.compile(
 WTA_PLAYER_ROW_RE = re.compile(
     r'<tr[^>]*data-player-id="(?P<id>\d+)"[^>]*data-player-name="(?P<name>[^"]+)"',
     flags=re.I | re.S,
+)
+WTA_PLAYER_FULL_ROW_RE = re.compile(
+    r'<tr(?P<attrs>[^>]*\bdata-player-id="(?P<id>\d+)"[^>]*\bdata-player-name="(?P<name>[^"]+)"[^>]*)>(?P<body>.*?)</tr>',
+    flags=re.I | re.S,
+)
+WTA_PLAYER_ROW_RANK_RE = re.compile(
+    r'class="[^"]*\bplayer-row__rank\b[^"]*"[^>]*>\s*(?P<rank>\d{1,4})\s*<',
+    flags=re.I | re.S,
+)
+WTA_PLAYER_ROW_COUNTRY_RE = re.compile(
+    r'player-cell__country--(?P<country>[A-Z]{3})|flag--(?P<flag>[A-Z]{3})',
+    flags=re.I,
 )
 MATCH_STATUS_PRIORITY = {
     "F": 60,
@@ -314,8 +336,20 @@ def find_existing_player_approx(registry: Dict[str, dict], name: str, country: s
 def player_metadata_score(player: dict) -> Tuple[int, int, int, int, int]:
     token_count = len(normalize_name_ascii_tokens(player.get("name", "")))
     return (
-        1 if player.get("ranking") not in (None, "") else 0,
-        1 if str(player.get("rankingTag") or "").strip() else 0,
+        1
+        if (
+            player.get("ranking") not in (None, "")
+            or player.get("singlesRanking") not in (None, "")
+            or player.get("doublesRanking") not in (None, "")
+        )
+        else 0,
+        1
+        if (
+            str(player.get("rankingTag") or "").strip()
+            or str(player.get("singlesRankingTag") or "").strip()
+            or str(player.get("doublesRankingTag") or "").strip()
+        )
+        else 0,
         1 if str(player.get("tour") or "").strip() else 0,
         1 if normalize_atp_player_id(player.get("atpPlayerId")) or normalize_wta_player_id(player.get("wtaPlayerId")) else 0,
         token_count,
@@ -357,6 +391,9 @@ def merge_player_records(target: dict, source: dict) -> None:
         target["ranking"] = source["ranking"]
     if not str(target.get("rankingTag") or "").strip() and str(source.get("rankingTag") or "").strip():
         target["rankingTag"] = source["rankingTag"]
+    for field in ("singlesRanking", "singlesRankingTag", "doublesRanking", "doublesRankingTag"):
+        if target.get(field) in (None, "") and source.get(field) not in (None, ""):
+            target[field] = source[field]
     if not str(target.get("tour") or "").strip() and str(source.get("tour") or "").strip():
         target["tour"] = source["tour"]
     attach_player_ids(
@@ -441,6 +478,11 @@ def remap_player_snapshots(items: List[dict], alias_map: Dict[str, str], registr
                 player["rankingTag"] = canonical["rankingTag"]
             else:
                 player.pop("rankingTag", None)
+            for field in ("singlesRanking", "singlesRankingTag", "doublesRanking", "doublesRankingTag"):
+                if canonical.get(field) not in (None, ""):
+                    player[field] = canonical[field]
+                else:
+                    player.pop(field, None)
             if canonical.get("tour"):
                 player["tour"] = canonical["tour"]
             else:
@@ -456,6 +498,10 @@ def remap_player_snapshots(items: List[dict], alias_map: Dict[str, str], registr
 
 
 def infer_training_session_tour(session: dict) -> str:
+    session_tour = str(session.get("tour") or "").strip().upper()
+    if session_tour in {"ATP", "WTA"}:
+        return session_tour
+
     tours = {
         str(player.get("tour") or "").strip().upper()
         for player in session.get("players", [])
@@ -496,6 +542,15 @@ def enrich_players_from_training_sessions(registry: Dict[str, dict], training_se
             break
 
     return applied
+
+
+def infer_tour_from_label(value: object) -> str:
+    text = str(value or "").strip().upper()
+    if re.search(r"\bATP\b", text):
+        return "ATP"
+    if re.search(r"\bWTA\b", text):
+        return "WTA"
+    return ""
 
 
 def upsert_player(registry: Dict[str, dict], name: str, country: str) -> Optional[dict]:
@@ -579,6 +634,8 @@ def format_round_label(draw_code: str, round_code: str) -> str:
             return "第一轮"
         if code in {"R64", "R2", "R6"}:
             return "第二轮"
+        if code in {"R32"} and draw == "MD":
+            return "第一轮"
         if code in {"R32", "R3"}:
             return "第三轮"
         if code in {"R16", "R4"}:
@@ -642,14 +699,17 @@ def slugify_path_segment(value: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", ascii_text.lower()).strip("-")
 
 
-def parse_wta_profile_singles_ranking(html_text: str) -> Optional[int]:
-    for match in WTA_PROFILE_SINGLES_JSON_RANK_RE.finditer(html_text):
-        rank = parse_int(match.group(1))
+def parse_wta_profile_ranking(html_text: str, discipline: str = "singles") -> Optional[int]:
+    json_re = WTA_PROFILE_DOUBLES_JSON_RANK_RE if normalize_ranking_discipline(discipline) == "doubles" else WTA_PROFILE_SINGLES_JSON_RANK_RE
+    text_re = WTA_PROFILE_DOUBLES_TEXT_RANK_RE if normalize_ranking_discipline(discipline) == "doubles" else WTA_PROFILE_SINGLES_TEXT_RANK_RE
+
+    for match in json_re.finditer(html_text):
+        rank = parse_int(next((group for group in match.groups() if group), None))
         if rank is not None and 0 < rank < 5000:
             return rank
 
     cleaned_text = clean_text(html_text)
-    for match in WTA_PROFILE_SINGLES_TEXT_RANK_RE.finditer(cleaned_text):
+    for match in text_re.finditer(cleaned_text):
         rank = parse_int(match.group(1))
         if rank is not None and 0 < rank < 5000:
             return rank
@@ -657,10 +717,23 @@ def parse_wta_profile_singles_ranking(html_text: str) -> Optional[int]:
     return None
 
 
+def parse_wta_profile_singles_ranking(html_text: str) -> Optional[int]:
+    return parse_wta_profile_ranking(html_text, "singles")
+
+
+def parse_wta_profile_doubles_ranking(html_text: str) -> Optional[int]:
+    return parse_wta_profile_ranking(html_text, "doubles")
+
+
 def fetch_wta_profile_singles_ranking(wta_player_id: str, player_name: str) -> Optional[int]:
+    rankings = fetch_wta_profile_rankings(wta_player_id, player_name)
+    return rankings.get("singles")
+
+
+def fetch_wta_profile_rankings(wta_player_id: str, player_name: str) -> Dict[str, Optional[int]]:
     normalized_id = normalize_wta_player_id(wta_player_id)
     if not normalized_id:
-        return None
+        return {"singles": None, "doubles": None}
 
     slug = slugify_path_segment(player_name)
     urls = []
@@ -674,11 +747,14 @@ def fetch_wta_profile_singles_ranking(wta_player_id: str, player_name: str) -> O
         except Exception:
             continue
 
-        rank = parse_wta_profile_singles_ranking(html_text)
-        if rank is not None:
-            return rank
+        rankings = {
+            "singles": parse_wta_profile_singles_ranking(html_text),
+            "doubles": parse_wta_profile_doubles_ranking(html_text),
+        }
+        if rankings["singles"] is not None or rankings["doubles"] is not None:
+            return rankings
 
-    return None
+    return {"singles": None, "doubles": None}
 
 
 def apply_player_id_overrides(registry: Dict[str, dict]) -> int:
@@ -709,7 +785,7 @@ def apply_atp_ranking_overrides(registry: Dict[str, dict]) -> int:
         if rank is None or player.get("ranking") not in (None, ""):
             continue
 
-        player["ranking"] = rank
+        set_player_ranking(player, rank, "", "singles")
         player["tour"] = player.get("tour") or "ATP"
         applied += 1
 
@@ -759,17 +835,57 @@ def parse_ranking_hint(raw_rank: object, raw_tag: object = "") -> Tuple[Optional
     return rank, tag
 
 
-def apply_ranking_hint(player: dict, raw_rank: object, raw_tag: object = "") -> bool:
+def normalize_ranking_discipline(value: object) -> str:
+    text = str(value or "").strip().lower()
+    return "doubles" if text == "doubles" else "singles"
+
+
+def set_player_ranking(player: dict, rank: Optional[int], tag: str = "", discipline: str = "singles") -> bool:
+    if rank is None or rank <= 0:
+        return False
+
+    normalized_discipline = normalize_ranking_discipline(discipline)
+    normalized_tag = str(tag or "").strip().upper()
+    rank_field = f"{normalized_discipline}Ranking"
+    tag_field = f"{normalized_discipline}RankingTag"
+    changed = False
+
+    current = parse_int(player.get(rank_field))
+    if current is None or rank < current:
+        player[rank_field] = rank
+        changed = True
+
+    if normalized_tag and not str(player.get(tag_field) or "").strip():
+        player[tag_field] = normalized_tag
+        changed = True
+
+    primary_tag = normalized_tag
+    if normalized_discipline == "doubles" and not primary_tag:
+        primary_tag = "D"
+
+    current_primary = parse_int(player.get("ranking"))
+    current_primary_tag = str(player.get("rankingTag") or "").strip().upper()
+    should_update_primary = current_primary is None
+    if normalized_discipline == "singles" and current_primary_tag == "D":
+        should_update_primary = True
+
+    if should_update_primary:
+        player["ranking"] = rank
+        if primary_tag:
+            player["rankingTag"] = primary_tag
+        else:
+            player.pop("rankingTag", None)
+        changed = True
+
+    return changed
+
+
+def apply_ranking_hint(player: dict, raw_rank: object, raw_tag: object = "", discipline: str = "singles") -> bool:
     rank, tag = parse_ranking_hint(raw_rank, raw_tag)
     changed = False
 
-    if rank is not None and player.get("ranking") in (None, ""):
-        player["ranking"] = rank
-        changed = True
-
-    if tag and not str(player.get("rankingTag") or "").strip():
-        player["rankingTag"] = tag
-        changed = True
+    if rank is not None:
+        changed = set_player_ranking(player, rank, tag, discipline) or changed
 
     return changed
 
@@ -886,6 +1002,36 @@ def parse_wta_official_rankings(html_text: str) -> List[dict]:
                 "tour": "WTA",
                 "rankingTag": "",
                 "wtaPlayerId": profile_id_by_name_token.get(name_token_key(name), ""),
+            }
+        )
+
+    for match in WTA_PLAYER_FULL_ROW_RE.finditer(html_text):
+        player_id = normalize_wta_player_id(match.group("id"))
+        name = normalize_person_name(html.unescape(match.group("name") or ""))
+        body = match.group("body") or ""
+        rank_match = WTA_PLAYER_ROW_RANK_RE.search(body)
+        rank = parse_int(rank_match.group("rank") if rank_match else None)
+        if rank is None or rank <= 0 or not name:
+            continue
+
+        country = ""
+        country_match = WTA_PLAYER_ROW_COUNTRY_RE.search(body)
+        if country_match:
+            country = str(country_match.group("country") or country_match.group("flag") or "").upper()
+
+        key = (name_token_key(name), country)
+        if not key[0] or key in seen:
+            continue
+
+        seen.add(key)
+        entries.append(
+            {
+                "name": name,
+                "country": country,
+                "ranking": rank,
+                "tour": "WTA",
+                "rankingTag": "",
+                "wtaPlayerId": player_id,
             }
         )
 
@@ -1253,6 +1399,9 @@ def parse_atp_matches(payload: dict, registry: Dict[str, dict]) -> List[dict]:
 
     for row in rows:
         players: List[dict] = []
+        match_id = str(row.get("MatchId") or "").strip()
+        draw_code = match_id[:2]
+        discipline = infer_discipline(draw_code)
 
         for team_key, side in (("PlayerTeam1", "A"), ("PlayerTeam2", "B")):
             team = row.get(team_key) or {}
@@ -1267,7 +1416,7 @@ def parse_atp_matches(payload: dict, registry: Dict[str, dict]) -> List[dict]:
                 if canonical_primary:
                     attach_player_ids(canonical_primary, atp_player_id=primary_atp_id)
                     canonical_primary["tour"] = canonical_primary.get("tour") or "ATP"
-                    apply_ranking_hint(canonical_primary, extract_atp_team_ranking_value(team, "player"))
+                    apply_ranking_hint(canonical_primary, extract_atp_team_ranking_value(team, "player"), discipline=discipline)
                     if canonical_primary.get("ranking") is not None:
                         primary_player["ranking"] = canonical_primary["ranking"]
                     if canonical_primary.get("rankingTag"):
@@ -1287,7 +1436,7 @@ def parse_atp_matches(payload: dict, registry: Dict[str, dict]) -> List[dict]:
                 if canonical_partner:
                     attach_player_ids(canonical_partner, atp_player_id=partner_atp_id)
                     canonical_partner["tour"] = canonical_partner.get("tour") or "ATP"
-                    apply_ranking_hint(canonical_partner, extract_atp_team_ranking_value(team, "partner"))
+                    apply_ranking_hint(canonical_partner, extract_atp_team_ranking_value(team, "partner"), discipline=discipline)
                     if canonical_partner.get("ranking") is not None:
                         partner_player["ranking"] = canonical_partner["ranking"]
                     if canonical_partner.get("rankingTag"):
@@ -1302,8 +1451,6 @@ def parse_atp_matches(payload: dict, registry: Dict[str, dict]) -> List[dict]:
         if not players:
             continue
 
-        match_id = str(row.get("MatchId") or "").strip()
-        draw_code = match_id[:2]
         round_short = ((row.get("Round") or {}).get("ShortName") or "").strip()
         round_code = round_short or "-"
 
@@ -1316,7 +1463,7 @@ def parse_atp_matches(payload: dict, registry: Dict[str, dict]) -> List[dict]:
                 "roundCode": round_code,
                 "roundLabel": format_round_label(draw_code, round_code),
                 "draw": draw_code,
-                "discipline": infer_discipline(draw_code),
+                "discipline": discipline,
                 "court": str(row.get("CourtName") or "").strip(),
                 "score": str(row.get("ResultString") or "").strip(),
                 "result": str(row.get("ResultString") or "").strip(),
@@ -1463,6 +1610,7 @@ def parse_training_day(html_text: str, day_offset: int, registry: Dict[str, dict
 
     for court_raw, table_body in court_blocks:
         court_name = clean_text(court_raw)
+        session_tour = infer_tour_from_label(court_name)
 
         rows = re.findall(
             r'<tr>\s*<td class="scheduleInfo"[^>]*>(.*?)</td>\s*</tr>\s*<tr class="scheduledMatch"[^>]*>(.*?)</tr>',
@@ -1493,6 +1641,7 @@ def parse_training_day(html_text: str, day_offset: int, registry: Dict[str, dict
                     "dayLabel": day_label,
                     "court": court_name,
                     "timeRange": time_range,
+                    "tour": session_tour,
                     "players": participants,
                 }
             )
@@ -1881,7 +2030,7 @@ def enrich_players_with_wta_draw_ids(registry: Dict[str, dict], rows: List[dict]
                 continue
 
             event_code = child_text_by_local_name(event, "EventTypeCode").upper()
-            if event_code not in {"LS", "RS"}:
+            if event_code not in {"LS", "LD", "RS"}:
                 continue
 
             for draw_line in event.iter():
@@ -1921,6 +2070,9 @@ def enrich_players_with_wta_draw_ids(registry: Dict[str, dict], rows: List[dict]
                     changed = False
                     if attach_player_ids(target_player, wta_player_id=wta_player_id):
                         changed = True
+                    if not str(target_player.get("tour") or "").strip():
+                        target_player["tour"] = "WTA"
+                        changed = True
                     if event_code == "LS" and entry_type:
                         if target_player.get("singlesEntryType") != entry_type:
                             target_player["singlesEntryType"] = entry_type
@@ -1931,11 +2083,180 @@ def enrich_players_with_wta_draw_ids(registry: Dict[str, dict], rows: List[dict]
     return applied
 
 
-def fetch_atp_official_rankings_entries(registry: Dict[str, dict]) -> List[dict]:
+def extract_wta_draw_line_players(draw_line: ET.Element, registry: Dict[str, dict], side: str) -> List[dict]:
+    players: List[dict] = []
+
+    for player_node in draw_line.iter():
+        if xml_local_name(player_node.tag) != "Player":
+            continue
+
+        wta_player_id = normalize_wta_player_id(
+            player_node.get("id") or child_text_by_local_name(player_node, "PlayerId")
+        )
+        if wta_player_id == "0":
+            continue
+
+        first_name = child_text_by_local_name(player_node, "FirstName")
+        last_name = child_text_by_local_name(player_node, "LastName") or child_text_by_local_name(player_node, "SurName")
+        display_name = child_text_by_local_name(player_node, "DisplayLine") or child_text_by_local_name(player_node, "PlayerDisplayLine")
+        country = child_text_by_local_name(player_node, "Nationality") or child_text_by_local_name(player_node, "Country")
+        full_name = split_name(first_name, last_name)
+        if not full_name and display_name:
+            full_name = normalize_person_name(display_name)
+        if not full_name or full_name.lower() == "bye":
+            continue
+
+        player = find_existing_player(registry, full_name, country)
+        if not player:
+            player = find_existing_player_approx(registry, full_name, country)
+        if not player:
+            player = upsert_player(registry, full_name, country)
+        if not player:
+            continue
+
+        attach_player_ids(player, wta_player_id=wta_player_id)
+        player["tour"] = player.get("tour") or "WTA"
+        snapshot = {
+            "id": player["id"],
+            "name": player.get("name", full_name),
+            "country": player.get("country", country),
+            "tour": "WTA",
+            "side": side,
+        }
+        if player.get("wtaPlayerId"):
+            snapshot["wtaPlayerId"] = player["wtaPlayerId"]
+        players.append(snapshot)
+
+    return players
+
+
+def wta_draw_round_code(draw_size: int) -> str:
+    if draw_size >= 128:
+        return "R128"
+    if draw_size >= 64:
+        return "R64"
+    if draw_size >= 32:
+        return "R32"
+    if draw_size >= 16:
+        return "R16"
+    return "R1"
+
+
+def parse_wta_doubles_draw_matches(rows: List[dict], registry: Dict[str, dict]) -> List[dict]:
+    parsed: List[dict] = []
+
+    for row in rows:
+        xml_text = str(row.get("drawxml") or row.get("DrawXml") or row.get("DRAWXML") or "").strip()
+        if not xml_text:
+            continue
+
+        try:
+            root = ET.fromstring(xml_text)
+        except ET.ParseError:
+            continue
+
+        for event in root.iter():
+            if xml_local_name(event.tag) != "Event":
+                continue
+
+            event_code = child_text_by_local_name(event, "EventTypeCode").upper()
+            if event_code != "LD":
+                continue
+
+            draw_size = parse_int(child_text_by_local_name(event, "DrawSize")) or 32
+            round_code = wta_draw_round_code(draw_size)
+            draw_node = next((child for child in event if xml_local_name(child.tag) == "Draw"), None)
+            if draw_node is None:
+                continue
+
+            draw_lines = [
+                draw_line
+                for draw_line in draw_node
+                if xml_local_name(draw_line.tag) == "DrawLine"
+            ]
+            draw_lines.sort(key=lambda node: parse_int(node.get("Pos")) or 0)
+
+            for index in range(0, len(draw_lines), 2):
+                try:
+                    top_line = draw_lines[index]
+                    bottom_line = draw_lines[index + 1]
+                except IndexError:
+                    continue
+
+                top_pos = parse_int(top_line.get("Pos")) or (index + 1)
+                bottom_pos = parse_int(bottom_line.get("Pos")) or (index + 2)
+                side_a = extract_wta_draw_line_players(top_line, registry, "A")
+                side_b = extract_wta_draw_line_players(bottom_line, registry, "B")
+                if not side_a or not side_b:
+                    continue
+
+                parsed.append(
+                    {
+                        "id": f"WTA-DRAW-LD-{round_code}-{top_pos}-{bottom_pos}",
+                        "startTime": "",
+                        "status": "U",
+                        "round": round_code,
+                        "roundCode": round_code,
+                        "roundLabel": format_round_label("MD", round_code),
+                        "draw": "MD",
+                        "discipline": "doubles",
+                        "court": "",
+                        "score": "",
+                        "result": "",
+                        "source": "wtaDraw",
+                        "players": side_a + side_b,
+                    }
+                )
+
+    return parsed
+
+
+def match_roster_signature(match: dict) -> Tuple[Tuple[str, ...], Tuple[str, ...]]:
+    side_a = sorted(
+        str(player.get("id") or "").strip()
+        for player in match.get("players") or []
+        if str(player.get("side") or "").upper() == "A" and str(player.get("id") or "").strip()
+    )
+    side_b = sorted(
+        str(player.get("id") or "").strip()
+        for player in match.get("players") or []
+        if str(player.get("side") or "").upper() == "B" and str(player.get("id") or "").strip()
+    )
+    sides = sorted([tuple(side_a), tuple(side_b)])
+    return sides[0], sides[1]
+
+
+def merge_draw_fallback_matches(matches: List[dict], fallback_matches: List[dict]) -> int:
+    existing = {
+        match_roster_signature(match)
+        for match in matches
+        if str(match.get("discipline") or "").lower() == "doubles"
+        and match_roster_signature(match) != (tuple(), tuple())
+    }
+
+    added = 0
+    for match in fallback_matches:
+        signature = match_roster_signature(match)
+        if signature == (tuple(), tuple()) or signature in existing:
+            continue
+        matches.append(match)
+        existing.add(signature)
+        added += 1
+
+    return added
+
+
+def fetch_atp_official_rankings_entries(registry: Dict[str, dict], discipline: str = "singles") -> List[dict]:
     merged: Dict[str, dict] = {}
+    normalized_discipline = normalize_ranking_discipline(discipline)
+    url_template = (
+        ATP_OFFICIAL_DOUBLES_RANKINGS_URL_TEMPLATE
+        if normalized_discipline == "doubles"
+        else ATP_OFFICIAL_RANKINGS_URL_TEMPLATE
+    )
 
     for rank_range in ATP_OFFICIAL_RANK_RANGE_VALUES:
-        url = ATP_OFFICIAL_RANKINGS_URL_TEMPLATE.format(rank_range=urllib.parse.quote_plus(rank_range))
+        url = url_template.format(rank_range=urllib.parse.quote_plus(rank_range))
         try:
             html_text = fetch_text(url)
             rows = parse_atp_official_ranking_rows(html_text)
@@ -1950,27 +2271,32 @@ def fetch_atp_official_rankings_entries(registry: Dict[str, dict]) -> List[dict]
                     "ranking": row["ranking"],
                     "tour": "ATP",
                     "rankingTag": "",
+                    "rankingDiscipline": normalized_discipline,
                 }
                 key = entry["name"]
                 current = merged.get(key)
                 if current is None or entry["ranking"] < current["ranking"]:
                     merged[key] = entry
         except Exception as error:
-            print(f"Warning: failed to fetch ATP official rankings range {rank_range}: {error}", file=sys.stderr)
+            print(f"Warning: failed to fetch ATP official {normalized_discipline} rankings range {rank_range}: {error}", file=sys.stderr)
 
     return list(merged.values())
 
 
-def fetch_wta_official_rankings_entries() -> List[dict]:
+def fetch_wta_official_rankings_entries(
+    base_url: str = WTA_OFFICIAL_RANKINGS_URL,
+    discipline: str = "singles",
+) -> List[dict]:
     merged: Dict[Tuple[str, str], dict] = {}
     last_signature: Tuple[Tuple[str, str, int], ...] = tuple()
+    normalized_discipline = normalize_ranking_discipline(discipline)
 
     for page in range(1, 31):
         if page == 1:
-            url = WTA_OFFICIAL_RANKINGS_URL
+            url = base_url
         else:
-            separator = "&" if "?" in WTA_OFFICIAL_RANKINGS_URL else "?"
-            url = f"{WTA_OFFICIAL_RANKINGS_URL}{separator}page={page}"
+            separator = "&" if "?" in base_url else "?"
+            url = f"{base_url}{separator}page={page}"
 
         html_text = fetch_text(url)
         rows = parse_wta_official_rankings(html_text)
@@ -1998,6 +2324,8 @@ def fetch_wta_official_rankings_entries() -> List[dict]:
                     "ranking": rank,
                     "tour": "WTA",
                     "rankingTag": "",
+                    "rankingDiscipline": normalized_discipline,
+                    "wtaPlayerId": row.get("wtaPlayerId", ""),
                 }
 
     return list(merged.values())
@@ -2108,7 +2436,7 @@ def enrich_players_from_draw_rankings(
         if ranking is None:
             continue
 
-        player["ranking"] = ranking
+        set_player_ranking(player, ranking, "", "singles")
         if inferred_tour and not str(player.get("tour") or "").strip():
             player["tour"] = inferred_tour
         applied += 1
@@ -2118,22 +2446,18 @@ def enrich_players_from_draw_rankings(
 
 def enrich_wta_rankings_from_profile_pages(registry: Dict[str, dict], matches: List[dict]) -> int:
     applied = 0
-    profile_rank_cache: Dict[str, Optional[int]] = {}
-    singles_player_ids = {
-        str(player.get("id") or "").strip()
-        for match in matches
-        if str(match.get("discipline") or "").strip().lower() == "singles"
-        for player in match.get("players", [])
-        if str(player.get("id") or "").strip()
-    }
+    profile_rank_cache: Dict[str, Dict[str, Optional[int]]] = {}
 
     candidates = [
         player
         for player in registry.values()
-        if player.get("ranking") in (None, "")
-        and str(player.get("id") or "").strip() in singles_player_ids
-        and normalize_wta_player_id(player.get("wtaPlayerId"))
+        if normalize_wta_player_id(player.get("wtaPlayerId"))
         and str(player.get("tour") or "").strip().upper() in {"", "WTA"}
+        and (
+            player.get("singlesRanking") in (None, "")
+            or player.get("doublesRanking") in (None, "")
+            or player.get("ranking") in (None, "")
+        )
     ]
 
     for player in sorted(candidates, key=lambda item: str(item.get("name") or "").lower()):
@@ -2142,15 +2466,20 @@ def enrich_wta_rankings_from_profile_pages(registry: Dict[str, dict], matches: L
             continue
 
         if wta_player_id not in profile_rank_cache:
-            profile_rank_cache[wta_player_id] = fetch_wta_profile_singles_ranking(
+            profile_rank_cache[wta_player_id] = fetch_wta_profile_rankings(
                 wta_player_id,
                 str(player.get("name") or ""),
             )
-        rank = profile_rank_cache[wta_player_id]
-        if rank is None:
+        rankings = profile_rank_cache[wta_player_id]
+        changed = False
+
+        if player.get("singlesRanking") in (None, "") and rankings.get("singles") is not None:
+            changed = set_player_ranking(player, rankings["singles"], "", "singles") or changed
+        if player.get("doublesRanking") in (None, "") and rankings.get("doubles") is not None:
+            changed = set_player_ranking(player, rankings["doubles"], "", "doubles") or changed
+        if not changed:
             continue
 
-        player["ranking"] = rank
         if not str(player.get("tour") or "").strip():
             player["tour"] = "WTA"
         applied += 1
@@ -2175,14 +2504,16 @@ def enrich_players_from_official_rankings(registry: Dict[str, dict], entries: Li
             wta_player_id=entry.get("wtaPlayerId", ""),
         ):
             changed = True
-        if player.get("ranking") in (None, "") and entry.get("ranking") not in (None, ""):
-            player["ranking"] = entry["ranking"]
-            changed = True
+        rank = parse_int(entry.get("ranking"))
+        if rank is not None:
+            changed = set_player_ranking(
+                player,
+                rank,
+                str(entry.get("rankingTag") or ""),
+                str(entry.get("rankingDiscipline") or "singles"),
+            ) or changed
         if not str(player.get("tour") or "").strip() and str(entry.get("tour") or "").strip():
             player["tour"] = entry["tour"]
-            changed = True
-        if not str(player.get("rankingTag") or "").strip() and str(entry.get("rankingTag") or "").strip():
-            player["rankingTag"] = entry["rankingTag"]
             changed = True
 
         if changed:
@@ -2192,14 +2523,7 @@ def enrich_players_from_official_rankings(registry: Dict[str, dict], entries: Li
 
 
 def remove_doubles_rankings(registry: Dict[str, dict]) -> int:
-    removed = 0
-    for player in registry.values():
-        if str(player.get("rankingTag") or "").strip().upper() != "D":
-            continue
-        player.pop("ranking", None)
-        player.pop("rankingTag", None)
-        removed += 1
-    return removed
+    return 0
 
 
 def enrich_players_from_directory(registry: Dict[str, dict], entries: List[dict]) -> int:
@@ -2218,9 +2542,7 @@ def enrich_players_from_directory(registry: Dict[str, dict], entries: List[dict]
             player["name"] = entry["name"]
         if entry["country"]:
             player["country"] = entry["country"]
-        player["ranking"] = entry["ranking"]
-        if entry.get("rankingTag"):
-            player["rankingTag"] = entry["rankingTag"]
+        set_player_ranking(player, entry["ranking"], entry.get("rankingTag", ""), "singles")
         player["tour"] = entry["tour"]
         matched += 1
 
@@ -2286,6 +2608,9 @@ def sync_player_snapshots(items: List[dict], registry: Dict[str, dict]) -> None:
                 snapshot["ranking"] = canonical["ranking"]
             if canonical and canonical.get("rankingTag"):
                 snapshot["rankingTag"] = canonical["rankingTag"]
+            for field in ("singlesRanking", "singlesRankingTag", "doublesRanking", "doublesRankingTag"):
+                if canonical and canonical.get(field) not in (None, ""):
+                    snapshot[field] = canonical[field]
             if canonical and canonical.get("tour"):
                 snapshot["tour"] = canonical["tour"]
             if canonical and canonical.get("atpPlayerId"):
@@ -2330,11 +2655,18 @@ def build_output() -> dict:
     apply_player_id_overrides(registry)
 
     try:
-        atp_official_entries = fetch_atp_official_rankings_entries(registry)
+        atp_official_entries = fetch_atp_official_rankings_entries(registry, "singles")
         enrich_players_from_official_rankings(registry, atp_official_entries)
     except Exception as error:
         print(f"Warning: failed to enrich rankings from ATP official rankings page: {error}", file=sys.stderr)
 
+    try:
+        atp_official_doubles_entries = fetch_atp_official_rankings_entries(registry, "doubles")
+        enrich_players_from_official_rankings(registry, atp_official_doubles_entries)
+    except Exception as error:
+        print(f"Warning: failed to enrich rankings from ATP official doubles rankings page: {error}", file=sys.stderr)
+
+    atp_draw_payload: dict = {}
     atp_draw_rankings: Dict[str, int] = {}
     try:
         atp_draw_payload = fetch_atp_draws(atp_token)
@@ -2344,9 +2676,14 @@ def build_output() -> dict:
         print(f"Warning: failed to enrich rankings from ATP draws API: {error}", file=sys.stderr)
 
     wta_draw_rankings: Dict[str, int] = {}
+    wta_draw_fallback_count = 0
     try:
         wta_event_draw_rows = fetch_wta_event_draw_rows()
         enrich_players_with_wta_draw_ids(registry, wta_event_draw_rows)
+        wta_draw_fallback_count = merge_draw_fallback_matches(
+            matches,
+            parse_wta_doubles_draw_matches(wta_event_draw_rows, registry),
+        )
         wta_draw_rankings = parse_wta_event_draw_singles_rankings(wta_event_draw_rows)
     except Exception as error:
         print(f"Warning: failed to enrich rankings from WTA draw XML API: {error}", file=sys.stderr)
@@ -2359,12 +2696,14 @@ def build_output() -> dict:
         print(f"Warning: failed to enrich rankings from WTA results info API: {error}", file=sys.stderr)
 
     try:
-        wta_official_entries = fetch_wta_official_rankings_entries()
+        wta_official_entries = fetch_wta_official_rankings_entries(WTA_OFFICIAL_RANKINGS_URL, "singles")
         enrich_players_from_official_rankings(registry, wta_official_entries)
     except Exception as error:
         print(f"Warning: failed to enrich rankings from WTA official rankings page: {error}", file=sys.stderr)
 
     try:
+        wta_doubles_rankings_entries = fetch_wta_official_rankings_entries(WTA_OFFICIAL_DOUBLES_URL, "doubles")
+        enrich_players_from_official_rankings(registry, wta_doubles_rankings_entries)
         wta_doubles_profile_entries = fetch_wta_official_profile_entries(WTA_OFFICIAL_DOUBLES_URL)
         enrich_players_from_official_rankings(registry, wta_doubles_profile_entries)
     except Exception as error:
@@ -2386,6 +2725,13 @@ def build_output() -> dict:
     sync_player_snapshots(training_sessions, registry)
 
     players = sorted(registry.values(), key=lambda p: (p.get("name") or "").lower())
+    doubles_matches = [match for match in matches if str(match.get("discipline") or "").lower() == "doubles"]
+    doubles_player_ids = {
+        str(player.get("id") or "").strip()
+        for match in doubles_matches
+        for player in match.get("players", [])
+        if str(player.get("id") or "").strip()
+    }
 
     return {
         "metadata": {
@@ -2411,6 +2757,23 @@ def build_output() -> dict:
                 "training": [TRAINING_URL_TEMPLATE.format(day=0), TRAINING_URL_TEMPLATE.format(day=1)],
             },
             "trainingDays": training_days,
+            "audit": {
+                "doublesMatches": len(doubles_matches),
+                "wtaDrawFallbackMatches": wta_draw_fallback_count,
+                "doublesPlayers": len(doubles_player_ids),
+                "doublesPlayersMissingDoublesRanking": sum(
+                    1
+                    for player_id in doubles_player_ids
+                    if registry.get(player_id, {}).get("doublesRanking") in (None, "")
+                    and registry.get(player_id, {}).get("ranking") in (None, "")
+                ),
+                "playersMissingTour": sum(1 for player in players if not str(player.get("tour") or "").strip()),
+                "atpDrawEvents": [
+                    str(event.get("EventTypeCode") or "")
+                    for association in (atp_draw_payload.get("Associations") or [])
+                    for event in association.get("Events") or []
+                ],
+            },
         },
         "players": players,
         "matches": matches,

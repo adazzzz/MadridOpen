@@ -459,7 +459,9 @@ function filterPlayers() {
       player.country,
       player.tour,
       player.rankingTag,
-      Number.isFinite(Number(player.ranking)) ? String(player.ranking) : ""
+      Number.isFinite(Number(player.ranking)) ? String(player.ranking) : "",
+      Number.isFinite(Number(player.singlesRanking)) ? String(player.singlesRanking) : "",
+      Number.isFinite(Number(player.doublesRanking)) ? String(player.doublesRanking) : ""
     ].join(" ");
 
     return normalizeForSearch(haystack).includes(query);
@@ -528,7 +530,7 @@ function renderDetail() {
   setHidden(dom.emptyState, true);
   setHidden(dom.playerDetail, false);
 
-  const rankLabel = formatRanking(player.ranking, player.rankingTag);
+  const rankLabel = formatPlayerRankings(player);
   const tourBadgeHtml = player.tour ? renderTourBadge(player.tour) : '<span class="neutral-label">未识别</span>';
   setHtml(dom.playerTopline, `${tourBadgeHtml}<span class="topline-rank">${escapeHtml(rankLabel)}</span>${renderEntryTypeBadge(player.singlesEntryType)}${renderEliminationBadge(player)}`);
   setText(dom.playerName, player.name);
@@ -736,6 +738,9 @@ function normalizeRoundLabel(draw, round) {
     }
     if (code === "R64" || code === "R2" || code === "R6") {
       return "第二轮";
+    }
+    if (draw === "MD" && code === "R32") {
+      return "第一轮";
     }
     if (code === "R32" || code === "R3") {
       return "第三轮";
@@ -1518,10 +1523,6 @@ function getNumericRanking(value) {
 }
 
 function getEffectiveNumericRanking(value, rankingTag = "") {
-  const tag = normalizeRankingTag(rankingTag);
-  if (tag === "D") {
-    return null;
-  }
   return getNumericRanking(value);
 }
 
@@ -1538,6 +1539,23 @@ function formatRanking(value, rankingTag = "") {
   }
 
   return tag ? `${tag} #${rank}` : `#${rank}`;
+}
+
+function formatPlayerRankings(player) {
+  const parts = [];
+  const primaryTag = normalizeRankingTag(player?.rankingTag);
+  const singlesValue = player?.singlesRanking ?? (primaryTag === "D" ? null : player?.ranking);
+  const singles = formatRanking(singlesValue, player?.singlesRankingTag || "");
+  const doubles = formatRanking(player?.doublesRanking ?? (primaryTag === "D" ? player?.ranking : null), player?.doublesRankingTag || "D");
+
+  if (singles !== "未收录") {
+    parts.push(`单 ${singles}`);
+  }
+  if (doubles !== "未收录") {
+    parts.push(`双 ${doubles.replace(/^D\s*/, "")}`);
+  }
+
+  return parts.length ? parts.join(" / ") : "未收录";
 }
 
 function normalizeCountryCode(value) {
@@ -1639,7 +1657,7 @@ function formatPlayerSuffix(player) {
     parts.push(escapeHtml(countryLabel));
   }
 
-  const rankingLabel = formatRanking(player?.ranking, player?.rankingTag);
+  const rankingLabel = formatPlayerRankings(player);
   if (rankingLabel !== "未收录") {
     parts.push(escapeHtml(rankingLabel));
   }
@@ -1660,7 +1678,7 @@ function renderLinkedPlayer(player) {
 }
 
 function renderPlayerListRanking(player) {
-  const ranking = formatRanking(player?.ranking, player?.rankingTag);
+  const ranking = formatPlayerRankings(player);
   if (ranking === "未收录") {
     return "";
   }
@@ -1670,7 +1688,7 @@ function renderPlayerListRanking(player) {
 
 function renderPlayerListTopline(player) {
   const tour = String(player?.tour || "").trim().toUpperCase();
-  const ranking = formatRanking(player?.ranking, player?.rankingTag);
+  const ranking = formatPlayerRankings(player);
   const country = formatCountryForList(player?.country);
   const parts = [];
 
