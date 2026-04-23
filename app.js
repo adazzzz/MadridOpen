@@ -675,7 +675,8 @@ function renderMatchRows(target, player, matches, discipline) {
       const roundText = escapeHtml(formatMatchRound(match));
       const displayResult = renderMatchResultHtml(player, match);
       const displayTime = formatMatchTime(match);
-      const displayPair = buildOpponentSummaryHtml(player, match, discipline);
+      const matchDiscipline = getMatchDisplayDiscipline(match, discipline);
+      const displayPair = buildOpponentSummaryHtml(player, match, matchDiscipline);
       const displayCourt = formatMatchCourt(match);
 
       return `
@@ -857,16 +858,34 @@ function buildCourtMatchupHtml(match) {
     return "-";
   }
 
+  const discipline = getMatchDisplayDiscipline(match);
   const sideA = players.filter((player) => String(player?.side || "").toUpperCase() === "A");
   const sideB = players.filter((player) => String(player?.side || "").toUpperCase() === "B");
 
   if (sideA.length || sideB.length) {
-    const left = renderLinkedPlayers(sideA) || "待定";
-    const right = renderLinkedPlayers(sideB) || "待定";
+    const left = renderLinkedPlayers(sideA, discipline) || "待定";
+    const right = renderLinkedPlayers(sideB, discipline) || "待定";
     return `${left} <span class="versus-sep">vs</span> ${right}`;
   }
 
-  return renderLinkedPlayers(players);
+  return renderLinkedPlayers(players, discipline);
+}
+
+function getMatchDisplayDiscipline(match, fallback = "") {
+  const raw = String(match?.discipline || fallback || "").trim().toLowerCase();
+  if (raw === "singles" || raw === "doubles") {
+    return raw;
+  }
+
+  const draw = String(match?.draw || "").trim().toUpperCase();
+  if (draw.endsWith("D")) {
+    return "doubles";
+  }
+  if (draw.endsWith("S")) {
+    return "singles";
+  }
+
+  return "";
 }
 
 function getMatchTour(match) {
@@ -933,7 +952,7 @@ function buildOpponentSummaryHtml(player, match, discipline) {
   const roster = Array.isArray(match.players) ? match.players : [];
   const current = roster.find((entry) => entry.id === player.id);
   const fallbackPlayers = roster.filter((entry) => entry.id !== player.id);
-  const fallback = renderLinkedPlayers(fallbackPlayers);
+  const fallback = renderLinkedPlayers(fallbackPlayers, discipline);
 
   if (!current) {
     return fallback || (match.result ? "见结果描述" : "-");
@@ -946,17 +965,17 @@ function buildOpponentSummaryHtml(player, match, discipline) {
     const chunks = [];
 
     if (sameSide.length) {
-      chunks.push(`搭档：${renderLinkedPlayers(sameSide)}`);
+      chunks.push(`搭档：${renderLinkedPlayers(sameSide, discipline)}`);
     }
 
     if (opponents.length) {
-      chunks.push(`对手：${renderLinkedPlayers(opponents)}`);
+      chunks.push(`对手：${renderLinkedPlayers(opponents, discipline)}`);
     }
 
     return chunks.join(" · ") || fallback || (match.result ? "见结果描述" : "-");
   }
 
-  return renderLinkedPlayers(opponents) || fallback || (match.result ? "见结果描述" : "-");
+  return renderLinkedPlayers(opponents, discipline) || fallback || (match.result ? "见结果描述" : "-");
 }
 
 function sortMatches(matches) {
@@ -1558,6 +1577,26 @@ function formatPlayerRankings(player) {
   return parts.length ? parts.join(" / ") : "未收录";
 }
 
+function formatPlayerRankingForDiscipline(player, discipline) {
+  const normalizedDiscipline = String(discipline || "").trim().toLowerCase();
+  const primaryTag = normalizeRankingTag(player?.rankingTag);
+  let value = null;
+  let tag = "";
+
+  if (normalizedDiscipline === "singles") {
+    value = player?.singlesRanking ?? (primaryTag === "D" ? null : player?.ranking);
+    tag = player?.singlesRankingTag || "";
+  } else if (normalizedDiscipline === "doubles") {
+    value = player?.doublesRanking ?? (primaryTag === "D" ? player?.ranking : null);
+    tag = player?.doublesRankingTag || (primaryTag === "D" ? "" : "");
+  } else {
+    return formatPlayerRankings(player);
+  }
+
+  const rank = formatRanking(value, tag);
+  return rank === "未收录" ? "" : rank.replace(/^D\s*/, "");
+}
+
 function normalizeCountryCode(value) {
   const code = String(value || "").trim().toUpperCase();
   return code;
@@ -1649,7 +1688,7 @@ function slugifyPathSegment(value) {
     .replace(/^-+|-+$/g, "");
 }
 
-function formatPlayerSuffix(player) {
+function formatPlayerSuffix(player, discipline = "") {
   const parts = [];
   const countryLabel = formatCountryForList(player?.country);
 
@@ -1657,17 +1696,19 @@ function formatPlayerSuffix(player) {
     parts.push(escapeHtml(countryLabel));
   }
 
-  const rankingLabel = formatPlayerRankings(player);
-  if (rankingLabel !== "未收录") {
+  const rankingLabel = discipline
+    ? formatPlayerRankingForDiscipline(player, discipline)
+    : formatPlayerRankings(player);
+  if (rankingLabel && rankingLabel !== "未收录") {
     parts.push(escapeHtml(rankingLabel));
   }
 
   return parts.length ? ` ${parts.join(" ")}` : "";
 }
 
-function renderLinkedPlayer(player) {
+function renderLinkedPlayer(player, discipline = "") {
   const nameLabel = escapeHtml(player?.name || "未知球员");
-  const suffix = formatPlayerSuffix(player);
+  const suffix = formatPlayerSuffix(player, discipline);
   const playerId = String(player?.id || "").trim();
 
   if (playerId && state.data?.playerById?.[playerId]) {
@@ -1718,12 +1759,12 @@ function renderPlayerListTourBadge(tour, label) {
   return `<span class="tour-badge tour-${code.toLowerCase()}">${escapeHtml(label)}</span>`;
 }
 
-function renderLinkedPlayers(players) {
+function renderLinkedPlayers(players, discipline = "") {
   if (!Array.isArray(players) || players.length === 0) {
     return "";
   }
 
-  return players.map((player) => renderLinkedPlayer(player)).join(" / ");
+  return players.map((player) => renderLinkedPlayer(player, discipline)).join(" / ");
 }
 
 function renderCourtLink(item, fallbackLabel = "-") {

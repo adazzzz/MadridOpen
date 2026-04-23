@@ -2,7 +2,7 @@
   "metadata": {
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-23T22:13:20.473427+00:00",
+    "updatedAt": "2026-04-23T22:31:29.025833+00:00",
     "playerRankingDate": "23/03/2026",
     "sources": {
       "matches": {
@@ -91,9 +91,9 @@
       "country": "INA",
       "wtaPlayerId": "318390",
       "tour": "WTA",
-      "singlesRanking": 9,
-      "ranking": 9,
-      "doublesRanking": 51
+      "doublesRanking": 51,
+      "ranking": 51,
+      "rankingTag": "D"
     },
     {
       "id": "davidovich-fokina-alejandro",
@@ -215,8 +215,8 @@
       "wtaPlayerId": "311956",
       "tour": "WTA",
       "doublesRanking": 24,
-      "ranking": 9,
-      "singlesRanking": 9
+      "ranking": 71,
+      "singlesRanking": 71
     },
     {
       "id": "alexandre-muller",
@@ -274,9 +274,9 @@
       "country": "CZE",
       "wtaPlayerId": "323849",
       "tour": "WTA",
-      "singlesRanking": 9,
-      "ranking": 9,
-      "doublesRanking": 79
+      "doublesRanking": 79,
+      "ranking": 79,
+      "rankingTag": "D"
     },
     {
       "id": "anastasia-pavlyuchenkova",
@@ -376,6 +376,16 @@
       "doublesRanking": 128
     },
     {
+      "id": "danilina-anna",
+      "name": "Anna Danilina",
+      "country": "KAZ",
+      "wtaPlayerId": "319731",
+      "tour": "WTA",
+      "doublesRanking": 7,
+      "ranking": 7,
+      "rankingTag": "D"
+    },
+    {
       "id": "anna-kalinskaya",
       "name": "Anna Kalinskaya",
       "country": "RUS",
@@ -471,6 +481,16 @@
       "singlesRanking": 108,
       "ranking": 108,
       "doublesRanking": 134
+    },
+    {
+      "id": "muhammad-asia",
+      "name": "Asia Muhammad",
+      "country": "USA",
+      "wtaPlayerId": "313919",
+      "tour": "WTA",
+      "doublesRanking": 23,
+      "ranking": 124,
+      "singlesRanking": 124
     },
     {
       "id": "beatriz-haddad-maia",
@@ -596,8 +616,7 @@
       "tour": "WTA",
       "singlesEntryType": "WC",
       "singlesRanking": 352,
-      "ranking": 352,
-      "doublesRanking": 9
+      "ranking": 352
     },
     {
       "id": "cash-julian",
@@ -745,16 +764,6 @@
       "atpPlayerId": "MM58"
     },
     {
-      "id": "danilina-anna",
-      "name": "Danilina Anna",
-      "country": "KAZ",
-      "wtaPlayerId": "319731",
-      "tour": "WTA",
-      "doublesRanking": 7,
-      "ranking": 9,
-      "singlesRanking": 9
-    },
-    {
       "id": "daria-kasatkina",
       "name": "Daria Kasatkina",
       "country": "AUS",
@@ -772,8 +781,7 @@
       "tour": "WTA",
       "singlesEntryType": "Q",
       "singlesRanking": 98,
-      "ranking": 98,
-      "doublesRanking": 9
+      "ranking": 98
     },
     {
       "id": "darja-vidmanova",
@@ -812,8 +820,8 @@
       "wtaPlayerId": "317462",
       "tour": "WTA",
       "doublesRanking": 22,
-      "ranking": 9,
-      "singlesRanking": 9
+      "ranking": 22,
+      "rankingTag": "D"
     },
     {
       "id": "shapovalov-denis",
@@ -832,8 +840,8 @@
       "wtaPlayerId": "317888",
       "tour": "WTA",
       "doublesRanking": 25,
-      "ranking": 9,
-      "singlesRanking": 9
+      "ranking": 25,
+      "rankingTag": "D"
     },
     {
       "id": "despina-papamichail",
@@ -946,8 +954,7 @@
       "wtaPlayerId": "327620",
       "tour": "WTA",
       "singlesRanking": 324,
-      "ranking": 324,
-      "doublesRanking": 9
+      "ranking": 324
     },
     {
       "id": "elina-svitolina",
@@ -956,8 +963,7 @@
       "wtaPlayerId": "316738",
       "tour": "WTA",
       "singlesRanking": 7,
-      "ranking": 8,
-      "doublesRanking": 9
+      "ranking": 8
     },
     {
       "id": "elisabetta-cocciaretto",
@@ -986,8 +992,8 @@
       "wtaPlayerId": "319960",
       "tour": "WTA",
       "doublesRanking": 20,
-      "ranking": 9,
-      "singlesRanking": 9
+      "ranking": 162,
+      "singlesRanking": 162
     },
     {
       "id": "elmer-moller",
@@ -1040,6 +1046,26 @@
       "ranking": 74
     },
     {
+      "id": "hozumi-eri",
+      "name": "Eri Hozumi",
+      "country": "JPN",
+      "wtaPlayerId": "317138",
+      "tour": "WTA",
+      "doublesRanking": 34,
+      "ranking": 989,
+      "singlesRanking": 989
+    },
+    {
+      "id": "routliffe-erin",
+      "name": "Erin Routliffe",
+      "country": "NZL",
+      "wtaPlayerId": "317299",
+      "tour": "WTA",
+      "doublesRanking": 14,
+      "ranking": 14,
+      "rankingTag": "D"
+    },
+    {
       "id": "erler-alexander",
       "name": "Erler Alexander",
       "country": "AUT",
@@ -1075,14 +1101,24 @@
       "doublesRanking": 358
     },
     {
+      "id": "wu-fang-hsien",
+      "name": "Fang-Hsien Wu",
+      "country": "TPE",
+      "wtaPlayerId": "323382",
+      "tour": "WTA",
+      "doublesRanking": 49,
+      "ranking": 49,
+      "rankingTag": "D"
+    },
+    {
       "id": "fanny-stollar",
       "name": "Fanny Stollar",
       "country": "HUN",
       "wtaPlayerId": "323231",
       "tour": "WTA",
       "doublesRanking": 27,
-      "ranking": 9,
-      "singlesRanking": 9
+      "ranking": 27,
+      "rankingTag": "D"
     },
     {
       "id": "federico-cina",
@@ -1181,8 +1217,8 @@
       "wtaPlayerId": "316060",
       "tour": "WTA",
       "doublesRanking": 42,
-      "ranking": 9,
-      "singlesRanking": 9
+      "ranking": 42,
+      "rankingTag": "D"
     },
     {
       "id": "glasspool-lloyd",
@@ -1250,8 +1286,8 @@
       "wtaPlayerId": "315741",
       "tour": "WTA",
       "doublesRanking": 38,
-      "ranking": 9,
-      "singlesRanking": 9
+      "ranking": 38,
+      "rankingTag": "D"
     },
     {
       "id": "harrison-christian",
@@ -1274,26 +1310,6 @@
       "singlesRanking": 118,
       "ranking": 118,
       "doublesRanking": 325
-    },
-    {
-      "id": "hozumi-eri",
-      "name": "Hozumi Eri",
-      "country": "JPN",
-      "wtaPlayerId": "317138",
-      "tour": "WTA",
-      "doublesRanking": 34,
-      "ranking": 989,
-      "singlesRanking": 989
-    },
-    {
-      "id": "hsieh-su-wei",
-      "name": "Hsieh Su-Wei",
-      "country": "TPE",
-      "wtaPlayerId": "310053",
-      "tour": "WTA",
-      "doublesRanking": 13,
-      "ranking": 9,
-      "singlesRanking": 9
     },
     {
       "id": "hubert-hurkacz",
@@ -1320,8 +1336,7 @@
       "wtaPlayerId": "326408",
       "tour": "WTA",
       "singlesRanking": 3,
-      "ranking": 3,
-      "doublesRanking": 9
+      "ranking": 3
     },
     {
       "id": "ignacio-buse",
@@ -1339,8 +1354,8 @@
       "wtaPlayerId": "317915",
       "tour": "WTA",
       "doublesRanking": 39,
-      "ranking": 9,
-      "singlesRanking": 9
+      "ranking": 39,
+      "rankingTag": "D"
     },
     {
       "id": "irina-camelia-begu",
@@ -1595,8 +1610,7 @@
       "wtaPlayerId": "313974",
       "tour": "WTA",
       "singlesRanking": 41,
-      "ranking": 41,
-      "doublesRanking": 9
+      "ranking": 41
     },
     {
       "id": "katarzyna-kawa",
@@ -1655,9 +1669,9 @@
       "country": "JPN",
       "wtaPlayerId": "317612",
       "tour": "WTA",
-      "singlesRanking": 9,
-      "ranking": 9,
-      "doublesRanking": 53
+      "doublesRanking": 53,
+      "ranking": 53,
+      "rankingTag": "D"
     },
     {
       "id": "kimberly-birrell",
@@ -1792,8 +1806,7 @@
       "wtaPlayerId": "329627",
       "tour": "WTA",
       "singlesRanking": 150,
-      "ranking": 150,
-      "doublesRanking": 9
+      "ranking": 150
     },
     {
       "id": "linda-noskova",
@@ -1888,8 +1901,7 @@
       "wtaPlayerId": "323149",
       "tour": "WTA",
       "singlesRanking": 143,
-      "ranking": 143,
-      "doublesRanking": 9
+      "ranking": 143
     },
     {
       "id": "lulu-sun",
@@ -1914,8 +1926,8 @@
       "wtaPlayerId": "314701",
       "tour": "WTA",
       "doublesRanking": 26,
-      "ranking": 9,
-      "singlesRanking": 9
+      "ranking": 26,
+      "rankingTag": "D"
     },
     {
       "id": "mackenzie-mcdonald",
@@ -1962,9 +1974,9 @@
       "country": "JPN",
       "wtaPlayerId": "317820",
       "tour": "WTA",
-      "singlesRanking": 9,
-      "ranking": 9,
-      "doublesRanking": 58
+      "doublesRanking": 58,
+      "ranking": 58,
+      "rankingTag": "D"
     },
     {
       "id": "manas-dhamne",
@@ -2078,8 +2090,7 @@
       "wtaPlayerId": "316266",
       "tour": "WTA",
       "singlesRanking": 519,
-      "ranking": 519,
-      "doublesRanking": 9
+      "ranking": 519
     },
     {
       "id": "marton-fucsovics",
@@ -2158,6 +2169,16 @@
       "ranking": 58
     },
     {
+      "id": "skoch-miriam",
+      "name": "Miriam Skoch",
+      "country": "CZE",
+      "wtaPlayerId": "324052",
+      "tour": "WTA",
+      "doublesRanking": 46,
+      "ranking": 46,
+      "rankingTag": "D"
+    },
+    {
       "id": "mirra-andreeva",
       "name": "Mirra Andreeva",
       "country": "RUS",
@@ -2203,24 +2224,14 @@
       "doublesRanking": 202
     },
     {
-      "id": "muhammad-asia",
-      "name": "Muhammad Asia",
-      "country": "USA",
-      "wtaPlayerId": "313919",
-      "tour": "WTA",
-      "doublesRanking": 23,
-      "ranking": 9,
-      "singlesRanking": 9
-    },
-    {
       "id": "nadiia-kichenok",
       "name": "Nadiia Kichenok",
       "country": "UKR",
       "wtaPlayerId": "314704",
       "tour": "WTA",
-      "singlesRanking": 9,
-      "ranking": 9,
-      "doublesRanking": 68
+      "doublesRanking": 68,
+      "ranking": 68,
+      "rankingTag": "D"
     },
     {
       "id": "naomi-osaka",
@@ -2229,8 +2240,7 @@
       "wtaPlayerId": "319998",
       "tour": "WTA",
       "singlesRanking": 15,
-      "ranking": 15,
-      "doublesRanking": 9
+      "ranking": 15
     },
     {
       "id": "nauhany-vitoria-leme-da-silva",
@@ -2256,10 +2266,10 @@
       "name": "Nicole Melichar-Martinez",
       "country": "USA",
       "doublesRanking": 16,
-      "ranking": 9,
+      "ranking": 16,
+      "rankingTag": "D",
       "tour": "WTA",
-      "wtaPlayerId": "316713",
-      "singlesRanking": 9
+      "wtaPlayerId": "316713"
     },
     {
       "id": "nikola-bartunkova",
@@ -2314,8 +2324,7 @@
       "wtaPlayerId": "319436",
       "tour": "WTA",
       "singlesRanking": 523,
-      "ranking": 523,
-      "doublesRanking": 9
+      "ranking": 523
     },
     {
       "id": "oksana-selekhmeteva",
@@ -2334,8 +2343,7 @@
       "wtaPlayerId": "327182",
       "tour": "WTA",
       "singlesRanking": 67,
-      "ranking": 67,
-      "doublesRanking": 9
+      "ranking": 67
     },
     {
       "id": "olivetti-albano",
@@ -2348,10 +2356,10 @@
       "name": "Olivia Nicholls",
       "country": "GBR",
       "doublesRanking": 30,
-      "ranking": 9,
+      "ranking": 30,
+      "rankingTag": "D",
       "tour": "WTA",
-      "wtaPlayerId": "322256",
-      "singlesRanking": 9
+      "wtaPlayerId": "322256"
     },
     {
       "id": "otto-virtanen",
@@ -2473,8 +2481,7 @@
       "wtaPlayerId": "328120",
       "tour": "WTA",
       "singlesRanking": 26,
-      "ranking": 26,
-      "doublesRanking": 9
+      "ranking": 26
     },
     {
       "id": "quentin-halys",
@@ -2490,10 +2497,10 @@
       "name": "Quinn Gleason",
       "country": "USA",
       "doublesRanking": 48,
-      "ranking": 9,
+      "ranking": 48,
+      "rankingTag": "D",
       "tour": "WTA",
-      "wtaPlayerId": "319413",
-      "singlesRanking": 9
+      "wtaPlayerId": "319413"
     },
     {
       "id": "rafael-jodar",
@@ -2586,16 +2593,6 @@
       "tour": "ATP"
     },
     {
-      "id": "routliffe-erin",
-      "name": "Routliffe Erin",
-      "country": "NZL",
-      "wtaPlayerId": "317299",
-      "tour": "WTA",
-      "doublesRanking": 14,
-      "ranking": 9,
-      "singlesRanking": 9
-    },
-    {
       "id": "ruth-roura-llaverias",
       "name": "Ruth Roura Llaverias",
       "country": "ESP",
@@ -2682,16 +2679,6 @@
       "doublesRanking": 239
     },
     {
-      "id": "skoch-miriam",
-      "name": "Skoch Miriam",
-      "country": "CZE",
-      "wtaPlayerId": "324052",
-      "tour": "WTA",
-      "doublesRanking": 46,
-      "ranking": 9,
-      "singlesRanking": 9
-    },
-    {
       "id": "skupski-neal",
       "name": "Skupski Neal",
       "country": "GBR",
@@ -2755,6 +2742,16 @@
       "tour": "ATP",
       "singlesRanking": 51,
       "ranking": 51
+    },
+    {
+      "id": "hsieh-su-wei",
+      "name": "Su-Wei Hsieh",
+      "country": "TPE",
+      "wtaPlayerId": "310053",
+      "tour": "WTA",
+      "doublesRanking": 13,
+      "ranking": 13,
+      "rankingTag": "D"
     },
     {
       "id": "suzan-lamens",
@@ -2840,10 +2837,10 @@
       "name": "Tereza Mihalikova",
       "country": "SVK",
       "doublesRanking": 30,
-      "ranking": 9,
+      "ranking": 30,
+      "rankingTag": "D",
       "tour": "WTA",
-      "wtaPlayerId": "322708",
-      "singlesRanking": 9
+      "wtaPlayerId": "322708"
     },
     {
       "id": "tereza-valentova",
@@ -2954,10 +2951,10 @@
       "name": "Ulrikke Eikeri",
       "country": "NOR",
       "doublesRanking": 36,
-      "ranking": 9,
+      "ranking": 36,
+      "rankingTag": "D",
       "tour": "WTA",
-      "wtaPlayerId": "315314",
-      "singlesRanking": 9
+      "wtaPlayerId": "315314"
     },
     {
       "id": "valentin-royer",
@@ -3003,6 +3000,16 @@
       "singlesRanking": 479,
       "ranking": 479,
       "doublesRanking": 148
+    },
+    {
+      "id": "zvonareva-vera",
+      "name": "Vera Zvonareva",
+      "country": "",
+      "wtaPlayerId": "260142",
+      "tour": "WTA",
+      "doublesRanking": 43,
+      "ranking": 323,
+      "singlesRanking": 323
     },
     {
       "id": "veronika-erjavec",
@@ -3075,24 +3082,14 @@
       "ranking": 60
     },
     {
-      "id": "wu-fang-hsien",
-      "name": "Wu Fang-Hsien",
-      "country": "TPE",
-      "wtaPlayerId": "323382",
-      "tour": "WTA",
-      "doublesRanking": 49,
-      "ranking": 9,
-      "singlesRanking": 9
-    },
-    {
       "id": "xinyu-jiang",
       "name": "Xinyu Jiang",
       "country": "CHN",
       "doublesRanking": 35,
-      "ranking": 9,
+      "ranking": 35,
+      "rankingTag": "D",
       "tour": "WTA",
-      "wtaPlayerId": "322931",
-      "singlesRanking": 9
+      "wtaPlayerId": "322931"
     },
     {
       "id": "xinyu-wang",
@@ -3127,10 +3124,10 @@
       "name": "Yifan Xu",
       "country": "CHN",
       "doublesRanking": 41,
-      "ranking": 9,
+      "ranking": 41,
+      "rankingTag": "D",
       "tour": "WTA",
-      "wtaPlayerId": "312280",
-      "singlesRanking": 9
+      "wtaPlayerId": "312280"
     },
     {
       "id": "yulia-putintseva",
@@ -3185,8 +3182,8 @@
       "wtaPlayerId": "317547",
       "tour": "WTA",
       "doublesRanking": 44,
-      "ranking": 9,
-      "singlesRanking": 9
+      "ranking": 44,
+      "rankingTag": "D"
     },
     {
       "id": "zhizhen-zhang",
@@ -3222,16 +3219,6 @@
       "tour": "ATP",
       "singlesRanking": 148,
       "ranking": 148
-    },
-    {
-      "id": "zvonareva-vera",
-      "name": "Zvonareva Vera",
-      "country": "",
-      "wtaPlayerId": "260142",
-      "tour": "WTA",
-      "doublesRanking": 43,
-      "ranking": 323,
-      "singlesRanking": 323
     }
   ],
   "matches": [
@@ -3654,7 +3641,6 @@
           "side": "B",
           "ranking": 523,
           "singlesRanking": 523,
-          "doublesRanking": 9,
           "tour": "WTA",
           "wtaPlayerId": "319436"
         }
@@ -3867,7 +3853,6 @@
           "side": "B",
           "ranking": 143,
           "singlesRanking": 143,
-          "doublesRanking": 9,
           "tour": "WTA",
           "wtaPlayerId": "323149"
         }
@@ -3952,7 +3937,6 @@
           "side": "B",
           "ranking": 98,
           "singlesRanking": 98,
-          "doublesRanking": 9,
           "tour": "WTA",
           "wtaPlayerId": "327845",
           "singlesEntryType": "Q"
@@ -4037,7 +4021,6 @@
           "side": "B",
           "ranking": 150,
           "singlesRanking": 150,
-          "doublesRanking": 9,
           "tour": "WTA",
           "wtaPlayerId": "329627"
         }
@@ -4123,7 +4106,6 @@
           "side": "B",
           "ranking": 324,
           "singlesRanking": 324,
-          "doublesRanking": 9,
           "tour": "WTA",
           "wtaPlayerId": "327620"
         }
@@ -4238,7 +4220,6 @@
           "side": "A",
           "ranking": 519,
           "singlesRanking": 519,
-          "doublesRanking": 9,
           "tour": "WTA",
           "wtaPlayerId": "316266"
         },
@@ -4855,7 +4836,6 @@
           "side": "B",
           "ranking": 98,
           "singlesRanking": 98,
-          "doublesRanking": 9,
           "tour": "WTA",
           "wtaPlayerId": "327845",
           "singlesEntryType": "Q"
@@ -5329,7 +5309,6 @@
           "side": "B",
           "ranking": 352,
           "singlesRanking": 352,
-          "doublesRanking": 9,
           "tour": "WTA",
           "wtaPlayerId": "326911",
           "singlesEntryType": "WC"
@@ -5406,7 +5385,6 @@
           "side": "A",
           "ranking": 98,
           "singlesRanking": 98,
-          "doublesRanking": 9,
           "tour": "WTA",
           "wtaPlayerId": "327845",
           "singlesEntryType": "Q"
@@ -5839,7 +5817,6 @@
           "side": "A",
           "ranking": 67,
           "singlesRanking": 67,
-          "doublesRanking": 9,
           "tour": "WTA",
           "wtaPlayerId": "327182"
         },
@@ -5882,7 +5859,6 @@
           "side": "A",
           "ranking": 41,
           "singlesRanking": 41,
-          "doublesRanking": 9,
           "tour": "WTA",
           "wtaPlayerId": "313974"
         },
@@ -6281,7 +6257,6 @@
           "side": "B",
           "ranking": 8,
           "singlesRanking": 7,
-          "doublesRanking": 9,
           "tour": "WTA",
           "wtaPlayerId": "316738"
         }
@@ -6333,8 +6308,8 @@
           "name": "Hao-Ching Chan",
           "country": "TPE",
           "side": "B",
-          "ranking": 9,
-          "singlesRanking": 9,
+          "ranking": 38,
+          "rankingTag": "D",
           "doublesRanking": 38,
           "tour": "WTA",
           "wtaPlayerId": "315741"
@@ -6344,8 +6319,8 @@
           "name": "Fanny Stollar",
           "country": "HUN",
           "side": "B",
-          "ranking": 9,
-          "singlesRanking": 9,
+          "ranking": 27,
+          "rankingTag": "D",
           "doublesRanking": 27,
           "tour": "WTA",
           "wtaPlayerId": "323231"
@@ -6464,7 +6439,6 @@
           "side": "A",
           "ranking": 3,
           "singlesRanking": 3,
-          "doublesRanking": 9,
           "tour": "WTA",
           "wtaPlayerId": "326408"
         },
@@ -6475,7 +6449,6 @@
           "side": "B",
           "ranking": 98,
           "singlesRanking": 98,
-          "doublesRanking": 9,
           "tour": "WTA",
           "wtaPlayerId": "327845",
           "singlesEntryType": "Q"
@@ -6742,8 +6715,8 @@
           "name": "Aldila Sutjiadi",
           "country": "INA",
           "side": "B",
-          "ranking": 9,
-          "singlesRanking": 9,
+          "ranking": 51,
+          "rankingTag": "D",
           "doublesRanking": 51,
           "tour": "WTA",
           "wtaPlayerId": "318390"
@@ -6807,8 +6780,8 @@
           "name": "Irina Khromacheva",
           "country": "RUS",
           "side": "B",
-          "ranking": 9,
-          "singlesRanking": 9,
+          "ranking": 39,
+          "rankingTag": "D",
           "doublesRanking": 39,
           "tour": "WTA",
           "wtaPlayerId": "317915"
@@ -6818,8 +6791,8 @@
           "name": "Giuliana Olmos",
           "country": "MEX",
           "side": "B",
-          "ranking": 9,
-          "singlesRanking": 9,
+          "ranking": 42,
+          "rankingTag": "D",
           "doublesRanking": 42,
           "tour": "WTA",
           "wtaPlayerId": "316060"
@@ -6862,7 +6835,6 @@
           "side": "B",
           "ranking": 15,
           "singlesRanking": 15,
-          "doublesRanking": 9,
           "tour": "WTA",
           "wtaPlayerId": "319998"
         }
@@ -6998,8 +6970,8 @@
           "name": "Lyudmyla Kichenok",
           "country": "UKR",
           "side": "A",
-          "ranking": 9,
-          "singlesRanking": 9,
+          "ranking": 26,
+          "rankingTag": "D",
           "doublesRanking": 26,
           "tour": "WTA",
           "wtaPlayerId": "314701"
@@ -7009,8 +6981,8 @@
           "name": "Desirae Krawczyk",
           "country": "USA",
           "side": "A",
-          "ranking": 9,
-          "singlesRanking": 9,
+          "ranking": 25,
+          "rankingTag": "D",
           "doublesRanking": 25,
           "tour": "WTA",
           "wtaPlayerId": "317888"
@@ -7193,7 +7165,6 @@
           "side": "A",
           "ranking": 26,
           "singlesRanking": 26,
-          "doublesRanking": 9,
           "tour": "WTA",
           "wtaPlayerId": "328120"
         },
@@ -7279,7 +7250,6 @@
           "side": "A",
           "ranking": 41,
           "singlesRanking": 41,
-          "doublesRanking": 9,
           "tour": "WTA",
           "wtaPlayerId": "313974"
         },
@@ -7406,8 +7376,8 @@
           "name": "Anastasia Detiuc",
           "country": "CZE",
           "side": "A",
-          "ranking": 9,
-          "singlesRanking": 9,
+          "ranking": 79,
+          "rankingTag": "D",
           "doublesRanking": 79,
           "tour": "WTA",
           "wtaPlayerId": "323849"
@@ -7856,8 +7826,8 @@
           "name": "Nadiia Kichenok",
           "country": "UKR",
           "side": "B",
-          "ranking": 9,
-          "singlesRanking": 9,
+          "ranking": 68,
+          "rankingTag": "D",
           "doublesRanking": 68,
           "tour": "WTA",
           "wtaPlayerId": "314704"
@@ -7867,8 +7837,8 @@
           "name": "Makoto Ninomiya",
           "country": "JPN",
           "side": "B",
-          "ranking": 9,
-          "singlesRanking": 9,
+          "ranking": 58,
+          "rankingTag": "D",
           "doublesRanking": 58,
           "tour": "WTA",
           "wtaPlayerId": "317820"
@@ -7941,8 +7911,8 @@
           "name": "Alexandra Panova",
           "country": "RUS",
           "side": "A",
-          "ranking": 9,
-          "singlesRanking": 9,
+          "ranking": 71,
+          "singlesRanking": 71,
           "doublesRanking": 24,
           "tour": "WTA",
           "wtaPlayerId": "311956"
@@ -7952,8 +7922,8 @@
           "name": "Zhaoxuan Yang",
           "country": "CHN",
           "side": "A",
-          "ranking": 9,
-          "singlesRanking": 9,
+          "ranking": 44,
+          "rankingTag": "D",
           "doublesRanking": 44,
           "tour": "WTA",
           "wtaPlayerId": "317547"
@@ -7963,8 +7933,8 @@
           "name": "Ellen Perez",
           "country": "AUS",
           "side": "B",
-          "ranking": 9,
-          "singlesRanking": 9,
+          "ranking": 162,
+          "singlesRanking": 162,
           "doublesRanking": 20,
           "tour": "WTA",
           "wtaPlayerId": "319960"
@@ -7974,8 +7944,8 @@
           "name": "Demi Schuurs",
           "country": "NED",
           "side": "B",
-          "ranking": 9,
-          "singlesRanking": 9,
+          "ranking": 22,
+          "rankingTag": "D",
           "doublesRanking": 22,
           "tour": "WTA",
           "wtaPlayerId": "317462"
@@ -10913,7 +10883,7 @@
         },
         {
           "id": "zvonareva-vera",
-          "name": "Zvonareva Vera",
+          "name": "Vera Zvonareva",
           "country": "",
           "side": "A",
           "ranking": 323,
@@ -10962,7 +10932,7 @@
       "players": [
         {
           "id": "hozumi-eri",
-          "name": "Hozumi Eri",
+          "name": "Eri Hozumi",
           "country": "JPN",
           "side": "A",
           "ranking": 989,
@@ -10973,11 +10943,11 @@
         },
         {
           "id": "wu-fang-hsien",
-          "name": "Wu Fang-Hsien",
+          "name": "Fang-Hsien Wu",
           "country": "TPE",
           "side": "A",
-          "ranking": 9,
-          "singlesRanking": 9,
+          "ranking": 49,
+          "rankingTag": "D",
           "doublesRanking": 49,
           "tour": "WTA",
           "wtaPlayerId": "323382"
@@ -10998,8 +10968,8 @@
           "name": "Nicole Melichar-Martinez",
           "country": "USA",
           "side": "B",
-          "ranking": 9,
-          "singlesRanking": 9,
+          "ranking": 16,
+          "rankingTag": "D",
           "doublesRanking": 16,
           "tour": "WTA",
           "wtaPlayerId": "316713"
@@ -11025,8 +10995,8 @@
           "name": "Kato Miyu",
           "country": "JPN",
           "side": "A",
-          "ranking": 9,
-          "singlesRanking": 9,
+          "ranking": 53,
+          "rankingTag": "D",
           "doublesRanking": 53,
           "tour": "WTA",
           "wtaPlayerId": "317612"
@@ -11055,11 +11025,11 @@
         },
         {
           "id": "skoch-miriam",
-          "name": "Skoch Miriam",
+          "name": "Miriam Skoch",
           "country": "CZE",
           "side": "B",
-          "ranking": 9,
-          "singlesRanking": 9,
+          "ranking": 46,
+          "rankingTag": "D",
           "doublesRanking": 46,
           "tour": "WTA",
           "wtaPlayerId": "324052"
@@ -11082,11 +11052,11 @@
       "players": [
         {
           "id": "hsieh-su-wei",
-          "name": "Hsieh Su-Wei",
+          "name": "Su-Wei Hsieh",
           "country": "TPE",
           "side": "A",
-          "ranking": 9,
-          "singlesRanking": 9,
+          "ranking": 13,
+          "rankingTag": "D",
           "doublesRanking": 13,
           "tour": "WTA",
           "wtaPlayerId": "310053"
@@ -11107,8 +11077,8 @@
           "name": "Tereza Mihalikova",
           "country": "SVK",
           "side": "B",
-          "ranking": 9,
-          "singlesRanking": 9,
+          "ranking": 30,
+          "rankingTag": "D",
           "doublesRanking": 30,
           "tour": "WTA",
           "wtaPlayerId": "322708"
@@ -11118,8 +11088,8 @@
           "name": "Olivia Nicholls",
           "country": "GBR",
           "side": "B",
-          "ranking": 9,
-          "singlesRanking": 9,
+          "ranking": 30,
+          "rankingTag": "D",
           "doublesRanking": 30,
           "tour": "WTA",
           "wtaPlayerId": "322256"
@@ -11145,8 +11115,8 @@
           "name": "Xinyu Jiang",
           "country": "CHN",
           "side": "A",
-          "ranking": 9,
-          "singlesRanking": 9,
+          "ranking": 35,
+          "rankingTag": "D",
           "doublesRanking": 35,
           "tour": "WTA",
           "wtaPlayerId": "322931"
@@ -11156,8 +11126,8 @@
           "name": "Yifan Xu",
           "country": "CHN",
           "side": "A",
-          "ranking": 9,
-          "singlesRanking": 9,
+          "ranking": 41,
+          "rankingTag": "D",
           "doublesRanking": 41,
           "tour": "WTA",
           "wtaPlayerId": "312280"
@@ -11236,11 +11206,11 @@
         },
         {
           "id": "routliffe-erin",
-          "name": "Routliffe Erin",
+          "name": "Erin Routliffe",
           "country": "NZL",
           "side": "B",
-          "ranking": 9,
-          "singlesRanking": 9,
+          "ranking": 14,
+          "rankingTag": "D",
           "doublesRanking": 14,
           "tour": "WTA",
           "wtaPlayerId": "317299"
@@ -11263,22 +11233,22 @@
       "players": [
         {
           "id": "danilina-anna",
-          "name": "Danilina Anna",
+          "name": "Anna Danilina",
           "country": "KAZ",
           "side": "A",
-          "ranking": 9,
-          "singlesRanking": 9,
+          "ranking": 7,
+          "rankingTag": "D",
           "doublesRanking": 7,
           "tour": "WTA",
           "wtaPlayerId": "319731"
         },
         {
           "id": "muhammad-asia",
-          "name": "Muhammad Asia",
+          "name": "Asia Muhammad",
           "country": "USA",
           "side": "A",
-          "ranking": 9,
-          "singlesRanking": 9,
+          "ranking": 124,
+          "singlesRanking": 124,
           "doublesRanking": 23,
           "tour": "WTA",
           "wtaPlayerId": "313919"
@@ -11288,8 +11258,8 @@
           "name": "Ulrikke Eikeri",
           "country": "NOR",
           "side": "B",
-          "ranking": 9,
-          "singlesRanking": 9,
+          "ranking": 36,
+          "rankingTag": "D",
           "doublesRanking": 36,
           "tour": "WTA",
           "wtaPlayerId": "315314"
@@ -11299,8 +11269,8 @@
           "name": "Quinn Gleason",
           "country": "USA",
           "side": "B",
-          "ranking": 9,
-          "singlesRanking": 9,
+          "ranking": 48,
+          "rankingTag": "D",
           "doublesRanking": 48,
           "tour": "WTA",
           "wtaPlayerId": "319413"
@@ -11343,7 +11313,6 @@
           "country": "CHN",
           "ranking": 26,
           "singlesRanking": 26,
-          "doublesRanking": 9,
           "tour": "WTA",
           "wtaPlayerId": "328120"
         }
@@ -11363,7 +11332,6 @@
           "country": "CHN",
           "ranking": 26,
           "singlesRanking": 26,
-          "doublesRanking": 9,
           "tour": "WTA",
           "wtaPlayerId": "328120"
         }
@@ -11620,7 +11588,6 @@
           "country": "CZE",
           "ranking": 41,
           "singlesRanking": 41,
-          "doublesRanking": 9,
           "tour": "WTA",
           "wtaPlayerId": "313974"
         }
@@ -11666,37 +11633,37 @@
       "players": [
         {
           "id": "muhammad-asia",
-          "name": "Muhammad Asia",
+          "name": "Asia Muhammad",
           "country": "USA",
-          "ranking": 9,
-          "singlesRanking": 9,
+          "ranking": 124,
+          "singlesRanking": 124,
           "doublesRanking": 23,
           "tour": "WTA",
           "wtaPlayerId": "313919"
         },
         {
           "id": "danilina-anna",
-          "name": "Danilina Anna",
+          "name": "Anna Danilina",
           "country": "KAZ",
-          "ranking": 9,
-          "singlesRanking": 9,
+          "ranking": 7,
+          "rankingTag": "D",
           "doublesRanking": 7,
           "tour": "WTA",
           "wtaPlayerId": "319731"
         },
         {
           "id": "wu-fang-hsien",
-          "name": "Wu Fang-Hsien",
+          "name": "Fang-Hsien Wu",
           "country": "TPE",
-          "ranking": 9,
-          "singlesRanking": 9,
+          "ranking": 49,
+          "rankingTag": "D",
           "doublesRanking": 49,
           "tour": "WTA",
           "wtaPlayerId": "323382"
         },
         {
           "id": "hozumi-eri",
-          "name": "Hozumi Eri",
+          "name": "Eri Hozumi",
           "country": "JPN",
           "ranking": 989,
           "singlesRanking": 989,
@@ -11913,10 +11880,10 @@
       "players": [
         {
           "id": "hsieh-su-wei",
-          "name": "Hsieh Su-Wei",
+          "name": "Su-Wei Hsieh",
           "country": "TPE",
-          "ranking": 9,
-          "singlesRanking": 9,
+          "ranking": 13,
+          "rankingTag": "D",
           "doublesRanking": 13,
           "tour": "WTA",
           "wtaPlayerId": "310053"
@@ -12176,8 +12143,8 @@
           "id": "aldila-sutjiadi",
           "name": "Aldila Sutjiadi",
           "country": "INA",
-          "ranking": 9,
-          "singlesRanking": 9,
+          "ranking": 51,
+          "rankingTag": "D",
           "doublesRanking": 51,
           "tour": "WTA",
           "wtaPlayerId": "318390"
@@ -12388,10 +12355,10 @@
         },
         {
           "id": "skoch-miriam",
-          "name": "Skoch Miriam",
+          "name": "Miriam Skoch",
           "country": "CZE",
-          "ranking": 9,
-          "singlesRanking": 9,
+          "ranking": 46,
+          "rankingTag": "D",
           "doublesRanking": 46,
           "tour": "WTA",
           "wtaPlayerId": "324052"
@@ -12442,7 +12409,6 @@
           "country": "JPN",
           "ranking": 15,
           "singlesRanking": 15,
-          "doublesRanking": 9,
           "tour": "WTA",
           "wtaPlayerId": "319998"
         }
@@ -12500,10 +12466,10 @@
       "players": [
         {
           "id": "routliffe-erin",
-          "name": "Routliffe Erin",
+          "name": "Erin Routliffe",
           "country": "NZL",
-          "ranking": 9,
-          "singlesRanking": 9,
+          "ranking": 14,
+          "rankingTag": "D",
           "doublesRanking": 14,
           "tour": "WTA",
           "wtaPlayerId": "317299"
@@ -12777,7 +12743,6 @@
           "country": "POL",
           "ranking": 3,
           "singlesRanking": 3,
-          "doublesRanking": 9,
           "tour": "WTA",
           "wtaPlayerId": "326408"
         }
@@ -13432,20 +13397,20 @@
       "players": [
         {
           "id": "danilina-anna",
-          "name": "Danilina Anna",
+          "name": "Anna Danilina",
           "country": "KAZ",
-          "ranking": 9,
-          "singlesRanking": 9,
+          "ranking": 7,
+          "rankingTag": "D",
           "doublesRanking": 7,
           "tour": "WTA",
           "wtaPlayerId": "319731"
         },
         {
           "id": "muhammad-asia",
-          "name": "Muhammad Asia",
+          "name": "Asia Muhammad",
           "country": "USA",
-          "ranking": 9,
-          "singlesRanking": 9,
+          "ranking": 124,
+          "singlesRanking": 124,
           "doublesRanking": 23,
           "tour": "WTA",
           "wtaPlayerId": "313919"
@@ -13462,7 +13427,7 @@
       "players": [
         {
           "id": "hozumi-eri",
-          "name": "Hozumi Eri",
+          "name": "Eri Hozumi",
           "country": "JPN",
           "ranking": 989,
           "singlesRanking": 989,
@@ -13472,10 +13437,10 @@
         },
         {
           "id": "wu-fang-hsien",
-          "name": "Wu Fang-Hsien",
+          "name": "Fang-Hsien Wu",
           "country": "TPE",
-          "ranking": 9,
-          "singlesRanking": 9,
+          "ranking": 49,
+          "rankingTag": "D",
           "doublesRanking": 49,
           "tour": "WTA",
           "wtaPlayerId": "323382"
@@ -13494,8 +13459,8 @@
           "id": "nicole-melichar-martinez",
           "name": "Nicole Melichar-Martinez",
           "country": "USA",
-          "ranking": 9,
-          "singlesRanking": 9,
+          "ranking": 16,
+          "rankingTag": "D",
           "doublesRanking": 16,
           "tour": "WTA",
           "wtaPlayerId": "316713"
@@ -13504,8 +13469,8 @@
           "id": "kato-miyu",
           "name": "Kato Miyu",
           "country": "JPN",
-          "ranking": 9,
-          "singlesRanking": 9,
+          "ranking": 53,
+          "rankingTag": "D",
           "doublesRanking": 53,
           "tour": "WTA",
           "wtaPlayerId": "317612"
@@ -13522,7 +13487,7 @@
       "players": [
         {
           "id": "zvonareva-vera",
-          "name": "Zvonareva Vera",
+          "name": "Vera Zvonareva",
           "country": "",
           "ranking": 323,
           "singlesRanking": 323,
@@ -13886,8 +13851,8 @@
           "id": "aldila-sutjiadi",
           "name": "Aldila Sutjiadi",
           "country": "INA",
-          "ranking": 9,
-          "singlesRanking": 9,
+          "ranking": 51,
+          "rankingTag": "D",
           "doublesRanking": 51,
           "tour": "WTA",
           "wtaPlayerId": "318390"
@@ -14191,8 +14156,8 @@
           "id": "nicole-melichar-martinez",
           "name": "Nicole Melichar-Martinez",
           "country": "USA",
-          "ranking": 9,
-          "singlesRanking": 9,
+          "ranking": 16,
+          "rankingTag": "D",
           "doublesRanking": 16,
           "tour": "WTA",
           "wtaPlayerId": "316713"
@@ -14284,8 +14249,8 @@
           "id": "anastasia-detiuc",
           "name": "Anastasia Detiuc",
           "country": "CZE",
-          "ranking": 9,
-          "singlesRanking": 9,
+          "ranking": 79,
+          "rankingTag": "D",
           "doublesRanking": 79,
           "tour": "WTA",
           "wtaPlayerId": "323849"
@@ -14335,8 +14300,8 @@
           "id": "nadiia-kichenok",
           "name": "Nadiia Kichenok",
           "country": "UKR",
-          "ranking": 9,
-          "singlesRanking": 9,
+          "ranking": 68,
+          "rankingTag": "D",
           "doublesRanking": 68,
           "tour": "WTA",
           "wtaPlayerId": "314704"
@@ -14345,8 +14310,8 @@
           "id": "makoto-ninomiya",
           "name": "Makoto Ninomiya",
           "country": "JPN",
-          "ranking": 9,
-          "singlesRanking": 9,
+          "ranking": 58,
+          "rankingTag": "D",
           "doublesRanking": 58,
           "tour": "WTA",
           "wtaPlayerId": "317820"
@@ -14365,8 +14330,8 @@
           "id": "makoto-ninomiya",
           "name": "Makoto Ninomiya",
           "country": "JPN",
-          "ranking": 9,
-          "singlesRanking": 9,
+          "ranking": 58,
+          "rankingTag": "D",
           "doublesRanking": 58,
           "tour": "WTA",
           "wtaPlayerId": "317820"
@@ -14375,8 +14340,8 @@
           "id": "nadiia-kichenok",
           "name": "Nadiia Kichenok",
           "country": "UKR",
-          "ranking": 9,
-          "singlesRanking": 9,
+          "ranking": 68,
+          "rankingTag": "D",
           "doublesRanking": 68,
           "tour": "WTA",
           "wtaPlayerId": "314704"
@@ -14553,8 +14518,8 @@
           "id": "demi-schuurs",
           "name": "Demi Schuurs",
           "country": "NED",
-          "ranking": 9,
-          "singlesRanking": 9,
+          "ranking": 22,
+          "rankingTag": "D",
           "doublesRanking": 22,
           "tour": "WTA",
           "wtaPlayerId": "317462"
@@ -14563,8 +14528,8 @@
           "id": "ellen-perez",
           "name": "Ellen Perez",
           "country": "AUS",
-          "ranking": 9,
-          "singlesRanking": 9,
+          "ranking": 162,
+          "singlesRanking": 162,
           "doublesRanking": 20,
           "tour": "WTA",
           "wtaPlayerId": "319960"
@@ -14732,8 +14697,8 @@
           "id": "alexandra-panova",
           "name": "Alexandra Panova",
           "country": "RUS",
-          "ranking": 9,
-          "singlesRanking": 9,
+          "ranking": 71,
+          "singlesRanking": 71,
           "doublesRanking": 24,
           "tour": "WTA",
           "wtaPlayerId": "311956"
@@ -14742,8 +14707,8 @@
           "id": "zhaoxuan-yang",
           "name": "Zhaoxuan Yang",
           "country": "CHN",
-          "ranking": 9,
-          "singlesRanking": 9,
+          "ranking": 44,
+          "rankingTag": "D",
           "doublesRanking": 44,
           "tour": "WTA",
           "wtaPlayerId": "317547"

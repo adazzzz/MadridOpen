@@ -147,10 +147,10 @@ WTA_PROFILE_DOUBLES_JSON_RANK_RE = re.compile(
     r'(?i)(?:"(?:doublesRanking|currentDoublesRanking|doubles_rank(?:ing)?)"\s*:\s*"?(\d{1,4})"?)|(?:["&]quot;doubles["&]quot;\s*:\s*\{[^{}]{0,300}?["&]quot;rank["&]quot;\s*:\s*["&]quot;(\d{1,4})["&]quot;)'
 )
 WTA_PROFILE_SINGLES_TEXT_RANK_RE = re.compile(
-    r"(?i)(?:current\s+)?singles\s+rank(?:ing)?[^0-9#]{0,40}#?\s*(\d{1,4})"
+    r"(?i)(?:current\s+)?singles\s+rank(?:ing)?[^0-9#]{0,80}#?\s*(\d{1,3}(?:,\d{3})+|\d{1,4})"
 )
 WTA_PROFILE_DOUBLES_TEXT_RANK_RE = re.compile(
-    r"(?i)(?:current\s+)?doubles\s+rank(?:ing)?[^0-9#]{0,40}#?\s*(\d{1,4})"
+    r"(?i)(?:current\s+)?doubles\s+rank(?:ing)?[^0-9#]{0,80}#?\s*(\d{1,3}(?:,\d{3})+|\d{1,4})"
 )
 WTA_PROFILE_LINK_RE = re.compile(
     r'href="(?:https?://www\.wtatennis\.com)?/players/(?P<id>\d+)/(?:[^"]+)"[^>]*>(?P<name>.*?)</a>',
@@ -659,6 +659,13 @@ def parse_int(value: object) -> Optional[int]:
     return parsed
 
 
+def parse_rank_number(value: object) -> Optional[int]:
+    text = str(value or "").strip()
+    if not text:
+        return None
+    return parse_int(text.replace(",", ""))
+
+
 def normalize_atp_player_id(value: object) -> str:
     text = str(value or "").strip().upper()
     if re.fullmatch(r"[A-Z0-9]{4}", text):
@@ -704,13 +711,13 @@ def parse_wta_profile_ranking(html_text: str, discipline: str = "singles") -> Op
     text_re = WTA_PROFILE_DOUBLES_TEXT_RANK_RE if normalize_ranking_discipline(discipline) == "doubles" else WTA_PROFILE_SINGLES_TEXT_RANK_RE
 
     for match in json_re.finditer(html_text):
-        rank = parse_int(next((group for group in match.groups() if group), None))
+        rank = parse_rank_number(next((group for group in match.groups() if group), None))
         if rank is not None and 0 < rank < 5000:
             return rank
 
     cleaned_text = clean_text(html_text)
     for match in text_re.finditer(cleaned_text):
-        rank = parse_int(match.group(1))
+        rank = parse_rank_number(match.group(1))
         if rank is not None and 0 < rank < 5000:
             return rank
 
@@ -2504,6 +2511,11 @@ def enrich_players_from_official_rankings(registry: Dict[str, dict], entries: Li
             wta_player_id=entry.get("wtaPlayerId", ""),
         ):
             changed = True
+        official_name = normalize_person_name(str(entry.get("name") or ""))
+        if official_name and name_token_key(official_name) == name_token_key(player.get("name", "")):
+            if player.get("name") != official_name:
+                player["name"] = official_name
+                changed = True
         rank = parse_int(entry.get("ranking"))
         if rank is not None:
             changed = set_player_ranking(
