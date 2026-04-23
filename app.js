@@ -624,10 +624,10 @@ function renderSingleSidebarState(view) {
   }
   if (expand) {
     expand.hidden = !collapsed;
-    expand.textContent = ">> 展开";
+    expand.textContent = "展开";
   }
   if (toggle) {
-    toggle.textContent = collapsed ? ">> 展开" : "<< 收起";
+    toggle.textContent = collapsed ? "展开" : "收起";
     toggle.setAttribute("aria-label", collapsed ? "展开侧栏" : "折叠侧栏");
   }
 }
