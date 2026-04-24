@@ -4,7 +4,7 @@
     "track": "training",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-24T22:02:33.630919+00:00",
+    "updatedAt": "2026-04-24T22:51:35.432238+00:00",
     "sources": {
       "training": [
         "https://practice.tmstennis.com/api/iframe?runid=702&public=1&day=0&mode=0",
@@ -1164,6 +1164,26 @@
           "doublesRanking": 274,
           "tour": "WTA",
           "wtaPlayerId": "324166"
+        }
+      ]
+    },
+    {
+      "id": "0-pista-12-wta-03-00-pm-04-30-pm-jessica-pegula",
+      "dayOffset": 0,
+      "dayLabel": "Sat, Apr 25, 2026",
+      "court": "PISTA 12 (WTA)",
+      "timeRange": "03:00 PM - 04:30 PM",
+      "tour": "WTA",
+      "players": [
+        {
+          "id": "jessica-pegula",
+          "name": "Jessica Pegula",
+          "country": "USA",
+          "ranking": 5,
+          "singlesRanking": 5,
+          "doublesRanking": 112,
+          "tour": "WTA",
+          "wtaPlayerId": "316956"
         }
       ]
     },
