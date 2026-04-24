@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Madrid Open Player Hub</title>
-    <link rel="stylesheet" href="./styles.css?v=2026042408" />
+    <link rel="stylesheet" href="./styles.css?v=2026042409" />
   </head>
   <body>
     <div class="bg-layer" aria-hidden="true"></div>
@@ -18,7 +18,7 @@
         </div>
       </div>
       <div class="header-actions">
-        <p id="buildVersion" class="build-version">v2026042408</p>
+        <p id="buildVersion" class="build-version">v2026042409</p>
         <p id="refreshStatus">快照时间：加载中，10-20min数据刷新</p>
         <button id="reloadBtn" type="button" aria-label="重新加载数据" title="重新加载数据">↻</button>
       </div>
@@ -70,7 +70,7 @@
             <section class="table-card">
               <div class="table-title">
                 <h2>单打比赛</h2>
-                <p>按开始时间倒序</p>
+                <p>进行中 / 未开赛优先，已结束倒序</p>
               </div>
               <div class="table-wrap">
                 <table>
@@ -91,7 +91,7 @@
             <section id="doublesSection" class="table-card">
               <div class="table-title">
                 <h2>双打比赛</h2>
-                <p>按开始时间倒序</p>
+                <p>进行中 / 未开赛优先，已结束倒序</p>
               </div>
               <div class="table-wrap">
                 <table>
@@ -152,7 +152,7 @@
         <section class="panel detail-panel" aria-label="场地明细">
           <div id="courtEmptyState" class="empty-state">
             <h2>请选择场地</h2>
-            <p>右侧会展示该场地每天的比赛安排，按时间从晚到早倒序排列。</p>
+            <p>右侧会展示该场地每天的比赛安排，优先显示当天未结束的比赛。</p>
           </div>
 
           <div id="courtDetail" hidden>
@@ -193,6 +193,6 @@
       </p>
     </footer>
 
-    <script type="module" src="./app.js?v=2026042408"></script>
+    <script type="module" src="./app.js?v=2026042409"></script>
   </body>
 </html>

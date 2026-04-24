@@ -1021,21 +1021,121 @@ function buildOpponentSummaryHtml(player, match, discipline) {
 }
 
 function sortMatches(matches) {
-  return [...matches].sort((a, b) => {
-    const orderA = getScheduleOrder(a);
-    const orderB = getScheduleOrder(b);
-    if (orderA !== orderB) {
-      return orderB - orderA;
-    }
+  return [...matches].sort(compareMatchesForDisplay);
+}
 
-    const timeA = getMatchSortStamp(a);
-    const timeB = getMatchSortStamp(b);
-    if (timeA !== timeB) {
-      return timeB - timeA;
-    }
+function compareMatchesForDisplay(a, b) {
+  const priorityA = getMatchDisplayPriority(a);
+  const priorityB = getMatchDisplayPriority(b);
+  if (priorityA !== priorityB) {
+    return priorityA - priorityB;
+  }
 
-    return String(b?.id || "").localeCompare(String(a?.id || ""));
-  });
+  const direction = priorityA === 2 ? -1 : 1;
+  const scheduleComparison = compareMatchSchedulePosition(a, b, direction);
+  if (scheduleComparison !== 0) {
+    return scheduleComparison;
+  }
+
+  return direction * String(a?.id || "").localeCompare(String(b?.id || ""));
+}
+
+function getMatchDisplayPriority(match) {
+  if (isLiveMatchStatus(match?.status)) {
+    return 0;
+  }
+  if (isFinishedMatch(match?.status)) {
+    return 2;
+  }
+  if (isCanceledMatchStatus(match?.status)) {
+    return 3;
+  }
+  return 1;
+}
+
+function compareMatchSchedulePosition(a, b, direction) {
+  const dayComparison = compareNullableNumbers(getMatchDaySortStamp(a), getMatchDaySortStamp(b), direction);
+  if (dayComparison !== 0) {
+    return dayComparison;
+  }
+
+  const orderA = getScheduleOrder(a);
+  const orderB = getScheduleOrder(b);
+  if (orderA > 0 && orderB > 0 && orderA !== orderB) {
+    return (orderA - orderB) * direction;
+  }
+
+  const minuteComparison = compareNullableNumbers(getMatchScheduleMinutes(a), getMatchScheduleMinutes(b), direction);
+  if (minuteComparison !== 0) {
+    return minuteComparison;
+  }
+
+  const orderComparison = compareNullableNumbers(orderA > 0 ? orderA : null, orderB > 0 ? orderB : null, direction);
+  if (orderComparison !== 0) {
+    return orderComparison;
+  }
+
+  return compareNullableNumbers(getComparableMatchSortStamp(a), getComparableMatchSortStamp(b), direction);
+}
+
+function compareNullableNumbers(left, right, direction) {
+  const hasLeft = Number.isFinite(left);
+  const hasRight = Number.isFinite(right);
+
+  if (hasLeft && hasRight) {
+    return left === right ? 0 : (left - right) * direction;
+  }
+  if (hasLeft) {
+    return -1;
+  }
+  if (hasRight) {
+    return 1;
+  }
+  return 0;
+}
+
+function getMatchDaySortStamp(match) {
+  const stamp = getCourtDaySortStamp(getCourtDayKey(match));
+  return stamp >= 0 ? stamp : null;
+}
+
+function getMatchScheduleMinutes(match) {
+  const scheduleMinutes = parseClockMinutes(formatScheduleClock(match?.scheduleTime));
+  if (scheduleMinutes !== null) {
+    return scheduleMinutes;
+  }
+
+  const raw = String(match?.startTime || "").trim();
+  if (!raw || isPlaceholderStartTime(raw) || isMidnightStartTime(raw)) {
+    return null;
+  }
+
+  const parsed = Date.parse(raw);
+  if (!Number.isFinite(parsed)) {
+    return null;
+  }
+
+  return getMadridClockMinutes(new Date(parsed));
+}
+
+function parseClockMinutes(value) {
+  const match = String(value || "").match(/^(\d{1,2}):(\d{2})/);
+  if (!match) {
+    return null;
+  }
+
+  const hour = Number(match[1]);
+  const minute = Number(match[2]);
+  if (!Number.isFinite(hour) || !Number.isFinite(minute)) {
+    return null;
+  }
+
+  return hour * 60 + minute;
+}
+
+function getComparableMatchSortStamp(match) {
+  const stamp = getMatchSortStamp(match);
+  return stamp > 0 ? stamp : null;
 }
 
 function getMatchSortStamp(match) {
@@ -1527,6 +1627,10 @@ function isFinishedMatch(status) {
   return String(status || "").toUpperCase() === "F";
 }
 
+function isCanceledMatchStatus(status) {
+  return String(status || "").toUpperCase() === "C";
+}
+
 function isLiveMatchStatus(status) {
   const code = String(status || "").toUpperCase();
   return code === "O" || code === "L" || code === "P";
@@ -1975,10 +2079,54 @@ function groupCourtScheduleByDay(matches, training) {
       key,
       label: formatCourtDayLabel(key),
       stamp: getCourtDaySortStamp(key),
+      hasOpenMatches: entries.matches.some(isOpenMatchForDisplay),
       matches: sortMatches(entries.matches),
       training: sortCourtTraining(entries.training)
     }))
-    .sort((a, b) => b.stamp - a.stamp);
+    .sort(compareCourtDaySections);
+}
+
+function compareCourtDaySections(a, b) {
+  const priorityA = getCourtDaySectionPriority(a);
+  const priorityB = getCourtDaySectionPriority(b);
+  if (priorityA !== priorityB) {
+    return priorityA - priorityB;
+  }
+
+  if (priorityA === 1) {
+    return a.stamp - b.stamp;
+  }
+  if (priorityA === 3) {
+    return b.stamp - a.stamp;
+  }
+
+  if (a.stamp !== b.stamp) {
+    return a.stamp - b.stamp;
+  }
+  return String(a.key || "").localeCompare(String(b.key || ""));
+}
+
+function getCourtDaySectionPriority(section) {
+  const todayKey = getTodayCourtDayKey();
+  const key = String(section?.key || "");
+
+  if (key === todayKey && section?.hasOpenMatches) {
+    return 0;
+  }
+  if (key !== "待定" && key > todayKey) {
+    return 1;
+  }
+  if (key === todayKey) {
+    return 2;
+  }
+  if (key !== "待定" && key < todayKey) {
+    return 3;
+  }
+  return 4;
+}
+
+function isOpenMatchForDisplay(match) {
+  return !isFinishedMatch(match?.status) && !isCanceledMatchStatus(match?.status);
 }
 
 function getCourtDayKey(match) {
@@ -2087,13 +2235,17 @@ function parseTrainingEndMinutes(value) {
 }
 
 function getMadridNowMinutes() {
+  return getMadridClockMinutes(new Date());
+}
+
+function getMadridClockMinutes(date) {
   const formatter = new Intl.DateTimeFormat("en-GB", {
     timeZone: "Europe/Madrid",
     hour: "2-digit",
     minute: "2-digit",
     hour12: false
   });
-  const parts = formatter.formatToParts(new Date());
+  const parts = formatter.formatToParts(date);
   const hour = Number(parts.find((part) => part.type === "hour")?.value || "0");
   const minute = Number(parts.find((part) => part.type === "minute")?.value || "0");
   return hour * 60 + minute;
