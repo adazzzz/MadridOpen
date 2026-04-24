@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import datetime as dt
 import html
+import io
 import json
 import re
 import sys
@@ -36,6 +37,9 @@ ATP_OFFICIAL_DOUBLES_RANKINGS_URL_TEMPLATE = (
     "https://www.atptour.com/en/rankings/doubles"
     "?DateWeek=Current+Week&RankRange={rank_range}&Region=all&SortAscending=True&SortField=LastName"
 )
+ATP_OFFICIAL_SINGLES_RANKINGS_REPORT_URL = "https://www.protennislive.com/posting/ramr/singles_entry_numerical.pdf"
+ATP_OFFICIAL_DOUBLES_RANKINGS_REPORT_URL = "https://www.protennislive.com/posting/ramr/doubles_numerical_entry.pdf"
+ATP_PLAYER_PROFILE_URL_TEMPLATE = "https://www.atptour.com/en/players/-/{atp_player_id}/overview"
 ATP_OFFICIAL_RANK_RANGE_VALUES = [
     "1-100",
     "100-200",
@@ -113,6 +117,31 @@ ATP_RANKING_ABBR_ROW_RE = re.compile(
     r"(?P<abbr>[A-Z]\.\s+[A-Za-zÀ-ÖØ-öø-ÿ'`.-]+(?:\s+[A-Za-zÀ-ÖØ-öø-ÿ'`.-]+){0,3})\s+"
     r"(?P<points>\d{1,5})\s+"
     r"(?:\d+|-)"
+)
+ATP_PLAYER_LINK_RE = re.compile(
+    r'href="[^"]*/players/[^"/]+/(?P<id>[a-z0-9]{4})(?:/[^"]*)?"[^>]*>(?P<name>.*?)</a>',
+    flags=re.I | re.S,
+)
+ATP_RANKING_REPORT_ROW_RE = re.compile(
+    r"^\s*"
+    r"(?P<rank>\d{1,4})(?:\s+T)?\s+"
+    r"(?P<last>[A-Za-zÀ-ÖØ-öø-ÿ'` .-]+?),\s+"
+    r"(?P<first>[A-Za-zÀ-ÖØ-öø-ÿ'` .-]+?)"
+    r"(?:\s+\((?P<country>[A-Z]{3})\))?\s+"
+    r"(?P<points>\d{1,6})\b",
+    flags=re.M,
+)
+ATP_PROFILE_RANK_STAT_RE = re.compile(
+    r'<div[^>]*class="[^"]*\bstat\b[^"]*"[^>]*>\s*'
+    r'(?P<rank>\d{1,4})\s*'
+    r'<span[^>]*class="[^"]*\bstat-label\b[^"]*"[^>]*>\s*Rank\s*</span>',
+    flags=re.I | re.S,
+)
+ATP_PROFILE_SINGLES_JSON_RANK_RE = re.compile(
+    r'(?i)"(?:singlesRank|singlesRanking|currentSinglesRank|currentSinglesRanking)"\s*:\s*"?(\d{1,4})"?'
+)
+ATP_PROFILE_DOUBLES_JSON_RANK_RE = re.compile(
+    r'(?i)"(?:doublesRank|doublesRanking|currentDoublesRank|currentDoublesRanking)"\s*:\s*"?(\d{1,4})"?'
 )
 WTA_RANKING_ROW_RE = re.compile(
     r"(?<!\d)"
@@ -200,6 +229,28 @@ def fetch_text(url: str, extra_headers: Optional[Dict[str, str]] = None) -> str:
         try:
             with urllib.request.urlopen(req, timeout=60) as response:
                 return response.read().decode("utf-8", errors="replace")
+        except Exception as error:
+            last_error = error
+            if attempt < 2:
+                time.sleep(2 * (attempt + 1))
+
+    raise RuntimeError(f"Failed to fetch URL after retries: {url}") from last_error
+
+
+def fetch_bytes(url: str, extra_headers: Optional[Dict[str, str]] = None) -> bytes:
+    headers = {
+        "User-Agent": "Mozilla/5.0 (MadridOpenPlayerHub/1.0)",
+        "Accept": "application/pdf,application/octet-stream,*/*",
+    }
+    if extra_headers:
+        headers.update(extra_headers)
+
+    req = urllib.request.Request(url, headers=headers)
+    last_error: Optional[Exception] = None
+    for attempt in range(3):
+        try:
+            with urllib.request.urlopen(req, timeout=60) as response:
+                return response.read()
         except Exception as error:
             last_error = error
             if attempt < 2:
@@ -847,7 +898,13 @@ def normalize_ranking_discipline(value: object) -> str:
     return "doubles" if text == "doubles" else "singles"
 
 
-def set_player_ranking(player: dict, rank: Optional[int], tag: str = "", discipline: str = "singles") -> bool:
+def set_player_ranking(
+    player: dict,
+    rank: Optional[int],
+    tag: str = "",
+    discipline: str = "singles",
+    replace: bool = False,
+) -> bool:
     if rank is None or rank <= 0:
         return False
 
@@ -858,11 +915,23 @@ def set_player_ranking(player: dict, rank: Optional[int], tag: str = "", discipl
     changed = False
 
     current = parse_int(player.get(rank_field))
-    if current is None or rank < current:
+    if replace:
+        should_update_rank = current != rank
+    else:
+        should_update_rank = current is None or rank < current
+    if should_update_rank:
         player[rank_field] = rank
         changed = True
 
-    if normalized_tag and not str(player.get(tag_field) or "").strip():
+    if replace:
+        if normalized_tag:
+            if player.get(tag_field) != normalized_tag:
+                player[tag_field] = normalized_tag
+                changed = True
+        elif tag_field in player:
+            player.pop(tag_field, None)
+            changed = True
+    elif normalized_tag and not str(player.get(tag_field) or "").strip():
         player[tag_field] = normalized_tag
         changed = True
 
@@ -873,8 +942,15 @@ def set_player_ranking(player: dict, rank: Optional[int], tag: str = "", discipl
     current_primary = parse_int(player.get("ranking"))
     current_primary_tag = str(player.get("rankingTag") or "").strip().upper()
     should_update_primary = current_primary is None
-    if normalized_discipline == "singles" and current_primary_tag == "D":
-        should_update_primary = True
+    if normalized_discipline == "singles":
+        if replace:
+            should_update_primary = (
+                current_primary != rank
+                or current_primary_tag == "D"
+                or current_primary_tag != primary_tag
+            )
+        elif current_primary_tag == "D":
+            should_update_primary = True
 
     if should_update_primary:
         player["ranking"] = rank
@@ -898,17 +974,34 @@ def apply_ranking_hint(player: dict, raw_rank: object, raw_tag: object = "", dis
 
 
 def parse_atp_official_ranking_rows(html_text: str) -> List[dict]:
-    text = clean_text(html_text)
     rows: List[dict] = []
     seen = set()
 
-    for match in ATP_RANKING_ABBR_ROW_RE.finditer(text):
-        rank = parse_int(match.group("rank"))
-        abbr = normalize_person_name(match.group("abbr"))
-        if rank is None or rank <= 0 or not abbr:
+    for row_html in TABLE_ROW_RE.findall(html_text):
+        cells = TABLE_CELL_RE.findall(row_html)
+        if len(cells) < 2:
             continue
 
-        key = (rank, abbr)
+        rank = parse_rank_number(clean_text(cells[0]))
+        if rank is None or rank <= 0:
+            continue
+
+        player_name = ""
+        atp_player_id = ""
+        for link_match in ATP_PLAYER_LINK_RE.finditer(row_html):
+            candidate = normalize_person_name(clean_text(link_match.group("name")))
+            if not candidate or candidate.lower().startswith("image"):
+                continue
+            player_name = candidate
+            atp_player_id = normalize_atp_player_id(link_match.group("id"))
+            break
+
+        if not player_name:
+            player_name = normalize_person_name(clean_text(cells[1]))
+        if not player_name:
+            continue
+
+        key = (rank, player_name, atp_player_id)
         if key in seen:
             continue
 
@@ -916,11 +1009,125 @@ def parse_atp_official_ranking_rows(html_text: str) -> List[dict]:
         rows.append(
             {
                 "ranking": rank,
-                "abbr": abbr,
+                "name": player_name,
+                "abbr": player_name,
+                "atpPlayerId": atp_player_id,
             }
         )
 
     return rows
+
+
+def parse_atp_ranking_report_rows(report_text: str) -> List[dict]:
+    rows: List[dict] = []
+    seen = set()
+
+    for match in ATP_RANKING_REPORT_ROW_RE.finditer(report_text):
+        rank = parse_int(match.group("rank"))
+        if rank is None or rank <= 0:
+            continue
+
+        first_name = normalize_person_name(match.group("first"))
+        last_name = normalize_person_name(match.group("last"))
+        name = normalize_person_name(f"{first_name} {last_name}")
+        if not name:
+            continue
+
+        country = normalize_country(match.group("country") or "")
+        key = (rank, name, country)
+        if key in seen:
+            continue
+        seen.add(key)
+        rows.append(
+            {
+                "ranking": rank,
+                "name": name,
+                "country": country,
+            }
+        )
+
+    return rows
+
+
+def parse_atp_profile_rankings(html_text: str) -> Dict[str, Optional[int]]:
+    rankings: Dict[str, Optional[int]] = {"singles": None, "doubles": None}
+
+    singles_match = ATP_PROFILE_SINGLES_JSON_RANK_RE.search(html_text)
+    if singles_match:
+        rankings["singles"] = parse_rank_number(singles_match.group(1))
+
+    doubles_match = ATP_PROFILE_DOUBLES_JSON_RANK_RE.search(html_text)
+    if doubles_match:
+        rankings["doubles"] = parse_rank_number(doubles_match.group(1))
+
+    dom_ranks = [
+        rank
+        for rank in (parse_rank_number(match.group("rank")) for match in ATP_PROFILE_RANK_STAT_RE.finditer(html_text))
+        if rank is not None and 0 < rank < 5000
+    ]
+    if rankings["singles"] is None and dom_ranks:
+        rankings["singles"] = dom_ranks[0]
+    if rankings["doubles"] is None and len(dom_ranks) > 1:
+        rankings["doubles"] = dom_ranks[1]
+
+    return rankings
+
+
+def is_cloudflare_challenge_page(html_text: str) -> bool:
+    lowered = html_text.lower()
+    return "challenges.cloudflare.com" in lowered or "just a moment..." in lowered
+
+
+def fetch_atp_profile_rankings(atp_player_id: str) -> Dict[str, Optional[int]]:
+    normalized_id = normalize_atp_player_id(atp_player_id)
+    if not normalized_id:
+        return {"singles": None, "doubles": None}
+
+    url = ATP_PLAYER_PROFILE_URL_TEMPLATE.format(atp_player_id=normalized_id.lower())
+    html_text = fetch_text(url)
+    if is_cloudflare_challenge_page(html_text):
+        raise RuntimeError("ATP profile page returned a Cloudflare challenge")
+    return parse_atp_profile_rankings(html_text)
+
+
+def extract_pdf_text(pdf_bytes: bytes) -> str:
+    try:
+        from pypdf import PdfReader
+    except ImportError as error:
+        raise RuntimeError("pypdf is required to parse ATP ranking report PDFs") from error
+
+    reader = PdfReader(io.BytesIO(pdf_bytes))
+    return "\n".join(page.extract_text() or "" for page in reader.pages)
+
+
+def find_player_by_atp_id(registry: Dict[str, dict], atp_player_id: object) -> Optional[dict]:
+    normalized_id = normalize_atp_player_id(atp_player_id)
+    if not normalized_id:
+        return None
+
+    for player in registry.values():
+        if normalize_atp_player_id(player.get("atpPlayerId")) == normalized_id:
+            return player
+    return None
+
+
+def resolve_atp_ranking_row_to_player(registry: Dict[str, dict], row: dict) -> Optional[dict]:
+    player = find_player_by_atp_id(registry, row.get("atpPlayerId"))
+    if player:
+        return player
+
+    name = str(row.get("name") or row.get("abbr") or "").strip()
+    country = str(row.get("country") or "").strip()
+    if not name:
+        return None
+
+    if re.match(r"^[A-Z]\.\s+", normalize_person_name(name)):
+        return resolve_atp_abbr_to_player(registry, name)
+
+    player = find_existing_player(registry, name, country)
+    if player:
+        return player
+    return find_existing_player_approx(registry, name, country)
 
 
 def resolve_atp_abbr_to_player(registry: Dict[str, dict], abbr_name: str) -> Optional[dict]:
@@ -1390,6 +1597,7 @@ def parse_matches(payload: dict, registry: Dict[str, dict]) -> List[dict]:
                 "roundLabel": format_round_label(draw_code, round_code),
                 "draw": draw_code,
                 "discipline": infer_discipline(draw_code),
+                "tour": "WTA",
                 "court": f"Court {row.get('CourtID')}" if row.get("CourtID") is not None else "",
                 "score": str(row.get("ScoreString") or "").strip(),
                 "result": str(row.get("ResultString") or "").strip(),
@@ -1471,6 +1679,7 @@ def parse_atp_matches(payload: dict, registry: Dict[str, dict]) -> List[dict]:
                 "roundLabel": format_round_label(draw_code, round_code),
                 "draw": draw_code,
                 "discipline": discipline,
+                "tour": "ATP",
                 "court": str(row.get("CourtName") or "").strip(),
                 "score": str(row.get("ResultString") or "").strip(),
                 "result": str(row.get("ResultString") or "").strip(),
@@ -1529,6 +1738,8 @@ def parse_wta_schedule(payload: dict) -> Dict[str, dict]:
 
                 not_before_text = str(match.get("NotBeforeText") or "").strip()
                 display_time = str(match.get("DisplayTime") or "").strip()
+                round_info = match.get("Round") or {}
+                round_code = str(round_info.get("ShortName") or "").strip()
 
                 schedule_map[match_id] = {
                     "day": day_value,
@@ -1538,6 +1749,7 @@ def parse_wta_schedule(payload: dict) -> Dict[str, dict]:
                     "text": not_before_text,
                     "time": str(match.get("DisplayIsoTime") or "").strip(),
                     "display": display_time,
+                    "roundCode": round_code,
                 }
 
     return schedule_map
@@ -1568,6 +1780,11 @@ def merge_schedule_into_matches(matches: List[dict], schedule_map: Dict[str, dic
             match["scheduleTime"] = schedule["time"]
         if schedule.get("display"):
             match["scheduleDisplay"] = schedule["display"]
+        if schedule.get("roundCode") and str(match.get("discipline") or "").lower() == "doubles":
+            round_code = str(schedule["roundCode"]).strip()
+            match["round"] = round_code
+            match["roundCode"] = round_code
+            match["roundLabel"] = format_round_label(str(match.get("draw") or ""), round_code)
 
         replacement_start = build_start_time_from_schedule(schedule.get("day", ""), schedule.get("time", ""))
         if replacement_start and should_override_start_time(str(match.get("startTime") or ""), str(match.get("status") or "")):
@@ -1864,6 +2081,121 @@ def enrich_players_with_atp_draw_ids(registry: Dict[str, dict], payload: dict) -
                                 applied += 1
 
     return applied
+
+
+def atp_draw_round_code(round_item: dict) -> str:
+    round_name = str(round_item.get("RoundName") or "").strip().lower()
+    if "qualifying round" in round_name:
+        number_match = re.search(r"(\d+)", round_name)
+        return f"Q{number_match.group(1)}" if number_match else "Q"
+    if round_name == "final":
+        return "F"
+    if round_name == "semifinal":
+        return "SF"
+    if round_name == "quarterfinal":
+        return "QF"
+    round_match = re.search(r"round of\s+(\d+)", round_name)
+    if round_match:
+        return f"R{round_match.group(1)}"
+
+    modernized = parse_int(round_item.get("RoundIdModernized"))
+    if modernized is not None:
+        return {
+            7: "F",
+            6: "SF",
+            5: "QF",
+            4: "R16",
+            3: "R32",
+            2: "R64",
+            1: "R128",
+            -30: "Q1",
+            -29: "Q2",
+            -28: "Q3",
+        }.get(modernized, str(modernized))
+
+    round_id = parse_int(round_item.get("RoundId"))
+    return f"R{round_id}" if round_id is not None else "-"
+
+
+def extract_atp_draw_line_players(draw_line: dict, registry: Dict[str, dict], side: str) -> List[dict]:
+    players: List[dict] = []
+
+    for draw_player in (draw_line or {}).get("Players") or []:
+        atp_player_id = normalize_atp_player_id(draw_player.get("PlayerId"))
+        name = extract_atp_draw_player_name(draw_player)
+        country = extract_atp_draw_player_country(draw_player)
+        if not name or name.lower() == "bye":
+            continue
+
+        player = find_player_by_atp_id(registry, atp_player_id)
+        if not player:
+            player = find_existing_player(registry, name, country)
+        if not player:
+            player = find_existing_player_approx(registry, name, country)
+        if not player:
+            player = upsert_player(registry, name, country)
+        if not player:
+            continue
+
+        if country and not str(player.get("country") or "").strip():
+            player["country"] = country
+        player["tour"] = player.get("tour") or "ATP"
+        attach_player_ids(player, atp_player_id=atp_player_id)
+
+        snapshot = {
+            "id": player["id"],
+            "name": player.get("name", name),
+            "country": player.get("country", country),
+            "tour": "ATP",
+            "side": side,
+        }
+        if player.get("atpPlayerId"):
+            snapshot["atpPlayerId"] = player["atpPlayerId"]
+        players.append(snapshot)
+
+    return players
+
+
+def parse_atp_doubles_draw_matches(payload: dict, registry: Dict[str, dict]) -> List[dict]:
+    parsed: List[dict] = []
+
+    for association in payload.get("Associations") or []:
+        for event in association.get("Events") or []:
+            event_code = str(event.get("EventTypeCode") or "").strip().upper()
+            if event_code not in {"MD", "QD"}:
+                continue
+
+            for round_item in event.get("Rounds") or []:
+                round_code = atp_draw_round_code(round_item)
+                for index, fixture in enumerate(round_item.get("Fixtures") or [], start=1):
+                    side_a = extract_atp_draw_line_players(fixture.get("DrawLineTop") or {}, registry, "A")
+                    side_b = extract_atp_draw_line_players(fixture.get("DrawLineBottom") or {}, registry, "B")
+                    if not side_a or not side_b:
+                        continue
+
+                    match_code = str(fixture.get("MatchCode") or "").strip()
+                    result = str(fixture.get("ResultString") or "").strip()
+                    status = "F" if result else "U"
+                    parsed.append(
+                        {
+                            "id": f"ATP-{match_code}" if match_code else f"ATP-DRAW-{event_code}-{round_code}-{index}",
+                            "startTime": "",
+                            "status": status,
+                            "round": round_code,
+                            "roundCode": round_code,
+                            "roundLabel": format_round_label(event_code, round_code),
+                            "draw": event_code,
+                            "discipline": "doubles",
+                            "tour": "ATP",
+                            "court": "",
+                            "score": result,
+                            "result": result,
+                            "source": "atpDraw",
+                            "players": side_a + side_b,
+                        }
+                    )
+
+    return dedupe_matches_by_id(parsed)
 
 
 def xml_local_name(tag: str) -> str:
@@ -2207,6 +2539,7 @@ def parse_wta_doubles_draw_matches(rows: List[dict], registry: Dict[str, dict]) 
                         "roundLabel": format_round_label("MD", round_code),
                         "draw": "MD",
                         "discipline": "doubles",
+                        "tour": "WTA",
                         "court": "",
                         "score": "",
                         "result": "",
@@ -2253,9 +2586,42 @@ def merge_draw_fallback_matches(matches: List[dict], fallback_matches: List[dict
     return added
 
 
+def fetch_atp_official_rankings_report_entries(discipline: str = "singles") -> List[dict]:
+    normalized_discipline = normalize_ranking_discipline(discipline)
+    report_url = (
+        ATP_OFFICIAL_DOUBLES_RANKINGS_REPORT_URL
+        if normalized_discipline == "doubles"
+        else ATP_OFFICIAL_SINGLES_RANKINGS_REPORT_URL
+    )
+    report_text = extract_pdf_text(fetch_bytes(report_url))
+    entries: List[dict] = []
+
+    for row in parse_atp_ranking_report_rows(report_text):
+        entries.append(
+            {
+                "name": row["name"],
+                "country": row.get("country", ""),
+                "ranking": row["ranking"],
+                "tour": "ATP",
+                "rankingTag": "",
+                "rankingDiscipline": normalized_discipline,
+            }
+        )
+
+    return entries
+
+
 def fetch_atp_official_rankings_entries(registry: Dict[str, dict], discipline: str = "singles") -> List[dict]:
     merged: Dict[str, dict] = {}
     normalized_discipline = normalize_ranking_discipline(discipline)
+
+    try:
+        report_entries = fetch_atp_official_rankings_report_entries(normalized_discipline)
+        if report_entries:
+            return report_entries
+    except Exception as error:
+        print(f"Warning: failed to fetch ATP official {normalized_discipline} rankings report: {error}", file=sys.stderr)
+
     url_template = (
         ATP_OFFICIAL_DOUBLES_RANKINGS_URL_TEMPLATE
         if normalized_discipline == "doubles"
@@ -2268,7 +2634,7 @@ def fetch_atp_official_rankings_entries(registry: Dict[str, dict], discipline: s
             html_text = fetch_text(url)
             rows = parse_atp_official_ranking_rows(html_text)
             for row in rows:
-                player = resolve_atp_abbr_to_player(registry, row["abbr"])
+                player = resolve_atp_ranking_row_to_player(registry, row)
                 if not player:
                     continue
 
@@ -2279,6 +2645,7 @@ def fetch_atp_official_rankings_entries(registry: Dict[str, dict], discipline: s
                     "tour": "ATP",
                     "rankingTag": "",
                     "rankingDiscipline": normalized_discipline,
+                    "atpPlayerId": row.get("atpPlayerId", ""),
                 }
                 key = entry["name"]
                 current = merged.get(key)
@@ -2494,6 +2861,48 @@ def enrich_wta_rankings_from_profile_pages(registry: Dict[str, dict], matches: L
     return applied
 
 
+def enrich_atp_rankings_from_profile_pages(registry: Dict[str, dict], matches: List[dict]) -> int:
+    applied = 0
+    profile_rank_cache: Dict[str, Dict[str, Optional[int]]] = {}
+    candidate_ids = {
+        normalize_atp_player_id(player.get("atpPlayerId"))
+        for match in matches
+        for player in match.get("players", [])
+        if str(player.get("tour") or "").strip().upper() == "ATP"
+    }
+    candidate_ids.discard("")
+
+    candidates = [
+        player
+        for player in registry.values()
+        if normalize_atp_player_id(player.get("atpPlayerId")) in candidate_ids
+        and str(player.get("tour") or "").strip().upper() in {"", "ATP"}
+    ]
+
+    for player in sorted(candidates, key=lambda item: str(item.get("name") or "").lower()):
+        atp_player_id = normalize_atp_player_id(player.get("atpPlayerId"))
+        if not atp_player_id:
+            continue
+
+        if atp_player_id not in profile_rank_cache:
+            profile_rank_cache[atp_player_id] = fetch_atp_profile_rankings(atp_player_id)
+        rankings = profile_rank_cache[atp_player_id]
+        changed = False
+
+        if rankings.get("singles") is not None:
+            changed = set_player_ranking(player, rankings["singles"], "", "singles", replace=True) or changed
+        if rankings.get("doubles") is not None:
+            changed = set_player_ranking(player, rankings["doubles"], "", "doubles", replace=True) or changed
+        if not changed:
+            continue
+
+        if not str(player.get("tour") or "").strip():
+            player["tour"] = "ATP"
+        applied += 1
+
+    return applied
+
+
 def enrich_players_from_official_rankings(registry: Dict[str, dict], entries: List[dict]) -> int:
     applied = 0
 
@@ -2523,6 +2932,7 @@ def enrich_players_from_official_rankings(registry: Dict[str, dict], entries: Li
                 rank,
                 str(entry.get("rankingTag") or ""),
                 str(entry.get("rankingDiscipline") or "singles"),
+                replace=True,
             ) or changed
         if not str(player.get("tour") or "").strip() and str(entry.get("tour") or "").strip():
             player["tour"] = entry["tour"]
@@ -2554,7 +2964,12 @@ def enrich_players_from_directory(registry: Dict[str, dict], entries: List[dict]
             player["name"] = entry["name"]
         if entry["country"]:
             player["country"] = entry["country"]
-        set_player_ranking(player, entry["ranking"], entry.get("rankingTag", ""), "singles")
+        if entry["tour"] == "ATP":
+            player["singlesEntryRanking"] = entry["ranking"]
+            if entry.get("rankingTag"):
+                player["singlesEntryRankingTag"] = entry["rankingTag"]
+        else:
+            set_player_ranking(player, entry["ranking"], entry.get("rankingTag", ""), "singles")
         player["tour"] = entry["tour"]
         matched += 1
 
@@ -2678,11 +3093,21 @@ def build_output() -> dict:
     except Exception as error:
         print(f"Warning: failed to enrich rankings from ATP official doubles rankings page: {error}", file=sys.stderr)
 
+    try:
+        enrich_atp_rankings_from_profile_pages(registry, matches)
+    except Exception as error:
+        print(f"Warning: failed to enrich rankings from ATP profile pages: {error}", file=sys.stderr)
+
     atp_draw_payload: dict = {}
     atp_draw_rankings: Dict[str, int] = {}
+    atp_draw_fallback_count = 0
     try:
         atp_draw_payload = fetch_atp_draws(atp_token)
         enrich_players_with_atp_draw_ids(registry, atp_draw_payload)
+        atp_draw_fallback_count = merge_draw_fallback_matches(
+            matches,
+            parse_atp_doubles_draw_matches(atp_draw_payload, registry),
+        )
         atp_draw_rankings = parse_atp_draw_singles_rankings(atp_draw_payload)
     except Exception as error:
         print(f"Warning: failed to enrich rankings from ATP draws API: {error}", file=sys.stderr)
@@ -2765,12 +3190,20 @@ def build_output() -> dict:
                     "wta": WTA_EVENT_DRAWS_URL,
                     "atp": ATP_DRAWS_URL,
                 },
+                "rankings": {
+                    "atpSingles": ATP_OFFICIAL_SINGLES_RANKINGS_REPORT_URL,
+                    "atpDoubles": ATP_OFFICIAL_DOUBLES_RANKINGS_REPORT_URL,
+                    "atpProfiles": ATP_PLAYER_PROFILE_URL_TEMPLATE,
+                    "wtaSingles": WTA_OFFICIAL_RANKINGS_URL,
+                    "wtaDoubles": WTA_OFFICIAL_DOUBLES_URL,
+                },
                 "players": PLAYERS_URL,
                 "training": [TRAINING_URL_TEMPLATE.format(day=0), TRAINING_URL_TEMPLATE.format(day=1)],
             },
             "trainingDays": training_days,
             "audit": {
                 "doublesMatches": len(doubles_matches),
+                "atpDrawFallbackMatches": atp_draw_fallback_count,
                 "wtaDrawFallbackMatches": wta_draw_fallback_count,
                 "doublesPlayers": len(doubles_player_ids),
                 "doublesPlayersMissingDoublesRanking": sum(
