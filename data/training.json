@@ -4,7 +4,7 @@
     "track": "training",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-24T11:12:47.034913+00:00",
+    "updatedAt": "2026-04-24T11:14:50.711478+00:00",
     "sources": {
       "training": [
         "https://practice.tmstennis.com/api/iframe?runid=702&public=1&day=0&mode=0",
@@ -162,7 +162,7 @@
       ]
     },
     {
-      "id": "0-arantxa-sanchez-09-30-am-10-00-am-musetti-lorenzo-shelton-ben",
+      "id": "0-arantxa-sanchez-09-30-am-10-00-am-lorenzo-musetti-shelton-ben",
       "dayOffset": 0,
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "ARANTXA SANCHEZ",
@@ -170,7 +170,7 @@
       "tour": "",
       "players": [
         {
-          "id": "musetti-lorenzo",
+          "id": "lorenzo-musetti",
           "name": "Lorenzo Musetti",
           "country": "ITA",
           "ranking": 9,
