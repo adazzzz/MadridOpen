@@ -4,7 +4,7 @@
     "track": "live",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-24T11:45:12.498585+00:00",
+    "updatedAt": "2026-04-24T12:01:24.727032+00:00",
     "sources": {
       "matches": {
         "wta": "https://api.wtatennis.com/tennis/tournaments/1038/2026/matches",
@@ -759,36 +759,38 @@
       "court": "Court 3"
     },
     {
-      "id": "LS057",
-      "status": "P",
-      "score": "6-1,4-3",
-      "startTime": "2026-04-24T10:12:04.517+00:00",
-      "court": "Court 3"
-    },
-    {
       "id": "LS053",
-      "status": "P",
-      "score": "6-2,4-1",
+      "status": "F",
+      "score": "6-2,6-1",
+      "result": "[20]L. Samsonova d J. Tjen 6-2,6-1",
       "startTime": "2026-04-24T10:25:13.04+00:00",
       "court": "Court 8"
     },
     {
+      "id": "LS057",
+      "status": "P",
+      "score": "6-1,5-6",
+      "startTime": "2026-04-24T10:12:04.517+00:00",
+      "court": "Court 3"
+    },
+    {
       "id": "LS058",
       "status": "P",
-      "score": "6-2,1-0",
+      "score": "6-2,4-0",
       "startTime": "2026-04-24T10:42:17.783+00:00",
       "court": "Court 5"
     },
     {
       "id": "LS063",
       "status": "P",
-      "score": "3-1",
+      "score": "5-3",
       "startTime": "2026-04-24T11:03:37.06+00:00",
       "court": "Court 1"
     },
     {
       "id": "LS061",
-      "status": "C",
+      "status": "P",
+      "score": "1-0",
       "startTime": "2026-04-24T11:40:57.637+00:00",
       "court": "Court 6"
     },
@@ -851,12 +853,6 @@
       "status": "U",
       "startTime": "2026-04-24T23:59+02:00",
       "court": "Court 6"
-    },
-    {
-      "id": "LS054",
-      "status": "U",
-      "startTime": "2026-04-24T23:59+02:00",
-      "court": "Court 8"
     },
     {
       "id": "ATP-MS047",

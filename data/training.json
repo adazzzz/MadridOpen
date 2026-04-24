@@ -4,7 +4,7 @@
     "track": "training",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-24T11:45:12.498585+00:00",
+    "updatedAt": "2026-04-24T12:01:24.727032+00:00",
     "sources": {
       "training": [
         "https://practice.tmstennis.com/api/iframe?runid=702&public=1&day=0&mode=0",
@@ -724,7 +724,7 @@
       ]
     },
     {
-      "id": "0-pista-9-wta-12-00-pm-12-30-pm-julieta-pareja-sorana-cirstea",
+      "id": "0-pista-9-wta-12-00-pm-12-30-pm-cirstea-sorana-julieta-pareja",
       "dayOffset": 0,
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "PISTA 9 (WTA)",
@@ -732,7 +732,7 @@
       "tour": "WTA",
       "players": [
         {
-          "id": "sorana-cirstea",
+          "id": "cirstea-sorana",
           "name": "Sorana Cirstea",
           "country": "ROU",
           "ranking": 26,
@@ -3424,6 +3424,25 @@
       ]
     },
     {
+      "id": "0-pista-21-warmup-03-30-pm-04-00-pm-jesper-de-jong",
+      "dayOffset": 0,
+      "dayLabel": "Fri, Apr 24, 2026",
+      "court": "PISTA 21 (WARMUP)",
+      "timeRange": "03:30 PM - 04:00 PM",
+      "tour": "",
+      "players": [
+        {
+          "id": "jesper-de-jong",
+          "name": "Jesper de Jong",
+          "country": "NED",
+          "ranking": 109,
+          "singlesRanking": 109,
+          "tour": "ATP",
+          "atpPlayerId": "D0C1"
+        }
+      ]
+    },
+    {
       "id": "0-pista-21-warmup-04-00-pm-04-30-pm-victoria-mboko",
       "dayOffset": 0,
       "dayLabel": "Fri, Apr 24, 2026",
@@ -3699,7 +3718,7 @@
       ]
     },
     {
-      "id": "0-pista-22-warmup-02-00-pm-02-30-pm-anastasia-detiuc-anna-siskova-kamilla-rakhimova-katarzyna-piter",
+      "id": "0-pista-22-warmup-02-00-pm-02-30-pm-anna-siskova-kamilla-rakhimova",
       "dayOffset": 0,
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "PISTA 22 (WARMUP)",
@@ -3725,26 +3744,6 @@
           "doublesRanking": 65,
           "tour": "WTA",
           "wtaPlayerId": "324995"
-        },
-        {
-          "id": "katarzyna-piter",
-          "name": "Katarzyna Piter",
-          "country": "POL",
-          "ranking": 1075,
-          "singlesRanking": 1075,
-          "doublesRanking": 66,
-          "tour": "WTA",
-          "wtaPlayerId": "313806"
-        },
-        {
-          "id": "anastasia-detiuc",
-          "name": "Anastasia Detiuc",
-          "country": "CZE",
-          "ranking": 79,
-          "rankingTag": "D",
-          "doublesRanking": 79,
-          "tour": "WTA",
-          "wtaPlayerId": "323849"
         }
       ]
     },
@@ -4189,26 +4188,6 @@
       ]
     },
     {
-      "id": "0-pista-24-warmup-02-00-pm-02-30-pm-arthur-rinderknech",
-      "dayOffset": 0,
-      "dayLabel": "Fri, Apr 24, 2026",
-      "court": "PISTA 24 (WARMUP)",
-      "timeRange": "02:00 PM - 02:30 PM",
-      "tour": "",
-      "players": [
-        {
-          "id": "arthur-rinderknech",
-          "name": "Arthur Rinderknech",
-          "country": "FRA",
-          "ranking": 26,
-          "singlesRanking": 26,
-          "doublesRanking": 109,
-          "tour": "ATP",
-          "atpPlayerId": "RC91"
-        }
-      ]
-    },
-    {
       "id": "0-pista-24-warmup-02-30-pm-04-30-pm-arevalo-marcelo-pavic-mate",
       "dayOffset": 0,
       "dayLabel": "Fri, Apr 24, 2026",
@@ -4282,6 +4261,74 @@
           "doublesRanking": 510,
           "tour": "ATP",
           "atpPlayerId": "Q02L"
+        }
+      ]
+    },
+    {
+      "id": "1-pista-10-atp-01-00-pm-02-00-pm-lorenzo-musetti",
+      "dayOffset": 1,
+      "dayLabel": "Sat, Apr 25, 2026",
+      "court": "PISTA 10 (ATP)",
+      "timeRange": "01:00 PM - 02:00 PM",
+      "tour": "ATP",
+      "players": [
+        {
+          "id": "lorenzo-musetti",
+          "name": "Lorenzo Musetti",
+          "country": "ITA",
+          "ranking": 9,
+          "singlesRanking": 9,
+          "doublesRanking": 84,
+          "tour": "ATP",
+          "atpPlayerId": "M0EJ"
+        }
+      ]
+    },
+    {
+      "id": "1-pista-14-atp-10-00-am-11-00-am-arribage-theo-nys-hugo-olivetti-albano-roger-vasselin-edouard",
+      "dayOffset": 1,
+      "dayLabel": "Sat, Apr 25, 2026",
+      "court": "PISTA 14 (ATP)",
+      "timeRange": "10:00 AM - 11:00 AM",
+      "tour": "ATP",
+      "players": [
+        {
+          "id": "roger-vasselin-edouard",
+          "name": "Edouard Roger-Vasselin",
+          "country": "FRA",
+          "ranking": 18,
+          "rankingTag": "D",
+          "doublesRanking": 18,
+          "tour": "ATP",
+          "atpPlayerId": "R613"
+        },
+        {
+          "id": "nys-hugo",
+          "name": "Hugo Nys",
+          "country": "MON",
+          "ranking": 17,
+          "rankingTag": "D",
+          "doublesRanking": 17,
+          "tour": "ATP",
+          "atpPlayerId": "N670"
+        },
+        {
+          "id": "olivetti-albano",
+          "name": "Albano Olivetti",
+          "country": "FRA",
+          "ranking": 26,
+          "rankingTag": "D",
+          "doublesRanking": 26,
+          "tour": "ATP"
+        },
+        {
+          "id": "arribage-theo",
+          "name": "Theo Arribage",
+          "country": "FRA",
+          "ranking": 27,
+          "rankingTag": "D",
+          "doublesRanking": 27,
+          "tour": "ATP"
         }
       ]
     },

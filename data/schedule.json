@@ -4,7 +4,7 @@
     "track": "schedule",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-24T11:45:12.498585+00:00",
+    "updatedAt": "2026-04-24T12:01:24.727032+00:00",
     "sources": {
       "schedules": {
         "wta": "https://wta-webapi-prod-apimanagement.azure-api.net/atpjoint-api/v1/Scores/Schedule?eventId=1038&eventYear=2026",
@@ -3924,46 +3924,6 @@
       ]
     },
     {
-      "id": "LS057",
-      "tour": "WTA",
-      "draw": "MS",
-      "discipline": "singles",
-      "round": "R2",
-      "roundCode": "R2",
-      "roundLabel": "第二轮",
-      "startTime": "2026-04-24T10:12:04.517+00:00",
-      "court": "Court 3",
-      "scheduleDay": "2026-04-24",
-      "scheduleOrder": 2,
-      "scheduleType": "followed_by",
-      "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "players": [
-        {
-          "id": "zeynep-sonmez",
-          "name": "Zeynep Sonmez",
-          "country": "TUR",
-          "side": "A",
-          "ranking": 67,
-          "singlesRanking": 67,
-          "doublesRanking": 498,
-          "tour": "WTA",
-          "wtaPlayerId": "326907"
-        },
-        {
-          "id": "cristina-bucsa",
-          "name": "Cristina Bucsa",
-          "country": "ESP",
-          "side": "B",
-          "ranking": 30,
-          "singlesRanking": 30,
-          "doublesRanking": 19,
-          "tour": "WTA",
-          "wtaPlayerId": "321158"
-        }
-      ]
-    },
-    {
       "id": "LS053",
       "tour": "WTA",
       "draw": "MS",
@@ -4000,6 +3960,46 @@
           "doublesRanking": 32,
           "tour": "WTA",
           "wtaPlayerId": "322222"
+        }
+      ]
+    },
+    {
+      "id": "LS057",
+      "tour": "WTA",
+      "draw": "MS",
+      "discipline": "singles",
+      "round": "R2",
+      "roundCode": "R2",
+      "roundLabel": "第二轮",
+      "startTime": "2026-04-24T10:12:04.517+00:00",
+      "court": "Court 3",
+      "scheduleDay": "2026-04-24",
+      "scheduleOrder": 2,
+      "scheduleType": "followed_by",
+      "scheduleText": "Followed By",
+      "scheduleDisplay": "Followed By",
+      "players": [
+        {
+          "id": "zeynep-sonmez",
+          "name": "Zeynep Sonmez",
+          "country": "TUR",
+          "side": "A",
+          "ranking": 67,
+          "singlesRanking": 67,
+          "doublesRanking": 498,
+          "tour": "WTA",
+          "wtaPlayerId": "326907"
+        },
+        {
+          "id": "cristina-bucsa",
+          "name": "Cristina Bucsa",
+          "country": "ESP",
+          "side": "B",
+          "ranking": 30,
+          "singlesRanking": 30,
+          "doublesRanking": 19,
+          "tour": "WTA",
+          "wtaPlayerId": "321158"
         }
       ]
     },
@@ -4616,47 +4616,6 @@
           "doublesRanking": 158,
           "tour": "WTA",
           "wtaPlayerId": "326482"
-        }
-      ]
-    },
-    {
-      "id": "LS054",
-      "tour": "WTA",
-      "draw": "MS",
-      "discipline": "singles",
-      "round": "R6",
-      "roundCode": "R6",
-      "roundLabel": "第二轮",
-      "startTime": "2026-04-24T23:59+02:00",
-      "court": "Court 8",
-      "scheduleDay": "2026-04-24",
-      "scheduleOrder": 3,
-      "scheduleType": "followed_by",
-      "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "players": [
-        {
-          "id": "sorana-cirstea",
-          "name": "Sorana Cirstea",
-          "country": "ROU",
-          "side": "A",
-          "ranking": 26,
-          "singlesRanking": 26,
-          "doublesRanking": 40,
-          "tour": "WTA",
-          "wtaPlayerId": "312469"
-        },
-        {
-          "id": "tyra-caterina-grant",
-          "name": "Tyra Caterina Grant",
-          "country": "ITA",
-          "side": "B",
-          "ranking": 262,
-          "singlesRanking": 262,
-          "doublesRanking": 396,
-          "tour": "WTA",
-          "wtaPlayerId": "333121",
-          "singlesEntryType": "Q"
         }
       ]
     },
