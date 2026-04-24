@@ -4,7 +4,7 @@
     "track": "live",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-24T12:01:24.727032+00:00",
+    "updatedAt": "2026-04-24T12:17:55.490929+00:00",
     "sources": {
       "matches": {
         "wta": "https://api.wtatennis.com/tennis/tournaments/1038/2026/matches",
@@ -767,32 +767,40 @@
       "court": "Court 8"
     },
     {
-      "id": "LS057",
-      "status": "P",
-      "score": "6-1,5-6",
-      "startTime": "2026-04-24T10:12:04.517+00:00",
-      "court": "Court 3"
-    },
-    {
       "id": "LS058",
-      "status": "P",
-      "score": "6-2,4-0",
+      "status": "F",
+      "score": "6-2,6-1",
+      "result": "[19]E. Mertens d A. Eala 6-2,6-1",
       "startTime": "2026-04-24T10:42:17.783+00:00",
       "court": "Court 5"
     },
     {
+      "id": "LS057",
+      "status": "D",
+      "score": "6-1,6-7(4),0-0",
+      "startTime": "2026-04-24T10:12:04.517+00:00",
+      "court": "Court 3"
+    },
+    {
       "id": "LS063",
       "status": "P",
-      "score": "5-3",
+      "score": "6-4,0-1",
       "startTime": "2026-04-24T11:03:37.06+00:00",
       "court": "Court 1"
     },
     {
       "id": "LS061",
       "status": "P",
-      "score": "1-0",
+      "score": "1-3",
       "startTime": "2026-04-24T11:40:57.637+00:00",
       "court": "Court 6"
+    },
+    {
+      "id": "LS054",
+      "status": "P",
+      "score": "2-1",
+      "startTime": "2026-04-24T11:51:05.347+00:00",
+      "court": "Court 8"
     },
     {
       "id": "LD021",
@@ -861,6 +869,14 @@
       "result": "64 76(4)",
       "startTime": "2026-04-24T00:00:00",
       "court": "Arantxa Sanchez Stadium"
+    },
+    {
+      "id": "ATP-MS043",
+      "status": "F",
+      "score": "67(5) 76(1) 63",
+      "result": "67(5) 76(1) 63",
+      "startTime": "2026-04-24T00:00:00",
+      "court": "Court 4"
     },
     {
       "id": "ATP-MS037",

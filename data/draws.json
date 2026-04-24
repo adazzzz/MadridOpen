@@ -4,7 +4,7 @@
     "track": "draws",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-24T12:01:24.727032+00:00",
+    "updatedAt": "2026-04-24T12:17:55.490929+00:00",
     "sources": {
       "draws": {
         "wta": "https://wta-webapi-prod-apimanagement.azure-api.net/api/v1/VwEventDrawxmls/2026/1038",

@@ -4,7 +4,7 @@
     "track": "training",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-24T12:01:24.727032+00:00",
+    "updatedAt": "2026-04-24T12:17:55.490929+00:00",
     "sources": {
       "training": [
         "https://practice.tmstennis.com/api/iframe?runid=702&public=1&day=0&mode=0",
@@ -298,7 +298,7 @@
       ]
     },
     {
-      "id": "0-pista-4-09-30-am-10-00-am-vacherot-valentin",
+      "id": "0-pista-4-09-30-am-10-00-am-valentin-vacherot",
       "dayOffset": 0,
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "PISTA 4",
@@ -306,7 +306,7 @@
       "tour": "",
       "players": [
         {
-          "id": "vacherot-valentin",
+          "id": "valentin-vacherot",
           "name": "Valentin Vacherot",
           "country": "MON",
           "ranking": 17,
@@ -724,7 +724,7 @@
       ]
     },
     {
-      "id": "0-pista-9-wta-12-00-pm-12-30-pm-cirstea-sorana-julieta-pareja",
+      "id": "0-pista-9-wta-12-00-pm-12-30-pm-julieta-pareja-sorana-cirstea",
       "dayOffset": 0,
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "PISTA 9 (WTA)",
@@ -732,7 +732,7 @@
       "tour": "WTA",
       "players": [
         {
-          "id": "cirstea-sorana",
+          "id": "sorana-cirstea",
           "name": "Sorana Cirstea",
           "country": "ROU",
           "ranking": 26,
@@ -2997,6 +2997,25 @@
       ]
     },
     {
+      "id": "0-pista-19-atp-06-00-pm-07-00-pm-seggerman-ryan",
+      "dayOffset": 0,
+      "dayLabel": "Fri, Apr 24, 2026",
+      "court": "PISTA 19 (ATP)",
+      "timeRange": "06:00 PM - 07:00 PM",
+      "tour": "ATP",
+      "players": [
+        {
+          "id": "seggerman-ryan",
+          "name": "Ryan Seggerman",
+          "country": "USA",
+          "ranking": 1057,
+          "singlesRanking": 1057,
+          "doublesRanking": 66,
+          "tour": "ATP"
+        }
+      ]
+    },
+    {
       "id": "0-pista-20-wta-09-00-am-10-30-am-julieta-pareja-talia-gibson",
       "dayOffset": 0,
       "dayLabel": "Fri, Apr 24, 2026",
@@ -4285,6 +4304,36 @@
       ]
     },
     {
+      "id": "1-pista-12-wta-12-00-pm-01-00-pm-aldila-sutjiadi-janice-tjen",
+      "dayOffset": 1,
+      "dayLabel": "Sat, Apr 25, 2026",
+      "court": "PISTA 12 (WTA)",
+      "timeRange": "12:00 PM - 01:00 PM",
+      "tour": "WTA",
+      "players": [
+        {
+          "id": "janice-tjen",
+          "name": "Janice Tjen",
+          "country": "INA",
+          "ranking": 39,
+          "singlesRanking": 39,
+          "doublesRanking": 45,
+          "tour": "WTA",
+          "wtaPlayerId": "328818"
+        },
+        {
+          "id": "aldila-sutjiadi",
+          "name": "Aldila Sutjiadi",
+          "country": "INA",
+          "ranking": 51,
+          "rankingTag": "D",
+          "doublesRanking": 51,
+          "tour": "WTA",
+          "wtaPlayerId": "318390"
+        }
+      ]
+    },
+    {
       "id": "1-pista-14-atp-10-00-am-11-00-am-arribage-theo-nys-hugo-olivetti-albano-roger-vasselin-edouard",
       "dayOffset": 1,
       "dayLabel": "Sat, Apr 25, 2026",
@@ -4453,10 +4502,86 @@
       ]
     },
     {
-      "id": "1-pista-17-atp-11-00-am-12-00-pm-cabral-francisco-gonzalez-maximo-molteni-andres-salisbury-joe",
+      "id": "1-pista-17-atp-12-00-pm-01-00-pm-cabral-francisco-gonzalez-maximo-molteni-andres-salisbury-joe",
       "dayOffset": 1,
       "dayLabel": "Sat, Apr 25, 2026",
       "court": "PISTA 17 -ATP",
+      "timeRange": "12:00 PM - 01:00 PM",
+      "tour": "ATP",
+      "players": [
+        {
+          "id": "salisbury-joe",
+          "name": "Joe Salisbury",
+          "country": "GBR",
+          "ranking": 8,
+          "rankingTag": "D",
+          "doublesRanking": 8,
+          "tour": "ATP"
+        },
+        {
+          "id": "cabral-francisco",
+          "name": "Francisco Cabral",
+          "country": "POR",
+          "ranking": 21,
+          "rankingTag": "D",
+          "doublesRanking": 21,
+          "tour": "ATP"
+        },
+        {
+          "id": "molteni-andres",
+          "name": "Andres Molteni",
+          "country": "ARG",
+          "ranking": 38,
+          "rankingTag": "D",
+          "doublesRanking": 38,
+          "tour": "ATP"
+        },
+        {
+          "id": "gonzalez-maximo",
+          "name": "Maximo Gonzalez",
+          "country": "ARG",
+          "ranking": 50,
+          "rankingTag": "D",
+          "doublesRanking": 50,
+          "tour": "ATP"
+        }
+      ]
+    },
+    {
+      "id": "1-pista-19-atp-10-00-am-11-00-am-doumbia-sadio-reboul-fabien",
+      "dayOffset": 1,
+      "dayLabel": "Sat, Apr 25, 2026",
+      "court": "PISTA 19 (ATP)",
+      "timeRange": "10:00 AM - 11:00 AM",
+      "tour": "ATP",
+      "players": [
+        {
+          "id": "doumbia-sadio",
+          "name": "Sadio Doumbia",
+          "country": "FRA",
+          "ranking": 22,
+          "rankingTag": "D",
+          "doublesRanking": 22,
+          "tour": "ATP",
+          "atpPlayerId": "D917"
+        },
+        {
+          "id": "reboul-fabien",
+          "name": "Fabien Reboul",
+          "country": "FRA",
+          "ranking": 23,
+          "rankingTag": "D",
+          "doublesRanking": 23,
+          "tour": "ATP",
+          "atpPlayerId": "RE45"
+        }
+      ]
+    },
+    {
+      "id": "1-pista-19-atp-11-00-am-12-00-pm-cabral-francisco-gonzalez-maximo-molteni-andres-salisbury-joe",
+      "dayOffset": 1,
+      "dayLabel": "Sat, Apr 25, 2026",
+      "court": "PISTA 19 (ATP)",
       "timeRange": "11:00 AM - 12:00 PM",
       "tour": "ATP",
       "players": [
@@ -4495,36 +4620,6 @@
           "rankingTag": "D",
           "doublesRanking": 8,
           "tour": "ATP"
-        }
-      ]
-    },
-    {
-      "id": "1-pista-19-atp-10-00-am-11-00-am-doumbia-sadio-reboul-fabien",
-      "dayOffset": 1,
-      "dayLabel": "Sat, Apr 25, 2026",
-      "court": "PISTA 19 (ATP)",
-      "timeRange": "10:00 AM - 11:00 AM",
-      "tour": "ATP",
-      "players": [
-        {
-          "id": "doumbia-sadio",
-          "name": "Sadio Doumbia",
-          "country": "FRA",
-          "ranking": 22,
-          "rankingTag": "D",
-          "doublesRanking": 22,
-          "tour": "ATP",
-          "atpPlayerId": "D917"
-        },
-        {
-          "id": "reboul-fabien",
-          "name": "Fabien Reboul",
-          "country": "FRA",
-          "ranking": 23,
-          "rankingTag": "D",
-          "doublesRanking": 23,
-          "tour": "ATP",
-          "atpPlayerId": "RE45"
         }
       ]
     },

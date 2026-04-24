@@ -4,7 +4,7 @@
     "track": "players",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-24T12:01:24.727032+00:00",
+    "updatedAt": "2026-04-24T12:17:55.490929+00:00",
     "sources": {
       "players": "https://mutuamadridopen.com/jugadores-2026/",
       "rankings": {
@@ -2946,13 +2946,13 @@
       "doublesRanking": 554
     },
     {
-      "id": "cirstea-sorana",
+      "id": "sorana-cirstea",
       "name": "Sorana Cirstea",
       "country": "ROU",
+      "wtaPlayerId": "312469",
+      "tour": "WTA",
       "singlesRanking": 26,
       "ranking": 26,
-      "tour": "WTA",
-      "wtaPlayerId": "312469",
       "doublesRanking": 40
     },
     {
@@ -3226,15 +3226,15 @@
       "ranking": 72
     },
     {
-      "id": "vacherot-valentin",
+      "id": "valentin-vacherot",
       "name": "Valentin Vacherot",
       "country": "MON",
-      "singlesEntryRanking": 25,
+      "atpPlayerId": "VA25",
       "tour": "ATP",
+      "singlesEntryRanking": 25,
       "singlesRanking": 17,
       "ranking": 17,
-      "doublesRanking": 139,
-      "atpPlayerId": "VA25"
+      "doublesRanking": 139
     },
     {
       "id": "vallejo-daniel",
