@@ -4,7 +4,7 @@
     "track": "training",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-24T20:42:17.453606+00:00",
+    "updatedAt": "2026-04-24T20:49:12.150531+00:00",
     "sources": {
       "training": [
         "https://practice.tmstennis.com/api/iframe?runid=702&public=1&day=0&mode=0",
@@ -6534,7 +6534,7 @@
       ]
     },
     {
-      "id": "1-pista-19-atp-02-00-pm-03-00-pm-melo-marcelo",
+      "id": "1-pista-19-atp-02-00-pm-03-00-pm-melo-marcelo-seggerman-ryan",
       "dayOffset": 1,
       "dayLabel": "Sat, Apr 25, 2026",
       "court": "PISTA 19 (ATP)",
@@ -6548,6 +6548,15 @@
           "ranking": 43,
           "rankingTag": "D",
           "doublesRanking": 43,
+          "tour": "ATP"
+        },
+        {
+          "id": "seggerman-ryan",
+          "name": "Ryan Seggerman",
+          "country": "USA",
+          "ranking": 1057,
+          "singlesRanking": 1057,
+          "doublesRanking": 66,
           "tour": "ATP"
         }
       ]
