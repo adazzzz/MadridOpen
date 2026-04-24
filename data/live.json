@@ -4,7 +4,7 @@
     "track": "live",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-24T12:43:09.092525+00:00",
+    "updatedAt": "2026-04-24T14:17:38.863125+00:00",
     "sources": {
       "matches": {
         "wta": "https://api.wtatennis.com/tennis/tournaments/1038/2026/matches",
@@ -758,6 +758,14 @@
       "court": "Court 3"
     },
     {
+      "id": "LS057",
+      "status": "F",
+      "score": "6-1,6-7(4),6-2",
+      "result": "Z. Sonmez d [27]C. Bucsa 6-1,6-7(4),6-2",
+      "startTime": "2026-04-24T10:12:04.517+00:00",
+      "court": "Court 3"
+    },
+    {
       "id": "LS053",
       "status": "F",
       "score": "6-2,6-1",
@@ -774,44 +782,71 @@
       "court": "Court 5"
     },
     {
-      "id": "LS057",
-      "status": "P",
-      "score": "6-1,6-7(4),5-2",
-      "startTime": "2026-04-24T10:12:04.517+00:00",
-      "court": "Court 3"
-    },
-    {
       "id": "LS063",
-      "status": "P",
-      "score": "6-4,3-4",
+      "status": "F",
+      "score": "4-6,6-3,7-5",
+      "result": "[2]E. Rybakina d E. Ruse 4-6,6-3,7-5",
       "startTime": "2026-04-24T11:03:37.06+00:00",
       "court": "Court 1"
     },
     {
       "id": "LS061",
-      "status": "P",
-      "score": "6-2,1-2",
+      "status": "F",
+      "score": "6-2,7-5",
+      "result": "[21]J. Ostapenko d S. Waltert 6-2,7-5",
       "startTime": "2026-04-24T11:40:57.637+00:00",
       "court": "Court 6"
     },
     {
       "id": "LS054",
-      "status": "P",
-      "score": "6-2,1-2",
+      "status": "F",
+      "score": "6-2,7-6(5)",
+      "result": "[25]S. Cirstea d T. Grant 6-2,7-6(5)",
       "startTime": "2026-04-24T11:51:05.347+00:00",
       "court": "Court 8"
     },
     {
       "id": "LD021",
-      "status": "P",
-      "score": "2-1",
+      "status": "F",
+      "score": "6-4,6-0",
+      "result": "M. Andreeva / D. Shnaider d A. Detiuc / K. Piter 6-4,6-0",
       "startTime": "2026-04-24T12:18:08.467+00:00",
       "court": "Court 5"
     },
     {
       "id": "LS052",
-      "status": "C",
+      "status": "F",
+      "score": "6-3,6-2",
+      "result": "[13]L. Noskova d E. Arango 6-3,6-2",
       "startTime": "2026-04-24T12:34:31.67+00:00",
+      "court": "Court 7"
+    },
+    {
+      "id": "LD016",
+      "status": "P",
+      "score": "4-3",
+      "startTime": "2026-04-24T13:31:40.107+00:00",
+      "court": "Court 5"
+    },
+    {
+      "id": "LD023",
+      "status": "P",
+      "score": "2-5",
+      "startTime": "2026-04-24T13:32:32.443+00:00",
+      "court": "Court 8"
+    },
+    {
+      "id": "LS049",
+      "status": "S",
+      "score": "1-4",
+      "startTime": "2026-04-24T13:34:00.88+00:00",
+      "court": "Court 6"
+    },
+    {
+      "id": "LS050",
+      "status": "P",
+      "score": "0-1",
+      "startTime": "2026-04-24T14:02:57.187+00:00",
       "court": "Court 7"
     },
     {
@@ -833,34 +868,10 @@
       "court": "Manolo Santana Stadium"
     },
     {
-      "id": "LS050",
-      "status": "U",
-      "startTime": "2026-04-24T23:59+02:00",
-      "court": "Court 7"
-    },
-    {
       "id": "LD026",
       "status": "U",
       "startTime": "2026-04-24T23:59+02:00",
       "court": "Court 5"
-    },
-    {
-      "id": "LD016",
-      "status": "U",
-      "startTime": "2026-04-24T23:59+02:00",
-      "court": "Court 5"
-    },
-    {
-      "id": "LD023",
-      "status": "U",
-      "startTime": "2026-04-24T23:59+02:00",
-      "court": "Court 8"
-    },
-    {
-      "id": "LS049",
-      "status": "U",
-      "startTime": "2026-04-24T23:59+02:00",
-      "court": "Court 6"
     },
     {
       "id": "ATP-MS047",
