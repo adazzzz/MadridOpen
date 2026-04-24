@@ -39,6 +39,7 @@ const statusLabels = {
   S: "未开赛",
   U: "待排赛程"
 };
+const LIVE_MATCH_TIME_LABEL = "正在进行";
 
 const entryTypeLabels = {
   LL: "LL 幸运落败者",
@@ -2180,6 +2181,10 @@ function normalizeForSearch(value) {
 }
 
 function formatMatchTime(match, options = {}) {
+  if (isLiveMatchStatus(match?.status)) {
+    return LIVE_MATCH_TIME_LABEL;
+  }
+
   const timeOnly = options.timeOnly === true;
   const raw = String(match?.startTime || "");
   const scheduleType = String(match?.scheduleType || "").toLowerCase();
@@ -2486,6 +2491,10 @@ function getTodayCourtDayKey() {
 }
 
 function formatCourtTimeSlot(match) {
+  if (isLiveMatchStatus(match?.status)) {
+    return LIVE_MATCH_TIME_LABEL;
+  }
+
   const timeLabel = formatMatchTime(match, { timeOnly: true });
   const order = getScheduleOrder(match);
 
