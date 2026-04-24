@@ -4,7 +4,7 @@
     "track": "training",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-24T12:17:55.490929+00:00",
+    "updatedAt": "2026-04-24T12:43:09.092525+00:00",
     "sources": {
       "training": [
         "https://practice.tmstennis.com/api/iframe?runid=702&public=1&day=0&mode=0",
@@ -944,6 +944,34 @@
           "doublesRanking": 126,
           "tour": "ATP",
           "atpPlayerId": "Z355"
+        }
+      ]
+    },
+    {
+      "id": "0-pista-10-atp-03-00-pm-04-00-pm-krawietz-kevin-puetz-tim",
+      "dayOffset": 0,
+      "dayLabel": "Fri, Apr 24, 2026",
+      "court": "PISTA 10 (ATP)",
+      "timeRange": "03:00 PM - 04:00 PM",
+      "tour": "ATP",
+      "players": [
+        {
+          "id": "krawietz-kevin",
+          "name": "Kevin Krawietz",
+          "country": "GER",
+          "ranking": 11,
+          "rankingTag": "D",
+          "doublesRanking": 11,
+          "tour": "ATP"
+        },
+        {
+          "id": "puetz-tim",
+          "name": "Tim Puetz",
+          "country": "GER",
+          "ranking": 12,
+          "rankingTag": "D",
+          "doublesRanking": 12,
+          "tour": "ATP"
         }
       ]
     },
@@ -2901,52 +2929,6 @@
       ]
     },
     {
-      "id": "0-pista-19-atp-03-00-pm-04-00-pm-cabral-francisco-krawietz-kevin-puetz-tim-salisbury-joe",
-      "dayOffset": 0,
-      "dayLabel": "Fri, Apr 24, 2026",
-      "court": "PISTA 19 (ATP)",
-      "timeRange": "03:00 PM - 04:00 PM",
-      "tour": "ATP",
-      "players": [
-        {
-          "id": "krawietz-kevin",
-          "name": "Kevin Krawietz",
-          "country": "GER",
-          "ranking": 11,
-          "rankingTag": "D",
-          "doublesRanking": 11,
-          "tour": "ATP"
-        },
-        {
-          "id": "puetz-tim",
-          "name": "Tim Puetz",
-          "country": "GER",
-          "ranking": 12,
-          "rankingTag": "D",
-          "doublesRanking": 12,
-          "tour": "ATP"
-        },
-        {
-          "id": "cabral-francisco",
-          "name": "Francisco Cabral",
-          "country": "POR",
-          "ranking": 21,
-          "rankingTag": "D",
-          "doublesRanking": 21,
-          "tour": "ATP"
-        },
-        {
-          "id": "salisbury-joe",
-          "name": "Joe Salisbury",
-          "country": "GBR",
-          "ranking": 8,
-          "rankingTag": "D",
-          "doublesRanking": 8,
-          "tour": "ATP"
-        }
-      ]
-    },
-    {
       "id": "0-pista-19-atp-04-00-pm-06-00-pm-doumbia-sadio-nys-hugo-reboul-fabien-roger-vasselin-edouard",
       "dayOffset": 0,
       "dayLabel": "Fri, Apr 24, 2026",
@@ -3160,11 +3142,11 @@
       ]
     },
     {
-      "id": "0-pista-20-wta-03-00-pm-03-30-pm-tomas-machac",
+      "id": "0-pista-20-wta-03-30-pm-04-00-pm-tomas-machac",
       "dayOffset": 0,
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "PISTA 20 (WTA)",
-      "timeRange": "03:00 PM - 03:30 PM",
+      "timeRange": "03:30 PM - 04:00 PM",
       "tour": "WTA",
       "players": [
         {
@@ -3176,26 +3158,6 @@
           "doublesRanking": 132,
           "tour": "ATP",
           "atpPlayerId": "M0FH"
-        }
-      ]
-    },
-    {
-      "id": "0-pista-20-wta-04-00-pm-05-00-pm-peyton-stearns",
-      "dayOffset": 0,
-      "dayLabel": "Fri, Apr 24, 2026",
-      "court": "PISTA 20 (WTA)",
-      "timeRange": "04:00 PM - 05:00 PM",
-      "tour": "WTA",
-      "players": [
-        {
-          "id": "peyton-stearns",
-          "name": "Peyton Stearns",
-          "country": "USA",
-          "ranking": 43,
-          "singlesRanking": 43,
-          "doublesRanking": 76,
-          "tour": "WTA",
-          "wtaPlayerId": "327573"
         }
       ]
     },
@@ -3997,11 +3959,11 @@
       ]
     },
     {
-      "id": "0-pista-23-warmup-02-30-pm-03-30-pm-aleksandra-krunic-kristina-mladenovic",
+      "id": "0-pista-23-warmup-03-00-pm-04-00-pm-aleksandra-krunic-kristina-mladenovic",
       "dayOffset": 0,
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "PISTA 23 (WARMUP)",
-      "timeRange": "02:30 PM - 03:30 PM",
+      "timeRange": "03:00 PM - 04:00 PM",
       "tour": "",
       "players": [
         {
@@ -4250,6 +4212,46 @@
           "singlesRanking": 15,
           "tour": "ATP",
           "atpPlayerId": "RH16"
+        }
+      ]
+    },
+    {
+      "id": "1-arantxa-sanchez-09-00-am-09-30-am-davidovich-fokina-alejandro",
+      "dayOffset": 1,
+      "dayLabel": "Sat, Apr 25, 2026",
+      "court": "ARANTXA SANCHEZ",
+      "timeRange": "09:00 AM - 09:30 AM",
+      "tour": "",
+      "players": [
+        {
+          "id": "davidovich-fokina-alejandro",
+          "name": "Alejandro Davidovich Fokina",
+          "country": "ESP",
+          "ranking": 24,
+          "singlesRanking": 24,
+          "doublesRanking": 597,
+          "tour": "ATP",
+          "atpPlayerId": "DH50"
+        }
+      ]
+    },
+    {
+      "id": "1-pista-9-wta-05-30-pm-06-30-pm-aryna-sabalenka",
+      "dayOffset": 1,
+      "dayLabel": "Sat, Apr 25, 2026",
+      "court": "PISTA 9 (WTA)",
+      "timeRange": "05:30 PM - 06:30 PM",
+      "tour": "WTA",
+      "players": [
+        {
+          "id": "aryna-sabalenka",
+          "name": "Aryna Sabalenka",
+          "country": "BLR",
+          "ranking": 1,
+          "singlesRanking": 1,
+          "doublesRanking": 596,
+          "tour": "WTA",
+          "wtaPlayerId": "320760"
         }
       ]
     },
