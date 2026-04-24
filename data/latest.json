@@ -2,7 +2,7 @@
   "metadata": {
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-24T03:26:58.622442+00:00",
+    "updatedAt": "2026-04-24T05:57:19.593517+00:00",
     "playerRankingDate": "23/03/2026",
     "sources": {
       "matches": {
@@ -47,7 +47,7 @@
       "wtaDrawFallbackMatches": 7,
       "doublesPlayers": 64,
       "doublesPlayersMissingDoublesRanking": 0,
-      "playersMissingTour": 1,
+      "playersMissingTour": 2,
       "atpDrawEvents": [
         "MS",
         "QS"
@@ -2319,6 +2319,11 @@
     {
       "id": "mcnally-catherine",
       "name": "McNally Catherine",
+      "country": ""
+    },
+    {
+      "id": "merida-aguilar-daniel",
+      "name": "Merida Aguilar Daniel",
       "country": ""
     },
     {
@@ -11939,6 +11944,26 @@
       ]
     },
     {
+      "id": "0-estadio-3-08-00-am-09-30-am-shuai-zhang",
+      "dayOffset": 0,
+      "dayLabel": "Fri, Apr 24, 2026",
+      "court": "ESTADIO 3",
+      "timeRange": "08:00 AM - 09:30 AM",
+      "tour": "",
+      "players": [
+        {
+          "id": "shuai-zhang",
+          "name": "Shuai Zhang",
+          "country": "CHN",
+          "ranking": 62,
+          "singlesRanking": 62,
+          "doublesRanking": 11,
+          "tour": "WTA",
+          "wtaPlayerId": "311779"
+        }
+      ]
+    },
+    {
       "id": "0-estadio-3-09-30-am-10-00-am-madison-keys",
       "dayOffset": 0,
       "dayLabel": "Fri, Apr 24, 2026",
@@ -13359,11 +13384,11 @@
       ]
     },
     {
-      "id": "0-pista-15-atp-11-00-am-12-00-pm-krajicek-austin-mektic-nikola",
+      "id": "0-pista-15-atp-10-30-am-12-00-pm-krajicek-austin-mektic-nikola",
       "dayOffset": 0,
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "PISTA 15 -ATP",
-      "timeRange": "11:00 AM - 12:00 PM",
+      "timeRange": "10:30 AM - 12:00 PM",
       "tour": "ATP",
       "players": [
         {
@@ -13953,26 +13978,6 @@
           "rankingTag": "D",
           "doublesRanking": 34,
           "tour": "ATP"
-        }
-      ]
-    },
-    {
-      "id": "0-pista-18-wta-08-00-am-09-30-am-shuai-zhang",
-      "dayOffset": 0,
-      "dayLabel": "Fri, Apr 24, 2026",
-      "court": "PISTA 18 -WTA",
-      "timeRange": "08:00 AM - 09:30 AM",
-      "tour": "WTA",
-      "players": [
-        {
-          "id": "shuai-zhang",
-          "name": "Shuai Zhang",
-          "country": "CHN",
-          "ranking": 62,
-          "singlesRanking": 62,
-          "doublesRanking": 11,
-          "tour": "WTA",
-          "wtaPlayerId": "311779"
         }
       ]
     },
@@ -15323,6 +15328,21 @@
           "doublesRanking": 657,
           "tour": "ATP",
           "atpPlayerId": "O513"
+        }
+      ]
+    },
+    {
+      "id": "0-pista-24-warmup-12-30-pm-01-00-pm-merida-aguilar-daniel",
+      "dayOffset": 0,
+      "dayLabel": "Fri, Apr 24, 2026",
+      "court": "PISTA 24 (WARMUP)",
+      "timeRange": "12:30 PM - 01:00 PM",
+      "tour": "",
+      "players": [
+        {
+          "id": "merida-aguilar-daniel",
+          "name": "Merida Aguilar Daniel",
+          "country": ""
         }
       ]
     },
