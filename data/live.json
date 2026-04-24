@@ -4,7 +4,7 @@
     "track": "live",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-24T16:36:42.879721+00:00",
+    "updatedAt": "2026-04-24T20:42:17.453606+00:00",
     "sources": {
       "matches": {
         "wta": "https://api.wtatennis.com/tennis/tournaments/1038/2026/matches",
@@ -863,22 +863,26 @@
     },
     {
       "id": "LD026",
-      "status": "P",
-      "score": "6-2,3-2",
+      "status": "F",
+      "score": "6-2,6-3",
+      "result": "A. Krunic / K. Mladenovic d K. Rakhimova / A. Siskova 6-2,6-3",
       "startTime": "2026-04-24T15:36:42.853+00:00",
       "court": "Court 5"
     },
     {
       "id": "LS051",
-      "status": "U",
-      "startTime": "2026-04-24T19:00+02:00",
-      "court": "Arantxa Sanchez Stadium"
+      "status": "F",
+      "score": "6-4,6-1",
+      "result": "C. McNally d [10]V. Mboko 6-4,6-1",
+      "startTime": "2026-04-24T16:45:42.64+00:00",
+      "court": "Court 2"
     },
     {
       "id": "LS048",
-      "status": "U",
-      "startTime": "2026-04-24T21:00+02:00",
-      "court": "Manolo Santana Stadium"
+      "status": "P",
+      "score": "6-4,1-1",
+      "startTime": "2026-04-24T19:28:18.917+00:00",
+      "court": "Court 1"
     },
     {
       "id": "LS018",
@@ -999,12 +1003,28 @@
       "court": "Arantxa Sanchez Stadium"
     },
     {
+      "id": "ATP-MS039",
+      "status": "F",
+      "score": "63 61",
+      "result": "63 61",
+      "startTime": "2026-04-24T00:00:00",
+      "court": "Manolo Santana Stadium"
+    },
+    {
       "id": "ATP-MS047",
       "status": "F",
       "score": "64 76(4)",
       "result": "64 76(4)",
       "startTime": "2026-04-24T00:00:00",
       "court": "Arantxa Sanchez Stadium"
+    },
+    {
+      "id": "ATP-MS036",
+      "status": "F",
+      "score": "63 64",
+      "result": "63 64",
+      "startTime": "2026-04-24T00:00:00",
+      "court": "Stadium 3"
     },
     {
       "id": "ATP-MS044",
@@ -1019,6 +1039,22 @@
       "status": "F",
       "score": "67(5) 76(1) 63",
       "result": "67(5) 76(1) 63",
+      "startTime": "2026-04-24T00:00:00",
+      "court": "Court 4"
+    },
+    {
+      "id": "ATP-MS035",
+      "status": "F",
+      "score": "75 64",
+      "result": "75 64",
+      "startTime": "2026-04-24T00:00:00",
+      "court": "Arantxa Sanchez Stadium"
+    },
+    {
+      "id": "ATP-MS034",
+      "status": "F",
+      "score": "62 67(6) 76(5)",
+      "result": "62 67(6) 76(5)",
       "startTime": "2026-04-24T00:00:00",
       "court": "Court 4"
     },
@@ -1045,6 +1081,14 @@
       "result": "64 64",
       "startTime": "2026-04-24T00:00:00",
       "court": "Court 4"
+    },
+    {
+      "id": "ATP-MS038",
+      "status": "F",
+      "score": "W/O",
+      "result": "W/O",
+      "startTime": "2026-04-24T00:00:00",
+      "court": "Court 8"
     },
     {
       "id": "ATP-MS046",
