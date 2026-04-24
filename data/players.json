@@ -4,7 +4,7 @@
     "track": "players",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-24T11:14:50.711478+00:00",
+    "updatedAt": "2026-04-24T11:45:12.498585+00:00",
     "sources": {
       "players": "https://mutuamadridopen.com/jugadores-2026/",
       "rankings": {
@@ -469,15 +469,15 @@
       "doublesRanking": 1780
     },
     {
-      "id": "rinderknech-arthur",
+      "id": "arthur-rinderknech",
       "name": "Arthur Rinderknech",
       "country": "FRA",
-      "singlesEntryRanking": 27,
+      "atpPlayerId": "RC91",
       "tour": "ATP",
+      "singlesEntryRanking": 27,
       "singlesRanking": 26,
       "ranking": 26,
-      "doublesRanking": 109,
-      "atpPlayerId": "RC91"
+      "doublesRanking": 109
     },
     {
       "id": "aryna-sabalenka",
