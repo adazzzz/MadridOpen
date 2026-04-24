@@ -2492,7 +2492,8 @@ function getTodayCourtDayKey() {
 
 function formatCourtTimeSlot(match) {
   if (isLiveMatchStatus(match?.status)) {
-    return LIVE_MATCH_TIME_LABEL;
+    const order = getScheduleOrder(match);
+    return order > 0 ? `第${order}场 · ${LIVE_MATCH_TIME_LABEL}` : LIVE_MATCH_TIME_LABEL;
   }
 
   const timeLabel = formatMatchTime(match, { timeOnly: true });
