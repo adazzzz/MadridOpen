@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Madrid Open Player Hub</title>
+    <link rel="stylesheet" href="./styles.css?v=2026042408" />
+  </head>
+  <body>
+    <div class="bg-layer" aria-hidden="true"></div>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Mutua Madrid Open 2026</p>
+        <h1>Madrid Open Schedule Hub</h1>
+        <div id="viewSwitch" class="view-switch" role="tablist" aria-label="页面视图切换">
+          <button class="view-tab active" type="button" data-view="players" role="tab" aria-selected="true">球员比赛 &amp; 训练</button>
+          <button class="view-tab" type="button" data-view="courts" role="tab" aria-selected="false">场地</button>
+        </div>
+      </div>
+      <div class="header-actions">
+        <p id="buildVersion" class="build-version">v2026042408</p>
+        <p id="refreshStatus">快照时间：加载中，10-20min数据刷新</p>
+        <button id="reloadBtn" type="button" aria-label="重新加载数据" title="重新加载数据">↻</button>
+      </div>
+    </header>
+
+    <section id="playersView" class="view-pane">
+      <main class="layout-shell">
+        <button id="playersSidebarExpand" class="sidebar-rail" type="button" hidden aria-label="展开球员侧栏">展开球员</button>
+        <div class="layout">
+        <aside id="playersSidebar" class="panel players-panel" aria-label="球员列表">
+          <div class="sidebar-topbar">
+            <button id="playersSidebarToggle" class="sidebar-toggle" type="button" aria-label="折叠球员侧栏">收起</button>
+          </div>
+          <div class="search-box">
+            <label for="playerSearch">按球员检索</label>
+            <div class="search-control">
+              <input id="playerSearch" type="search" enterkeyhint="search" placeholder="输入姓名 / 国家 / ATP / WTA / 排名，例如 Zheng / CHN / ATP / 12" />
+              <button id="playerSearchClear" class="search-clear" type="button" hidden aria-label="清除球员检索">×</button>
+            </div>
+          </div>
+          <div id="playerList" class="player-list" role="list"></div>
+        </aside>
+
+        <section class="panel detail-panel" aria-label="球员明细">
+          <div id="emptyState" class="empty-state">
+            <h2>请选择球员</h2>
+            <p>左侧列表支持姓名、国家、ATP/WTA 和排名检索。选择后可查看世界排名、官方身份、单打比赛、双打比赛和训练安排。</p>
+          </div>
+
+          <div id="playerDetail" hidden>
+            <section class="cards">
+              <article class="card">
+                <div id="playerTopline" class="card-topline">-</div>
+                <p id="playerName" class="card-main">-</p>
+                <p id="playerIdentity" class="card-sub">-</p>
+              </article>
+              <article class="card">
+                <h3>比赛场次</h3>
+                <p id="matchSplit" class="card-main">单 0</p>
+                <p id="matchCount" class="card-sub">总计 0 场</p>
+              </article>
+              <article class="card">
+                <h3>训练时段</h3>
+                <p id="trainingCount" class="card-main">0</p>
+                <p class="card-sub">-</p>
+              </article>
+            </section>
+
+            <section class="table-card">
+              <div class="table-title">
+                <h2>单打比赛</h2>
+                <p>按开始时间倒序</p>
+              </div>
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>时间 / 顺序</th>
+                      <th>轮次</th>
+                      <th>对阵信息</th>
+                      <th>比分 / 结果</th>
+                      <th>场地</th>
+                    </tr>
+                  </thead>
+                  <tbody id="singlesMatchRows"></tbody>
+                </table>
+              </div>
+            </section>
+
+            <section id="doublesSection" class="table-card">
+              <div class="table-title">
+                <h2>双打比赛</h2>
+                <p>按开始时间倒序</p>
+              </div>
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>时间 / 顺序</th>
+                      <th>轮次</th>
+                      <th>对阵信息</th>
+                      <th>比分 / 结果</th>
+                      <th>场地</th>
+                    </tr>
+                  </thead>
+                  <tbody id="doublesMatchRows"></tbody>
+                </table>
+              </div>
+            </section>
+
+            <section class="table-card">
+              <div class="table-title">
+                <h2>训练安排</h2>
+                <p>按日期与时段排序</p>
+              </div>
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>日期</th>
+                      <th>时段</th>
+                      <th>场地</th>
+                      <th>同场信息</th>
+                    </tr>
+                  </thead>
+                  <tbody id="trainingRows"></tbody>
+                </table>
+              </div>
+            </section>
+          </div>
+        </section>
+        </div>
+      </main>
+    </section>
+
+    <section id="courtsView" class="view-pane" hidden>
+      <main class="layout-shell">
+        <button id="courtsSidebarExpand" class="sidebar-rail" type="button" hidden aria-label="展开场地侧栏">展开场地</button>
+        <div class="layout">
+        <aside id="courtsSidebar" class="panel players-panel" aria-label="场地列表">
+          <div class="sidebar-topbar">
+            <button id="courtsSidebarToggle" class="sidebar-toggle" type="button" aria-label="折叠场地侧栏">收起</button>
+          </div>
+          <div class="panel-intro">
+            <h2>全部场地</h2>
+            <p>左侧选择场地，右侧按日期查看比赛安排。</p>
+          </div>
+          <div id="courtList" class="player-list" role="list"></div>
+        </aside>
+
+        <section class="panel detail-panel" aria-label="场地明细">
+          <div id="courtEmptyState" class="empty-state">
+            <h2>请选择场地</h2>
+            <p>右侧会展示该场地每天的比赛安排，按时间从晚到早倒序排列。</p>
+          </div>
+
+          <div id="courtDetail" hidden>
+            <section class="cards">
+              <article class="card">
+                <div class="card-topline"><span class="neutral-label">场地</span></div>
+                <p id="courtName" class="card-main">-</p>
+                <p id="courtMeta" class="card-sub">-</p>
+              </article>
+              <article class="card">
+                <h3>比赛总数</h3>
+                <p id="courtMatchCount" class="card-main">0</p>
+                <p id="courtDayCount" class="card-sub">0 天</p>
+              </article>
+            </section>
+
+            <div id="courtDaySections"></div>
+          </div>
+        </section>
+        </div>
+      </main>
+    </section>
+
+    <footer class="footer">
+      <p>
+        数据源：
+        <a href="https://api.wtatennis.com/tennis/tournaments/1038/2026/matches" target="_blank" rel="noreferrer">WTA 比分</a>
+        ·
+        <a href="https://wta-webapi-prod-apimanagement.azure-api.net/atpjoint-api/v1/Scores/Schedule?eventId=1038&eventYear=2026" target="_blank" rel="noreferrer">WTA 赛程</a>
+        ·
+        <a href="https://mutuamadridopen.com/results/php/" target="_blank" rel="noreferrer">ATP 比分 / 赛程 / 签表</a>
+        ·
+        <a href="https://wta-webapi-prod-apimanagement.azure-api.net/api/v1/VwEventDrawxmls/2026/1038" target="_blank" rel="noreferrer">WTA 签表</a>
+        ·
+        <a href="https://mutuamadridopen.com/jugadores-2026/" target="_blank" rel="noreferrer">官方球员目录</a>
+        ·
+        <a href="https://practice.tmstennis.com/" target="_blank" rel="noreferrer">训练预约</a>
+      </p>
+    </footer>
+
+    <script type="module" src="./app.js?v=2026042408"></script>
+  </body>
+</html>
