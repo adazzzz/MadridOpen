@@ -1,0 +1,429 @@
+{
+  "metadata": {
+    "schemaVersion": 1,
+    "track": "draws",
+    "tournament": "Mutua Madrid Open",
+    "season": 2026,
+    "updatedAt": "2026-04-24T00:14:31.071982+00:00",
+    "sources": {
+      "draws": {
+        "wta": "https://wta-webapi-prod-apimanagement.azure-api.net/api/v1/VwEventDrawxmls/2026/1038",
+        "atp": "https://mutuamadridopen.com/results/php/?type=draws"
+      }
+    },
+    "audit": {
+      "doublesMatches": 16,
+      "wtaDrawFallbackMatches": 7,
+      "doublesPlayers": 64,
+      "doublesPlayersMissingDoublesRanking": 0,
+      "playersMissingTour": 1,
+      "atpDrawEvents": [
+        "MS",
+        "QS"
+      ],
+      "atpDrawFallbackMatches": 0
+    }
+  },
+  "matches": [
+    {
+      "id": "WTA-DRAW-LD-R32-3-4",
+      "tour": "WTA",
+      "draw": "MD",
+      "discipline": "doubles",
+      "round": "R32",
+      "roundCode": "R32",
+      "roundLabel": "第一轮",
+      "status": "U",
+      "source": "wtaDraw",
+      "players": [
+        {
+          "id": "laura-siegemund",
+          "name": "Laura Siegemund",
+          "country": "GER",
+          "side": "A",
+          "ranking": 54,
+          "singlesRanking": 47,
+          "doublesRanking": 21,
+          "tour": "WTA",
+          "wtaPlayerId": "310926"
+        },
+        {
+          "id": "zvonareva-vera",
+          "name": "Vera Zvonareva",
+          "country": "",
+          "side": "A",
+          "ranking": 323,
+          "singlesRanking": 323,
+          "doublesRanking": 43,
+          "tour": "WTA",
+          "wtaPlayerId": "260142"
+        },
+        {
+          "id": "iva-jovic",
+          "name": "Iva Jovic",
+          "country": "USA",
+          "side": "B",
+          "ranking": 17,
+          "singlesRanking": 16,
+          "doublesRanking": 132,
+          "tour": "WTA",
+          "wtaPlayerId": "332285"
+        },
+        {
+          "id": "victoria-mboko",
+          "name": "Victoria Mboko",
+          "country": "CAN",
+          "side": "B",
+          "ranking": 9,
+          "singlesRanking": 9,
+          "doublesRanking": 136,
+          "tour": "WTA",
+          "wtaPlayerId": "331006"
+        }
+      ]
+    },
+    {
+      "id": "WTA-DRAW-LD-R32-7-8",
+      "tour": "WTA",
+      "draw": "MD",
+      "discipline": "doubles",
+      "round": "R32",
+      "roundCode": "R32",
+      "roundLabel": "第一轮",
+      "status": "U",
+      "source": "wtaDraw",
+      "players": [
+        {
+          "id": "hozumi-eri",
+          "name": "Eri Hozumi",
+          "country": "JPN",
+          "side": "A",
+          "ranking": 989,
+          "singlesRanking": 989,
+          "doublesRanking": 34,
+          "tour": "WTA",
+          "wtaPlayerId": "317138"
+        },
+        {
+          "id": "wu-fang-hsien",
+          "name": "Fang-Hsien Wu",
+          "country": "TPE",
+          "side": "A",
+          "ranking": 49,
+          "rankingTag": "D",
+          "doublesRanking": 49,
+          "tour": "WTA",
+          "wtaPlayerId": "323382"
+        },
+        {
+          "id": "cristina-bucsa",
+          "name": "Cristina Bucsa",
+          "country": "ESP",
+          "side": "B",
+          "ranking": 30,
+          "singlesRanking": 30,
+          "doublesRanking": 19,
+          "tour": "WTA",
+          "wtaPlayerId": "321158"
+        },
+        {
+          "id": "nicole-melichar-martinez",
+          "name": "Nicole Melichar-Martinez",
+          "country": "USA",
+          "side": "B",
+          "ranking": 16,
+          "rankingTag": "D",
+          "doublesRanking": 16,
+          "tour": "WTA",
+          "wtaPlayerId": "316713"
+        }
+      ]
+    },
+    {
+      "id": "WTA-DRAW-LD-R32-13-14",
+      "tour": "WTA",
+      "draw": "MD",
+      "discipline": "doubles",
+      "round": "R32",
+      "roundCode": "R32",
+      "roundLabel": "第一轮",
+      "status": "U",
+      "source": "wtaDraw",
+      "players": [
+        {
+          "id": "kato-miyu",
+          "name": "Kato Miyu",
+          "country": "JPN",
+          "side": "A",
+          "ranking": 53,
+          "rankingTag": "D",
+          "doublesRanking": 53,
+          "tour": "WTA",
+          "wtaPlayerId": "317612"
+        },
+        {
+          "id": "liudmila-samsonova",
+          "name": "Liudmila Samsonova",
+          "country": "RUS",
+          "side": "A",
+          "ranking": 22,
+          "singlesRanking": 20,
+          "doublesRanking": 32,
+          "tour": "WTA",
+          "wtaPlayerId": "322222"
+        },
+        {
+          "id": "kozyreva-mariia",
+          "name": "Kozyreva Mariia",
+          "country": "",
+          "side": "B",
+          "ranking": 541,
+          "singlesRanking": 541,
+          "doublesRanking": 56,
+          "tour": "WTA",
+          "wtaPlayerId": "325632"
+        },
+        {
+          "id": "skoch-miriam",
+          "name": "Miriam Skoch",
+          "country": "CZE",
+          "side": "B",
+          "ranking": 46,
+          "rankingTag": "D",
+          "doublesRanking": 46,
+          "tour": "WTA",
+          "wtaPlayerId": "324052"
+        }
+      ]
+    },
+    {
+      "id": "WTA-DRAW-LD-R32-17-18",
+      "tour": "WTA",
+      "draw": "MD",
+      "discipline": "doubles",
+      "round": "R32",
+      "roundCode": "R32",
+      "roundLabel": "第一轮",
+      "status": "U",
+      "source": "wtaDraw",
+      "players": [
+        {
+          "id": "hsieh-su-wei",
+          "name": "Su-Wei Hsieh",
+          "country": "TPE",
+          "side": "A",
+          "ranking": 13,
+          "rankingTag": "D",
+          "doublesRanking": 13,
+          "tour": "WTA",
+          "wtaPlayerId": "310053"
+        },
+        {
+          "id": "sofia-kenin",
+          "name": "Sofia Kenin",
+          "country": "USA",
+          "side": "A",
+          "ranking": 47,
+          "singlesRanking": 47,
+          "doublesRanking": 29,
+          "tour": "WTA",
+          "wtaPlayerId": "320942"
+        },
+        {
+          "id": "tereza-mihalikova",
+          "name": "Tereza Mihalikova",
+          "country": "SVK",
+          "side": "B",
+          "ranking": 30,
+          "rankingTag": "D",
+          "doublesRanking": 30,
+          "tour": "WTA",
+          "wtaPlayerId": "322708"
+        },
+        {
+          "id": "olivia-nicholls",
+          "name": "Olivia Nicholls",
+          "country": "GBR",
+          "side": "B",
+          "ranking": 30,
+          "rankingTag": "D",
+          "doublesRanking": 30,
+          "tour": "WTA",
+          "wtaPlayerId": "322256"
+        }
+      ]
+    },
+    {
+      "id": "WTA-DRAW-LD-R32-19-20",
+      "tour": "WTA",
+      "draw": "MD",
+      "discipline": "doubles",
+      "round": "R32",
+      "roundCode": "R32",
+      "roundLabel": "第一轮",
+      "status": "U",
+      "source": "wtaDraw",
+      "players": [
+        {
+          "id": "xinyu-jiang",
+          "name": "Xinyu Jiang",
+          "country": "CHN",
+          "side": "A",
+          "ranking": 35,
+          "rankingTag": "D",
+          "doublesRanking": 35,
+          "tour": "WTA",
+          "wtaPlayerId": "322931"
+        },
+        {
+          "id": "yifan-xu",
+          "name": "Yifan Xu",
+          "country": "CHN",
+          "side": "A",
+          "ranking": 41,
+          "rankingTag": "D",
+          "doublesRanking": 41,
+          "tour": "WTA",
+          "wtaPlayerId": "312280"
+        },
+        {
+          "id": "katie-boulter",
+          "name": "Katie Boulter",
+          "country": "GBR",
+          "side": "B",
+          "ranking": 68,
+          "singlesRanking": 68,
+          "doublesRanking": 321,
+          "tour": "WTA",
+          "wtaPlayerId": "319125"
+        },
+        {
+          "id": "venus-williams",
+          "name": "Venus Williams",
+          "country": "USA",
+          "side": "B",
+          "ranking": 479,
+          "singlesRanking": 479,
+          "doublesRanking": 148,
+          "tour": "WTA",
+          "wtaPlayerId": "230220",
+          "singlesEntryType": "WC"
+        }
+      ]
+    },
+    {
+      "id": "WTA-DRAW-LD-R32-23-24",
+      "tour": "WTA",
+      "draw": "MD",
+      "discipline": "doubles",
+      "round": "R32",
+      "roundCode": "R32",
+      "roundLabel": "第一轮",
+      "status": "U",
+      "source": "wtaDraw",
+      "players": [
+        {
+          "id": "marie-bouzkova",
+          "name": "Marie Bouzkova",
+          "country": "CZE",
+          "side": "A",
+          "ranking": 32,
+          "singlesRanking": 24,
+          "doublesRanking": 77,
+          "tour": "WTA",
+          "wtaPlayerId": "320983"
+        },
+        {
+          "id": "linda-noskova",
+          "name": "Linda Noskova",
+          "country": "CZE",
+          "side": "A",
+          "ranking": 13,
+          "singlesRanking": 13,
+          "doublesRanking": 88,
+          "tour": "WTA",
+          "wtaPlayerId": "329668"
+        },
+        {
+          "id": "jelena-ostapenko",
+          "name": "Jelena Ostapenko",
+          "country": "LAT",
+          "side": "B",
+          "ranking": 24,
+          "singlesRanking": 24,
+          "doublesRanking": 12,
+          "tour": "WTA",
+          "wtaPlayerId": "319939"
+        },
+        {
+          "id": "routliffe-erin",
+          "name": "Erin Routliffe",
+          "country": "NZL",
+          "side": "B",
+          "ranking": 14,
+          "rankingTag": "D",
+          "doublesRanking": 14,
+          "tour": "WTA",
+          "wtaPlayerId": "317299"
+        }
+      ]
+    },
+    {
+      "id": "WTA-DRAW-LD-R32-25-26",
+      "tour": "WTA",
+      "draw": "MD",
+      "discipline": "doubles",
+      "round": "R32",
+      "roundCode": "R32",
+      "roundLabel": "第一轮",
+      "status": "U",
+      "source": "wtaDraw",
+      "players": [
+        {
+          "id": "danilina-anna",
+          "name": "Anna Danilina",
+          "country": "KAZ",
+          "side": "A",
+          "ranking": 7,
+          "rankingTag": "D",
+          "doublesRanking": 7,
+          "tour": "WTA",
+          "wtaPlayerId": "319731"
+        },
+        {
+          "id": "muhammad-asia",
+          "name": "Asia Muhammad",
+          "country": "USA",
+          "side": "A",
+          "ranking": 124,
+          "singlesRanking": 124,
+          "doublesRanking": 23,
+          "tour": "WTA",
+          "wtaPlayerId": "313919"
+        },
+        {
+          "id": "ulrikke-eikeri",
+          "name": "Ulrikke Eikeri",
+          "country": "NOR",
+          "side": "B",
+          "ranking": 36,
+          "rankingTag": "D",
+          "doublesRanking": 36,
+          "tour": "WTA",
+          "wtaPlayerId": "315314"
+        },
+        {
+          "id": "quinn-gleason",
+          "name": "Quinn Gleason",
+          "country": "USA",
+          "side": "B",
+          "ranking": 48,
+          "rankingTag": "D",
+          "doublesRanking": 48,
+          "tour": "WTA",
+          "wtaPlayerId": "319413"
+        }
+      ]
+    }
+  ]
+}

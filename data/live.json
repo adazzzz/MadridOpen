@@ -1,0 +1,1394 @@
+{
+  "metadata": {
+    "schemaVersion": 1,
+    "track": "live",
+    "tournament": "Mutua Madrid Open",
+    "season": 2026,
+    "updatedAt": "2026-04-24T00:14:31.071982+00:00",
+    "sources": {
+      "matches": {
+        "wta": "https://api.wtatennis.com/tennis/tournaments/1038/2026/matches",
+        "wtaResultsInfo": "https://wta-webapi-prod-apimanagement.azure-api.net/api/v1/vw_Match_Infos/2026/1038",
+        "atp": "https://mutuamadridopen.com/results/php/"
+      }
+    }
+  },
+  "matches": [
+    {
+      "id": "RS045",
+      "status": "F",
+      "score": "7-5,6-1",
+      "result": "[24]D. Salkova d R. Roura Llaverias 7-5,6-1",
+      "startTime": "2026-04-20T07:48:16.02+00:00",
+      "court": "Court 2"
+    },
+    {
+      "id": "RS051",
+      "status": "F",
+      "score": "6-3,6-4",
+      "result": "A. Charaeva d [18]A. Sasnovich 6-3,6-4",
+      "startTime": "2026-04-20T07:48:54.807+00:00",
+      "court": "Court 4"
+    },
+    {
+      "id": "RS050",
+      "status": "F",
+      "score": "6-4,2-6,6-3",
+      "result": "[10]N. Bartunkova d K. Kawa 6-4,2-6,6-3",
+      "startTime": "2026-04-20T07:51:20.143+00:00",
+      "court": "Court 6"
+    },
+    {
+      "id": "RS044",
+      "status": "F",
+      "score": "7-5,6-3",
+      "result": "[7]S. Waltert d D. Papamichail 7-5,6-3",
+      "startTime": "2026-04-20T07:56:11.84+00:00",
+      "court": "Court 8"
+    },
+    {
+      "id": "RS036",
+      "status": "F",
+      "score": "6-3,3-6,6-4",
+      "result": "L. Jeanjean d [3]D. Vekic 6-3,3-6,6-4",
+      "startTime": "2026-04-20T09:52:27.967+00:00",
+      "court": "Court 2"
+    },
+    {
+      "id": "RS042",
+      "status": "F",
+      "score": "6-7(3),7-5,6-4",
+      "result": "[6]A. Blinkova d N. Brancaccio 6-7(3),7-5,6-4",
+      "startTime": "2026-04-20T09:53:08.607+00:00",
+      "court": "Court 4"
+    },
+    {
+      "id": "RS043",
+      "status": "F",
+      "score": "6-4,6-3",
+      "result": "E. Kalieva d [21]S. Lamens 6-4,6-3",
+      "startTime": "2026-04-20T09:56:31.987+00:00",
+      "court": "Court 8"
+    },
+    {
+      "id": "RS037",
+      "status": "F",
+      "score": "6-3,7-5",
+      "result": "R. Masarova d [23]R. Sramkova 6-3,7-5",
+      "startTime": "2026-04-20T10:09:44.62+00:00",
+      "court": "Court 6"
+    },
+    {
+      "id": "RS039",
+      "status": "F",
+      "score": "7-6(3),7-5",
+      "result": "T. Grant d [15]V. Erjavec 7-6(3),7-5",
+      "startTime": "2026-04-20T11:39:28.267+00:00",
+      "court": "Court 8"
+    },
+    {
+      "id": "RS040",
+      "status": "F",
+      "score": "6-0,4-6,6-1",
+      "result": "[5]K. Volynets d O. Dodin 6-0,4-6,6-1",
+      "startTime": "2026-04-20T12:14:44.937+00:00",
+      "court": "Court 6"
+    },
+    {
+      "id": "RS041",
+      "status": "F",
+      "score": "6-4,3-1 Ret'd",
+      "result": "[14]T. Korpatsch d S. Sorribes Tormo 6-4,3-1 Ret'd",
+      "startTime": "2026-04-20T12:24:58.023+00:00",
+      "court": "Court 2"
+    },
+    {
+      "id": "RS038",
+      "status": "F",
+      "score": "6-4,6-1",
+      "result": "[4]P. Udvardy d J. Pareja 6-4,6-1",
+      "startTime": "2026-04-20T12:40:28.863+00:00",
+      "court": "Court 4"
+    },
+    {
+      "id": "RS047",
+      "status": "F",
+      "score": "6-3,6-3",
+      "result": "[19]D. Vidmanova d L. Radivojevic 6-3,6-3",
+      "startTime": "2026-04-20T13:46:44.947+00:00",
+      "court": "Court 8"
+    },
+    {
+      "id": "RS033",
+      "status": "F",
+      "score": "6-3,6-2",
+      "result": "[20]A. Pavlyuchenkova d V. Tomova 6-3,6-2",
+      "startTime": "2026-04-20T14:04:57.42+00:00",
+      "court": "Court 4"
+    },
+    {
+      "id": "RS032",
+      "status": "F",
+      "score": "6-0,6-1",
+      "result": "[1]Y. Starodubtseva d L. Stefanini 6-0,6-1",
+      "startTime": "2026-04-20T14:09:34.293+00:00",
+      "court": "Court 6"
+    },
+    {
+      "id": "RS046",
+      "status": "F",
+      "score": "6-1,6-3",
+      "result": "[8]D. Galfi d L. Romero Gormaz 6-1,6-3",
+      "startTime": "2026-04-20T14:28:49.737+00:00",
+      "court": "Court 2"
+    },
+    {
+      "id": "RS053",
+      "status": "F",
+      "score": "7-5,6-1",
+      "result": "[13]D. Snigur d N. Leme Da Silva 7-5,6-1",
+      "startTime": "2026-04-20T15:17:03.673+00:00",
+      "court": "Court 8"
+    },
+    {
+      "id": "RS054",
+      "status": "F",
+      "score": "6-2,6-4",
+      "result": "S. Stephens d [12]D. Parry 6-2,6-4",
+      "startTime": "2026-04-20T15:24:32.44+00:00",
+      "court": "Court 4"
+    },
+    {
+      "id": "RS052",
+      "status": "F",
+      "score": "6-2,7-5",
+      "result": "[11]H. Vandewinkel d L. Fruhvirtova 6-2,7-5",
+      "startTime": "2026-04-20T15:43:50.79+00:00",
+      "court": "Court 6"
+    },
+    {
+      "id": "RS055",
+      "status": "F",
+      "score": "6-2,6-1",
+      "result": "[16]A. Kalinina d M. Bassols Ribera 6-2,6-1",
+      "startTime": "2026-04-20T15:59:20.123+00:00",
+      "court": "Court 2"
+    },
+    {
+      "id": "RS048",
+      "status": "F",
+      "score": "6-1,6-2",
+      "result": "[9]A. Parks d E. Avanesyan 6-1,6-2",
+      "startTime": "2026-04-20T16:27:46.51+00:00",
+      "court": "Court 8"
+    },
+    {
+      "id": "RS034",
+      "status": "F",
+      "score": "6-4,7-5",
+      "result": "[2]A. Potapova d T. Kostovic 6-4,7-5",
+      "startTime": "2026-04-20T17:01:44.12+00:00",
+      "court": "Court 4"
+    },
+    {
+      "id": "RS049",
+      "status": "F",
+      "score": "6-4,7-5",
+      "result": "K. Efremova d [17]L. Sun 6-4,7-5",
+      "startTime": "2026-04-20T17:23:19.92+00:00",
+      "court": "Court 2"
+    },
+    {
+      "id": "RS035",
+      "status": "F",
+      "score": "6-3,6-2",
+      "result": "[22]S. Kraus d M. Trevisan 6-3,6-2",
+      "startTime": "2026-04-20T17:23:37.82+00:00",
+      "court": "Court 6"
+    },
+    {
+      "id": "RS025",
+      "status": "F",
+      "score": "6-7(6),6-2,7-6(6)",
+      "result": "A. Charaeva d [10]N. Bartunkova 6-7(6),6-2,7-6(6)",
+      "startTime": "2026-04-21T08:42:51.957+00:00",
+      "court": "Court 3"
+    },
+    {
+      "id": "RS022",
+      "status": "F",
+      "score": "6-0,6-2",
+      "result": "[7]S. Waltert d [24]D. Salkova 6-0,6-2",
+      "startTime": "2026-04-21T08:44:42.08+00:00",
+      "court": "Court 5"
+    },
+    {
+      "id": "LS093",
+      "status": "F",
+      "score": "6-4,6-2",
+      "result": "L. Samson d T. Maria 6-4,6-2",
+      "startTime": "2026-04-21T08:44:48.84+00:00",
+      "court": "Court 2"
+    },
+    {
+      "id": "RS018",
+      "status": "F",
+      "score": "6-3,3-6,6-3",
+      "result": "L. Jeanjean d R. Masarova 6-3,3-6,6-3",
+      "startTime": "2026-04-21T08:45:43.58+00:00",
+      "court": "Court 7"
+    },
+    {
+      "id": "LS073",
+      "status": "F",
+      "score": "6-0,7-5",
+      "result": "P. Marcinko d V. Jimenez Kasintseva 6-0,7-5",
+      "startTime": "2026-04-21T08:49:39.99+00:00",
+      "court": "Court 1"
+    },
+    {
+      "id": "RS021",
+      "status": "F",
+      "score": "6-2,3-6,7-5",
+      "result": "E. Kalieva d [6]A. Blinkova 6-2,3-6,7-5",
+      "startTime": "2026-04-21T10:19:44.147+00:00",
+      "court": "Court 5"
+    },
+    {
+      "id": "LS078",
+      "status": "F",
+      "score": "6-4,6-0",
+      "result": "L. Siegemund d I. Begu 6-4,6-0",
+      "startTime": "2026-04-21T10:28:34.553+00:00",
+      "court": "Court 2"
+    },
+    {
+      "id": "LS074",
+      "status": "F",
+      "score": "6-1,6-1",
+      "result": "J. Bouzas Maneiro d B. Haddad Maia 6-1,6-1",
+      "startTime": "2026-04-21T10:39:45.637+00:00",
+      "court": "Court 1"
+    },
+    {
+      "id": "RS019",
+      "status": "F",
+      "score": "0-6,6-3,6-2",
+      "result": "T. Grant d [4]P. Udvardy 0-6,6-3,6-2",
+      "startTime": "2026-04-21T11:27:05.173+00:00",
+      "court": "Court 7"
+    },
+    {
+      "id": "RS020",
+      "status": "F",
+      "score": "7-5,5-7,6-2",
+      "result": "[5]K. Volynets d [14]T. Korpatsch 7-5,5-7,6-2",
+      "startTime": "2026-04-21T12:05:08.053+00:00",
+      "court": "Court 3"
+    },
+    {
+      "id": "LS085",
+      "status": "F",
+      "score": "7-6(3),4-6,6-0",
+      "result": "J. Grabher d P. Badosa 7-6(3),4-6,6-0",
+      "startTime": "2026-04-21T12:13:42.39+00:00",
+      "court": "Court 1"
+    },
+    {
+      "id": "LS094",
+      "status": "F",
+      "score": "6-2,6-3",
+      "result": "A. Bondar d V. Golubic 6-2,6-3",
+      "startTime": "2026-04-21T12:17:38.867+00:00",
+      "court": "Court 2"
+    },
+    {
+      "id": "RS016",
+      "status": "F",
+      "score": "6-4,0-6,6-4",
+      "result": "[20]A. Pavlyuchenkova d [1]Y. Starodubtseva 6-4,0-6,6-4",
+      "startTime": "2026-04-21T12:50:42.82+00:00",
+      "court": "Court 5"
+    },
+    {
+      "id": "RS026",
+      "status": "F",
+      "score": "7-6(4),6-4",
+      "result": "[13]D. Snigur d [11]H. Vandewinkel 7-6(4),6-4",
+      "startTime": "2026-04-21T13:46:45.52+00:00",
+      "court": "Court 7"
+    },
+    {
+      "id": "LS086",
+      "status": "F",
+      "score": "6-4,6-3",
+      "result": "M. Linette d R. Montgomery 6-4,6-3",
+      "startTime": "2026-04-21T14:02:18.52+00:00",
+      "court": "Court 2"
+    },
+    {
+      "id": "LS077",
+      "status": "F",
+      "score": "6-2,6-4",
+      "result": "K. Quevedo d V. Williams 6-2,6-4",
+      "startTime": "2026-04-21T15:05:34.253+00:00",
+      "court": "Court 1"
+    },
+    {
+      "id": "RS023",
+      "status": "F",
+      "score": "7-5,6-3",
+      "result": "[8]D. Galfi d [19]D. Vidmanova 7-5,6-3",
+      "startTime": "2026-04-21T15:20:33.737+00:00",
+      "court": "Court 5"
+    },
+    {
+      "id": "RS027",
+      "status": "F",
+      "score": "2-6,7-6(5),6-2",
+      "result": "[16]A. Kalinina d S. Stephens 2-6,7-6(5),6-2",
+      "startTime": "2026-04-21T15:28:10.527+00:00",
+      "court": "Court 3"
+    },
+    {
+      "id": "LS070",
+      "status": "F",
+      "score": "6-0,6-3",
+      "result": "C. Osorio d A. Zakharova 6-0,6-3",
+      "startTime": "2026-04-21T15:53:39.473+00:00",
+      "court": "Court 2"
+    },
+    {
+      "id": "RS017",
+      "status": "F",
+      "score": "6-2,6-7(5),6-3",
+      "result": "[22]S. Kraus d [2]A. Potapova 6-2,6-7(5),6-3",
+      "startTime": "2026-04-21T16:01:01.867+00:00",
+      "court": "Court 7"
+    },
+    {
+      "id": "RS024",
+      "status": "F",
+      "score": "6-1,7-6(4)",
+      "result": "[9]A. Parks d K. Efremova 6-1,7-6(4)",
+      "startTime": "2026-04-21T17:15:56.41+00:00",
+      "court": "Court 8"
+    },
+    {
+      "id": "LS065",
+      "status": "F",
+      "score": "6-1,6-3",
+      "result": "P. Stearns d L. Boisson 6-1,6-3",
+      "startTime": "2026-04-21T17:19:45.67+00:00",
+      "court": "Court 1"
+    },
+    {
+      "id": "LS126",
+      "status": "F",
+      "score": "6-3,4-6,6-0",
+      "result": "E. Ruse d A. Ruzic 6-3,4-6,6-0",
+      "startTime": "2026-04-22T08:40:45.287+00:00",
+      "court": "Court 5"
+    },
+    {
+      "id": "LS121",
+      "status": "F",
+      "score": "6-4,6-3",
+      "result": "S. Zhang d E. Lys 6-4,6-3",
+      "startTime": "2026-04-22T08:41:15.197+00:00",
+      "court": "Court 3"
+    },
+    {
+      "id": "LS114",
+      "status": "F",
+      "score": "7-5,6-2",
+      "result": "Z. Sonmez d C. Martinez Cirez 7-5,6-2",
+      "startTime": "2026-04-22T08:43:05.963+00:00",
+      "court": "Court 1"
+    },
+    {
+      "id": "LS089",
+      "status": "F",
+      "score": "6-4,1-6,6-1",
+      "result": "P. Udvardy d K. Birrell 6-4,1-6,6-1",
+      "startTime": "2026-04-22T08:44:16.827+00:00",
+      "court": "Court 7"
+    },
+    {
+      "id": "LS081",
+      "status": "F",
+      "score": "6-3,3-6,7-6(13)",
+      "result": "D. Snigur d D. Kasatkina 6-3,3-6,7-6(13)",
+      "startTime": "2026-04-22T10:41:58.4+00:00",
+      "court": "Court 3"
+    },
+    {
+      "id": "LS090",
+      "status": "F",
+      "score": "7-6(7),6-4",
+      "result": "D. Galfi d A. Tomljanovic 7-6(7),6-4",
+      "startTime": "2026-04-22T11:11:14.09+00:00",
+      "court": "Court 7"
+    },
+    {
+      "id": "LS066",
+      "status": "F",
+      "score": "6-3,1-6,6-3",
+      "result": "Y. Starodubtseva d M. Uchijima 6-3,1-6,6-3",
+      "startTime": "2026-04-22T11:17:37.957+00:00",
+      "court": "Court 5"
+    },
+    {
+      "id": "LS082",
+      "status": "F",
+      "score": "6-3,6-2",
+      "result": "A. Parks d E. Cocciaretto 6-3,6-2",
+      "startTime": "2026-04-22T11:22:24.1+00:00",
+      "court": "Court 8"
+    },
+    {
+      "id": "LS117",
+      "status": "F",
+      "score": "6-3,6-3",
+      "result": "A. Eala d A. Pavlyuchenkova 6-3,6-3",
+      "startTime": "2026-04-22T11:30:27.65+00:00",
+      "court": "Court 2"
+    },
+    {
+      "id": "LS069",
+      "status": "F",
+      "score": "6-2,5-7,6-2",
+      "result": "A. Kalinina d K. Rakhimova 6-2,5-7,6-2",
+      "startTime": "2026-04-22T12:53:30.99+00:00",
+      "court": "Court 8"
+    },
+    {
+      "id": "LS105",
+      "status": "F",
+      "score": "6-3,6-2",
+      "result": "E. Arango d T. Gibson 6-3,6-2",
+      "startTime": "2026-04-22T13:15:43.983+00:00",
+      "court": "Court 2"
+    },
+    {
+      "id": "LS098",
+      "status": "F",
+      "score": "6-4,4-6,6-3",
+      "result": "Y. Putintseva d T. Valentova 6-4,4-6,6-3",
+      "startTime": "2026-04-22T13:22:10.293+00:00",
+      "court": "Court 3"
+    },
+    {
+      "id": "LS106",
+      "status": "F",
+      "score": "6-4,6-2",
+      "result": "J. Tjen d A. Charaeva 6-4,6-2",
+      "startTime": "2026-04-22T13:24:08.17+00:00",
+      "court": "Court 7"
+    },
+    {
+      "id": "LS113",
+      "status": "F",
+      "score": "7-6(10),7-6(8)",
+      "result": "S. Sierra d D. Yastremska 7-6(10),7-6(8)",
+      "startTime": "2026-04-22T13:39:55.77+00:00",
+      "court": "Court 5"
+    },
+    {
+      "id": "LS122",
+      "status": "F",
+      "score": "7-5,6-0",
+      "result": "S. Waltert d O. Oliynykova 7-5,6-0",
+      "startTime": "2026-04-22T15:02:18.023+00:00",
+      "court": "Court 7"
+    },
+    {
+      "id": "LS118",
+      "status": "F",
+      "score": "2-6,6-1,6-4",
+      "result": "K. Pliskova d S. Kraus 2-6,6-1,6-4",
+      "startTime": "2026-04-22T15:10:44.32+00:00",
+      "court": "Court 1"
+    },
+    {
+      "id": "LS110",
+      "status": "F",
+      "score": "6-4,6-1",
+      "result": "L. Jeanjean d O. Selekhmeteva 6-4,6-1",
+      "startTime": "2026-04-22T15:56:27.323+00:00",
+      "court": "Court 8"
+    },
+    {
+      "id": "LS125",
+      "status": "F",
+      "score": "7-6(2),6-4",
+      "result": "S. Kenin d A. Krueger 7-6(2),6-4",
+      "startTime": "2026-04-22T16:26:57.19+00:00",
+      "court": "Court 5"
+    },
+    {
+      "id": "LS097",
+      "status": "F",
+      "score": "6-4,6-2",
+      "result": "K. Boulter d T. Townsend 6-4,6-2",
+      "startTime": "2026-04-22T16:35:33.753+00:00",
+      "court": "Court 2"
+    },
+    {
+      "id": "LS101",
+      "status": "F",
+      "score": "6-3,6-4",
+      "result": "K. Siniakova d E. Kalieva 6-3,6-4",
+      "startTime": "2026-04-22T16:52:30.94+00:00",
+      "court": "Court 7"
+    },
+    {
+      "id": "LS102",
+      "status": "F",
+      "score": "6-1,6-2",
+      "result": "C. McNally d K. Volynets 6-1,6-2",
+      "startTime": "2026-04-22T16:54:18.483+00:00",
+      "court": "Court 6"
+    },
+    {
+      "id": "LS109",
+      "status": "F",
+      "score": "6-1,6-2",
+      "result": "T. Grant d E. Jacquemot 6-1,6-2",
+      "startTime": "2026-04-22T17:45:20.03+00:00",
+      "court": "Court 8"
+    },
+    {
+      "id": "LS033",
+      "status": "F",
+      "score": "3-6,7-6(5),6-4",
+      "result": "[29]J. Cristian d Y. Starodubtseva 3-6,7-6(5),6-4",
+      "startTime": "2026-04-23T08:42:56.243+00:00",
+      "court": "Court 5"
+    },
+    {
+      "id": "LS036",
+      "status": "F",
+      "score": "6-4,6-2",
+      "result": "[11]B. Bencic d P. Marcinko 6-4,6-2",
+      "startTime": "2026-04-23T08:44:36.923+00:00",
+      "court": "Court 3"
+    },
+    {
+      "id": "LS047",
+      "status": "F",
+      "score": "6-3,6-4",
+      "result": "A. Bondar d [7]E. Svitolina 6-3,6-4",
+      "startTime": "2026-04-23T08:44:41.327+00:00",
+      "court": "Court 2"
+    },
+    {
+      "id": "LD030",
+      "status": "F",
+      "score": "6-2,6-2",
+      "result": "A. Eala / Z. Sonmez d H. Chan / F. Stollar 6-2,6-2",
+      "startTime": "2026-04-23T08:45:31.857+00:00",
+      "court": "Court 7"
+    },
+    {
+      "id": "LS046",
+      "status": "F",
+      "score": "2-6,6-3,6-0",
+      "result": "L. Samson d [28]X. Wang 2-6,6-3,6-0",
+      "startTime": "2026-04-23T10:13:52.37+00:00",
+      "court": "Court 7"
+    },
+    {
+      "id": "LS037",
+      "status": "F",
+      "score": "3-6,7-5,6-1",
+      "result": "[18]D. Shnaider d J. Bouzas Maneiro 3-6,7-5,6-1",
+      "startTime": "2026-04-23T10:33:52.38+00:00",
+      "court": "Court 3"
+    },
+    {
+      "id": "LS040",
+      "status": "F",
+      "score": "6-1,6-2",
+      "result": "[4]I. Swiatek d D. Snigur 6-1,6-2",
+      "startTime": "2026-04-23T11:45:37.473+00:00",
+      "court": "Court 1"
+    },
+    {
+      "id": "LS045",
+      "status": "F",
+      "score": "6-3,6-3",
+      "result": "D. Galfi d [22]A. Kalinskaya 6-3,6-3",
+      "startTime": "2026-04-23T12:18:20.253+00:00",
+      "court": "Court 5"
+    },
+    {
+      "id": "LS034",
+      "status": "F",
+      "score": "6-4,6-3",
+      "result": "A. Kalinina d [23]M. Bouzkova 6-4,6-3",
+      "startTime": "2026-04-23T12:21:32.047+00:00",
+      "court": "Court 7"
+    },
+    {
+      "id": "LS039",
+      "status": "F",
+      "score": "3-6,6-2,6-4",
+      "result": "[8]J. Paolini d L. Siegemund 3-6,6-2,6-4",
+      "startTime": "2026-04-23T12:48:27.38+00:00",
+      "court": "Court 4"
+    },
+    {
+      "id": "LS032",
+      "status": "F",
+      "score": "7-5,6-3",
+      "result": "[1]A. Sabalenka d P. Stearns 7-5,6-3",
+      "startTime": "2026-04-23T13:03:44.08+00:00",
+      "court": "Court 1"
+    },
+    {
+      "id": "LS041",
+      "status": "F",
+      "score": "6-2,6-7(5),6-3",
+      "result": "[31]A. Li d A. Parks 6-2,6-7(5),6-3",
+      "startTime": "2026-04-23T13:40:02.677+00:00",
+      "court": "Court 5"
+    },
+    {
+      "id": "LD018",
+      "status": "F",
+      "score": "6-3,7-6(1)",
+      "result": "A. Sutjiadi / J. Tjen d M. Kostyuk / C. Tauson 6-3,7-6(1)",
+      "startTime": "2026-04-23T13:42:35.29+00:00",
+      "court": "Court 8"
+    },
+    {
+      "id": "LD029",
+      "status": "F",
+      "score": "6-3,6-4",
+      "result": "C. Gauff / R. Montgomery d I. Khromacheva / G. Olmos 6-3,6-4",
+      "startTime": "2026-04-23T14:22:14.07+00:00",
+      "court": "Court 7"
+    },
+    {
+      "id": "LS035",
+      "status": "F",
+      "score": "6-2,7-5",
+      "result": "[14]N. Osaka d C. Osorio 6-2,7-5",
+      "startTime": "2026-04-23T14:49:54.283+00:00",
+      "court": "Court 2"
+    },
+    {
+      "id": "LS043",
+      "status": "F",
+      "score": "6-4,6-1",
+      "result": "[15]I. Jovic d M. Linette 6-4,6-1",
+      "startTime": "2026-04-23T15:24:17.157+00:00",
+      "court": "Court 4"
+    },
+    {
+      "id": "LD020",
+      "status": "F",
+      "score": "6-2,3-6,1-0(7)",
+      "result": "[3]E. Mertens / S. Zhang d C. McNally / J. Pegula 6-2,3-6,1-0(7)",
+      "startTime": "2026-04-23T15:27:13.95+00:00",
+      "court": "Court 8"
+    },
+    {
+      "id": "LD031",
+      "status": "F",
+      "score": "3-6,6-1,1-0(8)",
+      "result": "[2]K. Siniakova / T. Townsend d L. Kichenok / D. Krawczyk 3-6,6-1,1-0(8)",
+      "startTime": "2026-04-23T15:51:48.477+00:00",
+      "court": "Court 7"
+    },
+    {
+      "id": "LS042",
+      "status": "F",
+      "score": "6-2,6-3",
+      "result": "[24]L. Fernandez d J. Grabher 6-2,6-3",
+      "startTime": "2026-04-23T16:18:27.743+00:00",
+      "court": "Court 5"
+    },
+    {
+      "id": "LS044",
+      "status": "F",
+      "score": "7-5,6-2",
+      "result": "[9]M. Andreeva d P. Udvardy 7-5,6-2",
+      "startTime": "2026-04-23T16:50:39.247+00:00",
+      "court": "Court 1"
+    },
+    {
+      "id": "LS038",
+      "status": "F",
+      "score": "6-1,6-4",
+      "result": "[30]H. Baptiste d K. Quevedo 6-1,6-4",
+      "startTime": "2026-04-23T16:55:29.863+00:00",
+      "court": "Court 4"
+    },
+    {
+      "id": "LS062",
+      "status": "U",
+      "startTime": "2026-04-24T11:00+02:00",
+      "court": "Manolo Santana Stadium"
+    },
+    {
+      "id": "LS060",
+      "status": "U",
+      "startTime": "2026-04-24T11:00+02:00",
+      "court": "Stadium 3"
+    },
+    {
+      "id": "LS059",
+      "status": "U",
+      "startTime": "2026-04-24T11:00+02:00",
+      "court": "Court 5"
+    },
+    {
+      "id": "LS056",
+      "status": "U",
+      "startTime": "2026-04-24T11:00+02:00",
+      "court": "Court 8"
+    },
+    {
+      "id": "LS058",
+      "status": "U",
+      "startTime": "2026-04-24T12:30+02:00",
+      "court": "Court 5"
+    },
+    {
+      "id": "LD021",
+      "status": "U",
+      "startTime": "2026-04-24T14:00+02:00",
+      "court": "Court 5"
+    },
+    {
+      "id": "LS055",
+      "status": "U",
+      "startTime": "2026-04-24T15:00+02:00",
+      "court": "Arantxa Sanchez Stadium"
+    },
+    {
+      "id": "LS051",
+      "status": "U",
+      "startTime": "2026-04-24T19:00+02:00",
+      "court": "Arantxa Sanchez Stadium"
+    },
+    {
+      "id": "LS048",
+      "status": "U",
+      "startTime": "2026-04-24T21:00+02:00",
+      "court": "Manolo Santana Stadium"
+    },
+    {
+      "id": "LS061",
+      "status": "U",
+      "startTime": "2026-04-24T23:59+02:00",
+      "court": "Court 6"
+    },
+    {
+      "id": "LS050",
+      "status": "U",
+      "startTime": "2026-04-24T23:59+02:00",
+      "court": "Court 7"
+    },
+    {
+      "id": "LD026",
+      "status": "U",
+      "startTime": "2026-04-24T23:59+02:00",
+      "court": "Court 5"
+    },
+    {
+      "id": "LS053",
+      "status": "U",
+      "startTime": "2026-04-24T23:59+02:00",
+      "court": "Court 8"
+    },
+    {
+      "id": "LS063",
+      "status": "U",
+      "startTime": "2026-04-24T23:59+02:00",
+      "court": "Manolo Santana Stadium"
+    },
+    {
+      "id": "LD016",
+      "status": "U",
+      "startTime": "2026-04-24T23:59+02:00",
+      "court": "Court 5"
+    },
+    {
+      "id": "LS052",
+      "status": "U",
+      "startTime": "2026-04-24T23:59+02:00",
+      "court": "Court 7"
+    },
+    {
+      "id": "LD023",
+      "status": "U",
+      "startTime": "2026-04-24T23:59+02:00",
+      "court": "Court 8"
+    },
+    {
+      "id": "LS049",
+      "status": "U",
+      "startTime": "2026-04-24T23:59+02:00",
+      "court": "Court 6"
+    },
+    {
+      "id": "LS054",
+      "status": "U",
+      "startTime": "2026-04-24T23:59+02:00",
+      "court": "Court 8"
+    },
+    {
+      "id": "LS057",
+      "status": "U",
+      "startTime": "2026-04-24T23:59+02:00",
+      "court": "Stadium 3"
+    },
+    {
+      "id": "ATP-MS125",
+      "status": "F",
+      "score": "64 75",
+      "result": "64 75",
+      "startTime": "2026-04-23T00:00:00",
+      "court": "Court 4"
+    },
+    {
+      "id": "ATP-MS109",
+      "status": "F",
+      "score": "46 75 75",
+      "result": "46 75 75",
+      "startTime": "2026-04-23T00:00:00",
+      "court": "Court 6"
+    },
+    {
+      "id": "ATP-MS065",
+      "status": "F",
+      "score": "67(4) 76(4) 64",
+      "result": "67(4) 76(4) 64",
+      "startTime": "2026-04-22T00:00:00",
+      "court": "Court 4"
+    },
+    {
+      "id": "ATP-MS114",
+      "status": "F",
+      "score": "53 Ret'd",
+      "result": "53 Ret'd",
+      "startTime": "2026-04-23T00:00:00",
+      "court": "Stadium 3"
+    },
+    {
+      "id": "ATP-MS085",
+      "status": "F",
+      "score": "64 62",
+      "result": "64 62",
+      "startTime": "2026-04-22T00:00:00",
+      "court": "Court 4"
+    },
+    {
+      "id": "ATP-MS101",
+      "status": "F",
+      "score": "46 76(5) 62",
+      "result": "46 76(5) 62",
+      "startTime": "2026-04-23T00:00:00",
+      "court": "Manolo Santana Stadium"
+    },
+    {
+      "id": "ATP-MS106",
+      "status": "F",
+      "score": "64 64",
+      "result": "64 64",
+      "startTime": "2026-04-23T00:00:00",
+      "court": "Court 6"
+    },
+    {
+      "id": "ATP-MS077",
+      "status": "F",
+      "score": "46 63 64",
+      "result": "46 63 64",
+      "startTime": "2026-04-22T00:00:00",
+      "court": "Arantxa Sanchez Stadium"
+    },
+    {
+      "id": "ATP-MS122",
+      "status": "F",
+      "score": "76(7) 64",
+      "result": "76(7) 64",
+      "startTime": "2026-04-23T00:00:00",
+      "court": "Court 8"
+    },
+    {
+      "id": "ATP-MS093",
+      "status": "F",
+      "score": "62 64",
+      "result": "62 64",
+      "startTime": "2026-04-22T00:00:00",
+      "court": "Court 6"
+    },
+    {
+      "id": "ATP-MS110",
+      "status": "F",
+      "score": "75 61",
+      "result": "75 61",
+      "startTime": "2026-04-23T00:00:00",
+      "court": "Court 6"
+    },
+    {
+      "id": "ATP-MS105",
+      "status": "F",
+      "score": "64 67(3) 75",
+      "result": "64 67(3) 75",
+      "startTime": "2026-04-23T00:00:00",
+      "court": "Court 8"
+    },
+    {
+      "id": "ATP-MS094",
+      "status": "F",
+      "score": "63 63",
+      "result": "63 63",
+      "startTime": "2026-04-22T00:00:00",
+      "court": "Arantxa Sanchez Stadium"
+    },
+    {
+      "id": "ATP-MS078",
+      "status": "F",
+      "score": "26 75 64",
+      "result": "26 75 64",
+      "startTime": "2026-04-22T00:00:00",
+      "court": "Manolo Santana Stadium"
+    },
+    {
+      "id": "ATP-MS073",
+      "status": "F",
+      "score": "62 60",
+      "result": "62 60",
+      "startTime": "2026-04-22T00:00:00",
+      "court": "Court 4"
+    },
+    {
+      "id": "ATP-MS074",
+      "status": "F",
+      "score": "63 76(1)",
+      "result": "63 76(1)",
+      "startTime": "2026-04-22T00:00:00",
+      "court": "Court 6"
+    },
+    {
+      "id": "ATP-MS069",
+      "status": "F",
+      "score": "36 76(3) 63",
+      "result": "36 76(3) 63",
+      "startTime": "2026-04-22T00:00:00",
+      "court": "Stadium 3"
+    },
+    {
+      "id": "ATP-MS113",
+      "status": "F",
+      "score": "76(5) 76(6)",
+      "result": "76(5) 76(6)",
+      "startTime": "2026-04-23T00:00:00",
+      "court": "Court 4"
+    },
+    {
+      "id": "ATP-MS098",
+      "status": "F",
+      "score": "64 16 76(6)",
+      "result": "64 16 76(6)",
+      "startTime": "2026-04-23T00:00:00",
+      "court": "Stadium 3"
+    },
+    {
+      "id": "ATP-MS066",
+      "status": "F",
+      "score": "64 76(4)",
+      "result": "64 76(4)",
+      "startTime": "2026-04-22T00:00:00",
+      "court": "Court 6"
+    },
+    {
+      "id": "ATP-MS102",
+      "status": "F",
+      "score": "64 61",
+      "result": "64 61",
+      "startTime": "2026-04-23T00:00:00",
+      "court": "Arantxa Sanchez Stadium"
+    },
+    {
+      "id": "ATP-MS086",
+      "status": "F",
+      "score": "63 75",
+      "result": "63 75",
+      "startTime": "2026-04-22T00:00:00",
+      "court": "Court 6"
+    },
+    {
+      "id": "ATP-MS126",
+      "status": "F",
+      "score": "63 64",
+      "result": "63 64",
+      "startTime": "2026-04-23T00:00:00",
+      "court": "Court 6"
+    },
+    {
+      "id": "ATP-MS082",
+      "status": "F",
+      "score": "76(5) 76(0)",
+      "result": "76(5) 76(0)",
+      "startTime": "2026-04-22T00:00:00",
+      "court": "Court 4"
+    },
+    {
+      "id": "ATP-MS081",
+      "status": "F",
+      "score": "63 64",
+      "result": "63 64",
+      "startTime": "2026-04-22T00:00:00",
+      "court": "Manolo Santana Stadium"
+    },
+    {
+      "id": "ATP-MS090",
+      "status": "F",
+      "score": "76(3) 60",
+      "result": "76(3) 60",
+      "startTime": "2026-04-22T00:00:00",
+      "court": "Court 4"
+    },
+    {
+      "id": "ATP-MS089",
+      "status": "F",
+      "score": "62 64",
+      "result": "62 64",
+      "startTime": "2026-04-22T00:00:00",
+      "court": "Court 4"
+    },
+    {
+      "id": "ATP-MS070",
+      "status": "F",
+      "score": "62 64",
+      "result": "62 64",
+      "startTime": "2026-04-22T00:00:00",
+      "court": "Manolo Santana Stadium"
+    },
+    {
+      "id": "ATP-MS097",
+      "status": "F",
+      "score": "36 76(6) 76(4)",
+      "result": "36 76(6) 76(4)",
+      "startTime": "2026-04-23T00:00:00",
+      "court": "Stadium 3"
+    },
+    {
+      "id": "ATP-MS118",
+      "status": "F",
+      "score": "63 64",
+      "result": "63 64",
+      "startTime": "2026-04-23T00:00:00",
+      "court": "Manolo Santana Stadium"
+    },
+    {
+      "id": "ATP-MS117",
+      "status": "F",
+      "score": "64 64",
+      "result": "64 64",
+      "startTime": "2026-04-23T00:00:00",
+      "court": "Arantxa Sanchez Stadium"
+    },
+    {
+      "id": "ATP-MS121",
+      "status": "F",
+      "score": "62 63",
+      "result": "62 63",
+      "startTime": "2026-04-23T00:00:00",
+      "court": "Arantxa Sanchez Stadium"
+    },
+    {
+      "id": "ATP-QS016",
+      "status": "F",
+      "score": "76(4) 63",
+      "result": "76(4) 63",
+      "startTime": "2026-04-21T00:00:00",
+      "court": "Court 4"
+    },
+    {
+      "id": "ATP-QS017",
+      "status": "F",
+      "score": "26 64 76(5)",
+      "result": "26 64 76(5)",
+      "startTime": "2026-04-21T00:00:00",
+      "court": "Court 6"
+    },
+    {
+      "id": "ATP-QS019",
+      "status": "F",
+      "score": "63 62",
+      "result": "63 62",
+      "startTime": "2026-04-21T00:00:00",
+      "court": "Court 4"
+    },
+    {
+      "id": "ATP-QS022",
+      "status": "F",
+      "score": "67(2) 76(3) 64",
+      "result": "67(2) 76(3) 64",
+      "startTime": "2026-04-21T00:00:00",
+      "court": "Court 6"
+    },
+    {
+      "id": "ATP-QS023",
+      "status": "F",
+      "score": "61 46 62",
+      "result": "61 46 62",
+      "startTime": "2026-04-21T00:00:00",
+      "court": "Court 8"
+    },
+    {
+      "id": "ATP-QS026",
+      "status": "F",
+      "score": "60 76(5)",
+      "result": "60 76(5)",
+      "startTime": "2026-04-21T00:00:00",
+      "court": "Court 6"
+    },
+    {
+      "id": "ATP-QS025",
+      "status": "F",
+      "score": "62 61",
+      "result": "62 61",
+      "startTime": "2026-04-21T00:00:00",
+      "court": "Court 6"
+    },
+    {
+      "id": "ATP-QS018",
+      "status": "F",
+      "score": "76(5) 67(5) 76(4)",
+      "result": "76(5) 67(5) 76(4)",
+      "startTime": "2026-04-21T00:00:00",
+      "court": "Court 8"
+    },
+    {
+      "id": "ATP-QS024",
+      "status": "F",
+      "score": "61 60",
+      "result": "61 60",
+      "startTime": "2026-04-21T00:00:00",
+      "court": "Court 4"
+    },
+    {
+      "id": "ATP-QS021",
+      "status": "F",
+      "score": "46 63 00 Ret'd",
+      "result": "46 63 00 Ret'd",
+      "startTime": "2026-04-21T00:00:00",
+      "court": "Court 8"
+    },
+    {
+      "id": "ATP-QS027",
+      "status": "F",
+      "score": "64 64",
+      "result": "64 64",
+      "startTime": "2026-04-21T00:00:00",
+      "court": "Court 4"
+    },
+    {
+      "id": "ATP-QS020",
+      "status": "F",
+      "score": "76(4) 63",
+      "result": "76(4) 63",
+      "startTime": "2026-04-21T00:00:00",
+      "court": "Court 4"
+    },
+    {
+      "id": "ATP-QS032",
+      "status": "F",
+      "score": "64 63",
+      "result": "64 63",
+      "startTime": "2026-04-20T00:00:00",
+      "court": "Stadium 3"
+    },
+    {
+      "id": "ATP-QS034",
+      "status": "F",
+      "score": "75 64",
+      "result": "75 64",
+      "startTime": "2026-04-20T00:00:00",
+      "court": "Manolo Santana Stadium"
+    },
+    {
+      "id": "ATP-QS036",
+      "status": "F",
+      "score": "76(9) 61",
+      "result": "76(9) 61",
+      "startTime": "2026-04-20T00:00:00",
+      "court": "Stadium 3"
+    },
+    {
+      "id": "ATP-QS038",
+      "status": "F",
+      "score": "76(9) 67(5) 76(3)",
+      "result": "76(9) 67(5) 76(3)",
+      "startTime": "2026-04-20T00:00:00",
+      "court": "Stadium 3"
+    },
+    {
+      "id": "ATP-QS040",
+      "status": "F",
+      "score": "64 62",
+      "result": "64 62",
+      "startTime": "2026-04-20T00:00:00",
+      "court": "Manolo Santana Stadium"
+    },
+    {
+      "id": "ATP-QS042",
+      "status": "F",
+      "score": "67(9) 63 64",
+      "result": "67(9) 63 64",
+      "startTime": "2026-04-20T00:00:00",
+      "court": "Court 7"
+    },
+    {
+      "id": "ATP-QS044",
+      "status": "F",
+      "score": "62 62",
+      "result": "62 62",
+      "startTime": "2026-04-20T00:00:00",
+      "court": "Manolo Santana Stadium"
+    },
+    {
+      "id": "ATP-QS046",
+      "status": "F",
+      "score": "63 61",
+      "result": "63 61",
+      "startTime": "2026-04-20T00:00:00",
+      "court": "Manolo Santana Stadium"
+    },
+    {
+      "id": "ATP-QS048",
+      "status": "F",
+      "score": "46 64 76(3)",
+      "result": "46 64 76(3)",
+      "startTime": "2026-04-20T00:00:00",
+      "court": "Court 5"
+    },
+    {
+      "id": "ATP-QS050",
+      "status": "F",
+      "score": "63 62",
+      "result": "63 62",
+      "startTime": "2026-04-20T00:00:00",
+      "court": "Court 5"
+    },
+    {
+      "id": "ATP-QS052",
+      "status": "F",
+      "score": "61 75",
+      "result": "61 75",
+      "startTime": "2026-04-20T00:00:00",
+      "court": "Stadium 3"
+    },
+    {
+      "id": "ATP-QS054",
+      "status": "F",
+      "score": "76(2) 62",
+      "result": "76(2) 62",
+      "startTime": "2026-04-20T00:00:00",
+      "court": "Stadium 3"
+    },
+    {
+      "id": "ATP-QS033",
+      "status": "F",
+      "score": "63 75",
+      "result": "63 75",
+      "startTime": "2026-04-20T00:00:00",
+      "court": "Manolo Santana Stadium"
+    },
+    {
+      "id": "ATP-QS055",
+      "status": "F",
+      "score": "60 36 64",
+      "result": "60 36 64",
+      "startTime": "2026-04-20T00:00:00",
+      "court": "Manolo Santana Stadium"
+    },
+    {
+      "id": "ATP-QS051",
+      "status": "F",
+      "score": "63 76(2)",
+      "result": "63 76(2)",
+      "startTime": "2026-04-20T00:00:00",
+      "court": "Stadium 3"
+    },
+    {
+      "id": "ATP-QS049",
+      "status": "F",
+      "score": "64 64",
+      "result": "64 64",
+      "startTime": "2026-04-20T00:00:00",
+      "court": "Court 7"
+    },
+    {
+      "id": "ATP-QS053",
+      "status": "F",
+      "score": "26 63 63",
+      "result": "26 63 63",
+      "startTime": "2026-04-20T00:00:00",
+      "court": "Court 7"
+    },
+    {
+      "id": "ATP-QS041",
+      "status": "F",
+      "score": "63 63",
+      "result": "63 63",
+      "startTime": "2026-04-20T00:00:00",
+      "court": "Court 5"
+    },
+    {
+      "id": "ATP-QS047",
+      "status": "F",
+      "score": "76(5) 67(5) 75",
+      "result": "76(5) 67(5) 75",
+      "startTime": "2026-04-20T00:00:00",
+      "court": "Court 7"
+    },
+    {
+      "id": "ATP-QS045",
+      "status": "F",
+      "score": "76(4) 64",
+      "result": "76(4) 64",
+      "startTime": "2026-04-20T00:00:00",
+      "court": "Court 5"
+    },
+    {
+      "id": "ATP-QS039",
+      "status": "F",
+      "score": "63 75",
+      "result": "63 75",
+      "startTime": "2026-04-20T00:00:00",
+      "court": "Court 8"
+    },
+    {
+      "id": "ATP-QS037",
+      "status": "F",
+      "score": "62 64",
+      "result": "62 64",
+      "startTime": "2026-04-20T00:00:00",
+      "court": "Court 5"
+    },
+    {
+      "id": "ATP-QS043",
+      "status": "F",
+      "score": "64 62",
+      "result": "64 62",
+      "startTime": "2026-04-20T00:00:00",
+      "court": "Court 5"
+    },
+    {
+      "id": "ATP-QS035",
+      "status": "F",
+      "score": "60 76(5)",
+      "result": "60 76(5)",
+      "startTime": "2026-04-20T00:00:00",
+      "court": "Court 7"
+    }
+  ]
+}

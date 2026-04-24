@@ -1,4 +1,12 @@
 const DATA_URL = "./data/latest.json";
+const MANIFEST_URL = "./data/manifest.json";
+const SHARD_URLS = {
+  players: "./data/players.json",
+  live: "./data/live.json",
+  schedule: "./data/schedule.json",
+  training: "./data/training.json",
+  draws: "./data/draws.json"
+};
 const VIEW_STORAGE_KEY = "madrid-open-active-view";
 const SIDEBAR_STORAGE_KEYS = {
   players: "madrid-open-sidebar-players",
@@ -300,17 +308,10 @@ function renderPlayerSearchClear() {
 }
 
 async function loadData(force = false) {
-  setStatus("快照时间：加载中，10-20min数据刷新");
+  setStatus("数据加载中");
 
   try {
-    const suffix = force ? `?ts=${Date.now()}` : "";
-    const response = await fetch(`${DATA_URL}${suffix}`, { cache: "no-store" });
-
-    if (!response.ok) {
-      throw new Error(`数据请求失败：HTTP ${response.status}`);
-    }
-
-    const payload = await response.json();
+    const payload = await loadCurrentPayload(force);
     state.data = normalizePayload(payload);
 
     if (!state.activePlayerId || !state.data.playerById[state.activePlayerId]) {
@@ -329,8 +330,7 @@ async function loadData(force = false) {
     renderCourtDetail();
     renderView();
 
-    const updatedAt = formatDateTime(state.data.metadata.updatedAt);
-    setStatus(`快照时间：${updatedAt}，10-20min数据刷新`);
+    setStatus(formatRefreshStatus(state.data.metadata));
   } catch (error) {
     setStatus(`加载失败：${error.message}`);
     setHtml(dom.playerList, `<p class="card-sub">无法加载数据文件（${DATA_URL}）。</p>`);
@@ -340,6 +340,231 @@ async function loadData(force = false) {
     setHidden(dom.courtEmptyState, false);
     setHidden(dom.courtDetail, true);
   }
+}
+
+async function loadCurrentPayload(force = false) {
+  try {
+    return await loadShardedPayload(force);
+  } catch (error) {
+    console.warn("Falling back to compatibility snapshot", error);
+    return loadLegacyPayload(force);
+  }
+}
+
+async function loadLegacyPayload(force = false) {
+  return fetchJson(DATA_URL, force);
+}
+
+async function loadShardedPayload(force = false) {
+  const manifest = await fetchJson(MANIFEST_URL, force);
+  const tracks = manifest?.tracks || {};
+
+  const [
+    playersShard,
+    liveShard,
+    scheduleShard,
+    trainingShard,
+    drawsShard
+  ] = await Promise.all([
+    fetchJson(getTrackUrl(tracks, "players"), force),
+    fetchJson(getTrackUrl(tracks, "live"), force),
+    fetchJson(getTrackUrl(tracks, "schedule"), force),
+    fetchJson(getTrackUrl(tracks, "training"), force),
+    fetchJson(getTrackUrl(tracks, "draws"), force)
+  ]);
+
+  return combineShardedPayload({
+    manifest,
+    playersShard,
+    liveShard,
+    scheduleShard,
+    trainingShard,
+    drawsShard
+  });
+}
+
+async function fetchJson(url, force = false) {
+  const requestUrl = withCacheBust(url, force);
+  const response = await fetch(requestUrl, { cache: "no-store" });
+
+  if (!response.ok) {
+    throw new Error(`数据请求失败：HTTP ${response.status}`);
+  }
+
+  return response.json();
+}
+
+function withCacheBust(url, force = false) {
+  if (!force) {
+    return url;
+  }
+
+  const separator = String(url).includes("?") ? "&" : "?";
+  return `${url}${separator}ts=${Date.now()}`;
+}
+
+function getTrackUrl(tracks, name) {
+  return tracks?.[name]?.path || SHARD_URLS[name];
+}
+
+function combineShardedPayload({
+  manifest,
+  playersShard,
+  liveShard,
+  scheduleShard,
+  trainingShard,
+  drawsShard
+}) {
+  const tracks = manifest?.tracks || {};
+  const metadata = {
+    ...(manifest?.metadata || {}),
+    tracks,
+    sources: {
+      ...(playersShard?.metadata?.sources || {}),
+      ...(liveShard?.metadata?.sources || {}),
+      ...(scheduleShard?.metadata?.sources || {}),
+      ...(trainingShard?.metadata?.sources || {}),
+      ...(drawsShard?.metadata?.sources || {})
+    },
+    playerRankingDate: playersShard?.metadata?.playerRankingDate || "",
+    trainingDays: trainingShard?.metadata?.trainingDays || [],
+    audit: {
+      ...(playersShard?.metadata?.audit || {}),
+      ...(drawsShard?.metadata?.audit || {})
+    }
+  };
+
+  if (!metadata.updatedAt) {
+    metadata.updatedAt = getLatestTrackUpdatedAt(tracks);
+  }
+
+  return {
+    metadata,
+    players: Array.isArray(playersShard?.players) ? playersShard.players : [],
+    matches: mergeShardedMatches(
+      scheduleShard?.matches,
+      liveShard?.matches,
+      drawsShard?.matches
+    ),
+    trainingSessions: Array.isArray(trainingShard?.trainingSessions) ? trainingShard.trainingSessions : []
+  };
+}
+
+function mergeShardedMatches(scheduleMatches, liveMatches, drawMatches) {
+  const byId = new Map();
+
+  addMatchRecords(byId, Array.isArray(scheduleMatches) ? scheduleMatches : []);
+  addMatchRecords(byId, Array.isArray(liveMatches) ? liveMatches : []);
+
+  const existingSignatures = new Set(
+    [...byId.values()]
+      .map(matchRosterSignature)
+      .filter(Boolean)
+  );
+
+  (Array.isArray(drawMatches) ? drawMatches : []).forEach((match) => {
+    const id = String(match?.id || "").trim();
+    const signature = matchRosterSignature(match);
+
+    if (id && byId.has(id)) {
+      mergeMatchRecord(byId.get(id), match);
+      return;
+    }
+    if (signature && existingSignatures.has(signature)) {
+      return;
+    }
+    if (id) {
+      byId.set(id, { ...match });
+      if (signature) {
+        existingSignatures.add(signature);
+      }
+    }
+  });
+
+  return [...byId.values()];
+}
+
+function addMatchRecords(byId, matches) {
+  matches.forEach((match) => {
+    const id = String(match?.id || "").trim();
+    if (!id) {
+      return;
+    }
+
+    if (!byId.has(id)) {
+      byId.set(id, { ...match });
+      return;
+    }
+
+    mergeMatchRecord(byId.get(id), match);
+  });
+}
+
+function mergeMatchRecord(target, source) {
+  Object.entries(source || {}).forEach(([key, value]) => {
+    if (value === undefined || value === null || value === "") {
+      return;
+    }
+    if (Array.isArray(value) && value.length === 0) {
+      return;
+    }
+    target[key] = value;
+  });
+}
+
+function matchRosterSignature(match) {
+  const players = Array.isArray(match?.players) ? match.players : [];
+  if (!players.length || getMatchDisplayDiscipline(match) !== "doubles") {
+    return "";
+  }
+
+  const sideA = players
+    .filter((player) => String(player?.side || "").toUpperCase() === "A")
+    .map((player) => String(player?.id || "").trim())
+    .filter(Boolean)
+    .sort();
+  const sideB = players
+    .filter((player) => String(player?.side || "").toUpperCase() === "B")
+    .map((player) => String(player?.id || "").trim())
+    .filter(Boolean)
+    .sort();
+
+  if (!sideA.length || !sideB.length) {
+    return "";
+  }
+
+  return [sideA.join("+"), sideB.join("+")].sort().join("|");
+}
+
+function getLatestTrackUpdatedAt(tracks) {
+  return Object.values(tracks || {})
+    .map((track) => String(track?.updatedAt || ""))
+    .filter(Boolean)
+    .sort()
+    .pop() || "";
+}
+
+function formatRefreshStatus(metadata) {
+  const tracks = metadata?.tracks || {};
+  if (tracks.live || tracks.schedule || tracks.training || tracks.players) {
+    const parts = [
+      formatTrackStatusPart("比分", tracks.live),
+      formatTrackStatusPart("赛程", tracks.schedule),
+      formatTrackStatusPart("训练", tracks.training),
+      formatTrackStatusPart("球员", tracks.players)
+    ].filter(Boolean);
+    return `更新：${parts.join(" / ")}`;
+  }
+
+  const updatedAt = formatDateTime(metadata?.updatedAt);
+  return `快照时间：${updatedAt}，10-20min数据刷新`;
+}
+
+function formatTrackStatusPart(label, track) {
+  if (!track?.updatedAt) {
+    return "";
+  }
+  return `${label} ${formatDateTime(track.updatedAt)}`;
 }
 
 function normalizePayload(payload) {
