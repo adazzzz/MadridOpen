@@ -4,7 +4,7 @@
     "track": "live",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-24T21:13:06.546640+00:00",
+    "updatedAt": "2026-04-24T21:29:32.937016+00:00",
     "sources": {
       "matches": {
         "wta": "https://api.wtatennis.com/tennis/tournaments/1038/2026/matches",
@@ -879,8 +879,9 @@
     },
     {
       "id": "LS048",
-      "status": "P",
-      "score": "6-4,5-3",
+      "status": "F",
+      "score": "6-4,6-4",
+      "result": "[5]J. Pegula d K. Boulter 6-4,6-4",
       "startTime": "2026-04-24T19:28:18.917+00:00",
       "court": "Court 1"
     },
