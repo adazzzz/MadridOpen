@@ -2,7 +2,7 @@
   "metadata": {
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-24T00:14:31.071982+00:00",
+    "updatedAt": "2026-04-24T01:19:56.670802+00:00",
     "playerRankingDate": "23/03/2026",
     "sources": {
       "matches": {
@@ -18,18 +18,18 @@
         "wta": "https://wta-webapi-prod-apimanagement.azure-api.net/api/v1/VwEventDrawxmls/2026/1038",
         "atp": "https://mutuamadridopen.com/results/php/?type=draws"
       },
+      "rankings": {
+        "atpSingles": "https://www.protennislive.com/posting/ramr/singles_entry_numerical.pdf",
+        "atpDoubles": "https://www.protennislive.com/posting/ramr/doubles_numerical_entry.pdf",
+        "atpProfiles": "https://www.atptour.com/en/players/-/{atp_player_id}/overview",
+        "wtaSingles": "https://www.wtatennis.com/rankings/singles/",
+        "wtaDoubles": "https://www.wtatennis.com/rankings/doubles"
+      },
       "players": "https://mutuamadridopen.com/jugadores-2026/",
       "training": [
         "https://practice.tmstennis.com/api/iframe?runid=702&public=1&day=0&mode=0",
         "https://practice.tmstennis.com/api/iframe?runid=702&public=1&day=1&mode=0"
-      ],
-      "rankings": {
-        "atpSingles": "https://www.protennislive.com/posting/ramr/singles_entry_numerical.pdf",
-        "atpDoubles": "https://www.protennislive.com/posting/ramr/doubles_numerical_entry.pdf",
-        "wtaSingles": "https://www.wtatennis.com/rankings/singles/",
-        "wtaDoubles": "https://www.wtatennis.com/rankings/doubles",
-        "atpProfiles": "https://www.atptour.com/en/players/-/{atp_player_id}/overview"
-      }
+      ]
     },
     "trainingDays": [
       {
@@ -43,6 +43,7 @@
     ],
     "audit": {
       "doublesMatches": 16,
+      "atpDrawFallbackMatches": 0,
       "wtaDrawFallbackMatches": 7,
       "doublesPlayers": 64,
       "doublesPlayersMissingDoublesRanking": 0,
@@ -50,8 +51,7 @@
       "atpDrawEvents": [
         "MS",
         "QS"
-      ],
-      "atpDrawFallbackMatches": 0
+      ]
     }
   },
   "players": [
@@ -81,6 +81,7 @@
       "country": "FRA",
       "atpPlayerId": "ME82",
       "tour": "ATP",
+      "singlesEntryRanking": 43,
       "singlesRanking": 46,
       "ranking": 46
     },
@@ -98,10 +99,10 @@
       "id": "olivetti-albano",
       "name": "Albano Olivetti",
       "country": "FRA",
-      "tour": "ATP",
       "doublesRanking": 26,
       "ranking": 26,
-      "rankingTag": "D"
+      "rankingTag": "D",
+      "tour": "ATP"
     },
     {
       "id": "aldila-sutjiadi",
@@ -117,11 +118,12 @@
       "id": "davidovich-fokina-alejandro",
       "name": "Alejandro Davidovich Fokina",
       "country": "ESP",
+      "singlesEntryRanking": 17,
+      "tour": "ATP",
       "singlesRanking": 24,
       "ranking": 24,
-      "tour": "ATP",
-      "atpPlayerId": "DH50",
-      "doublesRanking": 597
+      "doublesRanking": 597,
+      "atpPlayerId": "DH50"
     },
     {
       "id": "alejandro-tabilo",
@@ -129,6 +131,7 @@
       "country": "CHI",
       "atpPlayerId": "TE30",
       "tour": "ATP",
+      "singlesEntryRanking": 41,
       "singlesRanking": 43,
       "ranking": 43,
       "doublesRanking": 459
@@ -167,18 +170,20 @@
       "id": "de-minaur-alex",
       "name": "Alex de Minaur",
       "country": "AUS",
+      "singlesEntryRanking": 6,
+      "tour": "ATP",
       "singlesRanking": 8,
       "ranking": 8,
-      "tour": "ATP",
       "atpPlayerId": "DH58"
     },
     {
       "id": "michelsen-alex",
       "name": "Alex Michelsen",
       "country": "USA",
+      "singlesEntryRanking": 40,
+      "tour": "ATP",
       "singlesRanking": 37,
       "ranking": 37,
-      "tour": "ATP",
       "doublesRanking": 91,
       "atpPlayerId": "M0QI"
     },
@@ -196,9 +201,10 @@
       "id": "bublik-alexander",
       "name": "Alexander Bublik",
       "country": "KAZ",
+      "singlesEntryRanking": 11,
+      "tour": "ATP",
       "singlesRanking": 11,
       "ranking": 11,
-      "tour": "ATP",
       "doublesRanking": 601,
       "atpPlayerId": "BK92"
     },
@@ -206,10 +212,10 @@
       "id": "erler-alexander",
       "name": "Alexander Erler",
       "country": "AUT",
-      "tour": "ATP",
       "doublesRanking": 34,
       "ranking": 34,
-      "rankingTag": "D"
+      "rankingTag": "D",
+      "tour": "ATP"
     },
     {
       "id": "alexander-shevchenko",
@@ -227,8 +233,7 @@
       "tour": "ATP",
       "atpPlayerId": "Z355",
       "singlesRanking": 3,
-      "ranking": 3,
-      "doublesRanking": 126
+      "ranking": 3
     },
     {
       "id": "alexandra-eala",
@@ -236,8 +241,8 @@
       "country": "PHI",
       "wtaPlayerId": "330332",
       "tour": "WTA",
-      "singlesRanking": 29,
-      "ranking": 29,
+      "singlesRanking": 44,
+      "ranking": 44,
       "doublesRanking": 101
     },
     {
@@ -266,6 +271,7 @@
       "country": "AUS",
       "atpPlayerId": "P09Z",
       "tour": "ATP",
+      "singlesEntryRanking": 47,
       "singlesRanking": 56,
       "ranking": 56,
       "doublesRanking": 351
@@ -347,10 +353,10 @@
       "id": "goransson-andre",
       "name": "Andre Goransson",
       "country": "SWE",
-      "tour": "ATP",
       "doublesRanking": 42,
       "ranking": 42,
-      "rankingTag": "D"
+      "rankingTag": "D",
+      "tour": "ATP"
     },
     {
       "id": "andrea-pellegrino",
@@ -366,20 +372,21 @@
       "id": "molteni-andres",
       "name": "Andres Molteni",
       "country": "ARG",
-      "tour": "WTA",
       "doublesRanking": 38,
       "ranking": 38,
-      "rankingTag": "D"
+      "rankingTag": "D",
+      "tour": "ATP"
     },
     {
       "id": "rublev-andrey",
       "name": "Andrey Rublev",
       "country": "RUS",
+      "singlesEntryRanking": 16,
+      "tour": "ATP",
       "singlesRanking": 12,
       "ranking": 12,
-      "tour": "ATP",
-      "atpPlayerId": "RE44",
-      "doublesRanking": 137
+      "doublesRanking": 137,
+      "atpPlayerId": "RE44"
     },
     {
       "id": "anhelina-kalinina",
@@ -399,7 +406,7 @@
       "wtaPlayerId": "326096",
       "tour": "WTA",
       "singlesRanking": 34,
-      "ranking": 39,
+      "ranking": 34,
       "doublesRanking": 135
     },
     {
@@ -438,8 +445,8 @@
       "country": "RUS",
       "wtaPlayerId": "323942",
       "tour": "WTA",
-      "singlesRanking": 21,
-      "ranking": 21,
+      "singlesRanking": 22,
+      "ranking": 22,
       "doublesRanking": 57
     },
     {
@@ -466,9 +473,10 @@
       "id": "fils-arthur",
       "name": "Arthur Fils",
       "country": "FRA",
+      "singlesEntryRanking": 31,
+      "tour": "ATP",
       "singlesRanking": 25,
       "ranking": 25,
-      "tour": "ATP",
       "doublesRanking": 345,
       "atpPlayerId": "F0F1"
     },
@@ -486,9 +494,10 @@
       "id": "rinderknech-arthur",
       "name": "Arthur Rinderknech",
       "country": "FRA",
+      "singlesEntryRanking": 27,
+      "tour": "ATP",
       "singlesRanking": 26,
       "ranking": 26,
-      "tour": "ATP",
       "doublesRanking": 109,
       "atpPlayerId": "RC91"
     },
@@ -526,10 +535,10 @@
       "id": "krajicek-austin",
       "name": "Austin Krajicek",
       "country": "USA",
-      "tour": "ATP",
       "doublesRanking": 41,
       "ranking": 41,
-      "rankingTag": "D"
+      "rankingTag": "D",
+      "tour": "ATP"
     },
     {
       "id": "beatriz-haddad-maia",
@@ -555,9 +564,10 @@
       "id": "shelton-ben",
       "name": "Ben Shelton",
       "country": "USA",
+      "singlesEntryRanking": 9,
+      "tour": "ATP",
       "singlesRanking": 6,
       "ranking": 6,
-      "tour": "ATP",
       "doublesRanking": 106,
       "atpPlayerId": "S0S1"
     },
@@ -594,9 +604,10 @@
       "id": "nakashima-brandon",
       "name": "Brandon Nakashima",
       "country": "USA",
+      "singlesEntryRanking": 30,
+      "tour": "ATP",
       "singlesRanking": 32,
       "ranking": 32,
-      "tour": "ATP",
       "doublesRanking": 513,
       "atpPlayerId": "N0AE"
     },
@@ -604,9 +615,10 @@
       "id": "norrie-cameron",
       "name": "Cameron Norrie",
       "country": "GBR",
+      "singlesEntryRanking": 24,
+      "tour": "ATP",
       "singlesRanking": 23,
       "ranking": 23,
-      "tour": "ATP",
       "doublesRanking": 255,
       "atpPlayerId": "N771"
     },
@@ -626,6 +638,7 @@
       "country": "ARG",
       "atpPlayerId": "U182",
       "tour": "ATP",
+      "singlesEntryRanking": 66,
       "singlesRanking": 57,
       "ranking": 57,
       "doublesRanking": 187
@@ -644,9 +657,10 @@
       "id": "ruud-casper",
       "name": "Casper Ruud",
       "country": "NOR",
+      "singlesEntryRanking": 12,
+      "tour": "ATP",
       "singlesRanking": 15,
       "ranking": 15,
-      "tour": "ATP",
       "atpPlayerId": "RH16"
     },
     {
@@ -673,10 +687,10 @@
       "id": "harrison-christian",
       "name": "Christian Harrison",
       "country": "USA",
-      "tour": "ATP",
       "doublesRanking": 13,
       "ranking": 13,
-      "rankingTag": "D"
+      "rankingTag": "D",
+      "tour": "ATP"
     },
     {
       "id": "christopher-o-connell",
@@ -693,8 +707,8 @@
       "country": "DEN",
       "wtaPlayerId": "327793",
       "tour": "WTA",
-      "singlesRanking": 16,
-      "ranking": 16,
+      "singlesRanking": 18,
+      "ranking": 18,
       "doublesRanking": 69
     },
     {
@@ -704,16 +718,17 @@
       "wtaPlayerId": "328560",
       "tour": "WTA",
       "singlesRanking": 3,
-      "ranking": 4,
+      "ranking": 3,
       "doublesRanking": 62
     },
     {
       "id": "moutet-corentin",
       "name": "Corentin Moutet",
       "country": "FRA",
+      "singlesEntryRanking": 33,
+      "tour": "ATP",
       "singlesRanking": 30,
       "ranking": 30,
-      "tour": "ATP",
       "doublesRanking": 347,
       "atpPlayerId": "MW02"
     },
@@ -753,6 +768,7 @@
       "country": "BIH",
       "atpPlayerId": "D923",
       "tour": "ATP",
+      "singlesEntryRanking": 76,
       "singlesRanking": 84,
       "ranking": 84,
       "doublesRanking": 890
@@ -763,6 +779,7 @@
       "country": "GER",
       "atpPlayerId": "AE14",
       "tour": "ATP",
+      "singlesEntryRanking": 55,
       "singlesRanking": 55,
       "ranking": 55
     },
@@ -779,9 +796,10 @@
       "id": "medvedev-daniil",
       "name": "Daniil Medvedev",
       "country": "RUS",
+      "singlesEntryRanking": 10,
+      "tour": "ATP",
       "singlesRanking": 10,
       "ranking": 10,
-      "tour": "ATP",
       "atpPlayerId": "MM58"
     },
     {
@@ -828,10 +846,10 @@
       "id": "pel-david",
       "name": "David Pel",
       "country": "NED",
-      "tour": "ATP",
       "doublesRanking": 32,
       "ranking": 32,
-      "rankingTag": "D"
+      "rankingTag": "D",
+      "tour": "ATP"
     },
     {
       "id": "dayana-yastremska",
@@ -840,7 +858,7 @@
       "wtaPlayerId": "324261",
       "tour": "WTA",
       "singlesRanking": 49,
-      "ranking": 55,
+      "ranking": 49,
       "doublesRanking": 449
     },
     {
@@ -857,9 +875,10 @@
       "id": "shapovalov-denis",
       "name": "Denis Shapovalov",
       "country": "CAN",
+      "singlesEntryRanking": 38,
+      "tour": "ATP",
       "singlesRanking": 35,
       "ranking": 35,
-      "tour": "ATP",
       "doublesRanking": 348,
       "atpPlayerId": "SU55"
     },
@@ -890,7 +909,7 @@
       "wtaPlayerId": "330482",
       "tour": "WTA",
       "singlesRanking": 19,
-      "ranking": 20,
+      "ranking": 19,
       "doublesRanking": 28
     },
     {
@@ -997,7 +1016,7 @@
       "wtaPlayerId": "316738",
       "tour": "WTA",
       "singlesRanking": 7,
-      "ranking": 8
+      "ranking": 7
     },
     {
       "id": "elisabetta-cocciaretto",
@@ -1006,7 +1025,7 @@
       "wtaPlayerId": "327909",
       "tour": "WTA",
       "singlesRanking": 41,
-      "ranking": 45,
+      "ranking": 41,
       "doublesRanking": 336
     },
     {
@@ -1015,8 +1034,8 @@
       "country": "BEL",
       "wtaPlayerId": "317964",
       "tour": "WTA",
-      "singlesRanking": 19,
-      "ranking": 19,
+      "singlesRanking": 21,
+      "ranking": 21,
       "doublesRanking": 1
     },
     {
@@ -1076,6 +1095,7 @@
       "country": "USA",
       "atpPlayerId": "N0AM",
       "tour": "ATP",
+      "singlesEntryRanking": 74,
       "singlesRanking": 116,
       "ranking": 116,
       "doublesRanking": 883
@@ -1106,6 +1126,7 @@
       "country": "USA",
       "atpPlayerId": "Q02L",
       "tour": "ATP",
+      "singlesEntryRanking": 56,
       "singlesRanking": 48,
       "ranking": 48,
       "doublesRanking": 510
@@ -1124,10 +1145,10 @@
       "id": "king-evan",
       "name": "Evan King",
       "country": "USA",
-      "tour": "ATP",
       "doublesRanking": 28,
       "ranking": 28,
-      "rankingTag": "D"
+      "rankingTag": "D",
+      "tour": "ATP"
     },
     {
       "id": "fabian-marozsan",
@@ -1135,6 +1156,7 @@
       "country": "HUN",
       "atpPlayerId": "M0CI",
       "tour": "ATP",
+      "singlesEntryRanking": 46,
       "singlesRanking": 50,
       "ranking": 50,
       "doublesRanking": 358
@@ -1182,9 +1204,10 @@
       "id": "auger-aliassime-felix",
       "name": "Felix Auger-Aliassime",
       "country": "CAN",
+      "singlesEntryRanking": 8,
+      "tour": "ATP",
       "singlesRanking": 5,
       "ranking": 5,
-      "tour": "ATP",
       "doublesRanking": 254,
       "atpPlayerId": "AG37"
     },
@@ -1192,9 +1215,10 @@
       "id": "cobolli-flavio",
       "name": "Flavio Cobolli",
       "country": "ITA",
+      "singlesEntryRanking": 14,
+      "tour": "ATP",
       "singlesRanking": 13,
       "ranking": 13,
-      "tour": "ATP",
       "doublesRanking": 360,
       "atpPlayerId": "C0E9"
     },
@@ -1212,18 +1236,19 @@
       "id": "cabral-francisco",
       "name": "Francisco Cabral",
       "country": "POR",
-      "tour": "ATP",
       "doublesRanking": 21,
       "ranking": 21,
-      "rankingTag": "D"
+      "rankingTag": "D",
+      "tour": "ATP"
     },
     {
       "id": "cerundolo-francisco",
       "name": "Francisco Cerundolo",
       "country": "ARG",
+      "singlesEntryRanking": 19,
+      "tour": "ATP",
       "singlesRanking": 20,
       "ranking": 20,
-      "tour": "ATP",
       "doublesRanking": 258,
       "atpPlayerId": "C0AU"
     },
@@ -1241,11 +1266,12 @@
       "id": "diallo-gabriel",
       "name": "Gabriel Diallo",
       "country": "CAN",
+      "singlesEntryRanking": 37,
+      "tour": "ATP",
       "singlesRanking": 36,
       "ranking": 36,
-      "tour": "ATP",
-      "atpPlayerId": "D0F6",
-      "doublesRanking": 439
+      "doublesRanking": 439,
+      "atpPlayerId": "D0F6"
     },
     {
       "id": "gael-monfils",
@@ -1282,6 +1308,7 @@
       "country": "BUL",
       "atpPlayerId": "D875",
       "tour": "ATP",
+      "singlesEntryRanking": 44,
       "singlesRanking": 137,
       "ranking": 137
     },
@@ -1289,10 +1316,10 @@
       "id": "andreozzi-guido",
       "name": "Guido Andreozzi",
       "country": "ARG",
-      "tour": "ATP",
       "doublesRanking": 16,
       "ranking": 16,
-      "rankingTag": "D"
+      "rankingTag": "D",
+      "tour": "ATP"
     },
     {
       "id": "hailey-baptiste",
@@ -1301,7 +1328,7 @@
       "wtaPlayerId": "327101",
       "tour": "WTA",
       "singlesRanking": 32,
-      "ranking": 46,
+      "ranking": 32,
       "doublesRanking": 129
     },
     {
@@ -1328,10 +1355,10 @@
       "id": "heliovaara-harri",
       "name": "Harri Heliovaara",
       "country": "FIN",
-      "tour": "ATP",
       "doublesRanking": 6,
       "ranking": 6,
-      "rankingTag": "D"
+      "rankingTag": "D",
+      "tour": "ATP"
     },
     {
       "id": "henrique-rocha",
@@ -1347,19 +1374,19 @@
       "id": "patten-henry",
       "name": "Henry Patten",
       "country": "GBR",
-      "tour": "ATP",
       "doublesRanking": 6,
       "ranking": 6,
-      "rankingTag": "D"
+      "rankingTag": "D",
+      "tour": "ATP"
     },
     {
       "id": "zeballos-horacio",
       "name": "Horacio Zeballos",
       "country": "ARG",
-      "tour": "ATP",
       "doublesRanking": 1,
       "ranking": 1,
-      "rankingTag": "D"
+      "rankingTag": "D",
+      "tour": "ATP"
     },
     {
       "id": "hubert-hurkacz",
@@ -1367,6 +1394,7 @@
       "country": "POL",
       "atpPlayerId": "HB71",
       "tour": "ATP",
+      "singlesEntryRanking": 75,
       "singlesRanking": 63,
       "ranking": 63
     },
@@ -1395,8 +1423,8 @@
       "country": "POL",
       "wtaPlayerId": "326408",
       "tour": "WTA",
-      "singlesRanking": 3,
-      "ranking": 3
+      "singlesRanking": 4,
+      "ranking": 4
     },
     {
       "id": "ignacio-buse",
@@ -1404,6 +1432,7 @@
       "country": "PER",
       "atpPlayerId": "B0ID",
       "tour": "ATP",
+      "singlesEntryRanking": 63,
       "singlesRanking": 58,
       "ranking": 58
     },
@@ -1434,7 +1463,7 @@
       "wtaPlayerId": "332285",
       "tour": "WTA",
       "singlesRanking": 16,
-      "ranking": 17,
+      "ranking": 16,
       "doublesRanking": 132
     },
     {
@@ -1451,9 +1480,10 @@
       "id": "mensik-jakub",
       "name": "Jakub Mensik",
       "country": "CZE",
+      "singlesEntryRanking": 13,
+      "tour": "ATP",
       "singlesRanking": 27,
       "ranking": 27,
-      "tour": "ATP",
       "doublesRanking": 359,
       "atpPlayerId": "M0NI"
     },
@@ -1470,10 +1500,10 @@
       "id": "zielinski-jan",
       "name": "Jan Zielinski",
       "country": "POL",
-      "tour": "ATP",
       "doublesRanking": 33,
       "ranking": 33,
-      "rankingTag": "D"
+      "rankingTag": "D",
+      "tour": "ATP"
     },
     {
       "id": "jan-lennard-struff",
@@ -1481,6 +1511,7 @@
       "country": "GER",
       "atpPlayerId": "SL28",
       "tour": "ATP",
+      "singlesEntryRanking": 78,
       "singlesRanking": 81,
       "ranking": 81
     },
@@ -1491,16 +1522,17 @@
       "wtaPlayerId": "328818",
       "tour": "WTA",
       "singlesRanking": 39,
-      "ranking": 40,
+      "ranking": 39,
       "doublesRanking": 45
     },
     {
       "id": "sinner-jannik",
       "name": "Jannik Sinner",
       "country": "ITA",
+      "singlesEntryRanking": 2,
+      "tour": "ATP",
       "singlesRanking": 1,
       "ranking": 1,
-      "tour": "ATP",
       "atpPlayerId": "S0AG"
     },
     {
@@ -1510,7 +1542,7 @@
       "wtaPlayerId": "320319",
       "tour": "WTA",
       "singlesRanking": 33,
-      "ranking": 36,
+      "ranking": 33,
       "doublesRanking": 107
     },
     {
@@ -1519,8 +1551,8 @@
       "country": "ITA",
       "wtaPlayerId": "319280",
       "tour": "WTA",
-      "singlesRanking": 7,
-      "ranking": 7,
+      "singlesRanking": 9,
+      "ranking": 9,
       "doublesRanking": 3
     },
     {
@@ -1529,6 +1561,7 @@
       "country": "ESP",
       "atpPlayerId": "MU94",
       "tour": "ATP",
+      "singlesEntryRanking": 35,
       "singlesRanking": 38,
       "ranking": 38,
       "doublesRanking": 318
@@ -1539,8 +1572,8 @@
       "country": "LAT",
       "wtaPlayerId": "319939",
       "tour": "WTA",
-      "singlesRanking": 24,
-      "ranking": 24,
+      "singlesRanking": 40,
+      "ranking": 40,
       "doublesRanking": 12
     },
     {
@@ -1549,6 +1582,7 @@
       "country": "USA",
       "atpPlayerId": "B0CD",
       "tour": "ATP",
+      "singlesEntryRanking": 42,
       "singlesRanking": 61,
       "ranking": 61
     },
@@ -1567,8 +1601,8 @@
       "country": "ESP",
       "wtaPlayerId": "328139",
       "tour": "WTA",
-      "singlesRanking": 49,
-      "ranking": 49,
+      "singlesRanking": 50,
+      "ranking": 50,
       "doublesRanking": 956
     },
     {
@@ -1585,9 +1619,10 @@
       "id": "lehecka-jiri",
       "name": "Jiri Lehecka",
       "country": "CZE",
+      "singlesEntryRanking": 22,
+      "tour": "ATP",
       "singlesRanking": 14,
       "ranking": 14,
-      "tour": "ATP",
       "doublesRanking": 176,
       "atpPlayerId": "L0BV"
     },
@@ -1595,9 +1630,10 @@
       "id": "fonseca-joao",
       "name": "Joao Fonseca",
       "country": "BRA",
+      "singlesEntryRanking": 39,
+      "tour": "ATP",
       "singlesRanking": 31,
       "ranking": 31,
-      "tour": "ATP",
       "doublesRanking": 162,
       "atpPlayerId": "F0FV"
     },
@@ -1605,10 +1641,10 @@
       "id": "salisbury-joe",
       "name": "Joe Salisbury",
       "country": "GBR",
-      "tour": "ATP",
       "doublesRanking": 8,
       "ranking": 8,
-      "rankingTag": "D"
+      "rankingTag": "D",
+      "tour": "ATP"
     },
     {
       "id": "juan-manuel-cerundolo",
@@ -1616,6 +1652,7 @@
       "country": "ARG",
       "atpPlayerId": "C0C8",
       "tour": "ATP",
+      "singlesEntryRanking": 71,
       "singlesRanking": 67,
       "ranking": 67,
       "doublesRanking": 488
@@ -1634,10 +1671,10 @@
       "id": "cash-julian",
       "name": "Julian Cash",
       "country": "GBR",
-      "tour": "ATP",
       "doublesRanking": 5,
       "ranking": 5,
-      "rankingTag": "D"
+      "rankingTag": "D",
+      "tour": "ATP"
     },
     {
       "id": "julieta-pareja",
@@ -1680,9 +1717,10 @@
       "id": "khachanov-karen",
       "name": "Karen Khachanov",
       "country": "RUS",
+      "singlesEntryRanking": 15,
+      "tour": "ATP",
       "singlesRanking": 16,
       "ranking": 16,
-      "tour": "ATP",
       "doublesRanking": 114,
       "atpPlayerId": "KE29"
     },
@@ -1722,7 +1760,7 @@
       "wtaPlayerId": "320301",
       "tour": "WTA",
       "singlesRanking": 42,
-      "ranking": 43,
+      "ranking": 42,
       "doublesRanking": 2
     },
     {
@@ -1760,10 +1798,10 @@
       "id": "krawietz-kevin",
       "name": "Kevin Krawietz",
       "country": "GER",
-      "tour": "WTA",
       "doublesRanking": 11,
       "ranking": 11,
-      "rankingTag": "D"
+      "rankingTag": "D",
+      "tour": "ATP"
     },
     {
       "id": "kimberly-birrell",
@@ -1830,18 +1868,19 @@
       "wtaPlayerId": "310926",
       "tour": "WTA",
       "singlesRanking": 47,
-      "ranking": 54,
+      "ranking": 47,
       "doublesRanking": 21
     },
     {
       "id": "tien-learner",
       "name": "Learner Tien",
       "country": "USA",
+      "singlesEntryRanking": 21,
+      "tour": "ATP",
       "singlesRanking": 21,
       "ranking": 21,
-      "tour": "ATP",
-      "atpPlayerId": "T0HA",
-      "doublesRanking": 438
+      "doublesRanking": 438,
+      "atpPlayerId": "T0HA"
     },
     {
       "id": "leolia-jeanjean",
@@ -1900,17 +1939,17 @@
       "wtaPlayerId": "322222",
       "tour": "WTA",
       "singlesRanking": 20,
-      "ranking": 22,
+      "ranking": 20,
       "doublesRanking": 32
     },
     {
       "id": "glasspool-lloyd",
       "name": "Lloyd Glasspool",
       "country": "GBR",
-      "tour": "ATP",
       "doublesRanking": 4,
       "ranking": 4,
-      "rankingTag": "D"
+      "rankingTag": "D",
+      "tour": "ATP"
     },
     {
       "id": "lloyd-harris",
@@ -1927,8 +1966,8 @@
       "country": "FRA",
       "wtaPlayerId": "328884",
       "tour": "WTA",
-      "singlesRanking": 38,
-      "ranking": 38,
+      "singlesRanking": 46,
+      "ranking": 46,
       "doublesRanking": 1245
     },
     {
@@ -1945,11 +1984,12 @@
       "id": "musetti-lorenzo",
       "name": "Lorenzo Musetti",
       "country": "ITA",
+      "singlesEntryRanking": 5,
+      "tour": "ATP",
       "singlesRanking": 9,
       "ranking": 9,
-      "tour": "ATP",
-      "atpPlayerId": "M0EJ",
-      "doublesRanking": 84
+      "doublesRanking": 84,
+      "atpPlayerId": "M0EJ"
     },
     {
       "id": "lorenzo-sonego",
@@ -1957,6 +1997,7 @@
       "country": "ITA",
       "atpPlayerId": "SU87",
       "tour": "ATP",
+      "singlesEntryRanking": 62,
       "singlesRanking": 62,
       "ranking": 62,
       "doublesRanking": 92
@@ -1974,18 +2015,19 @@
       "id": "miedler-lucas",
       "name": "Lucas Miedler",
       "country": "AUT",
-      "tour": "ATP",
       "doublesRanking": 24,
       "ranking": 24,
-      "rankingTag": "D"
+      "rankingTag": "D",
+      "tour": "ATP"
     },
     {
       "id": "darderi-luciano",
       "name": "Luciano Darderi",
       "country": "ITA",
+      "singlesEntryRanking": 18,
+      "tour": "ATP",
       "singlesRanking": 22,
       "ranking": 22,
-      "tour": "ATP",
       "doublesRanking": 203,
       "atpPlayerId": "D0FJ"
     },
@@ -2002,10 +2044,10 @@
       "id": "johnson-luke",
       "name": "Luke Johnson",
       "country": "GBR",
-      "tour": "WTA",
       "doublesRanking": 47,
       "ranking": 47,
-      "rankingTag": "D"
+      "rankingTag": "D",
+      "tour": "ATP"
     },
     {
       "id": "lulu-sun",
@@ -2044,7 +2086,7 @@
       "wtaPlayerId": "316959",
       "tour": "WTA",
       "singlesRanking": 17,
-      "ranking": 18,
+      "ranking": 17,
       "doublesRanking": 527
     },
     {
@@ -2063,8 +2105,8 @@
       "country": "POL",
       "wtaPlayerId": "320277",
       "tour": "WTA",
-      "singlesRanking": 37,
-      "ranking": 37,
+      "singlesRanking": 38,
+      "ranking": 38,
       "doublesRanking": 174
     },
     {
@@ -2091,37 +2133,37 @@
       "id": "guinard-manuel",
       "name": "Manuel Guinard",
       "country": "FRA",
-      "tour": "ATP",
       "singlesRanking": 1536,
       "ranking": 1536,
+      "tour": "ATP",
       "doublesRanking": 20
     },
     {
       "id": "polmans-marc",
       "name": "Marc Polmans",
       "country": "AUS",
-      "tour": "ATP",
       "singlesRanking": 340,
       "ranking": 340,
+      "tour": "ATP",
       "doublesRanking": 52
     },
     {
       "id": "granollers-marcel",
       "name": "Marcel Granollers",
       "country": "ESP",
-      "tour": "ATP",
       "doublesRanking": 2,
       "ranking": 2,
-      "rankingTag": "D"
+      "rankingTag": "D",
+      "tour": "ATP"
     },
     {
       "id": "melo-marcelo",
       "name": "Marcelo Melo",
       "country": "BRA",
-      "tour": "ATP",
       "doublesRanking": 43,
       "ranking": 43,
-      "rankingTag": "D"
+      "rankingTag": "D",
+      "tour": "ATP"
     },
     {
       "id": "marco-trungelliti",
@@ -2139,6 +2181,7 @@
       "country": "USA",
       "atpPlayerId": "GC88",
       "tour": "ATP",
+      "singlesEntryRanking": 70,
       "singlesRanking": 76,
       "ranking": 76,
       "doublesRanking": 599
@@ -2149,8 +2192,8 @@
       "country": "GRE",
       "wtaPlayerId": "318312",
       "tour": "WTA",
-      "singlesRanking": 33,
-      "ranking": 33,
+      "singlesRanking": 37,
+      "ranking": 37,
       "doublesRanking": 527
     },
     {
@@ -2159,6 +2202,7 @@
       "country": "ARG",
       "atpPlayerId": "N0BS",
       "tour": "ATP",
+      "singlesEntryRanking": 61,
       "singlesRanking": 45,
       "ranking": 45
     },
@@ -2169,7 +2213,7 @@
       "wtaPlayerId": "320983",
       "tour": "WTA",
       "singlesRanking": 24,
-      "ranking": 32,
+      "ranking": 24,
       "doublesRanking": 77
     },
     {
@@ -2178,6 +2222,7 @@
       "country": "CRO",
       "atpPlayerId": "C977",
       "tour": "ATP",
+      "singlesEntryRanking": 49,
       "singlesRanking": 51,
       "ranking": 51
     },
@@ -2198,7 +2243,7 @@
       "wtaPlayerId": "326482",
       "tour": "WTA",
       "singlesRanking": 23,
-      "ranking": 28,
+      "ranking": 23,
       "doublesRanking": 158
     },
     {
@@ -2235,6 +2280,7 @@
       "country": "HUN",
       "atpPlayerId": "F724",
       "tour": "ATP",
+      "singlesEntryRanking": 54,
       "singlesRanking": 54,
       "ranking": 54
     },
@@ -2254,6 +2300,7 @@
       "country": "ITA",
       "atpPlayerId": "BK40",
       "tour": "ATP",
+      "singlesEntryRanking": 68,
       "singlesRanking": 92,
       "ranking": 92,
       "doublesRanking": 594
@@ -2264,6 +2311,7 @@
       "country": "ITA",
       "atpPlayerId": "B0GG",
       "tour": "ATP",
+      "singlesEntryRanking": 77,
       "singlesRanking": 78,
       "ranking": 78,
       "doublesRanking": 354
@@ -2277,10 +2325,10 @@
       "id": "venus-michael",
       "name": "Michael Venus",
       "country": "NZL",
-      "tour": "ATP",
       "doublesRanking": 49,
       "ranking": 49,
-      "rankingTag": "D"
+      "rankingTag": "D",
+      "tour": "ATP"
     },
     {
       "id": "miomir-kecmanovic",
@@ -2288,6 +2336,7 @@
       "country": "SRB",
       "atpPlayerId": "KI95",
       "tour": "ATP",
+      "singlesEntryRanking": 58,
       "singlesRanking": 65,
       "ranking": 65,
       "doublesRanking": 888
@@ -2309,7 +2358,7 @@
       "wtaPlayerId": "331809",
       "tour": "WTA",
       "singlesRanking": 8,
-      "ranking": 10,
+      "ranking": 8,
       "doublesRanking": 33
     },
     {
@@ -2375,10 +2424,10 @@
       "id": "skupski-neal",
       "name": "Neal Skupski",
       "country": "GBR",
-      "tour": "ATP",
       "doublesRanking": 3,
       "ranking": 3,
-      "rankingTag": "D"
+      "rankingTag": "D",
+      "tour": "ATP"
     },
     {
       "id": "nicolai-budkov-kjaer",
@@ -2413,10 +2462,10 @@
       "id": "mektic-nikola",
       "name": "Nikola Mektic",
       "country": "CRO",
-      "tour": "ATP",
       "doublesRanking": 19,
       "ranking": 19,
-      "rankingTag": "D"
+      "rankingTag": "D",
+      "tour": "ATP"
     },
     {
       "id": "nikoloz-basilashvili",
@@ -2433,6 +2482,7 @@
       "country": "POR",
       "atpPlayerId": "BT72",
       "tour": "ATP",
+      "singlesEntryRanking": 50,
       "singlesRanking": 49,
       "ranking": 49,
       "doublesRanking": 182
@@ -2489,9 +2539,9 @@
       "id": "luz-orlando",
       "name": "Orlando Luz",
       "country": "BRA",
-      "tour": "ATP",
       "singlesRanking": 1031,
       "ranking": 1031,
+      "tour": "ATP",
       "doublesRanking": 29
     },
     {
@@ -2581,7 +2631,7 @@
       "wtaPlayerId": "327573",
       "tour": "WTA",
       "singlesRanking": 43,
-      "ranking": 48,
+      "ranking": 43,
       "doublesRanking": 76
     },
     {
@@ -2590,8 +2640,8 @@
       "country": "CHN",
       "wtaPlayerId": "328120",
       "tour": "WTA",
-      "singlesRanking": 26,
-      "ranking": 26
+      "singlesRanking": 36,
+      "ranking": 36
     },
     {
       "id": "quentin-halys",
@@ -2619,18 +2669,18 @@
       "country": "ESP",
       "atpPlayerId": "J0DZ",
       "tour": "ATP",
-      "doublesRanking": 346,
+      "singlesRanking": 42,
       "ranking": 42,
-      "singlesRanking": 42
+      "doublesRanking": 346
     },
     {
       "id": "matos-rafael",
       "name": "Rafael Matos",
       "country": "BRA",
-      "tour": "ATP",
       "doublesRanking": 31,
       "ranking": 31,
-      "rankingTag": "D"
+      "rankingTag": "D",
+      "tour": "ATP"
     },
     {
       "id": "rebecca-sramkova",
@@ -2668,6 +2718,7 @@
       "country": "USA",
       "atpPlayerId": "O522",
       "tour": "ATP",
+      "singlesEntryRanking": 67,
       "singlesRanking": 70,
       "ranking": 70
     },
@@ -2685,19 +2736,19 @@
       "id": "cash-robert",
       "name": "Robert Cash",
       "country": "USA",
-      "tour": "ATP",
       "doublesRanking": 35,
       "ranking": 35,
-      "rankingTag": "D"
+      "rankingTag": "D",
+      "tour": "ATP"
     },
     {
       "id": "galloway-robert",
       "name": "Robert Galloway",
       "country": "USA",
-      "tour": "ATP",
       "doublesRanking": 40,
       "ranking": 40,
-      "rankingTag": "D"
+      "rankingTag": "D",
+      "tour": "ATP"
     },
     {
       "id": "roberto-bautista-agut",
@@ -2723,10 +2774,10 @@
       "id": "arneodo-romain",
       "name": "Romain Arneodo",
       "country": "MON",
-      "tour": "ATP",
       "doublesRanking": 71,
       "ranking": 71,
-      "rankingTag": "D"
+      "rankingTag": "D",
+      "tour": "ATP"
     },
     {
       "id": "ruth-roura-llaverias",
@@ -2752,19 +2803,19 @@
       "id": "arends-sander",
       "name": "Sander Arends",
       "country": "NED",
-      "tour": "ATP",
       "doublesRanking": 51,
       "ranking": 51,
-      "rankingTag": "D"
+      "rankingTag": "D",
+      "tour": "ATP"
     },
     {
       "id": "gonzalez-santiago",
       "name": "Santiago Gonzalez",
       "country": "MEX",
-      "tour": "ATP",
       "doublesRanking": 48,
       "ranking": 48,
-      "rankingTag": "D"
+      "rankingTag": "D",
+      "tour": "ATP"
     },
     {
       "id": "sara-errani",
@@ -2792,6 +2843,7 @@
       "country": "ARG",
       "atpPlayerId": "B0BI",
       "tour": "ATP",
+      "singlesEntryRanking": 52,
       "singlesRanking": 64,
       "ranking": 64
     },
@@ -2830,10 +2882,10 @@
       "id": "bolelli-simone",
       "name": "Simone Bolelli",
       "country": "ITA",
-      "tour": "WTA",
       "doublesRanking": 15,
       "ranking": 15,
-      "rankingTag": "D"
+      "rankingTag": "D",
+      "tour": "ATP"
     },
     {
       "id": "sinja-kraus",
@@ -2883,7 +2935,7 @@
       "wtaPlayerId": "312469",
       "tour": "WTA",
       "singlesRanking": 26,
-      "ranking": 35,
+      "ranking": 26,
       "doublesRanking": 40
     },
     {
@@ -2902,6 +2954,7 @@
       "country": "GRE",
       "atpPlayerId": "TE51",
       "tour": "ATP",
+      "singlesEntryRanking": 51,
       "singlesRanking": 80,
       "ranking": 80,
       "doublesRanking": 355
@@ -2940,9 +2993,10 @@
       "id": "griekspoor-tallon",
       "name": "Tallon Griekspoor",
       "country": "NED",
+      "singlesEntryRanking": 29,
+      "tour": "ATP",
       "singlesRanking": 33,
       "ranking": 33,
-      "tour": "ATP",
       "doublesRanking": 202,
       "atpPlayerId": "GJ37"
     },
@@ -2992,6 +3046,7 @@
       "country": "FRA",
       "atpPlayerId": "A0GC",
       "tour": "ATP",
+      "singlesEntryRanking": 53,
       "singlesRanking": 47,
       "ranking": 47
     },
@@ -3019,10 +3074,10 @@
       "id": "arribage-theo",
       "name": "Theo Arribage",
       "country": "FRA",
-      "tour": "ATP",
       "doublesRanking": 27,
       "ranking": 27,
-      "rankingTag": "D"
+      "rankingTag": "D",
+      "tour": "ATP"
     },
     {
       "id": "thiago-agustin-tirante",
@@ -3038,10 +3093,10 @@
       "id": "puetz-tim",
       "name": "Tim Puetz",
       "country": "GER",
-      "tour": "WTA",
       "doublesRanking": 12,
       "ranking": 12,
-      "rankingTag": "D"
+      "rankingTag": "D",
+      "tour": "ATP"
     },
     {
       "id": "titouan-droguet",
@@ -3069,6 +3124,7 @@
       "country": "CZE",
       "atpPlayerId": "M0FH",
       "tour": "ATP",
+      "singlesEntryRanking": 48,
       "singlesRanking": 41,
       "ranking": 41,
       "doublesRanking": 132
@@ -3077,9 +3133,10 @@
       "id": "etcheverry-tomas-martin",
       "name": "Tomas Martin Etcheverry",
       "country": "ARG",
+      "singlesEntryRanking": 32,
+      "tour": "ATP",
       "singlesRanking": 29,
       "ranking": 29,
-      "tour": "ATP",
       "doublesRanking": 164,
       "atpPlayerId": "EA24"
     },
@@ -3087,9 +3144,10 @@
       "id": "paul-tommy",
       "name": "Tommy Paul",
       "country": "USA",
+      "singlesEntryRanking": 23,
+      "tour": "ATP",
       "singlesRanking": 18,
       "ranking": 18,
-      "tour": "ATP",
       "doublesRanking": 508,
       "atpPlayerId": "PL56"
     },
@@ -3124,9 +3182,10 @@
       "id": "humbert-ugo",
       "name": "Ugo Humbert",
       "country": "FRA",
+      "singlesEntryRanking": 34,
+      "tour": "ATP",
       "singlesRanking": 34,
       "ranking": 34,
-      "tour": "ATP",
       "atpPlayerId": "HH26"
     },
     {
@@ -3145,6 +3204,7 @@
       "country": "FRA",
       "atpPlayerId": "R0EB",
       "tour": "ATP",
+      "singlesEntryRanking": 69,
       "singlesRanking": 72,
       "ranking": 72
     },
@@ -3152,9 +3212,10 @@
       "id": "vacherot-valentin",
       "name": "Valentin Vacherot",
       "country": "MON",
+      "singlesEntryRanking": 25,
+      "tour": "ATP",
       "singlesRanking": 17,
       "ranking": 17,
-      "tour": "ATP",
       "doublesRanking": 139,
       "atpPlayerId": "VA25"
     },
@@ -3215,8 +3276,8 @@
       "country": "CAN",
       "wtaPlayerId": "331006",
       "tour": "WTA",
-      "singlesRanking": 9,
-      "ranking": 9,
+      "singlesRanking": 10,
+      "ranking": 10,
       "doublesRanking": 136
     },
     {
@@ -3255,6 +3316,7 @@
       "country": "CZE",
       "atpPlayerId": "KI82",
       "tour": "ATP",
+      "singlesEntryRanking": 60,
       "singlesRanking": 66,
       "ranking": 66
     },
@@ -3275,7 +3337,7 @@
       "wtaPlayerId": "326376",
       "tour": "WTA",
       "singlesRanking": 31,
-      "ranking": 34,
+      "ranking": 31,
       "doublesRanking": 155
     },
     {
@@ -3284,6 +3346,7 @@
       "country": "GER",
       "atpPlayerId": "H997",
       "tour": "ATP",
+      "singlesEntryRanking": 64,
       "singlesRanking": 60,
       "ranking": 60
     },
@@ -3310,10 +3373,10 @@
       "id": "bhambri-yuki",
       "name": "Yuki Bhambri",
       "country": "IND",
-      "tour": "ATP",
       "doublesRanking": 25,
       "ranking": 25,
-      "rankingTag": "D"
+      "rankingTag": "D",
+      "tour": "ATP"
     },
     {
       "id": "yulia-putintseva",
@@ -3372,6 +3435,8 @@
       "country": "CHN",
       "atpPlayerId": "Z371",
       "tour": "ATP",
+      "singlesEntryRanking": 60,
+      "singlesEntryRankingTag": "PR",
       "singlesRanking": 245,
       "ranking": 245
     },
@@ -3381,6 +3446,7 @@
       "country": "BEL",
       "atpPlayerId": "BU13",
       "tour": "ATP",
+      "singlesEntryRanking": 45,
       "singlesRanking": 44,
       "ranking": 44
     },
@@ -3404,6 +3470,7 @@
       "roundLabel": "资格赛第一轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 2",
       "score": "7-5,6-1",
       "result": "[24]D. Salkova d R. Roura Llaverias 7-5,6-1",
@@ -3436,8 +3503,7 @@
       "scheduleType": "starts_at",
       "scheduleText": "Starts at",
       "scheduleTime": "10:00+0200",
-      "scheduleDisplay": "Starts at 10:00 AM",
-      "tour": "WTA"
+      "scheduleDisplay": "Starts at 10:00 AM"
     },
     {
       "id": "RS051",
@@ -3448,6 +3514,7 @@
       "roundLabel": "资格赛第一轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 4",
       "score": "6-3,6-4",
       "result": "A. Charaeva d [18]A. Sasnovich 6-3,6-4",
@@ -3481,8 +3548,7 @@
       "scheduleType": "starts_at",
       "scheduleText": "Starts at",
       "scheduleTime": "10:00+0200",
-      "scheduleDisplay": "Starts at 10:00 AM",
-      "tour": "WTA"
+      "scheduleDisplay": "Starts at 10:00 AM"
     },
     {
       "id": "RS050",
@@ -3493,6 +3559,7 @@
       "roundLabel": "资格赛第一轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 6",
       "score": "6-4,2-6,6-3",
       "result": "[10]N. Bartunkova d K. Kawa 6-4,2-6,6-3",
@@ -3525,8 +3592,7 @@
       "scheduleType": "starts_at",
       "scheduleText": "Starts at",
       "scheduleTime": "10:00+0200",
-      "scheduleDisplay": "Starts at 10:00 AM",
-      "tour": "WTA"
+      "scheduleDisplay": "Starts at 10:00 AM"
     },
     {
       "id": "RS044",
@@ -3537,6 +3603,7 @@
       "roundLabel": "资格赛第一轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 8",
       "score": "7-5,6-3",
       "result": "[7]S. Waltert d D. Papamichail 7-5,6-3",
@@ -3570,8 +3637,7 @@
       "scheduleType": "starts_at",
       "scheduleText": "Starts at",
       "scheduleTime": "10:00+0200",
-      "scheduleDisplay": "Starts at 10:00 AM",
-      "tour": "WTA"
+      "scheduleDisplay": "Starts at 10:00 AM"
     },
     {
       "id": "RS036",
@@ -3582,6 +3648,7 @@
       "roundLabel": "资格赛第一轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 2",
       "score": "6-3,3-6,6-4",
       "result": "L. Jeanjean d [3]D. Vekic 6-3,3-6,6-4",
@@ -3614,8 +3681,7 @@
       "scheduleOrder": 2,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "RS042",
@@ -3626,6 +3692,7 @@
       "roundLabel": "资格赛第一轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 4",
       "score": "6-7(3),7-5,6-4",
       "result": "[6]A. Blinkova d N. Brancaccio 6-7(3),7-5,6-4",
@@ -3657,8 +3724,7 @@
       "scheduleOrder": 2,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "RS043",
@@ -3669,6 +3735,7 @@
       "roundLabel": "资格赛第一轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 8",
       "score": "6-4,6-3",
       "result": "E. Kalieva d [21]S. Lamens 6-4,6-3",
@@ -3701,8 +3768,7 @@
       "scheduleOrder": 2,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "RS037",
@@ -3713,6 +3779,7 @@
       "roundLabel": "资格赛第一轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 6",
       "score": "6-3,7-5",
       "result": "R. Masarova d [23]R. Sramkova 6-3,7-5",
@@ -3744,8 +3811,7 @@
       "scheduleOrder": 2,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "RS039",
@@ -3756,6 +3822,7 @@
       "roundLabel": "资格赛第一轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 8",
       "score": "7-6(3),7-5",
       "result": "T. Grant d [15]V. Erjavec 7-6(3),7-5",
@@ -3788,8 +3855,7 @@
       "scheduleOrder": 3,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "RS040",
@@ -3800,6 +3866,7 @@
       "roundLabel": "资格赛第一轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 6",
       "score": "6-0,4-6,6-1",
       "result": "[5]K. Volynets d O. Dodin 6-0,4-6,6-1",
@@ -3831,8 +3898,7 @@
       "scheduleOrder": 3,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "RS041",
@@ -3843,6 +3909,7 @@
       "roundLabel": "资格赛第一轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 2",
       "score": "6-4,3-1 Ret'd",
       "result": "[14]T. Korpatsch d S. Sorribes Tormo 6-4,3-1 Ret'd",
@@ -3874,8 +3941,7 @@
       "scheduleOrder": 3,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "RS038",
@@ -3886,6 +3952,7 @@
       "roundLabel": "资格赛第一轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 4",
       "score": "6-4,6-1",
       "result": "[4]P. Udvardy d J. Pareja 6-4,6-1",
@@ -3918,8 +3985,7 @@
       "scheduleOrder": 3,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "RS047",
@@ -3930,6 +3996,7 @@
       "roundLabel": "资格赛第一轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 8",
       "score": "6-3,6-3",
       "result": "[19]D. Vidmanova d L. Radivojevic 6-3,6-3",
@@ -3961,8 +4028,7 @@
       "scheduleOrder": 4,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "RS033",
@@ -3973,6 +4039,7 @@
       "roundLabel": "资格赛第一轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 4",
       "score": "6-3,6-2",
       "result": "[20]A. Pavlyuchenkova d V. Tomova 6-3,6-2",
@@ -4005,8 +4072,7 @@
       "scheduleOrder": 4,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "RS032",
@@ -4017,6 +4083,7 @@
       "roundLabel": "资格赛第一轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 6",
       "score": "6-0,6-1",
       "result": "[1]Y. Starodubtseva d L. Stefanini 6-0,6-1",
@@ -4048,8 +4115,7 @@
       "scheduleOrder": 4,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "RS046",
@@ -4060,6 +4126,7 @@
       "roundLabel": "资格赛第一轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 2",
       "score": "6-1,6-3",
       "result": "[8]D. Galfi d L. Romero Gormaz 6-1,6-3",
@@ -4092,8 +4159,7 @@
       "scheduleOrder": 4,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "RS053",
@@ -4104,6 +4170,7 @@
       "roundLabel": "资格赛第一轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 8",
       "score": "7-5,6-1",
       "result": "[13]D. Snigur d N. Leme Da Silva 7-5,6-1",
@@ -4135,8 +4202,7 @@
       "scheduleOrder": 5,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "RS054",
@@ -4147,6 +4213,7 @@
       "roundLabel": "资格赛第一轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 4",
       "score": "6-2,6-4",
       "result": "S. Stephens d [12]D. Parry 6-2,6-4",
@@ -4178,8 +4245,7 @@
       "scheduleOrder": 5,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "RS052",
@@ -4190,6 +4256,7 @@
       "roundLabel": "资格赛第一轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 6",
       "score": "6-2,7-5",
       "result": "[11]H. Vandewinkel d L. Fruhvirtova 6-2,7-5",
@@ -4220,8 +4287,7 @@
       "scheduleOrder": 5,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "RS055",
@@ -4232,6 +4298,7 @@
       "roundLabel": "资格赛第一轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 2",
       "score": "6-2,6-1",
       "result": "[16]A. Kalinina d M. Bassols Ribera 6-2,6-1",
@@ -4264,8 +4331,7 @@
       "scheduleOrder": 5,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "RS048",
@@ -4276,6 +4342,7 @@
       "roundLabel": "资格赛第一轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 8",
       "score": "6-1,6-2",
       "result": "[9]A. Parks d E. Avanesyan 6-1,6-2",
@@ -4307,8 +4374,7 @@
       "scheduleOrder": 6,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "RS034",
@@ -4319,6 +4385,7 @@
       "roundLabel": "资格赛第一轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 4",
       "score": "6-4,7-5",
       "result": "[2]A. Potapova d T. Kostovic 6-4,7-5",
@@ -4350,8 +4417,7 @@
       "scheduleOrder": 6,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "RS049",
@@ -4362,6 +4428,7 @@
       "roundLabel": "资格赛第一轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 2",
       "score": "6-4,7-5",
       "result": "K. Efremova d [17]L. Sun 6-4,7-5",
@@ -4393,8 +4460,7 @@
       "scheduleOrder": 6,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "RS035",
@@ -4405,6 +4471,7 @@
       "roundLabel": "资格赛第一轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 6",
       "score": "6-3,6-2",
       "result": "[22]S. Kraus d M. Trevisan 6-3,6-2",
@@ -4436,8 +4503,7 @@
       "scheduleOrder": 6,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "RS025",
@@ -4448,6 +4514,7 @@
       "roundLabel": "资格赛第二轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 3",
       "score": "6-7(6),6-2,7-6(6)",
       "result": "A. Charaeva d [10]N. Bartunkova 6-7(6),6-2,7-6(6)",
@@ -4481,8 +4548,7 @@
       "scheduleType": "starts_at",
       "scheduleText": "Starts at",
       "scheduleTime": "11:00+0200",
-      "scheduleDisplay": "Starts at 11:00 AM",
-      "tour": "WTA"
+      "scheduleDisplay": "Starts at 11:00 AM"
     },
     {
       "id": "RS022",
@@ -4493,6 +4559,7 @@
       "roundLabel": "资格赛第二轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 5",
       "score": "6-0,6-2",
       "result": "[7]S. Waltert d [24]D. Salkova 6-0,6-2",
@@ -4526,8 +4593,7 @@
       "scheduleType": "starts_at",
       "scheduleText": "Starts at",
       "scheduleTime": "11:00+0200",
-      "scheduleDisplay": "Starts at 11:00 AM",
-      "tour": "WTA"
+      "scheduleDisplay": "Starts at 11:00 AM"
     },
     {
       "id": "LS093",
@@ -4538,6 +4604,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 2",
       "score": "6-4,6-2",
       "result": "L. Samson d T. Maria 6-4,6-2",
@@ -4571,8 +4638,7 @@
       "scheduleType": "starts_at",
       "scheduleText": "Starts at",
       "scheduleTime": "11:00+0200",
-      "scheduleDisplay": "Starts at 11:00 AM",
-      "tour": "WTA"
+      "scheduleDisplay": "Starts at 11:00 AM"
     },
     {
       "id": "RS018",
@@ -4583,6 +4649,7 @@
       "roundLabel": "资格赛第二轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 7",
       "score": "6-3,3-6,6-3",
       "result": "L. Jeanjean d R. Masarova 6-3,3-6,6-3",
@@ -4616,8 +4683,7 @@
       "scheduleType": "starts_at",
       "scheduleText": "Starts at",
       "scheduleTime": "11:00+0200",
-      "scheduleDisplay": "Starts at 11:00 AM",
-      "tour": "WTA"
+      "scheduleDisplay": "Starts at 11:00 AM"
     },
     {
       "id": "LS073",
@@ -4628,6 +4694,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 1",
       "score": "6-0,7-5",
       "result": "P. Marcinko d V. Jimenez Kasintseva 6-0,7-5",
@@ -4661,8 +4728,7 @@
       "scheduleType": "starts_at",
       "scheduleText": "Starts at",
       "scheduleTime": "11:00+0200",
-      "scheduleDisplay": "Starts at 11:00 AM",
-      "tour": "WTA"
+      "scheduleDisplay": "Starts at 11:00 AM"
     },
     {
       "id": "RS021",
@@ -4673,6 +4739,7 @@
       "roundLabel": "资格赛第二轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 5",
       "score": "6-2,3-6,7-5",
       "result": "E. Kalieva d [6]A. Blinkova 6-2,3-6,7-5",
@@ -4705,8 +4772,7 @@
       "scheduleOrder": 2,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "LS078",
@@ -4717,6 +4783,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 2",
       "score": "6-4,6-0",
       "result": "L. Siegemund d I. Begu 6-4,6-0",
@@ -4726,7 +4793,7 @@
           "name": "Laura Siegemund",
           "country": "GER",
           "side": "A",
-          "ranking": 54,
+          "ranking": 47,
           "singlesRanking": 47,
           "doublesRanking": 21,
           "tour": "WTA",
@@ -4748,8 +4815,7 @@
       "scheduleOrder": 2,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "LS074",
@@ -4760,6 +4826,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 1",
       "score": "6-1,6-1",
       "result": "J. Bouzas Maneiro d B. Haddad Maia 6-1,6-1",
@@ -4780,8 +4847,8 @@
           "name": "Jessica Bouzas Maneiro",
           "country": "ESP",
           "side": "B",
-          "ranking": 49,
-          "singlesRanking": 49,
+          "ranking": 50,
+          "singlesRanking": 50,
           "doublesRanking": 956,
           "tour": "WTA",
           "wtaPlayerId": "328139"
@@ -4791,8 +4858,7 @@
       "scheduleOrder": 2,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "RS019",
@@ -4803,6 +4869,7 @@
       "roundLabel": "资格赛第二轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 7",
       "score": "0-6,6-3,6-2",
       "result": "T. Grant d [4]P. Udvardy 0-6,6-3,6-2",
@@ -4836,8 +4903,7 @@
       "scheduleOrder": 2,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "RS020",
@@ -4848,6 +4914,7 @@
       "roundLabel": "资格赛第二轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 3",
       "score": "7-5,5-7,6-2",
       "result": "[5]K. Volynets d [14]T. Korpatsch 7-5,5-7,6-2",
@@ -4880,8 +4947,7 @@
       "scheduleOrder": 2,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "LS085",
@@ -4892,6 +4958,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 1",
       "score": "7-6(3),4-6,6-0",
       "result": "J. Grabher d P. Badosa 7-6(3),4-6,6-0",
@@ -4924,8 +4991,7 @@
       "scheduleOrder": 3,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "LS094",
@@ -4936,6 +5002,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 2",
       "score": "6-2,6-3",
       "result": "A. Bondar d V. Golubic 6-2,6-3",
@@ -4967,8 +5034,7 @@
       "scheduleOrder": 3,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "RS016",
@@ -4979,6 +5045,7 @@
       "roundLabel": "资格赛第二轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 5",
       "score": "6-4,0-6,6-4",
       "result": "[20]A. Pavlyuchenkova d [1]Y. Starodubtseva 6-4,0-6,6-4",
@@ -5012,8 +5079,7 @@
       "scheduleOrder": 3,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "RS026",
@@ -5024,6 +5090,7 @@
       "roundLabel": "资格赛第二轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 7",
       "score": "7-6(4),6-4",
       "result": "[13]D. Snigur d [11]H. Vandewinkel 7-6(4),6-4",
@@ -5055,8 +5122,7 @@
       "scheduleOrder": 3,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "LS086",
@@ -5067,6 +5133,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 2",
       "score": "6-4,6-3",
       "result": "M. Linette d R. Montgomery 6-4,6-3",
@@ -5099,8 +5166,7 @@
       "scheduleOrder": 4,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "LS077",
@@ -5111,6 +5177,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 1",
       "score": "6-2,6-4",
       "result": "K. Quevedo d V. Williams 6-2,6-4",
@@ -5145,8 +5212,7 @@
       "scheduleType": "not_before",
       "scheduleText": "Not Before",
       "scheduleTime": "16:00+0200",
-      "scheduleDisplay": "Not Before 4:00 PM",
-      "tour": "WTA"
+      "scheduleDisplay": "Not Before 4:00 PM"
     },
     {
       "id": "RS023",
@@ -5157,6 +5223,7 @@
       "roundLabel": "资格赛第二轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 5",
       "score": "7-5,6-3",
       "result": "[8]D. Galfi d [19]D. Vidmanova 7-5,6-3",
@@ -5189,8 +5256,7 @@
       "scheduleOrder": 4,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "RS027",
@@ -5201,6 +5267,7 @@
       "roundLabel": "资格赛第二轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 3",
       "score": "2-6,7-6(5),6-2",
       "result": "[16]A. Kalinina d S. Stephens 2-6,7-6(5),6-2",
@@ -5233,8 +5300,7 @@
       "scheduleOrder": 3,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "LS070",
@@ -5245,6 +5311,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 2",
       "score": "6-0,6-3",
       "result": "C. Osorio d A. Zakharova 6-0,6-3",
@@ -5276,8 +5343,7 @@
       "scheduleOrder": 5,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "RS017",
@@ -5288,6 +5354,7 @@
       "roundLabel": "资格赛第二轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 7",
       "score": "6-2,6-7(5),6-3",
       "result": "[22]S. Kraus d [2]A. Potapova 6-2,6-7(5),6-3",
@@ -5320,8 +5387,7 @@
       "scheduleOrder": 4,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "RS024",
@@ -5332,6 +5398,7 @@
       "roundLabel": "资格赛第二轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 8",
       "score": "6-1,7-6(4)",
       "result": "[9]A. Parks d K. Efremova 6-1,7-6(4)",
@@ -5365,8 +5432,7 @@
       "scheduleType": "not_before",
       "scheduleText": "Not Before",
       "scheduleTime": "19:15+0200",
-      "scheduleDisplay": "Not Before 7:15 PM",
-      "tour": "WTA"
+      "scheduleDisplay": "Not Before 7:15 PM"
     },
     {
       "id": "LS065",
@@ -5377,6 +5443,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 1",
       "score": "6-1,6-3",
       "result": "P. Stearns d L. Boisson 6-1,6-3",
@@ -5386,7 +5453,7 @@
           "name": "Peyton Stearns",
           "country": "USA",
           "side": "A",
-          "ranking": 48,
+          "ranking": 43,
           "singlesRanking": 43,
           "doublesRanking": 76,
           "tour": "WTA",
@@ -5397,8 +5464,8 @@
           "name": "Lois Boisson",
           "country": "FRA",
           "side": "B",
-          "ranking": 38,
-          "singlesRanking": 38,
+          "ranking": 46,
+          "singlesRanking": 46,
           "doublesRanking": 1245,
           "tour": "WTA",
           "wtaPlayerId": "328884"
@@ -5408,8 +5475,7 @@
       "scheduleOrder": 5,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "LS126",
@@ -5420,6 +5486,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 5",
       "score": "6-3,4-6,6-0",
       "result": "E. Ruse d A. Ruzic 6-3,4-6,6-0",
@@ -5452,8 +5519,7 @@
       "scheduleType": "starts_at",
       "scheduleText": "Starts at",
       "scheduleTime": "11:00+0200",
-      "scheduleDisplay": "Starts at 11:00 AM",
-      "tour": "WTA"
+      "scheduleDisplay": "Starts at 11:00 AM"
     },
     {
       "id": "LS121",
@@ -5464,6 +5530,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 3",
       "score": "6-4,6-3",
       "result": "S. Zhang d E. Lys 6-4,6-3",
@@ -5496,8 +5563,7 @@
       "scheduleType": "starts_at",
       "scheduleText": "Starts at",
       "scheduleTime": "11:00+0200",
-      "scheduleDisplay": "Starts at 11:00 AM",
-      "tour": "WTA"
+      "scheduleDisplay": "Starts at 11:00 AM"
     },
     {
       "id": "LS114",
@@ -5508,6 +5574,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 1",
       "score": "7-5,6-2",
       "result": "Z. Sonmez d C. Martinez Cirez 7-5,6-2",
@@ -5540,8 +5607,7 @@
       "scheduleType": "starts_at",
       "scheduleText": "Starts at",
       "scheduleTime": "11:00+0200",
-      "scheduleDisplay": "Starts at 11:00 AM",
-      "tour": "WTA"
+      "scheduleDisplay": "Starts at 11:00 AM"
     },
     {
       "id": "LS089",
@@ -5552,6 +5618,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 7",
       "score": "6-4,1-6,6-1",
       "result": "P. Udvardy d K. Birrell 6-4,1-6,6-1",
@@ -5585,8 +5652,7 @@
       "scheduleType": "starts_at",
       "scheduleText": "Starts at",
       "scheduleTime": "11:00+0200",
-      "scheduleDisplay": "Starts at 11:00 AM",
-      "tour": "WTA"
+      "scheduleDisplay": "Starts at 11:00 AM"
     },
     {
       "id": "LS081",
@@ -5597,6 +5663,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 3",
       "score": "6-3,3-6,7-6(13)",
       "result": "D. Snigur d D. Kasatkina 6-3,3-6,7-6(13)",
@@ -5629,8 +5696,7 @@
       "scheduleType": "not_before",
       "scheduleText": "Not Before",
       "scheduleTime": "12:30+0200",
-      "scheduleDisplay": "Not Before 12:30 PM",
-      "tour": "WTA"
+      "scheduleDisplay": "Not Before 12:30 PM"
     },
     {
       "id": "LS090",
@@ -5641,6 +5707,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 7",
       "score": "7-6(7),6-4",
       "result": "D. Galfi d A. Tomljanovic 7-6(7),6-4",
@@ -5674,8 +5741,7 @@
       "scheduleType": "not_before",
       "scheduleText": "Not Before",
       "scheduleTime": "13:00+0200",
-      "scheduleDisplay": "Not Before 1:00 PM",
-      "tour": "WTA"
+      "scheduleDisplay": "Not Before 1:00 PM"
     },
     {
       "id": "LS066",
@@ -5686,6 +5752,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 5",
       "score": "6-3,1-6,6-3",
       "result": "Y. Starodubtseva d M. Uchijima 6-3,1-6,6-3",
@@ -5719,8 +5786,7 @@
       "scheduleType": "not_before",
       "scheduleText": "Not Before",
       "scheduleTime": "12:30+0200",
-      "scheduleDisplay": "Not Before 12:30 PM",
-      "tour": "WTA"
+      "scheduleDisplay": "Not Before 12:30 PM"
     },
     {
       "id": "LS082",
@@ -5731,6 +5797,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 8",
       "score": "6-3,6-2",
       "result": "A. Parks d E. Cocciaretto 6-3,6-2",
@@ -5752,7 +5819,7 @@
           "name": "Elisabetta Cocciaretto",
           "country": "ITA",
           "side": "B",
-          "ranking": 45,
+          "ranking": 41,
           "singlesRanking": 41,
           "doublesRanking": 336,
           "tour": "WTA",
@@ -5764,8 +5831,7 @@
       "scheduleType": "starts_at",
       "scheduleText": "Starts at",
       "scheduleTime": "13:30+0200",
-      "scheduleDisplay": "Starts at 1:30 PM",
-      "tour": "WTA"
+      "scheduleDisplay": "Starts at 1:30 PM"
     },
     {
       "id": "LS117",
@@ -5776,6 +5842,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 2",
       "score": "6-3,6-3",
       "result": "A. Eala d A. Pavlyuchenkova 6-3,6-3",
@@ -5797,8 +5864,8 @@
           "name": "Alexandra Eala",
           "country": "PHI",
           "side": "B",
-          "ranking": 29,
-          "singlesRanking": 29,
+          "ranking": 44,
+          "singlesRanking": 44,
           "doublesRanking": 101,
           "tour": "WTA",
           "wtaPlayerId": "330332"
@@ -5809,8 +5876,7 @@
       "scheduleType": "not_before",
       "scheduleText": "Not Before",
       "scheduleTime": "13:00+0200",
-      "scheduleDisplay": "Not Before 1:00 PM",
-      "tour": "WTA"
+      "scheduleDisplay": "Not Before 1:00 PM"
     },
     {
       "id": "LS069",
@@ -5821,6 +5887,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 8",
       "score": "6-2,5-7,6-2",
       "result": "A. Kalinina d K. Rakhimova 6-2,5-7,6-2",
@@ -5853,8 +5920,7 @@
       "scheduleOrder": 3,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "LS105",
@@ -5865,6 +5931,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 2",
       "score": "6-3,6-2",
       "result": "E. Arango d T. Gibson 6-3,6-2",
@@ -5897,8 +5964,7 @@
       "scheduleOrder": 3,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "LS098",
@@ -5909,6 +5975,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 3",
       "score": "6-4,4-6,6-3",
       "result": "Y. Putintseva d T. Valentova 6-4,4-6,6-3",
@@ -5940,8 +6007,7 @@
       "scheduleOrder": 3,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "LS106",
@@ -5952,6 +6018,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 7",
       "score": "6-4,6-2",
       "result": "J. Tjen d A. Charaeva 6-4,6-2",
@@ -5961,7 +6028,7 @@
           "name": "Janice Tjen",
           "country": "INA",
           "side": "A",
-          "ranking": 40,
+          "ranking": 39,
           "singlesRanking": 39,
           "doublesRanking": 45,
           "tour": "WTA",
@@ -5984,8 +6051,7 @@
       "scheduleOrder": 3,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "LS113",
@@ -5996,6 +6062,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 5",
       "score": "7-6(10),7-6(8)",
       "result": "S. Sierra d D. Yastremska 7-6(10),7-6(8)",
@@ -6005,7 +6072,7 @@
           "name": "Dayana Yastremska",
           "country": "UKR",
           "side": "A",
-          "ranking": 55,
+          "ranking": 49,
           "singlesRanking": 49,
           "doublesRanking": 449,
           "tour": "WTA",
@@ -6027,8 +6094,7 @@
       "scheduleOrder": 3,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "LS122",
@@ -6039,6 +6105,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 7",
       "score": "7-5,6-0",
       "result": "S. Waltert d O. Oliynykova 7-5,6-0",
@@ -6070,8 +6137,7 @@
       "scheduleOrder": 4,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "LS118",
@@ -6082,6 +6148,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 1",
       "score": "2-6,6-1,6-4",
       "result": "K. Pliskova d S. Kraus 2-6,6-1,6-4",
@@ -6114,8 +6181,7 @@
       "scheduleType": "not_before",
       "scheduleText": "Not Before",
       "scheduleTime": "17:00+0200",
-      "scheduleDisplay": "Not Before 5:00 PM",
-      "tour": "WTA"
+      "scheduleDisplay": "Not Before 5:00 PM"
     },
     {
       "id": "LS110",
@@ -6126,6 +6192,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 8",
       "score": "6-4,6-1",
       "result": "L. Jeanjean d O. Selekhmeteva 6-4,6-1",
@@ -6158,8 +6225,7 @@
       "scheduleOrder": 4,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "LS125",
@@ -6170,6 +6236,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 5",
       "score": "7-6(2),6-4",
       "result": "S. Kenin d A. Krueger 7-6(2),6-4",
@@ -6201,8 +6268,7 @@
       "scheduleOrder": 4,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "LS097",
@@ -6213,6 +6279,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 2",
       "score": "6-4,6-2",
       "result": "K. Boulter d T. Townsend 6-4,6-2",
@@ -6244,8 +6311,7 @@
       "scheduleOrder": 5,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "LS101",
@@ -6256,6 +6322,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 7",
       "score": "6-3,6-4",
       "result": "K. Siniakova d E. Kalieva 6-3,6-4",
@@ -6277,7 +6344,7 @@
           "name": "Katerina Siniakova",
           "country": "CZE",
           "side": "B",
-          "ranking": 43,
+          "ranking": 42,
           "singlesRanking": 42,
           "doublesRanking": 2,
           "tour": "WTA",
@@ -6288,8 +6355,7 @@
       "scheduleOrder": 5,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "LS102",
@@ -6300,6 +6366,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 6",
       "score": "6-1,6-2",
       "result": "C. McNally d K. Volynets 6-1,6-2",
@@ -6333,8 +6400,7 @@
       "scheduleType": "not_before",
       "scheduleText": "Not Before",
       "scheduleTime": "19:05+0200",
-      "scheduleDisplay": "Not Before 7:05 PM",
-      "tour": "WTA"
+      "scheduleDisplay": "Not Before 7:05 PM"
     },
     {
       "id": "LS109",
@@ -6345,6 +6411,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 8",
       "score": "6-1,6-2",
       "result": "T. Grant d E. Jacquemot 6-1,6-2",
@@ -6377,8 +6444,7 @@
       "scheduleOrder": 5,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "LS033",
@@ -6389,6 +6455,7 @@
       "roundLabel": "第二轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 5",
       "score": "3-6,7-6(5),6-4",
       "result": "[29]J. Cristian d Y. Starodubtseva 3-6,7-6(5),6-4",
@@ -6410,7 +6477,7 @@
           "name": "Jaqueline Cristian",
           "country": "ROU",
           "side": "B",
-          "ranking": 36,
+          "ranking": 33,
           "singlesRanking": 33,
           "doublesRanking": 107,
           "tour": "WTA",
@@ -6422,8 +6489,7 @@
       "scheduleType": "starts_at",
       "scheduleText": "Starts at",
       "scheduleTime": "11:00+0200",
-      "scheduleDisplay": "Starts at 11:00 AM",
-      "tour": "WTA"
+      "scheduleDisplay": "Starts at 11:00 AM"
     },
     {
       "id": "LS036",
@@ -6434,6 +6500,7 @@
       "roundLabel": "第二轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 3",
       "score": "6-4,6-2",
       "result": "[11]B. Bencic d P. Marcinko 6-4,6-2",
@@ -6466,8 +6533,7 @@
       "scheduleType": "starts_at",
       "scheduleText": "Starts at",
       "scheduleTime": "11:00+0200",
-      "scheduleDisplay": "Starts at 11:00 AM",
-      "tour": "WTA"
+      "scheduleDisplay": "Starts at 11:00 AM"
     },
     {
       "id": "LS047",
@@ -6478,6 +6544,7 @@
       "roundLabel": "第二轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 2",
       "score": "6-3,6-4",
       "result": "A. Bondar d [7]E. Svitolina 6-3,6-4",
@@ -6498,7 +6565,7 @@
           "name": "Elina Svitolina",
           "country": "UKR",
           "side": "B",
-          "ranking": 8,
+          "ranking": 7,
           "singlesRanking": 7,
           "tour": "WTA",
           "wtaPlayerId": "316738"
@@ -6509,8 +6576,7 @@
       "scheduleType": "starts_at",
       "scheduleText": "Starts at",
       "scheduleTime": "11:00+0200",
-      "scheduleDisplay": "Starts at 11:00 AM",
-      "tour": "WTA"
+      "scheduleDisplay": "Starts at 11:00 AM"
     },
     {
       "id": "LD030",
@@ -6521,6 +6587,7 @@
       "roundLabel": "第一轮",
       "draw": "MD",
       "discipline": "doubles",
+      "tour": "WTA",
       "court": "Court 7",
       "score": "6-2,6-2",
       "result": "A. Eala / Z. Sonmez d H. Chan / F. Stollar 6-2,6-2",
@@ -6530,8 +6597,8 @@
           "name": "Alexandra Eala",
           "country": "PHI",
           "side": "A",
-          "ranking": 29,
-          "singlesRanking": 29,
+          "ranking": 44,
+          "singlesRanking": 44,
           "doublesRanking": 101,
           "tour": "WTA",
           "wtaPlayerId": "330332"
@@ -6575,8 +6642,7 @@
       "scheduleType": "starts_at",
       "scheduleText": "Starts at",
       "scheduleTime": "11:00+0200",
-      "scheduleDisplay": "Starts at 11:00 AM",
-      "tour": "WTA"
+      "scheduleDisplay": "Starts at 11:00 AM"
     },
     {
       "id": "LS046",
@@ -6587,6 +6653,7 @@
       "roundLabel": "第二轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 7",
       "score": "2-6,6-3,6-0",
       "result": "L. Samson d [28]X. Wang 2-6,6-3,6-0",
@@ -6596,7 +6663,7 @@
           "name": "Xinyu Wang",
           "country": "CHN",
           "side": "A",
-          "ranking": 34,
+          "ranking": 31,
           "singlesRanking": 31,
           "doublesRanking": 155,
           "tour": "WTA",
@@ -6620,8 +6687,7 @@
       "scheduleType": "not_before",
       "scheduleText": "Not Before",
       "scheduleTime": "12:00+0200",
-      "scheduleDisplay": "Not Before 12:00 PM",
-      "tour": "WTA"
+      "scheduleDisplay": "Not Before 12:00 PM"
     },
     {
       "id": "LS037",
@@ -6632,6 +6698,7 @@
       "roundLabel": "第二轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 3",
       "score": "3-6,7-5,6-1",
       "result": "[18]D. Shnaider d J. Bouzas Maneiro 3-6,7-5,6-1",
@@ -6641,8 +6708,8 @@
           "name": "Jessica Bouzas Maneiro",
           "country": "ESP",
           "side": "A",
-          "ranking": 49,
-          "singlesRanking": 49,
+          "ranking": 50,
+          "singlesRanking": 50,
           "doublesRanking": 956,
           "tour": "WTA",
           "wtaPlayerId": "328139"
@@ -6652,7 +6719,7 @@
           "name": "Diana Shnaider",
           "country": "RUS",
           "side": "B",
-          "ranking": 20,
+          "ranking": 19,
           "singlesRanking": 19,
           "doublesRanking": 28,
           "tour": "WTA",
@@ -6663,8 +6730,7 @@
       "scheduleOrder": 2,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "LS040",
@@ -6675,6 +6741,7 @@
       "roundLabel": "第二轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 1",
       "score": "6-1,6-2",
       "result": "[4]I. Swiatek d D. Snigur 6-1,6-2",
@@ -6684,8 +6751,8 @@
           "name": "Iga Swiatek",
           "country": "POL",
           "side": "A",
-          "ranking": 3,
-          "singlesRanking": 3,
+          "ranking": 4,
+          "singlesRanking": 4,
           "tour": "WTA",
           "wtaPlayerId": "326408"
         },
@@ -6706,8 +6773,7 @@
       "scheduleType": "not_before",
       "scheduleText": "Not Before",
       "scheduleTime": "13:00+0200",
-      "scheduleDisplay": "Not Before 1:00 PM",
-      "tour": "WTA"
+      "scheduleDisplay": "Not Before 1:00 PM"
     },
     {
       "id": "LS045",
@@ -6718,6 +6784,7 @@
       "roundLabel": "第二轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 5",
       "score": "6-3,6-3",
       "result": "D. Galfi d [22]A. Kalinskaya 6-3,6-3",
@@ -6739,8 +6806,8 @@
           "name": "Anna Kalinskaya",
           "country": "RUS",
           "side": "B",
-          "ranking": 21,
-          "singlesRanking": 21,
+          "ranking": 22,
+          "singlesRanking": 22,
           "doublesRanking": 57,
           "tour": "WTA",
           "wtaPlayerId": "323942"
@@ -6751,8 +6818,7 @@
       "scheduleType": "not_before",
       "scheduleText": "Not Before",
       "scheduleTime": "13:00+0200",
-      "scheduleDisplay": "Not Before 1:00 PM",
-      "tour": "WTA"
+      "scheduleDisplay": "Not Before 1:00 PM"
     },
     {
       "id": "LS034",
@@ -6763,6 +6829,7 @@
       "roundLabel": "第二轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 7",
       "score": "6-4,6-3",
       "result": "A. Kalinina d [23]M. Bouzkova 6-4,6-3",
@@ -6772,7 +6839,7 @@
           "name": "Marie Bouzkova",
           "country": "CZE",
           "side": "A",
-          "ranking": 32,
+          "ranking": 24,
           "singlesRanking": 24,
           "doublesRanking": 77,
           "tour": "WTA",
@@ -6795,8 +6862,7 @@
       "scheduleOrder": 3,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "LS039",
@@ -6807,6 +6873,7 @@
       "roundLabel": "第二轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 4",
       "score": "3-6,6-2,6-4",
       "result": "[8]J. Paolini d L. Siegemund 3-6,6-2,6-4",
@@ -6816,7 +6883,7 @@
           "name": "Laura Siegemund",
           "country": "GER",
           "side": "A",
-          "ranking": 54,
+          "ranking": 47,
           "singlesRanking": 47,
           "doublesRanking": 21,
           "tour": "WTA",
@@ -6827,8 +6894,8 @@
           "name": "Jasmine Paolini",
           "country": "ITA",
           "side": "B",
-          "ranking": 7,
-          "singlesRanking": 7,
+          "ranking": 9,
+          "singlesRanking": 9,
           "doublesRanking": 3,
           "tour": "WTA",
           "wtaPlayerId": "319280"
@@ -6838,8 +6905,7 @@
       "scheduleOrder": 3,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "LS032",
@@ -6850,6 +6916,7 @@
       "roundLabel": "第二轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 1",
       "score": "7-5,6-3",
       "result": "[1]A. Sabalenka d P. Stearns 7-5,6-3",
@@ -6870,7 +6937,7 @@
           "name": "Peyton Stearns",
           "country": "USA",
           "side": "B",
-          "ranking": 48,
+          "ranking": 43,
           "singlesRanking": 43,
           "doublesRanking": 76,
           "tour": "WTA",
@@ -6881,8 +6948,7 @@
       "scheduleOrder": 3,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "LS041",
@@ -6893,6 +6959,7 @@
       "roundLabel": "第二轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 5",
       "score": "6-2,6-7(5),6-3",
       "result": "[31]A. Li d A. Parks 6-2,6-7(5),6-3",
@@ -6914,7 +6981,7 @@
           "name": "Ann Li",
           "country": "USA",
           "side": "B",
-          "ranking": 39,
+          "ranking": 34,
           "singlesRanking": 34,
           "doublesRanking": 135,
           "tour": "WTA",
@@ -6925,8 +6992,7 @@
       "scheduleOrder": 3,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "LD018",
@@ -6937,6 +7003,7 @@
       "roundLabel": "第一轮",
       "draw": "MD",
       "discipline": "doubles",
+      "tour": "WTA",
       "court": "Court 8",
       "score": "6-3,7-6(1)",
       "result": "A. Sutjiadi / J. Tjen d M. Kostyuk / C. Tauson 6-3,7-6(1)",
@@ -6946,7 +7013,7 @@
           "name": "Marta Kostyuk",
           "country": "UKR",
           "side": "A",
-          "ranking": 28,
+          "ranking": 23,
           "singlesRanking": 23,
           "doublesRanking": 158,
           "tour": "WTA",
@@ -6957,8 +7024,8 @@
           "name": "Clara Tauson",
           "country": "DEN",
           "side": "A",
-          "ranking": 16,
-          "singlesRanking": 16,
+          "ranking": 18,
+          "singlesRanking": 18,
           "doublesRanking": 69,
           "tour": "WTA",
           "wtaPlayerId": "327793"
@@ -6979,7 +7046,7 @@
           "name": "Janice Tjen",
           "country": "INA",
           "side": "B",
-          "ranking": 40,
+          "ranking": 39,
           "singlesRanking": 39,
           "doublesRanking": 45,
           "tour": "WTA",
@@ -6990,8 +7057,7 @@
       "scheduleOrder": 3,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "LD029",
@@ -7002,6 +7068,7 @@
       "roundLabel": "第一轮",
       "draw": "MD",
       "discipline": "doubles",
+      "tour": "WTA",
       "court": "Court 7",
       "score": "6-3,6-4",
       "result": "C. Gauff / R. Montgomery d I. Khromacheva / G. Olmos 6-3,6-4",
@@ -7011,7 +7078,7 @@
           "name": "Coco Gauff",
           "country": "USA",
           "side": "A",
-          "ranking": 4,
+          "ranking": 3,
           "singlesRanking": 3,
           "doublesRanking": 62,
           "tour": "WTA",
@@ -7056,8 +7123,7 @@
       "scheduleOrder": 4,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "LS035",
@@ -7068,6 +7134,7 @@
       "roundLabel": "第二轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 2",
       "score": "6-2,7-5",
       "result": "[14]N. Osaka d C. Osorio 6-2,7-5",
@@ -7099,8 +7166,7 @@
       "scheduleType": "not_before",
       "scheduleText": "Not Before",
       "scheduleTime": "17:00+0200",
-      "scheduleDisplay": "Not Before 5:00 PM",
-      "tour": "WTA"
+      "scheduleDisplay": "Not Before 5:00 PM"
     },
     {
       "id": "LS043",
@@ -7111,6 +7177,7 @@
       "roundLabel": "第二轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 4",
       "score": "6-4,6-1",
       "result": "[15]I. Jovic d M. Linette 6-4,6-1",
@@ -7131,7 +7198,7 @@
           "name": "Iva Jovic",
           "country": "USA",
           "side": "B",
-          "ranking": 17,
+          "ranking": 16,
           "singlesRanking": 16,
           "doublesRanking": 132,
           "tour": "WTA",
@@ -7142,8 +7209,7 @@
       "scheduleOrder": 4,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "LD020",
@@ -7154,6 +7220,7 @@
       "roundLabel": "第一轮",
       "draw": "MD",
       "discipline": "doubles",
+      "tour": "WTA",
       "court": "Court 8",
       "score": "6-2,3-6,1-0(7)",
       "result": "[3]E. Mertens / S. Zhang d C. McNally / J. Pegula 6-2,3-6,1-0(7)",
@@ -7163,8 +7230,8 @@
           "name": "Elise Mertens",
           "country": "BEL",
           "side": "A",
-          "ranking": 19,
-          "singlesRanking": 19,
+          "ranking": 21,
+          "singlesRanking": 21,
           "doublesRanking": 1,
           "tour": "WTA",
           "wtaPlayerId": "317964"
@@ -7207,8 +7274,7 @@
       "scheduleOrder": 4,
       "scheduleType": "after_rest",
       "scheduleText": "After suitable rest",
-      "scheduleDisplay": "After suitable rest",
-      "tour": "WTA"
+      "scheduleDisplay": "After suitable rest"
     },
     {
       "id": "LD031",
@@ -7219,6 +7285,7 @@
       "roundLabel": "第一轮",
       "draw": "MD",
       "discipline": "doubles",
+      "tour": "WTA",
       "court": "Court 7",
       "score": "3-6,6-1,1-0(8)",
       "result": "[2]K. Siniakova / T. Townsend d L. Kichenok / D. Krawczyk 3-6,6-1,1-0(8)",
@@ -7250,7 +7317,7 @@
           "name": "Katerina Siniakova",
           "country": "CZE",
           "side": "B",
-          "ranking": 43,
+          "ranking": 42,
           "singlesRanking": 42,
           "doublesRanking": 2,
           "tour": "WTA",
@@ -7272,8 +7339,7 @@
       "scheduleOrder": 5,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "LS042",
@@ -7284,6 +7350,7 @@
       "roundLabel": "第二轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 5",
       "score": "6-2,6-3",
       "result": "[24]L. Fernandez d J. Grabher 6-2,6-3",
@@ -7315,8 +7382,7 @@
       "scheduleOrder": 4,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "LS044",
@@ -7327,6 +7393,7 @@
       "roundLabel": "第二轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 1",
       "score": "7-5,6-2",
       "result": "[9]M. Andreeva d P. Udvardy 7-5,6-2",
@@ -7336,7 +7403,7 @@
           "name": "Mirra Andreeva",
           "country": "RUS",
           "side": "A",
-          "ranking": 10,
+          "ranking": 8,
           "singlesRanking": 8,
           "doublesRanking": 33,
           "tour": "WTA",
@@ -7360,8 +7427,7 @@
       "scheduleType": "not_before",
       "scheduleText": "Not Before",
       "scheduleTime": "19:00+0200",
-      "scheduleDisplay": "Not Before 7:00 PM",
-      "tour": "WTA"
+      "scheduleDisplay": "Not Before 7:00 PM"
     },
     {
       "id": "LS038",
@@ -7372,6 +7438,7 @@
       "roundLabel": "第二轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 4",
       "score": "6-1,6-4",
       "result": "[30]H. Baptiste d K. Quevedo 6-1,6-4",
@@ -7381,7 +7448,7 @@
           "name": "Hailey Baptiste",
           "country": "USA",
           "side": "A",
-          "ranking": 46,
+          "ranking": 32,
           "singlesRanking": 32,
           "doublesRanking": 129,
           "tour": "WTA",
@@ -7404,8 +7471,7 @@
       "scheduleOrder": 5,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "LS062",
@@ -7416,6 +7482,7 @@
       "roundLabel": "第二轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Manolo Santana Stadium",
       "score": "",
       "result": "",
@@ -7425,8 +7492,8 @@
           "name": "Qinwen Zheng",
           "country": "CHN",
           "side": "A",
-          "ranking": 26,
-          "singlesRanking": 26,
+          "ranking": 36,
+          "singlesRanking": 36,
           "tour": "WTA",
           "wtaPlayerId": "328120"
         },
@@ -7447,8 +7514,7 @@
       "scheduleType": "starts_at",
       "scheduleText": "Starts at",
       "scheduleTime": "11:00+0200",
-      "scheduleDisplay": "Starts at 11:00 AM",
-      "tour": "WTA"
+      "scheduleDisplay": "Starts at 11:00 AM"
     },
     {
       "id": "LS060",
@@ -7459,6 +7525,7 @@
       "roundLabel": "第二轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Stadium 3",
       "score": "",
       "result": "",
@@ -7468,7 +7535,7 @@
           "name": "Madison Keys",
           "country": "USA",
           "side": "A",
-          "ranking": 18,
+          "ranking": 17,
           "singlesRanking": 17,
           "doublesRanking": 527,
           "tour": "WTA",
@@ -7491,8 +7558,7 @@
       "scheduleType": "starts_at",
       "scheduleText": "Starts at",
       "scheduleTime": "11:00+0200",
-      "scheduleDisplay": "Starts at 11:00 AM",
-      "tour": "WTA"
+      "scheduleDisplay": "Starts at 11:00 AM"
     },
     {
       "id": "LS059",
@@ -7503,6 +7569,7 @@
       "roundLabel": "第二轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 5",
       "score": "",
       "result": "",
@@ -7522,8 +7589,8 @@
           "name": "Maria Sakkari",
           "country": "GRE",
           "side": "B",
-          "ranking": 33,
-          "singlesRanking": 33,
+          "ranking": 37,
+          "singlesRanking": 37,
           "doublesRanking": 527,
           "tour": "WTA",
           "wtaPlayerId": "318312"
@@ -7534,8 +7601,7 @@
       "scheduleType": "starts_at",
       "scheduleText": "Starts at",
       "scheduleTime": "11:00+0200",
-      "scheduleDisplay": "Starts at 11:00 AM",
-      "tour": "WTA"
+      "scheduleDisplay": "Starts at 11:00 AM"
     },
     {
       "id": "LS056",
@@ -7546,6 +7612,7 @@
       "roundLabel": "第二轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 8",
       "score": "",
       "result": "",
@@ -7555,8 +7622,8 @@
           "name": "Magdalena Frech",
           "country": "POL",
           "side": "A",
-          "ranking": 37,
-          "singlesRanking": 37,
+          "ranking": 38,
+          "singlesRanking": 38,
           "doublesRanking": 174,
           "tour": "WTA",
           "wtaPlayerId": "320277"
@@ -7578,8 +7645,7 @@
       "scheduleType": "starts_at",
       "scheduleText": "Starts at",
       "scheduleTime": "11:00+0200",
-      "scheduleDisplay": "Starts at 11:00 AM",
-      "tour": "WTA"
+      "scheduleDisplay": "Starts at 11:00 AM"
     },
     {
       "id": "LS058",
@@ -7590,6 +7656,7 @@
       "roundLabel": "第二轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 5",
       "score": "",
       "result": "",
@@ -7599,8 +7666,8 @@
           "name": "Elise Mertens",
           "country": "BEL",
           "side": "A",
-          "ranking": 19,
-          "singlesRanking": 19,
+          "ranking": 21,
+          "singlesRanking": 21,
           "doublesRanking": 1,
           "tour": "WTA",
           "wtaPlayerId": "317964"
@@ -7610,8 +7677,8 @@
           "name": "Alexandra Eala",
           "country": "PHI",
           "side": "B",
-          "ranking": 29,
-          "singlesRanking": 29,
+          "ranking": 44,
+          "singlesRanking": 44,
           "doublesRanking": 101,
           "tour": "WTA",
           "wtaPlayerId": "330332"
@@ -7622,8 +7689,7 @@
       "scheduleType": "not_before",
       "scheduleText": "Not Before",
       "scheduleTime": "12:30+0200",
-      "scheduleDisplay": "Not Before 12:30 PM",
-      "tour": "WTA"
+      "scheduleDisplay": "Not Before 12:30 PM"
     },
     {
       "id": "LD021",
@@ -7634,6 +7700,7 @@
       "roundLabel": "第一轮",
       "draw": "MD",
       "discipline": "doubles",
+      "tour": "WTA",
       "court": "Court 5",
       "score": "",
       "result": "",
@@ -7665,7 +7732,7 @@
           "name": "Mirra Andreeva",
           "country": "RUS",
           "side": "B",
-          "ranking": 10,
+          "ranking": 8,
           "singlesRanking": 8,
           "doublesRanking": 33,
           "tour": "WTA",
@@ -7676,7 +7743,7 @@
           "name": "Diana Shnaider",
           "country": "RUS",
           "side": "B",
-          "ranking": 20,
+          "ranking": 19,
           "singlesRanking": 19,
           "doublesRanking": 28,
           "tour": "WTA",
@@ -7688,8 +7755,7 @@
       "scheduleType": "not_before",
       "scheduleText": "Not Before",
       "scheduleTime": "14:00+0200",
-      "scheduleDisplay": "Not Before 2:00 PM",
-      "tour": "WTA"
+      "scheduleDisplay": "Not Before 2:00 PM"
     },
     {
       "id": "LS055",
@@ -7700,6 +7766,7 @@
       "roundLabel": "第二轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Arantxa Sanchez Stadium",
       "score": "",
       "result": "",
@@ -7721,7 +7788,7 @@
           "name": "Coco Gauff",
           "country": "USA",
           "side": "B",
-          "ranking": 4,
+          "ranking": 3,
           "singlesRanking": 3,
           "doublesRanking": 62,
           "tour": "WTA",
@@ -7733,8 +7800,7 @@
       "scheduleType": "not_before",
       "scheduleText": "Not Before",
       "scheduleTime": "15:00+0200",
-      "scheduleDisplay": "Not Before 3:00 PM",
-      "tour": "WTA"
+      "scheduleDisplay": "Not Before 3:00 PM"
     },
     {
       "id": "LS051",
@@ -7745,6 +7811,7 @@
       "roundLabel": "第二轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Arantxa Sanchez Stadium",
       "score": "",
       "result": "",
@@ -7765,8 +7832,8 @@
           "name": "Victoria Mboko",
           "country": "CAN",
           "side": "B",
-          "ranking": 9,
-          "singlesRanking": 9,
+          "ranking": 10,
+          "singlesRanking": 10,
           "doublesRanking": 136,
           "tour": "WTA",
           "wtaPlayerId": "331006"
@@ -7777,8 +7844,7 @@
       "scheduleType": "not_before",
       "scheduleText": "Not Before",
       "scheduleTime": "19:00+0200",
-      "scheduleDisplay": "Not Before 7:00 PM",
-      "tour": "WTA"
+      "scheduleDisplay": "Not Before 7:00 PM"
     },
     {
       "id": "LS048",
@@ -7789,6 +7855,7 @@
       "roundLabel": "第二轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Manolo Santana Stadium",
       "score": "",
       "result": "",
@@ -7821,8 +7888,7 @@
       "scheduleType": "not_before",
       "scheduleText": "Not Before",
       "scheduleTime": "21:00+0200",
-      "scheduleDisplay": "Not Before 9:00 PM",
-      "tour": "WTA"
+      "scheduleDisplay": "Not Before 9:00 PM"
     },
     {
       "id": "LS061",
@@ -7833,6 +7899,7 @@
       "roundLabel": "第二轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 6",
       "score": "",
       "result": "",
@@ -7854,8 +7921,8 @@
           "name": "Jelena Ostapenko",
           "country": "LAT",
           "side": "B",
-          "ranking": 24,
-          "singlesRanking": 24,
+          "ranking": 40,
+          "singlesRanking": 40,
           "doublesRanking": 12,
           "tour": "WTA",
           "wtaPlayerId": "319939"
@@ -7865,8 +7932,7 @@
       "scheduleOrder": 3,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "LS050",
@@ -7877,6 +7943,7 @@
       "roundLabel": "第二轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 7",
       "score": "",
       "result": "",
@@ -7886,8 +7953,8 @@
           "name": "Clara Tauson",
           "country": "DEN",
           "side": "A",
-          "ranking": 16,
-          "singlesRanking": 16,
+          "ranking": 18,
+          "singlesRanking": 18,
           "doublesRanking": 69,
           "tour": "WTA",
           "wtaPlayerId": "327793"
@@ -7897,7 +7964,7 @@
           "name": "Katerina Siniakova",
           "country": "CZE",
           "side": "B",
-          "ranking": 43,
+          "ranking": 42,
           "singlesRanking": 42,
           "doublesRanking": 2,
           "tour": "WTA",
@@ -7908,8 +7975,7 @@
       "scheduleOrder": 4,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "LD026",
@@ -7920,6 +7986,7 @@
       "roundLabel": "第一轮",
       "draw": "MD",
       "discipline": "doubles",
+      "tour": "WTA",
       "court": "Court 5",
       "score": "",
       "result": "",
@@ -7973,8 +8040,7 @@
       "scheduleOrder": 5,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "LS053",
@@ -7985,6 +8051,7 @@
       "roundLabel": "第二轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 8",
       "score": "",
       "result": "",
@@ -7994,7 +8061,7 @@
           "name": "Janice Tjen",
           "country": "INA",
           "side": "A",
-          "ranking": 40,
+          "ranking": 39,
           "singlesRanking": 39,
           "doublesRanking": 45,
           "tour": "WTA",
@@ -8005,7 +8072,7 @@
           "name": "Liudmila Samsonova",
           "country": "RUS",
           "side": "B",
-          "ranking": 22,
+          "ranking": 20,
           "singlesRanking": 20,
           "doublesRanking": 32,
           "tour": "WTA",
@@ -8016,8 +8083,7 @@
       "scheduleOrder": 2,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "LS063",
@@ -8028,6 +8094,7 @@
       "roundLabel": "第二轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Manolo Santana Stadium",
       "score": "",
       "result": "",
@@ -8059,8 +8126,7 @@
       "scheduleOrder": 2,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "LD016",
@@ -8071,6 +8137,7 @@
       "roundLabel": "第一轮",
       "draw": "MD",
       "discipline": "doubles",
+      "tour": "WTA",
       "court": "Court 5",
       "score": "",
       "result": "",
@@ -8091,8 +8158,8 @@
           "name": "Jasmine Paolini",
           "country": "ITA",
           "side": "A",
-          "ranking": 7,
-          "singlesRanking": 7,
+          "ranking": 9,
+          "singlesRanking": 9,
           "doublesRanking": 3,
           "tour": "WTA",
           "wtaPlayerId": "319280"
@@ -8124,8 +8191,7 @@
       "scheduleOrder": 4,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "LS052",
@@ -8136,6 +8202,7 @@
       "roundLabel": "第二轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 7",
       "score": "",
       "result": "",
@@ -8168,8 +8235,7 @@
       "scheduleOrder": 3,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "LD023",
@@ -8180,6 +8246,7 @@
       "roundLabel": "第一轮",
       "draw": "MD",
       "discipline": "doubles",
+      "tour": "WTA",
       "court": "Court 8",
       "score": "",
       "result": "",
@@ -8233,8 +8300,7 @@
       "scheduleOrder": 4,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "LS049",
@@ -8245,6 +8311,7 @@
       "roundLabel": "第二轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 6",
       "score": "",
       "result": "",
@@ -8265,7 +8332,7 @@
           "name": "Marta Kostyuk",
           "country": "UKR",
           "side": "B",
-          "ranking": 28,
+          "ranking": 23,
           "singlesRanking": 23,
           "doublesRanking": 158,
           "tour": "WTA",
@@ -8276,8 +8343,7 @@
       "scheduleOrder": 4,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "LS054",
@@ -8288,6 +8354,7 @@
       "roundLabel": "第二轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Court 8",
       "score": "",
       "result": "",
@@ -8297,7 +8364,7 @@
           "name": "Sorana Cirstea",
           "country": "ROU",
           "side": "A",
-          "ranking": 35,
+          "ranking": 26,
           "singlesRanking": 26,
           "doublesRanking": 40,
           "tour": "WTA",
@@ -8320,8 +8387,7 @@
       "scheduleOrder": 3,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "LS057",
@@ -8332,6 +8398,7 @@
       "roundLabel": "第二轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "WTA",
       "court": "Stadium 3",
       "score": "",
       "result": "",
@@ -8363,8 +8430,7 @@
       "scheduleOrder": 2,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "WTA"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "ATP-MS125",
@@ -8375,6 +8441,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Court 4",
       "score": "64 75",
       "result": "64 75",
@@ -8406,8 +8473,7 @@
       "scheduleType": "starts_at",
       "scheduleText": "Starts At",
       "scheduleTime": "11:00+0200",
-      "scheduleDisplay": "Starts At 11:00",
-      "tour": "ATP"
+      "scheduleDisplay": "Starts At 11:00"
     },
     {
       "id": "ATP-MS109",
@@ -8418,6 +8484,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Court 6",
       "score": "46 75 75",
       "result": "46 75 75",
@@ -8449,8 +8516,7 @@
       "scheduleType": "starts_at",
       "scheduleText": "Starts At",
       "scheduleTime": "11:00+0200",
-      "scheduleDisplay": "Starts At 11:00",
-      "tour": "ATP"
+      "scheduleDisplay": "Starts At 11:00"
     },
     {
       "id": "ATP-MS065",
@@ -8461,6 +8527,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Court 4",
       "score": "67(4) 76(4) 64",
       "result": "67(4) 76(4) 64",
@@ -8492,8 +8559,7 @@
       "scheduleOrder": 5,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "ATP"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "ATP-MS114",
@@ -8504,6 +8570,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Stadium 3",
       "score": "53 Ret'd",
       "result": "53 Ret'd",
@@ -8533,8 +8600,7 @@
       "scheduleOrder": 5,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "ATP"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "ATP-MS085",
@@ -8545,6 +8611,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Court 4",
       "score": "64 62",
       "result": "64 62",
@@ -8574,8 +8641,7 @@
       "scheduleOrder": 2,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "ATP"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "ATP-MS101",
@@ -8586,6 +8652,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Manolo Santana Stadium",
       "score": "46 76(5) 62",
       "result": "46 76(5) 62",
@@ -8616,8 +8683,7 @@
       "scheduleType": "starts_at",
       "scheduleText": "Starts At",
       "scheduleTime": "11:00+0200",
-      "scheduleDisplay": "Starts At 11:00",
-      "tour": "ATP"
+      "scheduleDisplay": "Starts At 11:00"
     },
     {
       "id": "ATP-MS106",
@@ -8628,6 +8694,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Court 6",
       "score": "64 64",
       "result": "64 64",
@@ -8658,8 +8725,7 @@
       "scheduleOrder": 4,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "ATP"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "ATP-MS077",
@@ -8670,6 +8736,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Arantxa Sanchez Stadium",
       "score": "46 63 64",
       "result": "46 63 64",
@@ -8700,8 +8767,7 @@
       "scheduleType": "starts_at",
       "scheduleText": "Starts At",
       "scheduleTime": "11:00+0200",
-      "scheduleDisplay": "Starts At 11:00",
-      "tour": "ATP"
+      "scheduleDisplay": "Starts At 11:00"
     },
     {
       "id": "ATP-MS122",
@@ -8712,6 +8778,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Court 8",
       "score": "76(7) 64",
       "result": "76(7) 64",
@@ -8743,8 +8810,7 @@
       "scheduleOrder": 2,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "ATP"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "ATP-MS093",
@@ -8755,6 +8821,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Court 6",
       "score": "62 64",
       "result": "62 64",
@@ -8786,8 +8853,7 @@
       "scheduleOrder": 2,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "ATP"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "ATP-MS110",
@@ -8798,6 +8864,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Court 6",
       "score": "75 61",
       "result": "75 61",
@@ -8828,8 +8895,7 @@
       "scheduleOrder": 3,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "ATP"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "ATP-MS105",
@@ -8840,6 +8906,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Court 8",
       "score": "64 67(3) 75",
       "result": "64 67(3) 75",
@@ -8871,8 +8938,7 @@
       "scheduleType": "starts_at",
       "scheduleText": "Starts At",
       "scheduleTime": "11:00+0200",
-      "scheduleDisplay": "Starts At 11:00",
-      "tour": "ATP"
+      "scheduleDisplay": "Starts At 11:00"
     },
     {
       "id": "ATP-MS094",
@@ -8883,6 +8949,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Arantxa Sanchez Stadium",
       "score": "63 63",
       "result": "63 63",
@@ -8913,8 +8980,7 @@
       "scheduleOrder": 4,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "ATP"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "ATP-MS078",
@@ -8925,6 +8991,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Manolo Santana Stadium",
       "score": "26 75 64",
       "result": "26 75 64",
@@ -8955,8 +9022,7 @@
       "scheduleOrder": 5,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "ATP"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "ATP-MS073",
@@ -8967,6 +9033,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Court 4",
       "score": "62 60",
       "result": "62 60",
@@ -8997,8 +9064,7 @@
       "scheduleType": "starts_at",
       "scheduleText": "Starts At",
       "scheduleTime": "11:00+0200",
-      "scheduleDisplay": "Starts At 11:00",
-      "tour": "ATP"
+      "scheduleDisplay": "Starts At 11:00"
     },
     {
       "id": "ATP-MS074",
@@ -9009,6 +9075,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Court 6",
       "score": "63 76(1)",
       "result": "63 76(1)",
@@ -9039,8 +9106,7 @@
       "scheduleOrder": 3,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "ATP"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "ATP-MS069",
@@ -9051,6 +9117,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Stadium 3",
       "score": "36 76(3) 63",
       "result": "36 76(3) 63",
@@ -9082,8 +9149,7 @@
       "scheduleOrder": 4,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "ATP"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "ATP-MS113",
@@ -9094,6 +9160,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Court 4",
       "score": "76(5) 76(6)",
       "result": "76(5) 76(6)",
@@ -9125,8 +9192,7 @@
       "scheduleOrder": 2,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "ATP"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "ATP-MS098",
@@ -9137,6 +9203,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Stadium 3",
       "score": "64 16 76(6)",
       "result": "64 16 76(6)",
@@ -9167,8 +9234,7 @@
       "scheduleOrder": 4,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "ATP"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "ATP-MS066",
@@ -9179,6 +9245,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Court 6",
       "score": "64 76(4)",
       "result": "64 76(4)",
@@ -9208,8 +9275,7 @@
       "scheduleOrder": 4,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "ATP"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "ATP-MS102",
@@ -9220,6 +9286,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Arantxa Sanchez Stadium",
       "score": "64 61",
       "result": "64 61",
@@ -9250,8 +9317,7 @@
       "scheduleOrder": 2,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "ATP"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "ATP-MS086",
@@ -9262,6 +9328,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Court 6",
       "score": "63 75",
       "result": "63 75",
@@ -9293,8 +9360,7 @@
       "scheduleType": "starts_at",
       "scheduleText": "Starts At",
       "scheduleTime": "11:00+0200",
-      "scheduleDisplay": "Starts At 11:00",
-      "tour": "ATP"
+      "scheduleDisplay": "Starts At 11:00"
     },
     {
       "id": "ATP-MS126",
@@ -9305,6 +9371,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Court 6",
       "score": "63 64",
       "result": "63 64",
@@ -9335,8 +9402,7 @@
       "scheduleOrder": 2,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "ATP"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "ATP-MS082",
@@ -9347,6 +9413,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Court 4",
       "score": "76(5) 76(0)",
       "result": "76(5) 76(0)",
@@ -9377,8 +9444,7 @@
       "scheduleOrder": 4,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "ATP"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "ATP-MS081",
@@ -9389,6 +9455,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Manolo Santana Stadium",
       "score": "63 64",
       "result": "63 64",
@@ -9420,8 +9487,7 @@
       "scheduleType": "not_before",
       "scheduleText": "Not Before",
       "scheduleTime": "13:30+0200",
-      "scheduleDisplay": "Not Before 13:30",
-      "tour": "ATP"
+      "scheduleDisplay": "Not Before 13:30"
     },
     {
       "id": "ATP-MS090",
@@ -9432,6 +9498,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Court 4",
       "score": "76(3) 60",
       "result": "76(3) 60",
@@ -9462,8 +9529,7 @@
       "scheduleOrder": 3,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "ATP"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "ATP-MS089",
@@ -9474,6 +9540,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Court 4",
       "score": "62 64",
       "result": "62 64",
@@ -9504,8 +9571,7 @@
       "scheduleOrder": 6,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "ATP"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "ATP-MS070",
@@ -9516,6 +9582,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Manolo Santana Stadium",
       "score": "62 64",
       "result": "62 64",
@@ -9546,8 +9613,7 @@
       "scheduleOrder": 3,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "ATP"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "ATP-MS097",
@@ -9558,6 +9624,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Stadium 3",
       "score": "36 76(6) 76(4)",
       "result": "36 76(6) 76(4)",
@@ -9588,8 +9655,7 @@
       "scheduleOrder": 3,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "ATP"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "ATP-MS118",
@@ -9600,6 +9666,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Manolo Santana Stadium",
       "score": "63 64",
       "result": "63 64",
@@ -9630,8 +9697,7 @@
       "scheduleOrder": 4,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "ATP"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "ATP-MS117",
@@ -9642,6 +9708,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Arantxa Sanchez Stadium",
       "score": "64 64",
       "result": "64 64",
@@ -9672,8 +9739,7 @@
       "scheduleOrder": 3,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "ATP"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "ATP-MS121",
@@ -9684,6 +9750,7 @@
       "roundLabel": "第一轮",
       "draw": "MS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Arantxa Sanchez Stadium",
       "score": "62 63",
       "result": "62 63",
@@ -9714,8 +9781,7 @@
       "scheduleOrder": 5,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "ATP"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "ATP-QS016",
@@ -9726,6 +9792,7 @@
       "roundLabel": "资格赛第二轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Court 4",
       "score": "76(4) 63",
       "result": "76(4) 63",
@@ -9756,8 +9823,7 @@
       "scheduleOrder": 2,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "ATP"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "ATP-QS017",
@@ -9768,6 +9834,7 @@
       "roundLabel": "资格赛第二轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Court 6",
       "score": "26 64 76(5)",
       "result": "26 64 76(5)",
@@ -9799,8 +9866,7 @@
       "scheduleType": "starts_at",
       "scheduleText": "Starts At",
       "scheduleTime": "11:00+0200",
-      "scheduleDisplay": "Starts At 11:00",
-      "tour": "ATP"
+      "scheduleDisplay": "Starts At 11:00"
     },
     {
       "id": "ATP-QS019",
@@ -9811,6 +9877,7 @@
       "roundLabel": "资格赛第二轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Court 4",
       "score": "63 62",
       "result": "63 62",
@@ -9840,8 +9907,7 @@
       "scheduleOrder": 5,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "ATP"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "ATP-QS022",
@@ -9852,6 +9918,7 @@
       "roundLabel": "资格赛第二轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Court 6",
       "score": "67(2) 76(3) 64",
       "result": "67(2) 76(3) 64",
@@ -9881,8 +9948,7 @@
       "scheduleOrder": 4,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "ATP"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "ATP-QS023",
@@ -9893,6 +9959,7 @@
       "roundLabel": "资格赛第二轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Court 8",
       "score": "61 46 62",
       "result": "61 46 62",
@@ -9925,8 +9992,7 @@
       "scheduleType": "not_before",
       "scheduleText": "Not Before",
       "scheduleTime": "16:25+0200",
-      "scheduleDisplay": "Not Before 16:25",
-      "tour": "ATP"
+      "scheduleDisplay": "Not Before 16:25"
     },
     {
       "id": "ATP-QS026",
@@ -9937,6 +10003,7 @@
       "roundLabel": "资格赛第二轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Court 6",
       "score": "60 76(5)",
       "result": "60 76(5)",
@@ -9967,8 +10034,7 @@
       "scheduleOrder": 2,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "ATP"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "ATP-QS025",
@@ -9979,6 +10045,7 @@
       "roundLabel": "资格赛第二轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Court 6",
       "score": "62 61",
       "result": "62 61",
@@ -10010,8 +10077,7 @@
       "scheduleOrder": 3,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "ATP"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "ATP-QS018",
@@ -10022,6 +10088,7 @@
       "roundLabel": "资格赛第二轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Court 8",
       "score": "76(5) 67(5) 76(4)",
       "result": "76(5) 67(5) 76(4)",
@@ -10054,8 +10121,7 @@
       "scheduleType": "starts_at",
       "scheduleText": "Starts At",
       "scheduleTime": "11:00+0200",
-      "scheduleDisplay": "Starts At 11:00",
-      "tour": "ATP"
+      "scheduleDisplay": "Starts At 11:00"
     },
     {
       "id": "ATP-QS024",
@@ -10066,6 +10132,7 @@
       "roundLabel": "资格赛第二轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Court 4",
       "score": "61 60",
       "result": "61 60",
@@ -10096,8 +10163,7 @@
       "scheduleOrder": 4,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "ATP"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "ATP-QS021",
@@ -10108,6 +10174,7 @@
       "roundLabel": "资格赛第二轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Court 8",
       "score": "46 63 00 Ret'd",
       "result": "46 63 00 Ret'd",
@@ -10138,8 +10205,7 @@
       "scheduleOrder": 2,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "ATP"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "ATP-QS027",
@@ -10150,6 +10216,7 @@
       "roundLabel": "资格赛第二轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Court 4",
       "score": "64 64",
       "result": "64 64",
@@ -10180,8 +10247,7 @@
       "scheduleOrder": 3,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "ATP"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "ATP-QS020",
@@ -10192,6 +10258,7 @@
       "roundLabel": "资格赛第二轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Court 4",
       "score": "76(4) 63",
       "result": "76(4) 63",
@@ -10223,8 +10290,7 @@
       "scheduleType": "starts_at",
       "scheduleText": "Starts At",
       "scheduleTime": "11:00+0200",
-      "scheduleDisplay": "Starts At 11:00",
-      "tour": "ATP"
+      "scheduleDisplay": "Starts At 11:00"
     },
     {
       "id": "ATP-QS032",
@@ -10235,6 +10301,7 @@
       "roundLabel": "资格赛第一轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Stadium 3",
       "score": "64 63",
       "result": "64 63",
@@ -10265,8 +10332,7 @@
       "scheduleOrder": 3,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "ATP"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "ATP-QS034",
@@ -10277,6 +10343,7 @@
       "roundLabel": "资格赛第一轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Manolo Santana Stadium",
       "score": "75 64",
       "result": "75 64",
@@ -10308,8 +10375,7 @@
       "scheduleType": "starts_at",
       "scheduleText": "Starts At",
       "scheduleTime": "10:00+0200",
-      "scheduleDisplay": "Starts At 10:00",
-      "tour": "ATP"
+      "scheduleDisplay": "Starts At 10:00"
     },
     {
       "id": "ATP-QS036",
@@ -10320,6 +10386,7 @@
       "roundLabel": "资格赛第一轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Stadium 3",
       "score": "76(9) 61",
       "result": "76(9) 61",
@@ -10352,8 +10419,7 @@
       "scheduleType": "starts_at",
       "scheduleText": "Starts At",
       "scheduleTime": "10:00+0200",
-      "scheduleDisplay": "Starts At 10:00",
-      "tour": "ATP"
+      "scheduleDisplay": "Starts At 10:00"
     },
     {
       "id": "ATP-QS038",
@@ -10364,6 +10430,7 @@
       "roundLabel": "资格赛第一轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Stadium 3",
       "score": "76(9) 67(5) 76(3)",
       "result": "76(9) 67(5) 76(3)",
@@ -10393,8 +10460,7 @@
       "scheduleOrder": 6,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "ATP"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "ATP-QS040",
@@ -10405,6 +10471,7 @@
       "roundLabel": "资格赛第一轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Manolo Santana Stadium",
       "score": "64 62",
       "result": "64 62",
@@ -10436,8 +10503,7 @@
       "scheduleOrder": 2,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "ATP"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "ATP-QS042",
@@ -10448,6 +10514,7 @@
       "roundLabel": "资格赛第一轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Court 7",
       "score": "67(9) 63 64",
       "result": "67(9) 63 64",
@@ -10479,8 +10546,7 @@
       "scheduleOrder": 3,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "ATP"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "ATP-QS044",
@@ -10491,6 +10557,7 @@
       "roundLabel": "资格赛第一轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Manolo Santana Stadium",
       "score": "62 62",
       "result": "62 62",
@@ -10521,8 +10588,7 @@
       "scheduleOrder": 6,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "ATP"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "ATP-QS046",
@@ -10533,6 +10599,7 @@
       "roundLabel": "资格赛第一轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Manolo Santana Stadium",
       "score": "63 61",
       "result": "63 61",
@@ -10564,8 +10631,7 @@
       "scheduleOrder": 4,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "ATP"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "ATP-QS048",
@@ -10576,6 +10642,7 @@
       "roundLabel": "资格赛第一轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Court 5",
       "score": "46 64 76(3)",
       "result": "46 64 76(3)",
@@ -10607,8 +10674,7 @@
       "scheduleOrder": 5,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "ATP"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "ATP-QS050",
@@ -10619,6 +10685,7 @@
       "roundLabel": "资格赛第一轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Court 5",
       "score": "63 62",
       "result": "63 62",
@@ -10649,8 +10716,7 @@
       "scheduleOrder": 4,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "ATP"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "ATP-QS052",
@@ -10661,6 +10727,7 @@
       "roundLabel": "资格赛第一轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Stadium 3",
       "score": "61 75",
       "result": "61 75",
@@ -10691,8 +10758,7 @@
       "scheduleOrder": 2,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "ATP"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "ATP-QS054",
@@ -10703,6 +10769,7 @@
       "roundLabel": "资格赛第一轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Stadium 3",
       "score": "76(2) 62",
       "result": "76(2) 62",
@@ -10734,8 +10801,7 @@
       "scheduleOrder": 5,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "ATP"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "ATP-QS033",
@@ -10746,6 +10812,7 @@
       "roundLabel": "资格赛第一轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Manolo Santana Stadium",
       "score": "63 75",
       "result": "63 75",
@@ -10776,8 +10843,7 @@
       "scheduleOrder": 3,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "ATP"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "ATP-QS055",
@@ -10788,6 +10854,7 @@
       "roundLabel": "资格赛第一轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Manolo Santana Stadium",
       "score": "60 36 64",
       "result": "60 36 64",
@@ -10818,8 +10885,7 @@
       "scheduleOrder": 5,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "ATP"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "ATP-QS051",
@@ -10830,6 +10896,7 @@
       "roundLabel": "资格赛第一轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Stadium 3",
       "score": "63 76(2)",
       "result": "63 76(2)",
@@ -10861,8 +10928,7 @@
       "scheduleOrder": 4,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "ATP"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "ATP-QS049",
@@ -10873,6 +10939,7 @@
       "roundLabel": "资格赛第一轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Court 7",
       "score": "64 64",
       "result": "64 64",
@@ -10903,8 +10970,7 @@
       "scheduleOrder": 5,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "ATP"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "ATP-QS053",
@@ -10915,6 +10981,7 @@
       "roundLabel": "资格赛第一轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Court 7",
       "score": "26 63 63",
       "result": "26 63 63",
@@ -10946,8 +11013,7 @@
       "scheduleOrder": 2,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "ATP"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "ATP-QS041",
@@ -10958,6 +11024,7 @@
       "roundLabel": "资格赛第一轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Court 5",
       "score": "63 63",
       "result": "63 63",
@@ -10987,8 +11054,7 @@
       "scheduleOrder": 2,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "ATP"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "ATP-QS047",
@@ -10999,6 +11065,7 @@
       "roundLabel": "资格赛第一轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Court 7",
       "score": "76(5) 67(5) 75",
       "result": "76(5) 67(5) 75",
@@ -11029,8 +11096,7 @@
       "scheduleOrder": 4,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "ATP"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "ATP-QS045",
@@ -11041,6 +11107,7 @@
       "roundLabel": "资格赛第一轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Court 5",
       "score": "76(4) 64",
       "result": "76(4) 64",
@@ -11071,8 +11138,7 @@
       "scheduleOrder": 6,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "ATP"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "ATP-QS039",
@@ -11083,6 +11149,7 @@
       "roundLabel": "资格赛第一轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Court 8",
       "score": "63 75",
       "result": "63 75",
@@ -11113,8 +11180,7 @@
       "scheduleOrder": 7,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "ATP"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "ATP-QS037",
@@ -11125,6 +11191,7 @@
       "roundLabel": "资格赛第一轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Court 5",
       "score": "62 64",
       "result": "62 64",
@@ -11157,8 +11224,7 @@
       "scheduleType": "starts_at",
       "scheduleText": "Starts At",
       "scheduleTime": "10:00+0200",
-      "scheduleDisplay": "Starts At 10:00",
-      "tour": "ATP"
+      "scheduleDisplay": "Starts At 10:00"
     },
     {
       "id": "ATP-QS043",
@@ -11169,6 +11235,7 @@
       "roundLabel": "资格赛第一轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Court 5",
       "score": "64 62",
       "result": "64 62",
@@ -11199,8 +11266,7 @@
       "scheduleOrder": 3,
       "scheduleType": "followed_by",
       "scheduleText": "Followed By",
-      "scheduleDisplay": "Followed By",
-      "tour": "ATP"
+      "scheduleDisplay": "Followed By"
     },
     {
       "id": "ATP-QS035",
@@ -11211,6 +11277,7 @@
       "roundLabel": "资格赛第一轮",
       "draw": "QS",
       "discipline": "singles",
+      "tour": "ATP",
       "court": "Court 7",
       "score": "60 76(5)",
       "result": "60 76(5)",
@@ -11243,8 +11310,7 @@
       "scheduleType": "starts_at",
       "scheduleText": "Starts At",
       "scheduleTime": "10:00+0200",
-      "scheduleDisplay": "Starts At 10:00",
-      "tour": "ATP"
+      "scheduleDisplay": "Starts At 10:00"
     },
     {
       "id": "WTA-DRAW-LD-R32-3-4",
@@ -11255,6 +11321,7 @@
       "roundLabel": "第一轮",
       "draw": "MD",
       "discipline": "doubles",
+      "tour": "WTA",
       "court": "",
       "score": "",
       "result": "",
@@ -11265,7 +11332,7 @@
           "name": "Laura Siegemund",
           "country": "GER",
           "side": "A",
-          "ranking": 54,
+          "ranking": 47,
           "singlesRanking": 47,
           "doublesRanking": 21,
           "tour": "WTA",
@@ -11287,7 +11354,7 @@
           "name": "Iva Jovic",
           "country": "USA",
           "side": "B",
-          "ranking": 17,
+          "ranking": 16,
           "singlesRanking": 16,
           "doublesRanking": 132,
           "tour": "WTA",
@@ -11298,14 +11365,13 @@
           "name": "Victoria Mboko",
           "country": "CAN",
           "side": "B",
-          "ranking": 9,
-          "singlesRanking": 9,
+          "ranking": 10,
+          "singlesRanking": 10,
           "doublesRanking": 136,
           "tour": "WTA",
           "wtaPlayerId": "331006"
         }
-      ],
-      "tour": "WTA"
+      ]
     },
     {
       "id": "WTA-DRAW-LD-R32-7-8",
@@ -11316,6 +11382,7 @@
       "roundLabel": "第一轮",
       "draw": "MD",
       "discipline": "doubles",
+      "tour": "WTA",
       "court": "",
       "score": "",
       "result": "",
@@ -11365,8 +11432,7 @@
           "tour": "WTA",
           "wtaPlayerId": "316713"
         }
-      ],
-      "tour": "WTA"
+      ]
     },
     {
       "id": "WTA-DRAW-LD-R32-13-14",
@@ -11377,6 +11443,7 @@
       "roundLabel": "第一轮",
       "draw": "MD",
       "discipline": "doubles",
+      "tour": "WTA",
       "court": "",
       "score": "",
       "result": "",
@@ -11398,7 +11465,7 @@
           "name": "Liudmila Samsonova",
           "country": "RUS",
           "side": "A",
-          "ranking": 22,
+          "ranking": 20,
           "singlesRanking": 20,
           "doublesRanking": 32,
           "tour": "WTA",
@@ -11426,8 +11493,7 @@
           "tour": "WTA",
           "wtaPlayerId": "324052"
         }
-      ],
-      "tour": "WTA"
+      ]
     },
     {
       "id": "WTA-DRAW-LD-R32-17-18",
@@ -11438,6 +11504,7 @@
       "roundLabel": "第一轮",
       "draw": "MD",
       "discipline": "doubles",
+      "tour": "WTA",
       "court": "",
       "score": "",
       "result": "",
@@ -11487,8 +11554,7 @@
           "tour": "WTA",
           "wtaPlayerId": "322256"
         }
-      ],
-      "tour": "WTA"
+      ]
     },
     {
       "id": "WTA-DRAW-LD-R32-19-20",
@@ -11499,6 +11565,7 @@
       "roundLabel": "第一轮",
       "draw": "MD",
       "discipline": "doubles",
+      "tour": "WTA",
       "court": "",
       "score": "",
       "result": "",
@@ -11549,8 +11616,7 @@
           "wtaPlayerId": "230220",
           "singlesEntryType": "WC"
         }
-      ],
-      "tour": "WTA"
+      ]
     },
     {
       "id": "WTA-DRAW-LD-R32-23-24",
@@ -11561,6 +11627,7 @@
       "roundLabel": "第一轮",
       "draw": "MD",
       "discipline": "doubles",
+      "tour": "WTA",
       "court": "",
       "score": "",
       "result": "",
@@ -11571,7 +11638,7 @@
           "name": "Marie Bouzkova",
           "country": "CZE",
           "side": "A",
-          "ranking": 32,
+          "ranking": 24,
           "singlesRanking": 24,
           "doublesRanking": 77,
           "tour": "WTA",
@@ -11593,8 +11660,8 @@
           "name": "Jelena Ostapenko",
           "country": "LAT",
           "side": "B",
-          "ranking": 24,
-          "singlesRanking": 24,
+          "ranking": 40,
+          "singlesRanking": 40,
           "doublesRanking": 12,
           "tour": "WTA",
           "wtaPlayerId": "319939"
@@ -11610,8 +11677,7 @@
           "tour": "WTA",
           "wtaPlayerId": "317299"
         }
-      ],
-      "tour": "WTA"
+      ]
     },
     {
       "id": "WTA-DRAW-LD-R32-25-26",
@@ -11622,6 +11688,7 @@
       "roundLabel": "第一轮",
       "draw": "MD",
       "discipline": "doubles",
+      "tour": "WTA",
       "court": "",
       "score": "",
       "result": "",
@@ -11671,8 +11738,7 @@
           "tour": "WTA",
           "wtaPlayerId": "319413"
         }
-      ],
-      "tour": "WTA"
+      ]
     }
   ],
   "trainingSessions": [
@@ -11682,13 +11748,13 @@
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "MANOLO SANTANA",
       "timeRange": "08:00 AM - 08:30 AM",
-      "tour": "WTA",
+      "tour": "",
       "players": [
         {
           "id": "ann-li",
           "name": "Ann Li",
           "country": "USA",
-          "ranking": 39,
+          "ranking": 34,
           "singlesRanking": 34,
           "doublesRanking": 135,
           "tour": "WTA",
@@ -11702,14 +11768,14 @@
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "MANOLO SANTANA",
       "timeRange": "08:30 AM - 09:00 AM",
-      "tour": "WTA",
+      "tour": "",
       "players": [
         {
           "id": "qinwen-zheng",
           "name": "Qinwen Zheng",
           "country": "CHN",
-          "ranking": 26,
-          "singlesRanking": 26,
+          "ranking": 36,
+          "singlesRanking": 36,
           "tour": "WTA",
           "wtaPlayerId": "328120"
         }
@@ -11721,14 +11787,14 @@
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "MANOLO SANTANA",
       "timeRange": "09:00 AM - 09:30 AM",
-      "tour": "WTA",
+      "tour": "",
       "players": [
         {
           "id": "qinwen-zheng",
           "name": "Qinwen Zheng",
           "country": "CHN",
-          "ranking": 26,
-          "singlesRanking": 26,
+          "ranking": 36,
+          "singlesRanking": 36,
           "tour": "WTA",
           "wtaPlayerId": "328120"
         }
@@ -11740,7 +11806,7 @@
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "MANOLO SANTANA",
       "timeRange": "09:30 AM - 10:00 AM",
-      "tour": "WTA",
+      "tour": "",
       "players": [
         {
           "id": "elena-gabriela-ruse",
@@ -11800,13 +11866,13 @@
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "ARANTXA SANCHEZ",
       "timeRange": "08:30 AM - 09:00 AM",
-      "tour": "WTA",
+      "tour": "",
       "players": [
         {
           "id": "ann-li",
           "name": "Ann Li",
           "country": "USA",
-          "ranking": 39,
+          "ranking": 34,
           "singlesRanking": 34,
           "doublesRanking": 135,
           "tour": "WTA",
@@ -11820,7 +11886,7 @@
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "ARANTXA SANCHEZ",
       "timeRange": "09:30 AM - 10:00 AM",
-      "tour": "ATP",
+      "tour": "",
       "players": [
         {
           "id": "musetti-lorenzo",
@@ -11850,7 +11916,7 @@
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "ARANTXA SANCHEZ",
       "timeRange": "10:00 AM - 10:30 AM",
-      "tour": "ATP",
+      "tour": "",
       "players": [
         {
           "id": "dino-prizmic",
@@ -11878,13 +11944,13 @@
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "ESTADIO 3",
       "timeRange": "09:30 AM - 10:00 AM",
-      "tour": "WTA",
+      "tour": "",
       "players": [
         {
           "id": "madison-keys",
           "name": "Madison Keys",
           "country": "USA",
-          "ranking": 18,
+          "ranking": 17,
           "singlesRanking": 17,
           "doublesRanking": 527,
           "tour": "WTA",
@@ -11898,7 +11964,7 @@
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "ESTADIO 3",
       "timeRange": "10:00 AM - 10:30 AM",
-      "tour": "WTA",
+      "tour": "",
       "players": [
         {
           "id": "zeynep-sonmez",
@@ -11918,7 +11984,7 @@
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "PISTA 4",
       "timeRange": "09:30 AM - 10:00 AM",
-      "tour": "ATP",
+      "tour": "",
       "players": [
         {
           "id": "vacherot-valentin",
@@ -11938,7 +12004,7 @@
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "PISTA 4",
       "timeRange": "10:00 AM - 10:30 AM",
-      "tour": "ATP",
+      "tour": "",
       "players": [
         {
           "id": "lehecka-jiri",
@@ -11958,14 +12024,14 @@
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "PISTA 5",
       "timeRange": "09:00 AM - 09:30 AM",
-      "tour": "WTA",
+      "tour": "",
       "players": [
         {
           "id": "maria-sakkari",
           "name": "Maria Sakkari",
           "country": "GRE",
-          "ranking": 33,
-          "singlesRanking": 33,
+          "ranking": 37,
+          "singlesRanking": 37,
           "doublesRanking": 527,
           "tour": "WTA",
           "wtaPlayerId": "318312"
@@ -11978,7 +12044,7 @@
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "PISTA 5",
       "timeRange": "09:30 AM - 10:00 AM",
-      "tour": "WTA",
+      "tour": "",
       "players": [
         {
           "id": "karolina-pliskova",
@@ -11997,14 +12063,14 @@
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "PISTA 5",
       "timeRange": "10:00 AM - 10:30 AM",
-      "tour": "WTA",
+      "tour": "",
       "players": [
         {
           "id": "alexandra-eala",
           "name": "Alexandra Eala",
           "country": "PHI",
-          "ranking": 29,
-          "singlesRanking": 29,
+          "ranking": 44,
+          "singlesRanking": 44,
           "doublesRanking": 101,
           "tour": "WTA",
           "wtaPlayerId": "330332"
@@ -12013,8 +12079,8 @@
           "id": "elise-mertens",
           "name": "Elise Mertens",
           "country": "BEL",
-          "ranking": 19,
-          "singlesRanking": 19,
+          "ranking": 21,
+          "singlesRanking": 21,
           "doublesRanking": 1,
           "tour": "WTA",
           "wtaPlayerId": "317964"
@@ -12027,7 +12093,7 @@
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "PISTA 6",
       "timeRange": "08:30 AM - 09:30 AM",
-      "tour": "WTA",
+      "tour": "",
       "players": [
         {
           "id": "muhammad-asia",
@@ -12077,7 +12143,7 @@
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "PISTA 6",
       "timeRange": "09:30 AM - 10:00 AM",
-      "tour": "ATP",
+      "tour": "",
       "players": [
         {
           "id": "michelsen-alex",
@@ -12107,7 +12173,7 @@
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "PISTA 6",
       "timeRange": "10:00 AM - 10:30 AM",
-      "tour": "ATP",
+      "tour": "",
       "players": [
         {
           "id": "rinderknech-arthur",
@@ -12136,7 +12202,7 @@
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "PISTA 7",
       "timeRange": "09:30 AM - 10:00 AM",
-      "tour": "ATP",
+      "tour": "",
       "players": [
         {
           "id": "griekspoor-tallon",
@@ -12166,14 +12232,14 @@
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "PISTA 8",
       "timeRange": "09:30 AM - 10:00 AM",
-      "tour": "WTA",
+      "tour": "",
       "players": [
         {
           "id": "magdalena-frech",
           "name": "Magdalena Frech",
           "country": "POL",
-          "ranking": 37,
-          "singlesRanking": 37,
+          "ranking": 38,
+          "singlesRanking": 38,
           "doublesRanking": 174,
           "tour": "WTA",
           "wtaPlayerId": "320277"
@@ -12186,13 +12252,13 @@
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "PISTA 8",
       "timeRange": "10:00 AM - 10:30 AM",
-      "tour": "WTA",
+      "tour": "",
       "players": [
         {
           "id": "liudmila-samsonova",
           "name": "Liudmila Samsonova",
           "country": "RUS",
-          "ranking": 22,
+          "ranking": 20,
           "singlesRanking": 20,
           "doublesRanking": 32,
           "tour": "WTA",
@@ -12212,8 +12278,8 @@
           "id": "lois-boisson",
           "name": "Lois Boisson",
           "country": "FRA",
-          "ranking": 38,
-          "singlesRanking": 38,
+          "ranking": 46,
+          "singlesRanking": 46,
           "doublesRanking": 1245,
           "tour": "WTA",
           "wtaPlayerId": "328884"
@@ -12232,8 +12298,8 @@
           "id": "lois-boisson",
           "name": "Lois Boisson",
           "country": "FRA",
-          "ranking": 38,
-          "singlesRanking": 38,
+          "ranking": 46,
+          "singlesRanking": 46,
           "doublesRanking": 1245,
           "tour": "WTA",
           "wtaPlayerId": "328884"
@@ -12302,7 +12368,7 @@
           "id": "sorana-cirstea",
           "name": "Sorana Cirstea",
           "country": "ROU",
-          "ranking": 35,
+          "ranking": 26,
           "singlesRanking": 26,
           "doublesRanking": 40,
           "tour": "WTA",
@@ -12740,7 +12806,7 @@
           "ranking": 47,
           "rankingTag": "D",
           "doublesRanking": 47,
-          "tour": "WTA"
+          "tour": "ATP"
         }
       ]
     },
@@ -13007,7 +13073,7 @@
           "id": "jaqueline-cristian",
           "name": "Jaqueline Cristian",
           "country": "ROU",
-          "ranking": 36,
+          "ranking": 33,
           "singlesRanking": 33,
           "doublesRanking": 107,
           "tour": "WTA",
@@ -13181,8 +13247,8 @@
           "id": "iga-swiatek",
           "name": "Iga Swiatek",
           "country": "POL",
-          "ranking": 3,
-          "singlesRanking": 3,
+          "ranking": 4,
+          "singlesRanking": 4,
           "tour": "WTA",
           "wtaPlayerId": "326408"
         }
@@ -13490,7 +13556,7 @@
           "ranking": 38,
           "rankingTag": "D",
           "doublesRanking": 38,
-          "tour": "WTA"
+          "tour": "ATP"
         },
         {
           "id": "bolelli-simone",
@@ -13499,7 +13565,7 @@
           "ranking": 15,
           "rankingTag": "D",
           "doublesRanking": 15,
-          "tour": "WTA"
+          "tour": "ATP"
         }
       ]
     },
@@ -13526,7 +13592,7 @@
           "id": "marie-bouzkova",
           "name": "Marie Bouzkova",
           "country": "CZE",
-          "ranking": 32,
+          "ranking": 24,
           "singlesRanking": 24,
           "doublesRanking": 77,
           "tour": "WTA",
@@ -13594,7 +13660,7 @@
           "id": "hailey-baptiste",
           "name": "Hailey Baptiste",
           "country": "USA",
-          "ranking": 46,
+          "ranking": 32,
           "singlesRanking": 32,
           "doublesRanking": 129,
           "tour": "WTA",
@@ -13831,7 +13897,7 @@
           "ranking": 47,
           "rankingTag": "D",
           "doublesRanking": 47,
-          "tour": "WTA"
+          "tour": "ATP"
         },
         {
           "id": "zielinski-jan",
@@ -14022,7 +14088,7 @@
           "id": "laura-siegemund",
           "name": "Laura Siegemund",
           "country": "GER",
-          "ranking": 54,
+          "ranking": 47,
           "singlesRanking": 47,
           "doublesRanking": 21,
           "tour": "WTA",
@@ -14282,7 +14348,7 @@
           "ranking": 11,
           "rankingTag": "D",
           "doublesRanking": 11,
-          "tour": "WTA"
+          "tour": "ATP"
         },
         {
           "id": "puetz-tim",
@@ -14291,7 +14357,7 @@
           "ranking": 12,
           "rankingTag": "D",
           "doublesRanking": 12,
-          "tour": "WTA"
+          "tour": "ATP"
         },
         {
           "id": "cabral-francisco",
@@ -14345,7 +14411,7 @@
           "id": "iva-jovic",
           "name": "Iva Jovic",
           "country": "USA",
-          "ranking": 17,
+          "ranking": 16,
           "singlesRanking": 16,
           "doublesRanking": 132,
           "tour": "WTA",
@@ -14365,7 +14431,7 @@
           "id": "peyton-stearns",
           "name": "Peyton Stearns",
           "country": "USA",
-          "ranking": 48,
+          "ranking": 43,
           "singlesRanking": 43,
           "doublesRanking": 76,
           "tour": "WTA",
@@ -14379,7 +14445,7 @@
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "PISTA 21 (WARMUP)",
       "timeRange": "09:00 AM - 10:00 AM",
-      "tour": "ATP",
+      "tour": "",
       "players": [
         {
           "id": "harrison-christian",
@@ -14407,13 +14473,13 @@
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "PISTA 21 (WARMUP)",
       "timeRange": "10:00 AM - 10:30 AM",
-      "tour": "WTA",
+      "tour": "",
       "players": [
         {
           "id": "janice-tjen",
           "name": "Janice Tjen",
           "country": "INA",
-          "ranking": 40,
+          "ranking": 39,
           "singlesRanking": 39,
           "doublesRanking": 45,
           "tour": "WTA",
@@ -14437,7 +14503,7 @@
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "PISTA 21 (WARMUP)",
       "timeRange": "10:30 AM - 11:00 AM",
-      "tour": "ATP",
+      "tour": "",
       "players": [
         {
           "id": "diallo-gabriel",
@@ -14466,7 +14532,7 @@
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "PISTA 21 (WARMUP)",
       "timeRange": "11:00 AM - 11:30 AM",
-      "tour": "ATP",
+      "tour": "",
       "players": [
         {
           "id": "fils-arthur",
@@ -14486,7 +14552,7 @@
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "PISTA 21 (WARMUP)",
       "timeRange": "11:30 AM - 12:00 PM",
-      "tour": "ATP",
+      "tour": "",
       "players": [
         {
           "id": "ignacio-buse",
@@ -14514,7 +14580,7 @@
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "PISTA 21 (WARMUP)",
       "timeRange": "12:00 PM - 12:30 PM",
-      "tour": "ATP",
+      "tour": "",
       "players": [
         {
           "id": "cerundolo-francisco",
@@ -14534,7 +14600,7 @@
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "PISTA 21 (WARMUP)",
       "timeRange": "12:30 PM - 01:00 PM",
-      "tour": "ATP",
+      "tour": "",
       "players": [
         {
           "id": "fonseca-joao",
@@ -14554,7 +14620,7 @@
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "PISTA 21 (WARMUP)",
       "timeRange": "01:00 PM - 01:30 PM",
-      "tour": "ATP",
+      "tour": "",
       "players": [
         {
           "id": "vit-kopriva",
@@ -14583,7 +14649,7 @@
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "PISTA 21 (WARMUP)",
       "timeRange": "02:00 PM - 02:30 PM",
-      "tour": "ATP",
+      "tour": "",
       "players": [
         {
           "id": "zhizhen-zhang",
@@ -14602,7 +14668,7 @@
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "PISTA 21 (WARMUP)",
       "timeRange": "02:30 PM - 03:00 PM",
-      "tour": "ATP",
+      "tour": "",
       "players": [
         {
           "id": "norrie-cameron",
@@ -14622,7 +14688,7 @@
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "PISTA 21 (WARMUP)",
       "timeRange": "03:00 PM - 03:30 PM",
-      "tour": "ATP",
+      "tour": "",
       "players": [
         {
           "id": "paul-tommy",
@@ -14652,14 +14718,14 @@
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "PISTA 21 (WARMUP)",
       "timeRange": "04:00 PM - 04:30 PM",
-      "tour": "WTA",
+      "tour": "",
       "players": [
         {
           "id": "victoria-mboko",
           "name": "Victoria Mboko",
           "country": "CAN",
-          "ranking": 9,
-          "singlesRanking": 9,
+          "ranking": 10,
+          "singlesRanking": 10,
           "doublesRanking": 136,
           "tour": "WTA",
           "wtaPlayerId": "331006"
@@ -14672,7 +14738,7 @@
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "PISTA 22 (WARMUP)",
       "timeRange": "09:30 AM - 10:00 AM",
-      "tour": "WTA",
+      "tour": "",
       "players": [
         {
           "id": "solana-sierra",
@@ -14692,7 +14758,7 @@
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "PISTA 22 (WARMUP)",
       "timeRange": "10:00 AM - 10:30 AM",
-      "tour": "WTA",
+      "tour": "",
       "players": [
         {
           "id": "anastasia-potapova",
@@ -14712,7 +14778,7 @@
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "PISTA 22 (WARMUP)",
       "timeRange": "10:30 AM - 11:00 AM",
-      "tour": "WTA",
+      "tour": "",
       "players": [
         {
           "id": "cristina-bucsa",
@@ -14742,7 +14808,7 @@
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "PISTA 22 (WARMUP)",
       "timeRange": "11:00 AM - 11:30 AM",
-      "tour": "WTA",
+      "tour": "",
       "players": [
         {
           "id": "linda-noskova",
@@ -14784,14 +14850,14 @@
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "PISTA 22 (WARMUP)",
       "timeRange": "11:30 AM - 12:00 PM",
-      "tour": "WTA",
+      "tour": "",
       "players": [
         {
           "id": "jelena-ostapenko",
           "name": "Jelena Ostapenko",
           "country": "LAT",
-          "ranking": 24,
-          "singlesRanking": 24,
+          "ranking": 40,
+          "singlesRanking": 40,
           "doublesRanking": 12,
           "tour": "WTA",
           "wtaPlayerId": "319939"
@@ -14804,7 +14870,7 @@
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "PISTA 22 (WARMUP)",
       "timeRange": "12:00 PM - 12:30 PM",
-      "tour": "WTA",
+      "tour": "",
       "players": [
         {
           "id": "emiliana-arango",
@@ -14845,7 +14911,7 @@
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "PISTA 22 (WARMUP)",
       "timeRange": "12:30 PM - 01:00 PM",
-      "tour": "WTA",
+      "tour": "",
       "players": [
         {
           "id": "leolia-jeanjean",
@@ -14866,7 +14932,7 @@
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "PISTA 22 (WARMUP)",
       "timeRange": "01:00 PM - 01:30 PM",
-      "tour": "WTA",
+      "tour": "",
       "players": [
         {
           "id": "nadiia-kichenok",
@@ -14896,7 +14962,7 @@
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "PISTA 22 (WARMUP)",
       "timeRange": "01:30 PM - 02:00 PM",
-      "tour": "WTA",
+      "tour": "",
       "players": [
         {
           "id": "makoto-ninomiya",
@@ -14926,7 +14992,7 @@
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "PISTA 22 (WARMUP)",
       "timeRange": "02:00 PM - 02:30 PM",
-      "tour": "WTA",
+      "tour": "",
       "players": [
         {
           "id": "kamilla-rakhimova",
@@ -14956,7 +15022,7 @@
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "PISTA 22 (WARMUP)",
       "timeRange": "02:30 PM - 03:00 PM",
-      "tour": "ATP",
+      "tour": "",
       "players": [
         {
           "id": "thiago-agustin-tirante",
@@ -14976,13 +15042,13 @@
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "PISTA 22 (WARMUP)",
       "timeRange": "03:00 PM - 03:30 PM",
-      "tour": "WTA",
+      "tour": "",
       "players": [
         {
           "id": "katerina-siniakova",
           "name": "Katerina Siniakova",
           "country": "CZE",
-          "ranking": 43,
+          "ranking": 42,
           "singlesRanking": 42,
           "doublesRanking": 2,
           "tour": "WTA",
@@ -14996,7 +15062,7 @@
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "PISTA 23 (WARMUP)",
       "timeRange": "10:30 AM - 11:00 AM",
-      "tour": "ATP",
+      "tour": "",
       "players": [
         {
           "id": "alejandro-tabilo",
@@ -15016,13 +15082,13 @@
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "PISTA 23 (WARMUP)",
       "timeRange": "11:00 AM - 11:30 AM",
-      "tour": "WTA",
+      "tour": "",
       "players": [
         {
           "id": "mirra-andreeva",
           "name": "Mirra Andreeva",
           "country": "RUS",
-          "ranking": 10,
+          "ranking": 8,
           "singlesRanking": 8,
           "doublesRanking": 33,
           "tour": "WTA",
@@ -15036,7 +15102,7 @@
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "PISTA 23 (WARMUP)",
       "timeRange": "12:00 PM - 12:30 PM",
-      "tour": "WTA",
+      "tour": "",
       "players": [
         {
           "id": "yulia-putintseva",
@@ -15056,7 +15122,7 @@
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "PISTA 23 (WARMUP)",
       "timeRange": "12:30 PM - 01:00 PM",
-      "tour": "WTA",
+      "tour": "",
       "players": [
         {
           "id": "sara-errani",
@@ -15072,8 +15138,8 @@
           "id": "jasmine-paolini",
           "name": "Jasmine Paolini",
           "country": "ITA",
-          "ranking": 7,
-          "singlesRanking": 7,
+          "ranking": 9,
+          "singlesRanking": 9,
           "doublesRanking": 3,
           "tour": "WTA",
           "wtaPlayerId": "319280"
@@ -15086,7 +15152,7 @@
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "PISTA 23 (WARMUP)",
       "timeRange": "01:00 PM - 01:30 PM",
-      "tour": "WTA",
+      "tour": "",
       "players": [
         {
           "id": "demi-schuurs",
@@ -15116,14 +15182,14 @@
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "PISTA 23 (WARMUP)",
       "timeRange": "01:30 PM - 02:00 PM",
-      "tour": "WTA",
+      "tour": "",
       "players": [
         {
           "id": "clara-tauson",
           "name": "Clara Tauson",
           "country": "DEN",
-          "ranking": 16,
-          "singlesRanking": 16,
+          "ranking": 18,
+          "singlesRanking": 18,
           "doublesRanking": 69,
           "tour": "WTA",
           "wtaPlayerId": "327793"
@@ -15136,13 +15202,13 @@
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "PISTA 23 (WARMUP)",
       "timeRange": "02:00 PM - 02:30 PM",
-      "tour": "WTA",
+      "tour": "",
       "players": [
         {
           "id": "marta-kostyuk",
           "name": "Marta Kostyuk",
           "country": "UKR",
-          "ranking": 28,
+          "ranking": 23,
           "singlesRanking": 23,
           "doublesRanking": 158,
           "tour": "WTA",
@@ -15156,7 +15222,7 @@
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "PISTA 23 (WARMUP)",
       "timeRange": "02:30 PM - 03:30 PM",
-      "tour": "WTA",
+      "tour": "",
       "players": [
         {
           "id": "kristina-mladenovic",
@@ -15186,13 +15252,13 @@
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "PISTA 24 (WARMUP)",
       "timeRange": "11:00 AM - 11:30 AM",
-      "tour": "WTA",
+      "tour": "",
       "players": [
         {
           "id": "diana-shnaider",
           "name": "Diana Shnaider",
           "country": "RUS",
-          "ranking": 20,
+          "ranking": 19,
           "singlesRanking": 19,
           "doublesRanking": 28,
           "tour": "WTA",
@@ -15202,7 +15268,7 @@
           "id": "mirra-andreeva",
           "name": "Mirra Andreeva",
           "country": "RUS",
-          "ranking": 10,
+          "ranking": 8,
           "singlesRanking": 8,
           "doublesRanking": 33,
           "tour": "WTA",
@@ -15216,13 +15282,13 @@
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "PISTA 24 (WARMUP)",
       "timeRange": "11:30 AM - 12:00 PM",
-      "tour": "WTA",
+      "tour": "",
       "players": [
         {
           "id": "mirra-andreeva",
           "name": "Mirra Andreeva",
           "country": "RUS",
-          "ranking": 10,
+          "ranking": 8,
           "singlesRanking": 8,
           "doublesRanking": 33,
           "tour": "WTA",
@@ -15232,7 +15298,7 @@
           "id": "diana-shnaider",
           "name": "Diana Shnaider",
           "country": "RUS",
-          "ranking": 20,
+          "ranking": 19,
           "singlesRanking": 19,
           "doublesRanking": 28,
           "tour": "WTA",
@@ -15246,7 +15312,7 @@
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "PISTA 24 (WARMUP)",
       "timeRange": "12:00 PM - 12:30 PM",
-      "tour": "ATP",
+      "tour": "",
       "players": [
         {
           "id": "sebastian-ofner",
@@ -15266,7 +15332,7 @@
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "PISTA 24 (WARMUP)",
       "timeRange": "01:00 PM - 01:30 PM",
-      "tour": "WTA",
+      "tour": "",
       "players": [
         {
           "id": "alexandra-panova",
@@ -15296,7 +15362,7 @@
       "dayLabel": "Fri, Apr 24, 2026",
       "court": "PISTA 24 (WARMUP)",
       "timeRange": "03:00 PM - 03:30 PM",
-      "tour": "ATP",
+      "tour": "",
       "players": [
         {
           "id": "tomas-machac",
