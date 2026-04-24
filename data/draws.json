@@ -4,7 +4,7 @@
     "track": "draws",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-24T00:14:31.071982+00:00",
+    "updatedAt": "2026-04-24T11:12:47.034913+00:00",
     "sources": {
       "draws": {
         "wta": "https://wta-webapi-prod-apimanagement.azure-api.net/api/v1/VwEventDrawxmls/2026/1038",
@@ -13,15 +13,15 @@
     },
     "audit": {
       "doublesMatches": 16,
+      "atpDrawFallbackMatches": 0,
       "wtaDrawFallbackMatches": 7,
       "doublesPlayers": 64,
       "doublesPlayersMissingDoublesRanking": 0,
-      "playersMissingTour": 1,
+      "playersMissingTour": 2,
       "atpDrawEvents": [
         "MS",
         "QS"
-      ],
-      "atpDrawFallbackMatches": 0
+      ]
     }
   },
   "matches": [
@@ -41,7 +41,7 @@
           "name": "Laura Siegemund",
           "country": "GER",
           "side": "A",
-          "ranking": 54,
+          "ranking": 47,
           "singlesRanking": 47,
           "doublesRanking": 21,
           "tour": "WTA",
@@ -63,7 +63,7 @@
           "name": "Iva Jovic",
           "country": "USA",
           "side": "B",
-          "ranking": 17,
+          "ranking": 16,
           "singlesRanking": 16,
           "doublesRanking": 132,
           "tour": "WTA",
@@ -74,8 +74,8 @@
           "name": "Victoria Mboko",
           "country": "CAN",
           "side": "B",
-          "ranking": 9,
-          "singlesRanking": 9,
+          "ranking": 10,
+          "singlesRanking": 10,
           "doublesRanking": 136,
           "tour": "WTA",
           "wtaPlayerId": "331006"
@@ -166,7 +166,7 @@
           "name": "Liudmila Samsonova",
           "country": "RUS",
           "side": "A",
-          "ranking": 22,
+          "ranking": 20,
           "singlesRanking": 20,
           "doublesRanking": 32,
           "tour": "WTA",
@@ -184,7 +184,7 @@
           "wtaPlayerId": "325632"
         },
         {
-          "id": "skoch-miriam",
+          "id": "miriam-skoch",
           "name": "Miriam Skoch",
           "country": "CZE",
           "side": "B",
@@ -327,7 +327,7 @@
           "name": "Marie Bouzkova",
           "country": "CZE",
           "side": "A",
-          "ranking": 32,
+          "ranking": 24,
           "singlesRanking": 24,
           "doublesRanking": 77,
           "tour": "WTA",
@@ -349,8 +349,8 @@
           "name": "Jelena Ostapenko",
           "country": "LAT",
           "side": "B",
-          "ranking": 24,
-          "singlesRanking": 24,
+          "ranking": 40,
+          "singlesRanking": 40,
           "doublesRanking": 12,
           "tour": "WTA",
           "wtaPlayerId": "319939"
@@ -402,7 +402,7 @@
           "wtaPlayerId": "313919"
         },
         {
-          "id": "ulrikke-eikeri",
+          "id": "eikeri-ulrikke",
           "name": "Ulrikke Eikeri",
           "country": "NOR",
           "side": "B",
@@ -413,7 +413,7 @@
           "wtaPlayerId": "315314"
         },
         {
-          "id": "quinn-gleason",
+          "id": "gleason-quinn",
           "name": "Quinn Gleason",
           "country": "USA",
           "side": "B",
