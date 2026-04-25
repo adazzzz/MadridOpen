@@ -4,7 +4,7 @@
     "track": "schedule",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-25T03:27:14.048366+00:00",
+    "updatedAt": "2026-04-25T05:24:49.634668+00:00",
     "sources": {
       "schedules": {
         "wta": "https://wta-webapi-prod-apimanagement.azure-api.net/atpjoint-api/v1/Scores/Schedule?eventId=1038&eventYear=2026",
@@ -4719,7 +4719,7 @@
       "scheduleDisplay": "Starts at 11:00 AM",
       "players": [
         {
-          "id": "hozumi-eri",
+          "id": "eri-hozumi",
           "name": "Eri Hozumi",
           "country": "JPN",
           "side": "A",
@@ -4730,7 +4730,7 @@
           "wtaPlayerId": "317138"
         },
         {
-          "id": "wu-fang-hsien",
+          "id": "fang-hsien-wu",
           "name": "Fang-Hsien Wu",
           "country": "TPE",
           "side": "A",
@@ -4782,7 +4782,7 @@
       "scheduleDisplay": "Starts at 11:00 AM",
       "players": [
         {
-          "id": "hsieh-su-wei",
+          "id": "su-wei-hsieh",
           "name": "Su-Wei Hsieh",
           "country": "TPE",
           "side": "A",
@@ -5050,7 +5050,7 @@
       "scheduleDisplay": "Followed By",
       "players": [
         {
-          "id": "danilina-anna",
+          "id": "anna-danilina",
           "name": "Anna Danilina",
           "country": "KAZ",
           "side": "A",
@@ -5061,7 +5061,7 @@
           "wtaPlayerId": "319731"
         },
         {
-          "id": "muhammad-asia",
+          "id": "asia-muhammad",
           "name": "Asia Muhammad",
           "country": "USA",
           "side": "A",
@@ -5072,7 +5072,7 @@
           "wtaPlayerId": "313919"
         },
         {
-          "id": "eikeri-ulrikke",
+          "id": "ulrikke-eikeri",
           "name": "Ulrikke Eikeri",
           "country": "NOR",
           "side": "B",
@@ -5083,7 +5083,7 @@
           "wtaPlayerId": "315314"
         },
         {
-          "id": "gleason-quinn",
+          "id": "quinn-gleason",
           "name": "Quinn Gleason",
           "country": "USA",
           "side": "B",
@@ -5127,6 +5127,9 @@
           "name": "Vera Zvonareva",
           "country": "RUS",
           "side": "A",
+          "ranking": 323,
+          "singlesRanking": 323,
+          "doublesRanking": 43,
           "tour": "WTA",
           "wtaPlayerId": "260142"
         },
@@ -5305,7 +5308,7 @@
           "wtaPlayerId": "319939"
         },
         {
-          "id": "routliffe-erin",
+          "id": "erin-routliffe",
           "name": "Erin Routliffe",
           "country": "NZL",
           "side": "B",
@@ -5397,8 +5400,8 @@
       "scheduleDisplay": "Followed By",
       "players": [
         {
-          "id": "kato-miyu",
-          "name": "Kato Miyu",
+          "id": "miyu-kato",
+          "name": "Miyu Kato",
           "country": "JPN",
           "side": "A",
           "ranking": 53,
@@ -5423,6 +5426,9 @@
           "name": "Mariia Kozyreva",
           "country": "RUS",
           "side": "B",
+          "ranking": 541,
+          "singlesRanking": 541,
+          "doublesRanking": 56,
           "tour": "WTA",
           "wtaPlayerId": "325632"
         },
@@ -5559,7 +5565,7 @@
       "scheduleDisplay": "Not Before 16:00",
       "players": [
         {
-          "id": "sinner-jannik",
+          "id": "jannik-sinner",
           "name": "Jannik Sinner",
           "country": "ITA",
           "side": "A",
@@ -5608,7 +5614,7 @@
           "atpPlayerId": "P0HW"
         },
         {
-          "id": "shelton-ben",
+          "id": "ben-shelton",
           "name": "Ben Shelton",
           "country": "USA",
           "side": "B",
@@ -5649,7 +5655,7 @@
           "atpPlayerId": "J0DZ"
         },
         {
-          "id": "de-minaur-alex",
+          "id": "alex-de-minaur",
           "name": "Alex de Minaur",
           "country": "AUS",
           "side": "B",
@@ -5727,7 +5733,7 @@
           "atpPlayerId": "KI82"
         },
         {
-          "id": "rublev-andrey",
+          "id": "andrey-rublev",
           "name": "Andrey Rublev",
           "country": "RUS",
           "side": "B",
@@ -5756,7 +5762,7 @@
       "scheduleDisplay": "Followed By",
       "players": [
         {
-          "id": "lehecka-jiri",
+          "id": "jiri-lehecka",
           "name": "Jiri Lehecka",
           "country": "CZE",
           "side": "A",
@@ -5849,7 +5855,7 @@
           "atpPlayerId": "T0A1"
         },
         {
-          "id": "paul-tommy",
+          "id": "tommy-paul",
           "name": "Tommy Paul",
           "country": "USA",
           "side": "B",
@@ -5878,7 +5884,7 @@
       "scheduleDisplay": "Followed By",
       "players": [
         {
-          "id": "norrie-cameron",
+          "id": "cameron-norrie",
           "name": "Cameron Norrie",
           "country": "GBR",
           "side": "A",
@@ -5918,7 +5924,7 @@
       "scheduleDisplay": "Followed By",
       "players": [
         {
-          "id": "fils-arthur",
+          "id": "arthur-fils",
           "name": "Arthur Fils",
           "country": "FRA",
           "side": "A",
@@ -5997,7 +6003,7 @@
       "scheduleDisplay": "Not Before 15:00",
       "players": [
         {
-          "id": "etcheverry-tomas-martin",
+          "id": "tomas-martin-etcheverry",
           "name": "Tomas Martin Etcheverry",
           "country": "ARG",
           "side": "A",
@@ -6037,7 +6043,7 @@
       "scheduleDisplay": "Followed By",
       "players": [
         {
-          "id": "fonseca-joao",
+          "id": "joao-fonseca",
           "name": "Joao Fonseca",
           "country": "BRA",
           "side": "A",
@@ -6127,7 +6133,7 @@
           "atpPlayerId": "M0K4"
         },
         {
-          "id": "diallo-gabriel",
+          "id": "gabriel-diallo",
           "name": "Gabriel Diallo",
           "country": "CAN",
           "side": "B",
