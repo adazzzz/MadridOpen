@@ -4,7 +4,7 @@
     "track": "live",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-25T20:52:22.638130+00:00",
+    "updatedAt": "2026-04-25T21:00:38.932002+00:00",
     "sources": {
       "matches": {
         "wta": "https://api.wtatennis.com/tennis/tournaments/1038/2026/matches",
@@ -1015,8 +1015,9 @@
     },
     {
       "id": "LS017",
-      "status": "P",
-      "score": "6-1,5-3",
+      "status": "F",
+      "score": "6-1,6-3",
+      "result": "[14]N. Osaka d A. Kalinina 6-1,6-3",
       "startTime": "2026-04-25T19:24:05.46+00:00",
       "court": "Court 2"
     },
