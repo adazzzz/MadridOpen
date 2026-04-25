@@ -4,7 +4,7 @@
     "track": "training",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-25T11:37:22.818312+00:00",
+    "updatedAt": "2026-04-25T11:52:19.631489+00:00",
     "sources": {
       "training": [
         "https://practice.tmstennis.com/api/iframe?runid=702&public=1&day=0&mode=0",
@@ -1251,26 +1251,6 @@
           "doublesRanking": 22,
           "tour": "WTA",
           "wtaPlayerId": "317462"
-        }
-      ]
-    },
-    {
-      "id": "0-pista-12-wta-02-00-pm-03-00-pm-elena-rybakina",
-      "dayOffset": 0,
-      "dayLabel": "Sat, Apr 25, 2026",
-      "court": "PISTA 12 (WTA)",
-      "timeRange": "02:00 PM - 03:00 PM",
-      "tour": "WTA",
-      "players": [
-        {
-          "id": "elena-rybakina",
-          "name": "Elena Rybakina",
-          "country": "KAZ",
-          "ranking": 2,
-          "singlesRanking": 2,
-          "doublesRanking": 274,
-          "tour": "WTA",
-          "wtaPlayerId": "324166"
         }
       ]
     },
@@ -2660,7 +2640,7 @@
       ]
     },
     {
-      "id": "0-pista-20-wta-03-30-pm-04-30-pm-julieta-pareja-victoria-mboko",
+      "id": "0-pista-20-wta-03-30-pm-04-30-pm-victoria-mboko",
       "dayOffset": 0,
       "dayLabel": "Sat, Apr 25, 2026",
       "court": "PISTA 20 (WTA)",
@@ -2676,16 +2656,6 @@
           "doublesRanking": 136,
           "tour": "WTA",
           "wtaPlayerId": "331006"
-        },
-        {
-          "id": "julieta-pareja",
-          "name": "Julieta Pareja",
-          "country": "USA",
-          "ranking": 364,
-          "singlesRanking": 364,
-          "doublesRanking": 1493,
-          "tour": "WTA",
-          "wtaPlayerId": "333685"
         }
       ]
     },
@@ -3659,6 +3629,87 @@
           "country": "ITA",
           "tour": "ATP",
           "atpPlayerId": "VA08"
+        }
+      ]
+    },
+    {
+      "id": "1-pista-11-atp-04-00-pm-05-00-pm-gonzalez-maximo-molteni-andres",
+      "dayOffset": 1,
+      "dayLabel": "Sun, Apr 26, 2026",
+      "court": "PISTA 11 (ATP)",
+      "timeRange": "04:00 PM - 05:00 PM",
+      "tour": "ATP",
+      "players": [
+        {
+          "id": "molteni-andres",
+          "name": "Andres Molteni",
+          "country": "ARG",
+          "ranking": 38,
+          "rankingTag": "D",
+          "doublesRanking": 38,
+          "tour": "ATP",
+          "atpPlayerId": "ME56"
+        },
+        {
+          "id": "gonzalez-maximo",
+          "name": "Maximo Gonzalez",
+          "country": "ARG",
+          "ranking": 50,
+          "rankingTag": "D",
+          "doublesRanking": 50,
+          "tour": "ATP",
+          "atpPlayerId": "G585"
+        }
+      ]
+    },
+    {
+      "id": "1-pista-13-wta-02-00-pm-03-00-pm-demi-schuurs-ellen-perez",
+      "dayOffset": 1,
+      "dayLabel": "Sun, Apr 26, 2026",
+      "court": "PISTA 13 (WTA)",
+      "timeRange": "02:00 PM - 03:00 PM",
+      "tour": "WTA",
+      "players": [
+        {
+          "id": "demi-schuurs",
+          "name": "Demi Schuurs",
+          "country": "NED",
+          "ranking": 22,
+          "rankingTag": "D",
+          "doublesRanking": 22,
+          "tour": "WTA",
+          "wtaPlayerId": "317462"
+        },
+        {
+          "id": "ellen-perez",
+          "name": "Ellen Perez",
+          "country": "AUS",
+          "ranking": 162,
+          "singlesRanking": 162,
+          "doublesRanking": 20,
+          "tour": "WTA",
+          "wtaPlayerId": "319960"
+        }
+      ]
+    },
+    {
+      "id": "1-pista-13-wta-04-00-pm-05-00-pm-anastasia-pavlyuchenkova",
+      "dayOffset": 1,
+      "dayLabel": "Sun, Apr 26, 2026",
+      "court": "PISTA 13 (WTA)",
+      "timeRange": "04:00 PM - 05:00 PM",
+      "tour": "WTA",
+      "players": [
+        {
+          "id": "anastasia-pavlyuchenkova",
+          "name": "Anastasia Pavlyuchenkova",
+          "country": "RUS",
+          "ranking": 116,
+          "singlesRanking": 116,
+          "doublesRanking": 298,
+          "tour": "WTA",
+          "wtaPlayerId": "313796",
+          "singlesEntryType": "Q"
         }
       ]
     }
