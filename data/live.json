@@ -4,7 +4,7 @@
     "track": "live",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-25T14:30:03.265198+00:00",
+    "updatedAt": "2026-04-25T15:09:23.638960+00:00",
     "sources": {
       "matches": {
         "wta": "https://api.wtatennis.com/tennis/tournaments/1038/2026/matches",
@@ -966,30 +966,40 @@
       "court": "Court 7"
     },
     {
-      "id": "LS020",
-      "status": "P",
-      "score": "7-6(4),1-4",
-      "startTime": "2026-04-25T12:41:21.59+00:00",
-      "court": "Court 2"
-    },
-    {
       "id": "LD025",
-      "status": "P",
-      "score": "6-4,3-6,0-0(5)",
+      "status": "F",
+      "score": "4-6,6-3,1-0(7)",
+      "result": "K. Boulter / V. Williams d X. Jiang / Y. Xu 4-6,6-3,1-0(7)",
       "startTime": "2026-04-25T12:54:48.437+00:00",
       "court": "Court 6"
     },
     {
+      "id": "LS020",
+      "status": "P",
+      "score": "6-7(4),6-2,0-3",
+      "startTime": "2026-04-25T12:41:21.59+00:00",
+      "court": "Court 2"
+    },
+    {
       "id": "LD010",
-      "status": "C",
+      "status": "P",
+      "score": "3-4",
       "startTime": "2026-04-25T14:08:30.45+00:00",
       "court": "Court 7"
     },
     {
       "id": "LD017",
-      "status": "U",
-      "startTime": "2026-04-25T16:45+02:00",
+      "status": "P",
+      "score": "2-0",
+      "startTime": "2026-04-25T14:41:36.713+00:00",
       "court": "Court 6"
+    },
+    {
+      "id": "LS019",
+      "status": "P",
+      "score": "0-1",
+      "startTime": "2026-04-25T14:50:04.187+00:00",
+      "court": "Court 3"
     },
     {
       "id": "LS016",
@@ -1002,12 +1012,6 @@
       "status": "U",
       "startTime": "2026-04-25T21:30+02:00",
       "court": "Arantxa Sanchez Stadium"
-    },
-    {
-      "id": "LS019",
-      "status": "U",
-      "startTime": "2026-04-25T23:59+02:00",
-      "court": "Stadium 3"
     },
     {
       "id": "LS025",
@@ -1088,6 +1092,14 @@
       "result": "67(6) 61 64",
       "startTime": "2026-04-24T00:00:00",
       "court": "Manolo Santana Stadium"
+    },
+    {
+      "id": "ATP-MS055",
+      "status": "F",
+      "score": "63 64",
+      "result": "63 64",
+      "startTime": "2026-04-25T00:00:00",
+      "court": "Stadium 3"
     },
     {
       "id": "ATP-MS040",
@@ -1234,12 +1246,28 @@
       "court": "Court 8"
     },
     {
+      "id": "ATP-MS054",
+      "status": "F",
+      "score": "36 63 64",
+      "result": "36 63 64",
+      "startTime": "2026-04-25T00:00:00",
+      "court": "Court 4"
+    },
+    {
       "id": "ATP-MS046",
       "status": "F",
       "score": "63 64",
       "result": "63 64",
       "startTime": "2026-04-24T00:00:00",
       "court": "Court 7"
+    },
+    {
+      "id": "ATP-MS062",
+      "status": "F",
+      "score": "76(3) 76(5)",
+      "result": "76(3) 76(5)",
+      "startTime": "2026-04-25T00:00:00",
+      "court": "Court 5"
     },
     {
       "id": "ATP-MS033",
