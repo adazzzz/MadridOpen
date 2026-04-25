@@ -4,7 +4,7 @@
     "track": "live",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-25T15:09:23.638960+00:00",
+    "updatedAt": "2026-04-25T15:54:20.464915+00:00",
     "sources": {
       "matches": {
         "wta": "https://api.wtatennis.com/tennis/tournaments/1038/2026/matches",
@@ -966,6 +966,14 @@
       "court": "Court 7"
     },
     {
+      "id": "LS020",
+      "status": "F",
+      "score": "7-6(4),2-6,3-0 Ret'd",
+      "result": "[31]A. Li d [4]I. Swiatek 7-6(4),2-6,3-0 Ret'd",
+      "startTime": "2026-04-25T12:41:21.59+00:00",
+      "court": "Court 2"
+    },
+    {
       "id": "LD025",
       "status": "F",
       "score": "4-6,6-3,1-0(7)",
@@ -974,30 +982,23 @@
       "court": "Court 6"
     },
     {
-      "id": "LS020",
-      "status": "P",
-      "score": "6-7(4),6-2,0-3",
-      "startTime": "2026-04-25T12:41:21.59+00:00",
-      "court": "Court 2"
-    },
-    {
       "id": "LD010",
       "status": "P",
-      "score": "3-4",
+      "score": "7-5,4-2",
       "startTime": "2026-04-25T14:08:30.45+00:00",
       "court": "Court 7"
     },
     {
       "id": "LD017",
       "status": "P",
-      "score": "2-0",
+      "score": "6-2,2-3",
       "startTime": "2026-04-25T14:41:36.713+00:00",
       "court": "Court 6"
     },
     {
       "id": "LS019",
       "status": "P",
-      "score": "0-1",
+      "score": "5-4",
       "startTime": "2026-04-25T14:50:04.187+00:00",
       "court": "Court 3"
     },
@@ -1091,6 +1092,14 @@
       "score": "67(6) 61 64",
       "result": "67(6) 61 64",
       "startTime": "2026-04-24T00:00:00",
+      "court": "Manolo Santana Stadium"
+    },
+    {
+      "id": "ATP-MS063",
+      "status": "F",
+      "score": "61 36 63",
+      "result": "61 36 63",
+      "startTime": "2026-04-25T00:00:00",
       "court": "Manolo Santana Stadium"
     },
     {
