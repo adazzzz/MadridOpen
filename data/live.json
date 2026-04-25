@@ -4,7 +4,7 @@
     "track": "live",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-25T19:30:17.288699+00:00",
+    "updatedAt": "2026-04-25T20:02:55.511180+00:00",
     "sources": {
       "matches": {
         "wta": "https://api.wtatennis.com/tennis/tournaments/1038/2026/matches",
@@ -1007,14 +1007,16 @@
     },
     {
       "id": "LS016",
-      "status": "P",
-      "score": "6-1,4-4",
+      "status": "F",
+      "score": "6-1,6-4",
+      "result": "[1]A. Sabalenka d [29]J. Cristian 6-1,6-4",
       "startTime": "2026-04-25T17:46:49.82+00:00",
       "court": "Court 1"
     },
     {
       "id": "LS017",
-      "status": "C",
+      "status": "P",
+      "score": "1-4",
       "startTime": "2026-04-25T19:24:05.46+00:00",
       "court": "Court 2"
     },

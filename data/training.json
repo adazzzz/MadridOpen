@@ -4,7 +4,7 @@
     "track": "training",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-25T19:30:17.288699+00:00",
+    "updatedAt": "2026-04-25T20:02:55.511180+00:00",
     "sources": {
       "training": [
         "https://practice.tmstennis.com/api/iframe?runid=702&public=1&day=0&mode=0",
@@ -4387,6 +4387,26 @@
       ]
     },
     {
+      "id": "1-pista-8-04-00-pm-05-00-pm-cobolli-flavio",
+      "dayOffset": 1,
+      "dayLabel": "Sun, Apr 26, 2026",
+      "court": "PISTA 8",
+      "timeRange": "04:00 PM - 05:00 PM",
+      "tour": "",
+      "players": [
+        {
+          "id": "cobolli-flavio",
+          "name": "Flavio Cobolli",
+          "country": "ITA",
+          "ranking": 13,
+          "singlesRanking": 13,
+          "doublesRanking": 360,
+          "tour": "ATP",
+          "atpPlayerId": "C0E9"
+        }
+      ]
+    },
+    {
       "id": "1-pista-8-05-00-pm-06-00-pm-qinwen-zheng",
       "dayOffset": 1,
       "dayLabel": "Sun, Apr 26, 2026",
@@ -4502,6 +4522,53 @@
           "doublesRanking": 596,
           "tour": "WTA",
           "wtaPlayerId": "320760"
+        }
+      ]
+    },
+    {
+      "id": "1-pista-9-wta-04-00-pm-05-30-pm-arends-sander-benjamin-winter-lopez-pablo-llamas-ruiz-pel-david",
+      "dayOffset": 1,
+      "dayLabel": "Sun, Apr 26, 2026",
+      "court": "PISTA 9 (WTA)",
+      "timeRange": "04:00 PM - 05:30 PM",
+      "tour": "WTA",
+      "players": [
+        {
+          "id": "arends-sander",
+          "name": "Sander Arends",
+          "country": "NED",
+          "ranking": 51,
+          "rankingTag": "D",
+          "doublesRanking": 51,
+          "tour": "ATP",
+          "atpPlayerId": "AC55"
+        },
+        {
+          "id": "pel-david",
+          "name": "David Pel",
+          "country": "NED",
+          "ranking": 32,
+          "rankingTag": "D",
+          "doublesRanking": 32,
+          "tour": "ATP",
+          "atpPlayerId": "PE69"
+        },
+        {
+          "id": "benjamin-winter-lopez",
+          "name": "Benjamin Winter Lopez",
+          "country": "ESP",
+          "tour": "ATP",
+          "atpPlayerId": "W09X"
+        },
+        {
+          "id": "pablo-llamas-ruiz",
+          "name": "Pablo Llamas Ruiz",
+          "country": "ESP",
+          "ranking": 145,
+          "singlesRanking": 145,
+          "doublesRanking": 267,
+          "tour": "ATP",
+          "atpPlayerId": "L0CX"
         }
       ]
     },
@@ -4678,26 +4745,6 @@
           "doublesRanking": 35,
           "tour": "ATP",
           "atpPlayerId": "C0E0"
-        }
-      ]
-    },
-    {
-      "id": "1-pista-10-atp-06-00-pm-07-00-pm-cobolli-flavio",
-      "dayOffset": 1,
-      "dayLabel": "Sun, Apr 26, 2026",
-      "court": "PISTA 10 (ATP)",
-      "timeRange": "06:00 PM - 07:00 PM",
-      "tour": "ATP",
-      "players": [
-        {
-          "id": "cobolli-flavio",
-          "name": "Flavio Cobolli",
-          "country": "ITA",
-          "ranking": 13,
-          "singlesRanking": 13,
-          "doublesRanking": 360,
-          "tour": "ATP",
-          "atpPlayerId": "C0E9"
         }
       ]
     },
