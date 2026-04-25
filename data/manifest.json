@@ -3,7 +3,7 @@
     "schemaVersion": 1,
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-25T00:04:03.949776+00:00"
+    "updatedAt": "2026-04-25T03:27:14.048366+00:00"
   },
   "tracks": {
     "players": {
@@ -15,21 +15,21 @@
     },
     "live": {
       "path": "./data/live.json",
-      "updatedAt": "2026-04-25T00:04:03.949776+00:00",
+      "updatedAt": "2026-04-25T03:27:14.048366+00:00",
       "schemaVersion": 1,
       "policy": "frequent",
       "count": 210
     },
     "schedule": {
       "path": "./data/schedule.json",
-      "updatedAt": "2026-04-25T00:04:03.949776+00:00",
+      "updatedAt": "2026-04-25T03:27:14.048366+00:00",
       "schemaVersion": 1,
       "policy": "frequent",
       "count": 210
     },
     "training": {
       "path": "./data/training.json",
-      "updatedAt": "2026-04-25T00:04:03.949776+00:00",
+      "updatedAt": "2026-04-25T03:27:14.048366+00:00",
       "schemaVersion": 1,
       "policy": "frequent",
       "count": 120
