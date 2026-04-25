@@ -4,7 +4,7 @@
     "track": "live",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-25T08:42:47.771047+00:00",
+    "updatedAt": "2026-04-25T09:36:41.122200+00:00",
     "sources": {
       "matches": {
         "wta": "https://api.wtatennis.com/tennis/tournaments/1038/2026/matches",
@@ -886,28 +886,40 @@
       "court": "Court 1"
     },
     {
+      "id": "LD022",
+      "status": "F",
+      "score": "W/O",
+      "result": "M. Kozyreva / M. Skoch d M. Kato / L. Samsonova  W/O",
+      "startTime": "2026-04-25T09:23:49.523+00:00",
+      "court": "Court 8"
+    },
+    {
       "id": "LS018",
-      "status": "C",
+      "status": "P",
+      "score": "5-1",
       "startTime": "2026-04-25T08:41:01.307+00:00",
       "court": "Court 1"
     },
     {
-      "id": "LD019",
-      "status": "U",
-      "startTime": "2026-04-25T11:00+02:00",
-      "court": "Court 6"
-    },
-    {
       "id": "LD024",
-      "status": "U",
-      "startTime": "2026-04-25T11:00+02:00",
+      "status": "P",
+      "score": "5-2",
+      "startTime": "2026-04-25T08:44:22.003+00:00",
       "court": "Court 7"
     },
     {
       "id": "LS023",
-      "status": "U",
-      "startTime": "2026-04-25T11:00+02:00",
+      "status": "P",
+      "score": "3-4",
+      "startTime": "2026-04-25T08:44:22.2+00:00",
       "court": "Court 4"
+    },
+    {
+      "id": "LD019",
+      "status": "P",
+      "score": "2-5",
+      "startTime": "2026-04-25T08:44:58.447+00:00",
+      "court": "Court 6"
     },
     {
       "id": "LS022",
@@ -965,12 +977,6 @@
     },
     {
       "id": "LD025",
-      "status": "U",
-      "startTime": "2026-04-25T23:59+02:00",
-      "court": "Court 6"
-    },
-    {
-      "id": "LD022",
       "status": "U",
       "startTime": "2026-04-25T23:59+02:00",
       "court": "Court 6"
