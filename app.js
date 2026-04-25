@@ -162,6 +162,7 @@ boot();
 function boot() {
   bindSidebarControls("players");
   bindSidebarControls("courts");
+  window.setInterval(refreshCurrentCourtActivity, 60_000);
 
   if (dom.reloadBtn) {
     dom.reloadBtn.addEventListener("click", () => {
@@ -642,7 +643,7 @@ function normalizePayload(payload) {
         name: id,
         matchCount: courtMatches.length,
         trainingCount: courtTraining.length,
-        activeTrainingCount: courtTraining.filter((session) => isActiveTrainingSession(session)).length,
+        currentTrainingCount: courtTraining.filter((session) => isCurrentTrainingSession(session)).length,
         liveCount: courtMatches.filter((match) => isLiveMatchStatus(match.status)).length,
         openCount: courtMatches.filter((match) => !isFinishedMatch(match.status)).length,
         todayOpenCount: courtMatches.filter((match) => (
@@ -652,6 +653,8 @@ function normalizePayload(payload) {
       };
     })
     .sort((a, b) => compareCourtName(a.name, b.name));
+
+  const courtActivity = summarizeCourtActivity(courts);
 
   const courtById = {};
   courts.forEach((court) => {
@@ -668,7 +671,51 @@ function normalizePayload(payload) {
     matchesByCourt,
     trainingByCourt,
     courts,
-    courtById
+    courtById,
+    courtActivity
+  };
+}
+
+function refreshCurrentCourtActivity() {
+  if (!state.data?.courts?.length) {
+    return;
+  }
+
+  let changed = false;
+  state.data.courts.forEach((court) => {
+    const training = state.data.trainingByCourt?.[court.id] || [];
+    const currentTrainingCount = training.filter((session) => isCurrentTrainingSession(session)).length;
+    if (court.currentTrainingCount !== currentTrainingCount) {
+      changed = true;
+      court.currentTrainingCount = currentTrainingCount;
+    }
+  });
+  const courtActivity = summarizeCourtActivity(state.data.courts);
+  if (
+    state.data.courtActivity?.liveMatchCourtCount !== courtActivity.liveMatchCourtCount ||
+    state.data.courtActivity?.currentTrainingCourtCount !== courtActivity.currentTrainingCourtCount
+  ) {
+    changed = true;
+    state.data.courtActivity = courtActivity;
+  }
+
+  if (!changed) {
+    return;
+  }
+
+  const courtListScrollTop = dom.courtList?.scrollTop ?? 0;
+  renderCourtList();
+  if (dom.courtList) {
+    dom.courtList.scrollTop = courtListScrollTop;
+  }
+  renderCourtDetail();
+  renderView();
+}
+
+function summarizeCourtActivity(courts) {
+  return {
+    liveMatchCourtCount: courts.filter((court) => court.liveCount > 0).length,
+    currentTrainingCourtCount: courts.filter((court) => court.currentTrainingCount > 0).length
   };
 }
 
@@ -825,7 +872,9 @@ function renderView() {
 
   if (dom.viewSwitch) {
     dom.viewSwitch.querySelectorAll("[data-view]").forEach((tab) => {
-      const active = tab.getAttribute("data-view") === (isPlayers ? "players" : "courts");
+      const view = tab.getAttribute("data-view") || "";
+      const active = view === (isPlayers ? "players" : "courts");
+      tab.innerHTML = renderViewTabLabel(view);
       tab.classList.toggle("active", active);
       tab.setAttribute("aria-selected", active ? "true" : "false");
     });
@@ -878,6 +927,11 @@ function renderCourtList() {
 
   state.data.courts.forEach((court) => {
     const button = document.createElement("button");
+    const meta = formatCourtListMeta(court);
+    const statusPills = renderCourtStatusPills(court);
+    const footer = [meta ? `<div class="meta court-list-meta">${escapeHtml(meta)}</div>` : "", statusPills]
+      .filter(Boolean)
+      .join("");
     button.className = `player-item${court.id === state.activeCourtId ? " active" : ""}`;
     button.type = "button";
     button.setAttribute("role", "listitem");
@@ -888,10 +942,7 @@ function renderCourtList() {
         <div class="player-head">
           <div class="name">${escapeHtml(court.name)}</div>
         </div>
-        <div class="court-list-footer">
-          <div class="meta court-list-meta">${escapeHtml(formatCourtListMeta(court))}</div>
-          ${court.liveCount > 0 ? '<span class="court-live-pill" aria-label="有比赛进行中" title="有比赛进行中">LIVE</span>' : ""}
-        </div>
+        ${footer ? `<div class="court-list-footer">${footer}</div>` : ""}
       </div>
     `;
 
@@ -1056,7 +1107,7 @@ function renderTrainingRows(player, sessions) {
       return `
         <tr>
           <td>${escapeHtml(session.dayLabel || "-")}</td>
-          <td>${escapeHtml(session.timeRange || "-")}</td>
+          <td>${escapeHtml(formatTrainingTime(session))}</td>
           <td>${renderCourtLink(session, session.court || "-")}</td>
           <td>${partnersHtml || "单人或未公开"}</td>
         </tr>
@@ -1118,6 +1169,45 @@ function renderCourtDaySection(section) {
       ` : ""}
     </section>
   `;
+}
+
+function renderViewTabLabel(view) {
+  if (view !== "courts") {
+    return "球员比赛 &amp; 训练";
+  }
+
+  const activity = state.data?.courtActivity;
+  const parts = [];
+  const liveMatchCourtCount = activity?.liveMatchCourtCount ?? 0;
+  const currentTrainingCourtCount = activity?.currentTrainingCourtCount ?? 0;
+
+  if (liveMatchCourtCount > 0) {
+    parts.push(`<span class="view-tab-status-part">🔴${liveMatchCourtCount}赛</span>`);
+  }
+  if (currentTrainingCourtCount > 0) {
+    parts.push(`<span class="view-tab-status-part">🎾${currentTrainingCourtCount}练</span>`);
+  }
+  if (!parts.length) {
+    return "场地";
+  }
+
+  return `场地 <span class="view-tab-status">${parts.join('<span class="view-tab-divider">·</span>')}</span>`;
+}
+
+function renderCourtStatusPills(court) {
+  const parts = [];
+
+  if ((court?.liveCount ?? 0) > 0) {
+    parts.push('<span class="court-status-pill court-live-pill" aria-label="有比赛进行中" title="有比赛进行中">LIVE</span>');
+  }
+  if ((court?.currentTrainingCount ?? 0) > 0) {
+    parts.push('<span class="court-status-pill court-training-pill" aria-label="有训练进行中" title="有训练进行中">训练中</span>');
+  }
+  if (!parts.length) {
+    return "";
+  }
+
+  return `<div class="court-status-pills">${parts.join("")}</div>`;
 }
 
 function buildCourtMatchupHtml(match) {
@@ -1403,6 +1493,11 @@ function sortTraining(sessions) {
     if (dayA !== dayB) {
       return dayA - dayB;
     }
+    const timeA = parseTrainingStartMinutes(a.timeRange);
+    const timeB = parseTrainingStartMinutes(b.timeRange);
+    if (timeA !== timeB) {
+      return timeA - timeB;
+    }
     return (a.timeRange || "").localeCompare(b.timeRange || "");
   });
 }
@@ -1421,18 +1516,7 @@ function getTrainingSortStamp(session) {
 }
 
 function parseTrainingStartMinutes(value) {
-  const raw = String(value || "");
-  const match = raw.match(/(\d{1,2}):(\d{2})\s*(AM|PM)/i);
-  if (!match) {
-    return 0;
-  }
-
-  let hour = Number(match[1]) % 12;
-  if (match[3].toUpperCase() === "PM") {
-    hour += 12;
-  }
-
-  return hour * 60 + Number(match[2]);
+  return parseTrainingRangeMinutes(value)?.start ?? 0;
 }
 
 function renderTourBadge(tour) {
@@ -2266,12 +2350,19 @@ function formatCourtMeta(court) {
 }
 
 function formatCourtListMeta(court) {
-  const trainingLabel = `练 ${court?.activeTrainingCount ?? 0}`;
-  if ((court?.openCount ?? 0) <= 0) {
-    return trainingLabel;
+  const parts = [];
+
+  if ((court?.todayOpenCount ?? 0) > 0) {
+    parts.push(`今 ${court.todayOpenCount}`);
+  }
+  if ((court?.openCount ?? 0) > 0) {
+    parts.push(`全 ${court.openCount}`);
+  }
+  if ((court?.currentTrainingCount ?? 0) > 0) {
+    parts.push(`练 ${court.currentTrainingCount}`);
   }
 
-  return `今 ${court.todayOpenCount} · 全 ${court.openCount} · ${trainingLabel}`;
+  return parts.join(" · ");
 }
 
 function formatCourtDisplayName(courtName) {
@@ -2423,45 +2514,95 @@ function formatCourtDaySummary(section) {
 }
 
 function formatTrainingTime(session) {
-  return String(session?.timeRange || "-").trim() || "-";
+  return formatTrainingTimeRange(session?.timeRange);
 }
 
-function isActiveTrainingSession(session) {
+function isCurrentTrainingSession(session) {
   const todayKey = getTodayCourtDayKey();
   const dayKey = getTrainingDayKey(session);
 
-  if (dayKey === "待定") {
-    return true;
-  }
-  if (dayKey > todayKey) {
-    return true;
-  }
-  if (dayKey < todayKey) {
+  if (dayKey !== todayKey) {
     return false;
   }
 
   const nowMinutes = getMadridNowMinutes();
-  const endMinutes = parseTrainingEndMinutes(session?.timeRange);
-  if (endMinutes === null) {
-    return true;
+  const range = parseTrainingRangeMinutes(session?.timeRange);
+  if (!range) {
+    return false;
   }
 
-  return endMinutes > nowMinutes;
+  return range.start <= nowMinutes && nowMinutes < range.end;
 }
 
-function parseTrainingEndMinutes(value) {
+function parseTrainingRangeMinutes(value) {
   const raw = String(value || "");
-  const match = raw.match(/-\s*(\d{1,2}):(\d{2})\s*(AM|PM)/i);
+  const match = raw.match(/(\d{1,2}):(\d{2})\s*(AM|PM)?\s*-\s*(\d{1,2}):(\d{2})\s*(AM|PM)/i);
   if (!match) {
     return null;
   }
 
-  let hour = Number(match[1]) % 12;
-  if (match[3].toUpperCase() === "PM") {
+  const startPeriod = match[3] || match[6];
+  let start = parseMeridiemClockMinutes(match[1], match[2], startPeriod);
+  let end = parseMeridiemClockMinutes(match[4], match[5], match[6]);
+  if (start === null || end === null) {
+    return null;
+  }
+
+  if (!match[3] && start > end) {
+    start -= 12 * 60;
+  }
+  if (end <= start) {
+    end += 24 * 60;
+  }
+
+  return { start, end };
+}
+
+function formatTrainingTimeRange(value) {
+  const raw = String(value || "").trim();
+  if (!raw) {
+    return "-";
+  }
+
+  const range = parseTrainingRangeMinutes(raw);
+  if (!range) {
+    return raw;
+  }
+
+  return `${formatMinutesAsClock(range.start)} - ${formatMinutesAsClock(range.end)}`;
+}
+
+function formatMinutesAsClock(value) {
+  const minutesInDay = 24 * 60;
+  const normalized = ((value % minutesInDay) + minutesInDay) % minutesInDay;
+  const hour = Math.floor(normalized / 60);
+  const minute = normalized % 60;
+  return `${String(hour).padStart(2, "0")}:${String(minute).padStart(2, "0")}`;
+}
+
+function parseMeridiemClockMinutes(hourValue, minuteValue, periodValue) {
+  const hourNumber = Number(hourValue);
+  const minuteNumber = Number(minuteValue);
+  const period = String(periodValue || "").toUpperCase();
+
+  if (
+    !Number.isFinite(hourNumber) ||
+    !Number.isFinite(minuteNumber) ||
+    hourNumber < 1 ||
+    hourNumber > 12 ||
+    minuteNumber < 0 ||
+    minuteNumber > 59 ||
+    (period !== "AM" && period !== "PM")
+  ) {
+    return null;
+  }
+
+  let hour = hourNumber % 12;
+  if (period === "PM") {
     hour += 12;
   }
 
-  return hour * 60 + Number(match[2]);
+  return hour * 60 + minuteNumber;
 }
 
 function getMadridNowMinutes() {

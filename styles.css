@@ -83,7 +83,9 @@ h1 {
 
 .view-switch {
   display: inline-flex;
+  flex-wrap: wrap;
   gap: 8px;
+  max-width: 100%;
   margin-top: 8px;
   padding: 6px;
   border-radius: 999px;
@@ -93,18 +95,47 @@ h1 {
 }
 
 .view-tab {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
   background: transparent;
   color: var(--muted);
   border-radius: 999px;
   padding: 10px 16px;
   border: 1px solid transparent;
   box-shadow: none;
+  white-space: nowrap;
 }
 
 .view-tab.active {
   background: linear-gradient(145deg, #ea580c, #c2410c);
   color: #fff;
   border-color: rgba(154, 52, 18, 0.2);
+}
+
+.view-tab-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--text);
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.view-tab.active .view-tab-status {
+  color: #fff;
+}
+
+.view-tab-status-part,
+.view-tab-divider {
+  display: inline-flex;
+  align-items: center;
+}
+
+.view-tab-divider {
+  opacity: 0.64;
 }
 
 .header-actions {
@@ -716,20 +747,38 @@ tbody td {
   text-decoration: none;
 }
 
-.court-live-pill {
+.court-status-pills {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 6px;
+  flex: 0 0 auto;
+  margin-left: auto;
+}
+
+.court-status-pill {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   min-height: 20px;
   padding: 3px 8px;
   border-radius: 999px;
-  background: rgba(220, 38, 38, 0.12);
-  border: 1px solid rgba(153, 27, 27, 0.2);
-  color: #991b1b;
   font-size: 10px;
   font-weight: 800;
   line-height: 1;
+}
+
+.court-live-pill {
+  background: rgba(220, 38, 38, 0.12);
+  border: 1px solid rgba(153, 27, 27, 0.2);
+  color: #991b1b;
   letter-spacing: 0.04em;
+}
+
+.court-training-pill {
+  background: rgba(13, 148, 136, 0.12);
+  border: 1px solid rgba(15, 118, 110, 0.22);
+  color: #0f766e;
 }
 
 .court-list-footer {
