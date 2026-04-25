@@ -4,7 +4,7 @@
     "track": "live",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-25T09:36:41.122200+00:00",
+    "updatedAt": "2026-04-25T11:09:43.253668+00:00",
     "sources": {
       "matches": {
         "wta": "https://api.wtatennis.com/tennis/tournaments/1038/2026/matches",
@@ -886,6 +886,38 @@
       "court": "Court 1"
     },
     {
+      "id": "LS018",
+      "status": "F",
+      "score": "6-2,7-6(6)",
+      "result": "[11]B. Bencic d [18]D. Shnaider 6-2,7-6(6)",
+      "startTime": "2026-04-25T08:41:01.307+00:00",
+      "court": "Court 1"
+    },
+    {
+      "id": "LD024",
+      "status": "F",
+      "score": "6-2,6-3",
+      "result": "[7]S. Hsieh / S. Kenin d T. Mihalikova / O. Nicholls 6-2,6-3",
+      "startTime": "2026-04-25T08:44:22.003+00:00",
+      "court": "Court 7"
+    },
+    {
+      "id": "LS023",
+      "status": "F",
+      "score": "7-6(3),6-1",
+      "result": "A. Bondar d L. Samson 7-6(3),6-1",
+      "startTime": "2026-04-25T08:44:22.2+00:00",
+      "court": "Court 4"
+    },
+    {
+      "id": "LD019",
+      "status": "F",
+      "score": "6-2,6-4",
+      "result": "[6]C. Bucsa / N. Melichar-Martinez d E. Hozumi / F. Wu 6-2,6-4",
+      "startTime": "2026-04-25T08:44:58.447+00:00",
+      "court": "Court 6"
+    },
+    {
       "id": "LD022",
       "status": "F",
       "score": "W/O",
@@ -894,38 +926,38 @@
       "court": "Court 8"
     },
     {
-      "id": "LS018",
+      "id": "LD028",
       "status": "P",
-      "score": "5-1",
-      "startTime": "2026-04-25T08:41:01.307+00:00",
-      "court": "Court 1"
-    },
-    {
-      "id": "LD024",
-      "status": "P",
-      "score": "5-2",
-      "startTime": "2026-04-25T08:44:22.003+00:00",
+      "score": "2-5",
+      "startTime": "2026-04-25T10:23:25.893+00:00",
       "court": "Court 7"
     },
     {
-      "id": "LS023",
+      "id": "LD027",
       "status": "P",
       "score": "3-4",
-      "startTime": "2026-04-25T08:44:22.2+00:00",
-      "court": "Court 4"
-    },
-    {
-      "id": "LD019",
-      "status": "P",
-      "score": "2-5",
-      "startTime": "2026-04-25T08:44:58.447+00:00",
+      "startTime": "2026-04-25T10:25:23.817+00:00",
       "court": "Court 6"
     },
     {
+      "id": "LS021",
+      "status": "P",
+      "score": "1-1",
+      "startTime": "2026-04-25T10:42:08.68+00:00",
+      "court": "Court 3"
+    },
+    {
       "id": "LS022",
+      "status": "P",
+      "score": "0-0",
+      "startTime": "2026-04-25T10:50:30.103+00:00",
+      "court": "Court 2"
+    },
+    {
+      "id": "LD025",
       "status": "U",
-      "startTime": "2026-04-25T13:00+02:00",
-      "court": "Arantxa Sanchez Stadium"
+      "startTime": "2026-04-25T14:00+02:00",
+      "court": "Court 6"
     },
     {
       "id": "LS016",
@@ -938,18 +970,6 @@
       "status": "U",
       "startTime": "2026-04-25T21:30+02:00",
       "court": "Arantxa Sanchez Stadium"
-    },
-    {
-      "id": "LS019",
-      "status": "U",
-      "startTime": "2026-04-25T23:59+02:00",
-      "court": "Stadium 3"
-    },
-    {
-      "id": "LD028",
-      "status": "U",
-      "startTime": "2026-04-25T23:59+02:00",
-      "court": "Court 7"
     },
     {
       "id": "LD017",
@@ -970,28 +990,16 @@
       "court": "Court 7"
     },
     {
-      "id": "LD027",
+      "id": "LS019",
       "status": "U",
       "startTime": "2026-04-25T23:59+02:00",
-      "court": "Court 6"
-    },
-    {
-      "id": "LD025",
-      "status": "U",
-      "startTime": "2026-04-25T23:59+02:00",
-      "court": "Court 6"
+      "court": "Stadium 3"
     },
     {
       "id": "LD010",
       "status": "U",
       "startTime": "2026-04-25T23:59+02:00",
       "court": "Court 6"
-    },
-    {
-      "id": "LS021",
-      "status": "U",
-      "startTime": "2026-04-25T23:59+02:00",
-      "court": "Stadium 3"
     },
     {
       "id": "ATP-MS032",
@@ -1042,6 +1050,14 @@
       "court": "Court 4"
     },
     {
+      "id": "ATP-MS060",
+      "status": "F",
+      "score": "62 63",
+      "result": "62 63",
+      "startTime": "2026-04-25T00:00:00",
+      "court": "Stadium 3"
+    },
+    {
       "id": "ATP-MS043",
       "status": "F",
       "score": "67(5) 76(1) 63",
@@ -1058,12 +1074,28 @@
       "court": "Arantxa Sanchez Stadium"
     },
     {
+      "id": "ATP-MS052",
+      "status": "F",
+      "score": "61 75",
+      "result": "61 75",
+      "startTime": "2026-04-25T00:00:00",
+      "court": "Court 5"
+    },
+    {
       "id": "ATP-MS034",
       "status": "F",
       "score": "62 67(6) 76(5)",
       "result": "62 67(6) 76(5)",
       "startTime": "2026-04-24T00:00:00",
       "court": "Court 4"
+    },
+    {
+      "id": "ATP-MS050",
+      "status": "F",
+      "score": "63 63",
+      "result": "63 63",
+      "startTime": "2026-04-25T00:00:00",
+      "court": "Arantxa Sanchez Stadium"
     },
     {
       "id": "ATP-MS042",

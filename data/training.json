@@ -4,7 +4,7 @@
     "track": "training",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-25T09:36:41.122200+00:00",
+    "updatedAt": "2026-04-25T11:09:43.253668+00:00",
     "sources": {
       "training": [
         "https://practice.tmstennis.com/api/iframe?runid=702&public=1&day=0&mode=0",
@@ -799,6 +799,26 @@
       ]
     },
     {
+      "id": "0-pista-10-atp-02-00-pm-02-30-pm-gauff-cori",
+      "dayOffset": 0,
+      "dayLabel": "Sat, Apr 25, 2026",
+      "court": "PISTA 10 (ATP)",
+      "timeRange": "02:00 PM - 02:30 PM",
+      "tour": "ATP",
+      "players": [
+        {
+          "id": "gauff-cori",
+          "name": "Gauff Cori",
+          "country": "USA",
+          "ranking": 3,
+          "singlesRanking": 3,
+          "doublesRanking": 62,
+          "tour": "WTA",
+          "wtaPlayerId": "328560"
+        }
+      ]
+    },
+    {
       "id": "0-pista-10-atp-02-30-pm-04-00-pm-jannik-sinner-tomas-martin-etcheverry",
       "dayOffset": 0,
       "dayLabel": "Sat, Apr 25, 2026",
@@ -1271,6 +1291,40 @@
           "doublesRanking": 112,
           "tour": "WTA",
           "wtaPlayerId": "316956"
+        }
+      ]
+    },
+    {
+      "id": "0-pista-12-wta-04-30-pm-06-00-pm-benjamin-winter-lopez-inigo-cervantes-pablo-llamas-ruiz",
+      "dayOffset": 0,
+      "dayLabel": "Sat, Apr 25, 2026",
+      "court": "PISTA 12 (WTA)",
+      "timeRange": "04:30 PM - 06:00 PM",
+      "tour": "WTA",
+      "players": [
+        {
+          "id": "inigo-cervantes",
+          "name": "Inigo Cervantes",
+          "country": "ESP",
+          "tour": "ATP",
+          "atpPlayerId": "CA33"
+        },
+        {
+          "id": "benjamin-winter-lopez",
+          "name": "Benjamin Winter Lopez",
+          "country": "ESP",
+          "tour": "ATP",
+          "atpPlayerId": "W09X"
+        },
+        {
+          "id": "pablo-llamas-ruiz",
+          "name": "Pablo Llamas Ruiz",
+          "country": "ESP",
+          "ranking": 145,
+          "singlesRanking": 145,
+          "doublesRanking": 267,
+          "tour": "ATP",
+          "atpPlayerId": "L0CX"
         }
       ]
     },
@@ -3014,7 +3068,7 @@
       ]
     },
     {
-      "id": "0-pista-22-warmup-02-30-pm-03-00-pm-fabian-marozsan",
+      "id": "0-pista-22-warmup-02-30-pm-03-00-pm-fabian-marozsan-shapovalov-denis",
       "dayOffset": 0,
       "dayLabel": "Sat, Apr 25, 2026",
       "court": "PISTA 22 (WARMUP)",
@@ -3030,6 +3084,16 @@
           "doublesRanking": 358,
           "tour": "ATP",
           "atpPlayerId": "M0CI"
+        },
+        {
+          "id": "shapovalov-denis",
+          "name": "Denis Shapovalov",
+          "country": "CAN",
+          "ranking": 35,
+          "singlesRanking": 35,
+          "doublesRanking": 348,
+          "tour": "ATP",
+          "atpPlayerId": "SU55"
         }
       ]
     },
@@ -3205,6 +3269,35 @@
           "singlesRanking": 45,
           "tour": "ATP",
           "atpPlayerId": "N0BS"
+        }
+      ]
+    },
+    {
+      "id": "0-pista-23-warmup-01-30-pm-02-30-pm-melo-marcelo-seggerman-ryan",
+      "dayOffset": 0,
+      "dayLabel": "Sat, Apr 25, 2026",
+      "court": "PISTA 23 (WARMUP)",
+      "timeRange": "01:30 PM - 02:30 PM",
+      "tour": "",
+      "players": [
+        {
+          "id": "melo-marcelo",
+          "name": "Marcelo Melo",
+          "country": "BRA",
+          "ranking": 43,
+          "rankingTag": "D",
+          "doublesRanking": 43,
+          "tour": "ATP",
+          "atpPlayerId": "M919"
+        },
+        {
+          "id": "seggerman-ryan",
+          "name": "Ryan Seggerman",
+          "country": "USA",
+          "ranking": 1057,
+          "singlesRanking": 1057,
+          "doublesRanking": 66,
+          "tour": "ATP"
         }
       ]
     },
@@ -3397,6 +3490,36 @@
       ]
     },
     {
+      "id": "0-pista-24-warmup-02-30-pm-03-30-pm-ethan-quinn-tommy-paul",
+      "dayOffset": 0,
+      "dayLabel": "Sat, Apr 25, 2026",
+      "court": "PISTA 24 (WARMUP)",
+      "timeRange": "02:30 PM - 03:30 PM",
+      "tour": "",
+      "players": [
+        {
+          "id": "tommy-paul",
+          "name": "Tommy Paul",
+          "country": "USA",
+          "ranking": 18,
+          "singlesRanking": 18,
+          "doublesRanking": 508,
+          "tour": "ATP",
+          "atpPlayerId": "PL56"
+        },
+        {
+          "id": "ethan-quinn",
+          "name": "Ethan Quinn",
+          "country": "USA",
+          "ranking": 48,
+          "singlesRanking": 48,
+          "doublesRanking": 510,
+          "tour": "ATP",
+          "atpPlayerId": "Q02L"
+        }
+      ]
+    },
+    {
       "id": "1-manolo-santana-10-00-am-10-30-am-lorenzo-musetti",
       "dayOffset": 1,
       "dayLabel": "Sun, Apr 26, 2026",
@@ -3413,6 +3536,26 @@
           "doublesRanking": 84,
           "tour": "ATP",
           "atpPlayerId": "M0EJ"
+        }
+      ]
+    },
+    {
+      "id": "1-pista-9-wta-12-00-pm-01-00-pm-sofia-kenin",
+      "dayOffset": 1,
+      "dayLabel": "Sun, Apr 26, 2026",
+      "court": "PISTA 9 (WTA)",
+      "timeRange": "12:00 PM - 01:00 PM",
+      "tour": "WTA",
+      "players": [
+        {
+          "id": "sofia-kenin",
+          "name": "Sofia Kenin",
+          "country": "USA",
+          "ranking": 47,
+          "singlesRanking": 47,
+          "doublesRanking": 29,
+          "tour": "WTA",
+          "wtaPlayerId": "320942"
         }
       ]
     }
