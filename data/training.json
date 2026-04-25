@@ -4,7 +4,7 @@
     "track": "training",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-25T11:52:19.631489+00:00",
+    "updatedAt": "2026-04-25T12:31:23.652968+00:00",
     "sources": {
       "training": [
         "https://practice.tmstennis.com/api/iframe?runid=702&public=1&day=0&mode=0",
@@ -610,11 +610,11 @@
       ]
     },
     {
-      "id": "0-pista-9-wta-04-00-pm-05-00-pm-tirante-thiago",
+      "id": "0-pista-9-wta-04-30-pm-05-30-pm-tirante-thiago",
       "dayOffset": 0,
       "dayLabel": "Sat, Apr 25, 2026",
       "court": "PISTA 9 (WTA)",
-      "timeRange": "04:00 PM - 05:00 PM",
+      "timeRange": "04:30 PM - 05:30 PM",
       "tour": "WTA",
       "players": [
         {
@@ -795,26 +795,6 @@
           "doublesRanking": 109,
           "tour": "ATP",
           "atpPlayerId": "RC91"
-        }
-      ]
-    },
-    {
-      "id": "0-pista-10-atp-02-00-pm-02-30-pm-gauff-cori",
-      "dayOffset": 0,
-      "dayLabel": "Sat, Apr 25, 2026",
-      "court": "PISTA 10 (ATP)",
-      "timeRange": "02:00 PM - 02:30 PM",
-      "tour": "ATP",
-      "players": [
-        {
-          "id": "gauff-cori",
-          "name": "Gauff Cori",
-          "country": "USA",
-          "ranking": 3,
-          "singlesRanking": 3,
-          "doublesRanking": 62,
-          "tour": "WTA",
-          "wtaPlayerId": "328560"
         }
       ]
     },
@@ -1045,7 +1025,7 @@
       ]
     },
     {
-      "id": "0-pista-11-atp-03-00-pm-03-30-pm-tien-learner",
+      "id": "0-pista-11-atp-03-00-pm-03-30-pm-shapovalov-denis",
       "dayOffset": 0,
       "dayLabel": "Sat, Apr 25, 2026",
       "court": "PISTA 11 (ATP)",
@@ -1053,14 +1033,14 @@
       "tour": "ATP",
       "players": [
         {
-          "id": "tien-learner",
-          "name": "Learner Tien",
-          "country": "USA",
-          "ranking": 21,
-          "singlesRanking": 21,
-          "doublesRanking": 438,
+          "id": "shapovalov-denis",
+          "name": "Denis Shapovalov",
+          "country": "CAN",
+          "ranking": 35,
+          "singlesRanking": 35,
+          "doublesRanking": 348,
           "tour": "ATP",
-          "atpPlayerId": "T0HA"
+          "atpPlayerId": "SU55"
         }
       ]
     },
@@ -2514,6 +2494,26 @@
       ]
     },
     {
+      "id": "0-pista-19-atp-05-00-pm-06-00-pm-polmans-marc",
+      "dayOffset": 0,
+      "dayLabel": "Sat, Apr 25, 2026",
+      "court": "PISTA 19 (ATP)",
+      "timeRange": "05:00 PM - 06:00 PM",
+      "tour": "ATP",
+      "players": [
+        {
+          "id": "polmans-marc",
+          "name": "Marc Polmans",
+          "country": "AUS",
+          "ranking": 340,
+          "singlesRanking": 340,
+          "doublesRanking": 52,
+          "tour": "ATP",
+          "atpPlayerId": "PG94"
+        }
+      ]
+    },
+    {
       "id": "0-pista-20-wta-10-00-am-11-00-am-julieta-pareja",
       "dayOffset": 0,
       "dayLabel": "Sat, Apr 25, 2026",
@@ -2596,26 +2596,6 @@
           "doublesRanking": 883,
           "tour": "ATP",
           "atpPlayerId": "N0AM"
-        }
-      ]
-    },
-    {
-      "id": "0-pista-20-wta-02-00-pm-02-30-pm-gauff-cori",
-      "dayOffset": 0,
-      "dayLabel": "Sat, Apr 25, 2026",
-      "court": "PISTA 20 (WTA)",
-      "timeRange": "02:00 PM - 02:30 PM",
-      "tour": "WTA",
-      "players": [
-        {
-          "id": "gauff-cori",
-          "name": "Gauff Cori",
-          "country": "USA",
-          "ranking": 3,
-          "singlesRanking": 3,
-          "doublesRanking": 62,
-          "tour": "WTA",
-          "wtaPlayerId": "328560"
         }
       ]
     },
@@ -3114,26 +3094,6 @@
       ]
     },
     {
-      "id": "0-pista-22-warmup-03-00-pm-03-30-pm-shapovalov-denis",
-      "dayOffset": 0,
-      "dayLabel": "Sat, Apr 25, 2026",
-      "court": "PISTA 22 (WARMUP)",
-      "timeRange": "03:00 PM - 03:30 PM",
-      "tour": "",
-      "players": [
-        {
-          "id": "shapovalov-denis",
-          "name": "Denis Shapovalov",
-          "country": "CAN",
-          "ranking": 35,
-          "singlesRanking": 35,
-          "doublesRanking": 348,
-          "tour": "ATP",
-          "atpPlayerId": "SU55"
-        }
-      ]
-    },
-    {
       "id": "0-pista-22-warmup-04-00-pm-04-30-pm-merida-aguilar-daniel",
       "dayOffset": 0,
       "dayLabel": "Sat, Apr 25, 2026",
@@ -3586,6 +3546,53 @@
       ]
     },
     {
+      "id": "1-manolo-santana-06-00-pm-06-30-pm-elena-rybakina",
+      "dayOffset": 1,
+      "dayLabel": "Sun, Apr 26, 2026",
+      "court": "MANOLO SANTANA",
+      "timeRange": "06:00 PM - 06:30 PM",
+      "tour": "",
+      "players": [
+        {
+          "id": "elena-rybakina",
+          "name": "Elena Rybakina",
+          "country": "KAZ",
+          "ranking": 2,
+          "singlesRanking": 2,
+          "doublesRanking": 274,
+          "tour": "WTA",
+          "wtaPlayerId": "324166"
+        }
+      ]
+    },
+    {
+      "id": "1-pista-8-12-00-pm-01-00-pm-andrea-vavassori-bolelli-simone",
+      "dayOffset": 1,
+      "dayLabel": "Sun, Apr 26, 2026",
+      "court": "PISTA 8",
+      "timeRange": "12:00 PM - 01:00 PM",
+      "tour": "",
+      "players": [
+        {
+          "id": "bolelli-simone",
+          "name": "Simone Bolelli",
+          "country": "ITA",
+          "ranking": 15,
+          "rankingTag": "D",
+          "doublesRanking": 15,
+          "tour": "ATP",
+          "atpPlayerId": "BA98"
+        },
+        {
+          "id": "andrea-vavassori",
+          "name": "Andrea Vavassori",
+          "country": "ITA",
+          "tour": "ATP",
+          "atpPlayerId": "VA08"
+        }
+      ]
+    },
+    {
       "id": "1-pista-9-wta-12-00-pm-01-00-pm-sofia-kenin",
       "dayOffset": 1,
       "dayLabel": "Sun, Apr 26, 2026",
@@ -3606,29 +3613,22 @@
       ]
     },
     {
-      "id": "1-pista-11-atp-12-00-pm-01-30-pm-andrea-vavassori-bolelli-simone",
+      "id": "1-pista-10-atp-12-00-pm-01-00-pm-khachanov-karen",
       "dayOffset": 1,
       "dayLabel": "Sun, Apr 26, 2026",
-      "court": "PISTA 11 (ATP)",
-      "timeRange": "12:00 PM - 01:30 PM",
+      "court": "PISTA 10 (ATP)",
+      "timeRange": "12:00 PM - 01:00 PM",
       "tour": "ATP",
       "players": [
         {
-          "id": "bolelli-simone",
-          "name": "Simone Bolelli",
-          "country": "ITA",
-          "ranking": 15,
-          "rankingTag": "D",
-          "doublesRanking": 15,
+          "id": "khachanov-karen",
+          "name": "Karen Khachanov",
+          "country": "RUS",
+          "ranking": 16,
+          "singlesRanking": 16,
+          "doublesRanking": 114,
           "tour": "ATP",
-          "atpPlayerId": "BA98"
-        },
-        {
-          "id": "andrea-vavassori",
-          "name": "Andrea Vavassori",
-          "country": "ITA",
-          "tour": "ATP",
-          "atpPlayerId": "VA08"
+          "atpPlayerId": "KE29"
         }
       ]
     },
@@ -3659,6 +3659,26 @@
           "doublesRanking": 50,
           "tour": "ATP",
           "atpPlayerId": "G585"
+        }
+      ]
+    },
+    {
+      "id": "1-pista-12-wta-06-00-pm-07-00-pm-elena-rybakina",
+      "dayOffset": 1,
+      "dayLabel": "Sun, Apr 26, 2026",
+      "court": "PISTA 12 (WTA)",
+      "timeRange": "06:00 PM - 07:00 PM",
+      "tour": "WTA",
+      "players": [
+        {
+          "id": "elena-rybakina",
+          "name": "Elena Rybakina",
+          "country": "KAZ",
+          "ranking": 2,
+          "singlesRanking": 2,
+          "doublesRanking": 274,
+          "tour": "WTA",
+          "wtaPlayerId": "324166"
         }
       ]
     },
@@ -3710,6 +3730,26 @@
           "tour": "WTA",
           "wtaPlayerId": "313796",
           "singlesEntryType": "Q"
+        }
+      ]
+    },
+    {
+      "id": "1-pista-24-warmup-11-00-am-11-30-am-arthur-fils",
+      "dayOffset": 1,
+      "dayLabel": "Sun, Apr 26, 2026",
+      "court": "PISTA 24 (WARMUP)",
+      "timeRange": "11:00 AM - 11:30 AM",
+      "tour": "",
+      "players": [
+        {
+          "id": "arthur-fils",
+          "name": "Arthur Fils",
+          "country": "FRA",
+          "ranking": 25,
+          "singlesRanking": 25,
+          "doublesRanking": 345,
+          "tour": "ATP",
+          "atpPlayerId": "F0F1"
         }
       ]
     }

@@ -4,7 +4,7 @@
     "track": "live",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-25T11:52:19.631489+00:00",
+    "updatedAt": "2026-04-25T12:31:23.652968+00:00",
     "sources": {
       "matches": {
         "wta": "https://api.wtatennis.com/tennis/tournaments/1038/2026/matches",
@@ -936,27 +936,28 @@
     {
       "id": "LD027",
       "status": "P",
-      "score": "7-6(2),1-2",
+      "score": "7-6(2),5-5",
       "startTime": "2026-04-25T10:25:23.817+00:00",
       "court": "Court 6"
     },
     {
       "id": "LS021",
       "status": "P",
-      "score": "6-3,1-1",
+      "score": "3-6,6-3,1-1",
       "startTime": "2026-04-25T10:42:08.68+00:00",
       "court": "Court 3"
     },
     {
       "id": "LS022",
       "status": "P",
-      "score": "6-3,1-0",
+      "score": "6-3,4-2",
       "startTime": "2026-04-25T10:50:30.103+00:00",
       "court": "Court 2"
     },
     {
       "id": "LD015",
-      "status": "W",
+      "status": "P",
+      "score": "6-1,2-1",
       "startTime": "2026-04-25T11:42:14+00:00",
       "court": "Court 7"
     },
@@ -1051,6 +1052,14 @@
       "court": "Court 4"
     },
     {
+      "id": "ATP-MS051",
+      "status": "F",
+      "score": "60 61",
+      "result": "60 61",
+      "startTime": "2026-04-25T00:00:00",
+      "court": "Manolo Santana Stadium"
+    },
+    {
       "id": "ATP-MS060",
       "status": "F",
       "score": "62 63",
@@ -1079,6 +1088,14 @@
       "status": "F",
       "score": "61 75",
       "result": "61 75",
+      "startTime": "2026-04-25T00:00:00",
+      "court": "Court 5"
+    },
+    {
+      "id": "ATP-MS053",
+      "status": "F",
+      "score": "61 63",
+      "result": "61 63",
       "startTime": "2026-04-25T00:00:00",
       "court": "Court 5"
     },
@@ -1113,6 +1130,14 @@
       "result": "63 62",
       "startTime": "2026-04-24T00:00:00",
       "court": "Court 6"
+    },
+    {
+      "id": "ATP-MS061",
+      "status": "F",
+      "score": "63 64",
+      "result": "63 64",
+      "startTime": "2026-04-25T00:00:00",
+      "court": "Court 4"
     },
     {
       "id": "ATP-MS041",
