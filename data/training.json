@@ -4,7 +4,7 @@
     "track": "training",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-25T05:24:49.634668+00:00",
+    "updatedAt": "2026-04-25T06:49:07.451631+00:00",
     "sources": {
       "training": [
         "https://practice.tmstennis.com/api/iframe?runid=702&public=1&day=0&mode=0",
@@ -24,31 +24,11 @@
   },
   "trainingSessions": [
     {
-      "id": "0-manolo-santana-08-30-am-09-30-am-sorana-cirstea",
+      "id": "0-manolo-santana-09-00-am-09-30-am-belinda-bencic-diana-shnaider",
       "dayOffset": 0,
       "dayLabel": "Sat, Apr 25, 2026",
       "court": "MANOLO SANTANA",
-      "timeRange": "08:30 AM - 09:30 AM",
-      "tour": "",
-      "players": [
-        {
-          "id": "sorana-cirstea",
-          "name": "Sorana Cirstea",
-          "country": "ROU",
-          "ranking": 26,
-          "singlesRanking": 26,
-          "doublesRanking": 40,
-          "tour": "WTA",
-          "wtaPlayerId": "312469"
-        }
-      ]
-    },
-    {
-      "id": "0-manolo-santana-09-30-am-10-00-am-belinda-bencic-diana-shnaider",
-      "dayOffset": 0,
-      "dayLabel": "Sat, Apr 25, 2026",
-      "court": "MANOLO SANTANA",
-      "timeRange": "09:30 AM - 10:00 AM",
+      "timeRange": "09:00 AM - 09:30 AM",
       "tour": "",
       "players": [
         {
@@ -70,6 +50,26 @@
           "doublesRanking": 28,
           "tour": "WTA",
           "wtaPlayerId": "330482"
+        }
+      ]
+    },
+    {
+      "id": "0-manolo-santana-09-30-am-10-00-am-belinda-bencic",
+      "dayOffset": 0,
+      "dayLabel": "Sat, Apr 25, 2026",
+      "court": "MANOLO SANTANA",
+      "timeRange": "09:30 AM - 10:00 AM",
+      "tour": "",
+      "players": [
+        {
+          "id": "belinda-bencic",
+          "name": "Belinda Bencic",
+          "country": "SUI",
+          "ranking": 12,
+          "singlesRanking": 12,
+          "doublesRanking": 1574,
+          "tour": "WTA",
+          "wtaPlayerId": "319001"
         }
       ]
     },
@@ -138,6 +138,26 @@
           "singlesRanking": 94,
           "tour": "ATP",
           "atpPlayerId": "CD85"
+        }
+      ]
+    },
+    {
+      "id": "0-estadio-3-08-30-am-09-30-am-sorana-cirstea",
+      "dayOffset": 0,
+      "dayLabel": "Sat, Apr 25, 2026",
+      "court": "ESTADIO 3",
+      "timeRange": "08:30 AM - 09:30 AM",
+      "tour": "",
+      "players": [
+        {
+          "id": "sorana-cirstea",
+          "name": "Sorana Cirstea",
+          "country": "ROU",
+          "ranking": 26,
+          "singlesRanking": 26,
+          "doublesRanking": 40,
+          "tour": "WTA",
+          "wtaPlayerId": "312469"
         }
       ]
     },
@@ -458,6 +478,25 @@
           "doublesRanking": 48,
           "tour": "WTA",
           "wtaPlayerId": "319413"
+        }
+      ]
+    },
+    {
+      "id": "0-pista-8-09-30-am-10-00-am-yannick-hanfmann",
+      "dayOffset": 0,
+      "dayLabel": "Sat, Apr 25, 2026",
+      "court": "PISTA 8",
+      "timeRange": "09:30 AM - 10:00 AM",
+      "tour": "",
+      "players": [
+        {
+          "id": "yannick-hanfmann",
+          "name": "Yannick Hanfmann",
+          "country": "GER",
+          "ranking": 60,
+          "singlesRanking": 60,
+          "tour": "ATP",
+          "atpPlayerId": "H997"
         }
       ]
     },
@@ -1213,26 +1252,6 @@
           "tour": "WTA",
           "wtaPlayerId": "320567",
           "singlesEntryType": "Q"
-        }
-      ]
-    },
-    {
-      "id": "0-pista-13-wta-08-30-am-09-30-am-shuai-zhang",
-      "dayOffset": 0,
-      "dayLabel": "Sat, Apr 25, 2026",
-      "court": "PISTA 13 (WTA)",
-      "timeRange": "08:30 AM - 09:30 AM",
-      "tour": "WTA",
-      "players": [
-        {
-          "id": "shuai-zhang",
-          "name": "Shuai Zhang",
-          "country": "CHN",
-          "ranking": 62,
-          "singlesRanking": 62,
-          "doublesRanking": 11,
-          "tour": "WTA",
-          "wtaPlayerId": "311779"
         }
       ]
     },
@@ -2067,6 +2086,26 @@
           "doublesRanking": 25,
           "tour": "WTA",
           "wtaPlayerId": "317888"
+        }
+      ]
+    },
+    {
+      "id": "0-pista-19-atp-08-30-am-09-30-am-shuai-zhang",
+      "dayOffset": 0,
+      "dayLabel": "Sat, Apr 25, 2026",
+      "court": "PISTA 19 (ATP)",
+      "timeRange": "08:30 AM - 09:30 AM",
+      "tour": "ATP",
+      "players": [
+        {
+          "id": "shuai-zhang",
+          "name": "Shuai Zhang",
+          "country": "CHN",
+          "ranking": 62,
+          "singlesRanking": 62,
+          "doublesRanking": 11,
+          "tour": "WTA",
+          "wtaPlayerId": "311779"
         }
       ]
     },
