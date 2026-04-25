@@ -4,7 +4,7 @@
     "track": "live",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-25T16:27:53.399805+00:00",
+    "updatedAt": "2026-04-25T17:08:54.305213+00:00",
     "sources": {
       "matches": {
         "wta": "https://api.wtatennis.com/tennis/tournaments/1038/2026/matches",
@@ -999,8 +999,9 @@
     },
     {
       "id": "LS019",
-      "status": "P",
-      "score": "7-5,2-1",
+      "status": "F",
+      "score": "7-5,6-3",
+      "result": "[30]H. Baptiste d [8]J. Paolini 7-5,6-3",
       "startTime": "2026-04-25T14:50:04.187+00:00",
       "court": "Court 3"
     },
@@ -1189,6 +1190,14 @@
       "status": "F",
       "score": "61 75",
       "result": "61 75",
+      "startTime": "2026-04-25T00:00:00",
+      "court": "Court 5"
+    },
+    {
+      "id": "ATP-MS058",
+      "status": "F",
+      "score": "64 63",
+      "result": "64 63",
       "startTime": "2026-04-25T00:00:00",
       "court": "Court 5"
     },
