@@ -4,7 +4,7 @@
     "track": "training",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-26T08:58:59.253589+00:00",
+    "updatedAt": "2026-04-26T09:54:24.574083+00:00",
     "sources": {
       "training": [
         "https://practice.tmstennis.com/api/iframe?runid=702&public=1&day=0&mode=0",
@@ -2044,6 +2044,26 @@
       ]
     },
     {
+      "id": "0-pista-17-atp-04-00-pm-05-00-pm-cash-robert",
+      "dayOffset": 0,
+      "dayLabel": "Sun, Apr 26, 2026",
+      "court": "PISTA 17 -ATP",
+      "timeRange": "04:00 PM - 05:00 PM",
+      "tour": "ATP",
+      "players": [
+        {
+          "id": "cash-robert",
+          "name": "Robert Cash",
+          "country": "USA",
+          "ranking": 35,
+          "rankingTag": "D",
+          "doublesRanking": 35,
+          "tour": "ATP",
+          "atpPlayerId": "C0E0"
+        }
+      ]
+    },
+    {
       "id": "0-pista-18-wta-09-00-am-10-30-am-taylor-townsend",
       "dayOffset": 0,
       "dayLabel": "Sun, Apr 26, 2026",
@@ -2194,6 +2214,30 @@
       ]
     },
     {
+      "id": "0-pista-19-atp-12-00-pm-01-00-pm-orlando-luz-rafael-matos",
+      "dayOffset": 0,
+      "dayLabel": "Sun, Apr 26, 2026",
+      "court": "PISTA 19 (ATP)",
+      "timeRange": "12:00 PM - 01:00 PM",
+      "tour": "ATP",
+      "players": [
+        {
+          "id": "rafael-matos",
+          "name": "Rafael Matos",
+          "country": "BRA",
+          "tour": "ATP",
+          "atpPlayerId": "MO41"
+        },
+        {
+          "id": "orlando-luz",
+          "name": "Orlando Luz",
+          "country": "BRA",
+          "tour": "ATP",
+          "atpPlayerId": "LF26"
+        }
+      ]
+    },
+    {
       "id": "0-pista-19-atp-01-00-pm-01-30-pm-merida-aguilar-daniel",
       "dayOffset": 0,
       "dayLabel": "Sun, Apr 26, 2026",
@@ -2226,6 +2270,22 @@
           "doublesRanking": 601,
           "tour": "ATP",
           "atpPlayerId": "BK92"
+        }
+      ]
+    },
+    {
+      "id": "0-pista-19-atp-02-30-pm-03-30-pm-tracy-james",
+      "dayOffset": 0,
+      "dayLabel": "Sun, Apr 26, 2026",
+      "court": "PISTA 19 (ATP)",
+      "timeRange": "02:30 PM - 03:30 PM",
+      "tour": "ATP",
+      "players": [
+        {
+          "id": "tracy-james",
+          "name": "Tracy James",
+          "country": "",
+          "tour": "ATP"
         }
       ]
     },
@@ -2330,6 +2390,27 @@
           "ranking": 17,
           "singlesRanking": 17,
           "tour": "WTA"
+        }
+      ]
+    },
+    {
+      "id": "0-pista-20-wta-04-00-pm-06-00-pm-anastasia-pavlyuchenkova",
+      "dayOffset": 0,
+      "dayLabel": "Sun, Apr 26, 2026",
+      "court": "PISTA 20 (WTA)",
+      "timeRange": "04:00 PM - 06:00 PM",
+      "tour": "WTA",
+      "players": [
+        {
+          "id": "anastasia-pavlyuchenkova",
+          "name": "Anastasia Pavlyuchenkova",
+          "country": "RUS",
+          "ranking": 116,
+          "singlesRanking": 116,
+          "doublesRanking": 298,
+          "tour": "WTA",
+          "wtaPlayerId": "313796",
+          "singlesEntryType": "Q"
         }
       ]
     },
