@@ -4,7 +4,7 @@
     "track": "live",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-26T15:00:13.016286+00:00",
+    "updatedAt": "2026-04-26T15:47:06.609898+00:00",
     "sources": {
       "matches": {
         "wta": "https://api.wtatennis.com/tennis/tournaments/1038/2026/matches",
@@ -1087,14 +1087,16 @@
     },
     {
       "id": "LS024",
-      "status": "P",
-      "score": "6-1,5-4",
+      "status": "F",
+      "score": "6-1,6-4",
+      "result": "[26]M. Kostyuk d [5]J. Pegula 6-1,6-4",
       "startTime": "2026-04-26T13:32:54.573+00:00",
       "court": "Court 2"
     },
     {
       "id": "LD009",
-      "status": "C",
+      "status": "P",
+      "score": "5-3",
       "startTime": "2026-04-26T14:59:02.7+00:00",
       "court": "Court 5"
     },
@@ -1163,6 +1165,14 @@
       "status": "U",
       "startTime": "2026-04-27T19:00+02:00",
       "court": "Arantxa Sanchez Stadium"
+    },
+    {
+      "id": "ATP-MS016",
+      "status": "F",
+      "score": "62 63",
+      "result": "62 63",
+      "startTime": "2026-04-26T00:00:00",
+      "court": "Manolo Santana Stadium"
     },
     {
       "id": "ATP-MS023",
