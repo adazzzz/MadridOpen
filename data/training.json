@@ -4,7 +4,7 @@
     "track": "training",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-26T17:07:16.678500+00:00",
+    "updatedAt": "2026-04-26T17:54:58.603252+00:00",
     "sources": {
       "training": [
         "https://practice.tmstennis.com/api/iframe?runid=702&public=1&day=0&mode=0",
@@ -3546,6 +3546,36 @@
       ]
     },
     {
+      "id": "1-pista-7-09-30-am-10-00-am-arends-sander-pel-david",
+      "dayOffset": 1,
+      "dayLabel": "Mon, Apr 27, 2026",
+      "court": "PISTA 7",
+      "timeRange": "09:30 AM - 10:00 AM",
+      "tour": "",
+      "players": [
+        {
+          "id": "arends-sander",
+          "name": "Sander Arends",
+          "country": "NED",
+          "ranking": 51,
+          "rankingTag": "D",
+          "doublesRanking": 51,
+          "tour": "ATP",
+          "atpPlayerId": "AC55"
+        },
+        {
+          "id": "pel-david",
+          "name": "David Pel",
+          "country": "NED",
+          "ranking": 32,
+          "rankingTag": "D",
+          "doublesRanking": 32,
+          "tour": "ATP",
+          "atpPlayerId": "PE69"
+        }
+      ]
+    },
+    {
       "id": "1-pista-8-10-30-am-11-00-am-doumbia-sadio-reboul-fabien",
       "dayOffset": 1,
       "dayLabel": "Mon, Apr 27, 2026",
@@ -4449,6 +4479,36 @@
       ]
     },
     {
+      "id": "1-pista-18-wta-03-00-pm-04-00-pm-cabral-francisco-salisbury-joe",
+      "dayOffset": 1,
+      "dayLabel": "Mon, Apr 27, 2026",
+      "court": "PISTA 18 -WTA",
+      "timeRange": "03:00 PM - 04:00 PM",
+      "tour": "WTA",
+      "players": [
+        {
+          "id": "cabral-francisco",
+          "name": "Francisco Cabral",
+          "country": "POR",
+          "ranking": 21,
+          "rankingTag": "D",
+          "doublesRanking": 21,
+          "tour": "ATP",
+          "atpPlayerId": "CL84"
+        },
+        {
+          "id": "salisbury-joe",
+          "name": "Joe Salisbury",
+          "country": "GBR",
+          "ranking": 8,
+          "rankingTag": "D",
+          "doublesRanking": 8,
+          "tour": "ATP",
+          "atpPlayerId": "SO70"
+        }
+      ]
+    },
+    {
       "id": "1-pista-19-atp-11-00-am-12-00-pm-zhizhen-zhang",
       "dayOffset": 1,
       "dayLabel": "Mon, Apr 27, 2026",
@@ -4464,6 +4524,26 @@
           "singlesRanking": 245,
           "tour": "ATP",
           "atpPlayerId": "Z371"
+        }
+      ]
+    },
+    {
+      "id": "1-pista-19-atp-01-00-pm-02-00-pm-polmans-marc",
+      "dayOffset": 1,
+      "dayLabel": "Mon, Apr 27, 2026",
+      "court": "PISTA 19 (ATP)",
+      "timeRange": "01:00 PM - 02:00 PM",
+      "tour": "ATP",
+      "players": [
+        {
+          "id": "polmans-marc",
+          "name": "Marc Polmans",
+          "country": "AUS",
+          "ranking": 340,
+          "singlesRanking": 340,
+          "doublesRanking": 52,
+          "tour": "ATP",
+          "atpPlayerId": "PG94"
         }
       ]
     },
@@ -4494,6 +4574,26 @@
           "doublesRanking": 267,
           "tour": "ATP",
           "atpPlayerId": "L0CX"
+        }
+      ]
+    },
+    {
+      "id": "1-pista-20-wta-12-00-pm-12-30-pm-luciano-darderi",
+      "dayOffset": 1,
+      "dayLabel": "Mon, Apr 27, 2026",
+      "court": "PISTA 20 (WTA)",
+      "timeRange": "12:00 PM - 12:30 PM",
+      "tour": "WTA",
+      "players": [
+        {
+          "id": "luciano-darderi",
+          "name": "Luciano Darderi",
+          "country": "ITA",
+          "ranking": 22,
+          "singlesRanking": 22,
+          "doublesRanking": 203,
+          "tour": "ATP",
+          "atpPlayerId": "D0FJ"
         }
       ]
     },
