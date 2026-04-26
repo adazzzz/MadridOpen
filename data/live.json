@@ -4,7 +4,7 @@
     "track": "live",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-26T16:25:11.658023+00:00",
+    "updatedAt": "2026-04-26T17:07:16.678500+00:00",
     "sources": {
       "matches": {
         "wta": "https://api.wtatennis.com/tennis/tournaments/1038/2026/matches",
@@ -1095,8 +1095,9 @@
     },
     {
       "id": "LD009",
-      "status": "P",
-      "score": "6-4,4-2",
+      "status": "F",
+      "score": "6-4,6-2",
+      "result": "A. Sutjiadi / J. Tjen d [6]C. Bucsa / N. Melichar-Martinez 6-4,6-2",
       "startTime": "2026-04-26T14:59:02.7+00:00",
       "court": "Court 5"
     },
@@ -2029,6 +2030,22 @@
       "result": "64 76(6)",
       "startTime": "2026-04-26T00:00:00",
       "court": "Court 6"
+    },
+    {
+      "id": "ATP-MD028",
+      "status": "F",
+      "score": "76(7) 76(5)",
+      "result": "76(7) 76(5)",
+      "startTime": "2026-04-26T00:00:00",
+      "court": "Court 6"
+    },
+    {
+      "id": "ATP-MD023",
+      "status": "F",
+      "score": "63 76(3)",
+      "result": "63 76(3)",
+      "startTime": "2026-04-26T00:00:00",
+      "court": "Court 4"
     },
     {
       "id": "ATP-MD025",
