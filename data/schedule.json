@@ -4,7 +4,7 @@
     "track": "schedule",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-26T22:38:32.260509+00:00",
+    "updatedAt": "2026-04-26T23:22:55.677127+00:00",
     "sources": {
       "schedules": {
         "wta": "https://wta-webapi-prod-apimanagement.azure-api.net/atpjoint-api/v1/Scores/Schedule?eventId=1038&eventYear=2026",
@@ -6861,6 +6861,46 @@
           "singlesRanking": 87,
           "tour": "ATP",
           "atpPlayerId": "P0HW"
+        }
+      ]
+    },
+    {
+      "id": "ATP-MS019",
+      "tour": "ATP",
+      "draw": "MS",
+      "discipline": "singles",
+      "round": "R32",
+      "roundCode": "R32",
+      "roundLabel": "第三轮",
+      "startTime": "2026-04-26T00:00:00",
+      "court": "Manolo Santana Stadium",
+      "scheduleDay": "2026-04-26",
+      "scheduleOrder": 6,
+      "scheduleType": "followed_by",
+      "scheduleText": "Followed By",
+      "scheduleDisplay": "Followed By",
+      "players": [
+        {
+          "id": "rafael-jodar",
+          "name": "Rafael Jodar",
+          "country": "ESP",
+          "side": "A",
+          "ranking": 42,
+          "singlesRanking": 42,
+          "doublesRanking": 346,
+          "tour": "ATP",
+          "atpPlayerId": "J0DZ"
+        },
+        {
+          "id": "joao-fonseca",
+          "name": "Joao Fonseca",
+          "country": "BRA",
+          "side": "B",
+          "ranking": 31,
+          "singlesRanking": 31,
+          "doublesRanking": 162,
+          "tour": "ATP",
+          "atpPlayerId": "F0FV"
         }
       ]
     },
