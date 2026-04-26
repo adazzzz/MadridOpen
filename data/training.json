@@ -4,7 +4,7 @@
     "track": "training",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-26T20:04:35.821618+00:00",
+    "updatedAt": "2026-04-26T20:53:23.044767+00:00",
     "sources": {
       "training": [
         "https://practice.tmstennis.com/api/iframe?runid=702&public=1&day=0&mode=0",
@@ -3732,6 +3732,26 @@
       ]
     },
     {
+      "id": "1-pista-8-07-00-pm-08-00-pm-elena-rybakina",
+      "dayOffset": 1,
+      "dayLabel": "Mon, Apr 27, 2026",
+      "court": "PISTA 8",
+      "timeRange": "07:00 PM - 08:00 PM",
+      "tour": "",
+      "players": [
+        {
+          "id": "elena-rybakina",
+          "name": "Elena Rybakina",
+          "country": "KAZ",
+          "ranking": 2,
+          "singlesRanking": 2,
+          "doublesRanking": 274,
+          "tour": "WTA",
+          "wtaPlayerId": "324166"
+        }
+      ]
+    },
+    {
       "id": "1-pista-9-wta-10-30-am-11-30-am-aryna-sabalenka",
       "dayOffset": 1,
       "dayLabel": "Mon, Apr 27, 2026",
@@ -4391,11 +4411,11 @@
       ]
     },
     {
-      "id": "1-pista-15-atp-10-30-am-12-00-pm-ethan-quinn-tommy-paul",
+      "id": "1-pista-15-atp-01-00-pm-02-30-pm-ethan-quinn-tommy-paul",
       "dayOffset": 1,
       "dayLabel": "Mon, Apr 27, 2026",
       "court": "PISTA 15 -ATP",
-      "timeRange": "10:30 AM - 12:00 PM",
+      "timeRange": "01:00 PM - 02:30 PM",
       "tour": "ATP",
       "players": [
         {
@@ -4437,6 +4457,26 @@
           "doublesRanking": 5,
           "tour": "WTA",
           "wtaPlayerId": "318609"
+        }
+      ]
+    },
+    {
+      "id": "1-pista-16-wta-11-00-am-12-00-pm-aldila-sutjiadi",
+      "dayOffset": 1,
+      "dayLabel": "Mon, Apr 27, 2026",
+      "court": "PISTA 16 -WTA",
+      "timeRange": "11:00 AM - 12:00 PM",
+      "tour": "WTA",
+      "players": [
+        {
+          "id": "aldila-sutjiadi",
+          "name": "Aldila Sutjiadi",
+          "country": "INA",
+          "ranking": 51,
+          "rankingTag": "D",
+          "doublesRanking": 51,
+          "tour": "WTA",
+          "wtaPlayerId": "318390"
         }
       ]
     },
@@ -4549,6 +4589,26 @@
       ]
     },
     {
+      "id": "1-pista-17-atp-01-00-pm-02-00-pm-arneodo-romain",
+      "dayOffset": 1,
+      "dayLabel": "Mon, Apr 27, 2026",
+      "court": "PISTA 17 -ATP",
+      "timeRange": "01:00 PM - 02:00 PM",
+      "tour": "ATP",
+      "players": [
+        {
+          "id": "arneodo-romain",
+          "name": "Romain Arneodo",
+          "country": "MON",
+          "ranking": 71,
+          "rankingTag": "D",
+          "doublesRanking": 71,
+          "tour": "ATP",
+          "atpPlayerId": "AA81"
+        }
+      ]
+    },
+    {
       "id": "1-pista-18-wta-01-00-pm-02-00-pm-heliovaara-harri-patten-henry",
       "dayOffset": 1,
       "dayLabel": "Mon, Apr 27, 2026",
@@ -4605,6 +4665,36 @@
           "doublesRanking": 8,
           "tour": "ATP",
           "atpPlayerId": "SO70"
+        }
+      ]
+    },
+    {
+      "id": "1-pista-19-atp-12-00-pm-01-00-pm-bhambri-yuki-venus-michael",
+      "dayOffset": 1,
+      "dayLabel": "Mon, Apr 27, 2026",
+      "court": "PISTA 19 (ATP)",
+      "timeRange": "12:00 PM - 01:00 PM",
+      "tour": "ATP",
+      "players": [
+        {
+          "id": "venus-michael",
+          "name": "Michael Venus",
+          "country": "NZL",
+          "ranking": 49,
+          "rankingTag": "D",
+          "doublesRanking": 49,
+          "tour": "ATP",
+          "atpPlayerId": "V576"
+        },
+        {
+          "id": "bhambri-yuki",
+          "name": "Yuki Bhambri",
+          "country": "IND",
+          "ranking": 25,
+          "rankingTag": "D",
+          "doublesRanking": 25,
+          "tour": "ATP",
+          "atpPlayerId": "BF55"
         }
       ]
     },
