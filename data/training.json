@@ -4,7 +4,7 @@
     "track": "training",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-26T05:50:15.601640+00:00",
+    "updatedAt": "2026-04-26T06:25:43.967013+00:00",
     "sources": {
       "training": [
         "https://practice.tmstennis.com/api/iframe?runid=702&public=1&day=0&mode=0",
@@ -24,11 +24,11 @@
   },
   "trainingSessions": [
     {
-      "id": "0-manolo-santana-09-00-am-09-30-am-gauff-cori",
+      "id": "0-manolo-santana-08-30-am-09-30-am-gauff-cori",
       "dayOffset": 0,
       "dayLabel": "Sun, Apr 26, 2026",
       "court": "MANOLO SANTANA",
-      "timeRange": "09:00 AM - 09:30 AM",
+      "timeRange": "08:30 AM - 09:30 AM",
       "tour": "",
       "players": [
         {
