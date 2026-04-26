@@ -4,10 +4,11 @@
     "track": "live",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-26T04:32:12.955685+00:00",
+    "updatedAt": "2026-04-26T05:50:15.601640+00:00",
     "sources": {
       "matches": {
         "wta": "https://api.wtatennis.com/tennis/tournaments/1038/2026/matches",
+        "wtaResultsInfo": "https://wta-webapi-prod-apimanagement.azure-api.net/api/v1/vw_Match_Infos/2026/1038",
         "atp": "https://mutuamadridopen.com/results/php/"
       }
     }

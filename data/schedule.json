@@ -4,7 +4,7 @@
     "track": "schedule",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-26T04:32:12.955685+00:00",
+    "updatedAt": "2026-04-26T05:50:15.601640+00:00",
     "sources": {
       "schedules": {
         "wta": "https://wta-webapi-prod-apimanagement.azure-api.net/atpjoint-api/v1/Scores/Schedule?eventId=1038&eventYear=2026",
@@ -245,7 +245,8 @@
           "singlesRanking": 89,
           "doublesRanking": 237,
           "tour": "WTA",
-          "wtaPlayerId": "324267"
+          "wtaPlayerId": "324267",
+          "singlesEntryType": "LL"
         },
         {
           "id": "nuria-brancaccio",
@@ -1221,7 +1222,8 @@
           "singlesRanking": 89,
           "doublesRanking": 237,
           "tour": "WTA",
-          "wtaPlayerId": "324267"
+          "wtaPlayerId": "324267",
+          "singlesEntryType": "LL"
         },
         {
           "id": "elvina-kalieva",
@@ -4459,7 +4461,8 @@
           "singlesRanking": 89,
           "doublesRanking": 237,
           "tour": "WTA",
-          "wtaPlayerId": "324267"
+          "wtaPlayerId": "324267",
+          "singlesEntryType": "LL"
         },
         {
           "id": "katerina-siniakova",
@@ -6183,7 +6186,7 @@
       "scheduleDisplay": "Not Before 16:00",
       "players": [
         {
-          "id": "zverev-alexander",
+          "id": "alexander-zverev",
           "name": "Alexander Zverev",
           "country": "GER",
           "side": "A",
@@ -6222,7 +6225,7 @@
       "scheduleDisplay": "Followed By",
       "players": [
         {
-          "id": "auger-aliassime-felix",
+          "id": "felix-auger-aliassime",
           "name": "Felix Auger-Aliassime",
           "country": "CAN",
           "side": "A",
@@ -6382,7 +6385,7 @@
       "scheduleDisplay": "Not Before 19:00",
       "players": [
         {
-          "id": "medvedev-daniil",
+          "id": "daniil-medvedev",
           "name": "Daniil Medvedev",
           "country": "RUS",
           "side": "A",
@@ -6432,7 +6435,7 @@
           "atpPlayerId": "TE51"
         },
         {
-          "id": "bublik-alexander",
+          "id": "alexander-bublik",
           "name": "Alexander Bublik",
           "country": "KAZ",
           "side": "B",
@@ -6501,7 +6504,7 @@
       "scheduleDisplay": "Not Before 15:30",
       "players": [
         {
-          "id": "cobolli-flavio",
+          "id": "flavio-cobolli",
           "name": "Flavio Cobolli",
           "country": "ITA",
           "side": "A",
@@ -6581,7 +6584,7 @@
       "scheduleDisplay": "Followed By",
       "players": [
         {
-          "id": "ruud-casper",
+          "id": "casper-ruud",
           "name": "Casper Ruud",
           "country": "NOR",
           "side": "A",
@@ -6621,7 +6624,7 @@
       "scheduleDisplay": "Starts At 11:00",
       "players": [
         {
-          "id": "khachanov-karen",
+          "id": "karen-khachanov",
           "name": "Karen Khachanov",
           "country": "RUS",
           "side": "A",
@@ -6744,7 +6747,7 @@
       "scheduleDisplay": "Starts At 11:00",
       "players": [
         {
-          "id": "cerundolo-francisco",
+          "id": "francisco-cerundolo",
           "name": "Francisco Cerundolo",
           "country": "ARG",
           "side": "A",
@@ -6794,7 +6797,7 @@
           "atpPlayerId": "V0DP"
         },
         {
-          "id": "tien-learner",
+          "id": "learner-tien",
           "name": "Learner Tien",
           "country": "USA",
           "side": "B",
@@ -6823,7 +6826,7 @@
       "scheduleDisplay": "Followed By",
       "players": [
         {
-          "id": "darderi-luciano",
+          "id": "luciano-darderi",
           "name": "Luciano Darderi",
           "country": "ITA",
           "side": "A",
@@ -6904,7 +6907,7 @@
       "scheduleDisplay": "Starts At 11:00",
       "players": [
         {
-          "id": "davidovich-fokina-alejandro",
+          "id": "alejandro-davidovich-fokina",
           "name": "Alejandro Davidovich Fokina",
           "country": "ESP",
           "side": "A",
@@ -7021,7 +7024,7 @@
       "scheduleDisplay": "Followed By",
       "players": [
         {
-          "id": "mensik-jakub",
+          "id": "jakub-mensik",
           "name": "Jakub Mensik",
           "country": "CZE",
           "side": "A",
@@ -7112,7 +7115,7 @@
           "atpPlayerId": "M0N7"
         },
         {
-          "id": "moutet-corentin",
+          "id": "corentin-moutet",
           "name": "Corentin Moutet",
           "country": "FRA",
           "side": "B",
@@ -7191,7 +7194,7 @@
           "atpPlayerId": "B0PG"
         },
         {
-          "id": "nakashima-brandon",
+          "id": "brandon-nakashima",
           "name": "Brandon Nakashima",
           "country": "USA",
           "side": "B",
@@ -7271,7 +7274,7 @@
           "atpPlayerId": "A0GC"
         },
         {
-          "id": "humbert-ugo",
+          "id": "ugo-humbert",
           "name": "Ugo Humbert",
           "country": "FRA",
           "side": "B",
@@ -7309,7 +7312,7 @@
           "atpPlayerId": "B0U4"
         },
         {
-          "id": "shapovalov-denis",
+          "id": "denis-shapovalov",
           "name": "Denis Shapovalov",
           "country": "CAN",
           "side": "B",

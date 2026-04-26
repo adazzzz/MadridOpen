@@ -4,7 +4,7 @@
     "track": "draws",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-25T05:24:49.634668+00:00",
+    "updatedAt": "2026-04-26T05:50:15.601640+00:00",
     "sources": {
       "draws": {
         "wta": "https://wta-webapi-prod-apimanagement.azure-api.net/api/v1/VwEventDrawxmls/2026/1038",
@@ -12,12 +12,12 @@
       }
     },
     "audit": {
-      "doublesMatches": 34,
+      "doublesMatches": 38,
       "atpDrawFallbackMatches": 16,
       "wtaDrawFallbackMatches": 0,
       "doublesPlayers": 128,
-      "doublesPlayersMissingDoublesRanking": 4,
-      "playersMissingTour": 1,
+      "doublesPlayersMissingDoublesRanking": 3,
+      "playersMissingTour": 2,
       "atpDrawEvents": [
         "MS",
         "QS",
@@ -163,7 +163,7 @@
           "atpPlayerId": "M919"
         },
         {
-          "id": "zverev-alexander",
+          "id": "alexander-zverev",
           "name": "Alexander Zverev",
           "country": "GER",
           "side": "A",
@@ -174,7 +174,7 @@
           "atpPlayerId": "Z355"
         },
         {
-          "id": "darderi-luciano",
+          "id": "luciano-darderi",
           "name": "Luciano Darderi",
           "country": "ITA",
           "side": "B",
@@ -242,10 +242,13 @@
           "atpPlayerId": "BA98"
         },
         {
-          "id": "andrea-vavassori",
+          "id": "vavassori-andrea",
           "name": "Andrea Vavassori",
           "country": "ITA",
           "side": "B",
+          "ranking": 614,
+          "singlesRanking": 614,
+          "doublesRanking": 14,
           "tour": "ATP",
           "atpPlayerId": "VA08"
         }
@@ -431,7 +434,7 @@
       "source": "atpDraw",
       "players": [
         {
-          "id": "cerundolo-francisco",
+          "id": "francisco-cerundolo",
           "name": "Francisco Cerundolo",
           "country": "ARG",
           "side": "A",
@@ -545,7 +548,7 @@
       "source": "atpDraw",
       "players": [
         {
-          "id": "bublik-alexander",
+          "id": "alexander-bublik",
           "name": "Alexander Bublik",
           "country": "KAZ",
           "side": "A",
@@ -567,24 +570,18 @@
           "atpPlayerId": "PG94"
         },
         {
-          "id": "luz-orlando",
+          "id": "orlando-luz",
           "name": "Orlando Luz",
           "country": "BRA",
           "side": "B",
-          "ranking": 1031,
-          "singlesRanking": 1031,
-          "doublesRanking": 29,
           "tour": "ATP",
           "atpPlayerId": "LF26"
         },
         {
-          "id": "matos-rafael",
+          "id": "rafael-matos",
           "name": "Rafael Matos",
           "country": "BRA",
           "side": "B",
-          "ranking": 31,
-          "rankingTag": "D",
-          "doublesRanking": 31,
           "tour": "ATP",
           "atpPlayerId": "MO41"
         }
@@ -634,10 +631,13 @@
           "atpPlayerId": "CD85"
         },
         {
-          "id": "inigo-cervantes",
+          "id": "cervantes-inigo",
           "name": "Inigo Cervantes",
           "country": "ESP",
           "side": "B",
+          "ranking": 173,
+          "rankingTag": "D",
+          "doublesRanking": 173,
           "tour": "ATP",
           "atpPlayerId": "CA33"
         }
@@ -666,7 +666,7 @@
           "atpPlayerId": "TE30"
         },
         {
-          "id": "tien-learner",
+          "id": "learner-tien",
           "name": "Learner Tien",
           "country": "USA",
           "side": "A",
@@ -745,7 +745,7 @@
           "atpPlayerId": "GJ37"
         },
         {
-          "id": "nakashima-brandon",
+          "id": "brandon-nakashima",
           "name": "Brandon Nakashima",
           "country": "USA",
           "side": "B",
@@ -769,7 +769,7 @@
       "source": "atpDraw",
       "players": [
         {
-          "id": "moutet-corentin",
+          "id": "corentin-moutet",
           "name": "Corentin Moutet",
           "country": "FRA",
           "side": "A",
@@ -837,10 +837,13 @@
           "atpPlayerId": "L0CX"
         },
         {
-          "id": "benjamin-winter-lopez",
+          "id": "winter-lopez-benjamin",
           "name": "Benjamin Winter Lopez",
           "country": "ESP",
           "side": "A",
+          "ranking": 1013,
+          "singlesRanking": 1013,
+          "doublesRanking": 211,
           "tour": "ATP",
           "atpPlayerId": "W09X"
         },
