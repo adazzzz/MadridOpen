@@ -4,7 +4,7 @@
     "track": "schedule",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-26T11:23:47.011192+00:00",
+    "updatedAt": "2026-04-26T11:59:53.169848+00:00",
     "sources": {
       "schedules": {
         "wta": "https://wta-webapi-prod-apimanagement.azure-api.net/atpjoint-api/v1/Scores/Schedule?eventId=1038&eventYear=2026",
@@ -5830,7 +5830,7 @@
       "startTime": "2026-04-26T15:00+02:00",
       "court": "Court 5",
       "scheduleDay": "2026-04-26",
-      "scheduleOrder": 3,
+      "scheduleOrder": 2,
       "scheduleType": "not_before",
       "scheduleText": "Not Before",
       "scheduleTime": "15:00+0200",
@@ -5975,7 +5975,7 @@
       "startTime": "2026-04-26T23:59+02:00",
       "court": "Court 5",
       "scheduleDay": "2026-04-26",
-      "scheduleOrder": 2,
+      "scheduleOrder": 3,
       "scheduleType": "after_rest",
       "scheduleText": "After suitable rest",
       "scheduleDisplay": "After suitable rest",
