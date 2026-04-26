@@ -4,7 +4,7 @@
     "track": "live",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-26T14:09:38.242043+00:00",
+    "updatedAt": "2026-04-26T15:00:13.016286+00:00",
     "sources": {
       "matches": {
         "wta": "https://api.wtatennis.com/tennis/tournaments/1038/2026/matches",
@@ -1078,16 +1078,24 @@
       "court": "Court 5"
     },
     {
+      "id": "LD013",
+      "status": "F",
+      "score": "3-6,7-5,1-0(9)",
+      "result": "A. Krunic / K. Mladenovic d M. Bouzkova / L. Noskova 3-6,7-5,1-0(9)",
+      "startTime": "2026-04-26T12:58:44.177+00:00",
+      "court": "Court 5"
+    },
+    {
       "id": "LS024",
       "status": "P",
-      "score": "0-3",
+      "score": "6-1,5-4",
       "startTime": "2026-04-26T13:32:54.573+00:00",
       "court": "Court 2"
     },
     {
       "id": "LD009",
-      "status": "U",
-      "startTime": "2026-04-26T16:30+02:00",
+      "status": "C",
+      "startTime": "2026-04-26T14:59:02.7+00:00",
       "court": "Court 5"
     },
     {
@@ -1100,6 +1108,60 @@
       "id": "LS030",
       "status": "U",
       "startTime": "2026-04-26T21:30+02:00",
+      "court": "Arantxa Sanchez Stadium"
+    },
+    {
+      "id": "LS009",
+      "status": "U",
+      "startTime": "2026-04-27T11:00+02:00",
+      "court": "Arantxa Sanchez Stadium"
+    },
+    {
+      "id": "LD011",
+      "status": "U",
+      "startTime": "2026-04-27T11:00+02:00",
+      "court": "Court 4"
+    },
+    {
+      "id": "LS010",
+      "status": "U",
+      "startTime": "2026-04-27T11:00+02:00",
+      "court": "Stadium 3"
+    },
+    {
+      "id": "LS008",
+      "status": "U",
+      "startTime": "2026-04-27T13:00+02:00",
+      "court": "Manolo Santana Stadium"
+    },
+    {
+      "id": "LS014",
+      "status": "U",
+      "startTime": "2026-04-27T13:00+02:00",
+      "court": "Stadium 3"
+    },
+    {
+      "id": "LS011",
+      "status": "U",
+      "startTime": "2026-04-27T15:00+02:00",
+      "court": "Stadium 3"
+    },
+    {
+      "id": "LS013",
+      "status": "U",
+      "startTime": "2026-04-27T16:00+02:00",
+      "court": "Manolo Santana Stadium"
+    },
+    {
+      "id": "LD012",
+      "status": "U",
+      "startTime": "2026-04-27T17:00+02:00",
+      "court": "Court 4"
+    },
+    {
+      "id": "LS012",
+      "status": "U",
+      "startTime": "2026-04-27T19:00+02:00",
       "court": "Arantxa Sanchez Stadium"
     },
     {
@@ -1117,6 +1179,14 @@
       "result": "64 62",
       "startTime": "2026-04-26T00:00:00",
       "court": "Arantxa Sanchez Stadium"
+    },
+    {
+      "id": "ATP-MS020",
+      "status": "F",
+      "score": "26 64 63",
+      "result": "26 64 63",
+      "startTime": "2026-04-26T00:00:00",
+      "court": "Stadium 3"
     },
     {
       "id": "ATP-MS032",
@@ -1941,6 +2011,22 @@
       "result": "64 76(6)",
       "startTime": "2026-04-26T00:00:00",
       "court": "Court 6"
+    },
+    {
+      "id": "ATP-MD025",
+      "status": "F",
+      "score": "63 67(4) 10-6",
+      "result": "63 67(4) 10-6",
+      "startTime": "2026-04-26T00:00:00",
+      "court": "Court 6"
+    },
+    {
+      "id": "ATP-MD018",
+      "status": "F",
+      "score": "75 64",
+      "result": "75 64",
+      "startTime": "2026-04-26T00:00:00",
+      "court": "Court 4"
     }
   ]
 }
