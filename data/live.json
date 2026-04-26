@@ -4,7 +4,7 @@
     "track": "live",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-26T13:12:18.045386+00:00",
+    "updatedAt": "2026-04-26T14:09:38.242043+00:00",
     "sources": {
       "matches": {
         "wta": "https://api.wtatennis.com/tennis/tournaments/1038/2026/matches",
@@ -1054,6 +1054,22 @@
       "court": "Court 3"
     },
     {
+      "id": "LS029",
+      "status": "F",
+      "score": "7-5,2-6,7-6(3)",
+      "result": "K. Pliskova d [19]E. Mertens 7-5,2-6,7-6(3)",
+      "startTime": "2026-04-26T10:45:59.003+00:00",
+      "court": "Court 2"
+    },
+    {
+      "id": "LD008",
+      "status": "F",
+      "score": "4-6,6-4,1-0(6)",
+      "result": "L. Siegemund / V. Zvonareva d [1]S. Errani / J. Paolini 4-6,6-4,1-0(6)",
+      "startTime": "2026-04-26T11:01:12.813+00:00",
+      "court": "Court 4"
+    },
+    {
       "id": "LD014",
       "status": "F",
       "score": "W/O",
@@ -1062,23 +1078,16 @@
       "court": "Court 5"
     },
     {
-      "id": "LS029",
+      "id": "LS024",
       "status": "P",
-      "score": "5-7,6-2,5-4",
-      "startTime": "2026-04-26T10:45:59.003+00:00",
+      "score": "0-3",
+      "startTime": "2026-04-26T13:32:54.573+00:00",
       "court": "Court 2"
     },
     {
-      "id": "LD008",
-      "status": "P",
-      "score": "6-4,4-6,0-0(4)",
-      "startTime": "2026-04-26T11:01:12.813+00:00",
-      "court": "Court 4"
-    },
-    {
-      "id": "LD013",
-      "status": "W",
-      "startTime": "2026-04-26T12:58:44.177+00:00",
+      "id": "LD009",
+      "status": "U",
+      "startTime": "2026-04-26T16:30+02:00",
       "court": "Court 5"
     },
     {
@@ -1094,16 +1103,12 @@
       "court": "Arantxa Sanchez Stadium"
     },
     {
-      "id": "LS024",
-      "status": "U",
-      "startTime": "2026-04-26T23:59+02:00",
-      "court": "Arantxa Sanchez Stadium"
-    },
-    {
-      "id": "LD009",
-      "status": "U",
-      "startTime": "2026-04-26T16:30:00+02:00",
-      "court": "Court 5"
+      "id": "ATP-MS023",
+      "status": "F",
+      "score": "64 75",
+      "result": "64 75",
+      "startTime": "2026-04-26T00:00:00",
+      "court": "Manolo Santana Stadium"
     },
     {
       "id": "ATP-MS022",
