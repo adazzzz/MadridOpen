@@ -4,7 +4,7 @@
     "track": "schedule",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-26T19:32:25.546967+00:00",
+    "updatedAt": "2026-04-26T20:04:35.821618+00:00",
     "sources": {
       "schedules": {
         "wta": "https://wta-webapi-prod-apimanagement.azure-api.net/atpjoint-api/v1/Scores/Schedule?eventId=1038&eventYear=2026",
@@ -6085,6 +6085,48 @@
           "doublesRanking": 274,
           "tour": "WTA",
           "wtaPlayerId": "324166"
+        }
+      ]
+    },
+    {
+      "id": "LS030",
+      "tour": "WTA",
+      "draw": "MS",
+      "discipline": "singles",
+      "round": "R3",
+      "roundCode": "R3",
+      "roundLabel": "第三轮",
+      "startTime": "2026-04-26T19:18:12.57+00:00",
+      "court": "Court 2",
+      "scheduleDay": "2026-04-26",
+      "scheduleOrder": 6,
+      "scheduleType": "not_before",
+      "scheduleText": "Not Before",
+      "scheduleTime": "21:30+0200",
+      "scheduleDisplay": "Not Before 9:30 PM",
+      "players": [
+        {
+          "id": "anastasia-potapova",
+          "name": "Anastasia Potapova",
+          "country": "AUT",
+          "side": "A",
+          "ranking": 56,
+          "singlesRanking": 56,
+          "doublesRanking": 141,
+          "tour": "WTA",
+          "wtaPlayerId": "325601",
+          "singlesEntryType": "LL"
+        },
+        {
+          "id": "jelena-ostapenko",
+          "name": "Jelena Ostapenko",
+          "country": "LAT",
+          "side": "B",
+          "ranking": 40,
+          "singlesRanking": 40,
+          "doublesRanking": 12,
+          "tour": "WTA",
+          "wtaPlayerId": "319939"
         }
       ]
     },
