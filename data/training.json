@@ -4,7 +4,7 @@
     "track": "training",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-27T19:49:30.986024+00:00",
+    "updatedAt": "2026-04-27T20:45:11.682720+00:00",
     "sources": {
       "training": [
         "https://practice.tmstennis.com/api/iframe?runid=702&public=1&day=0&mode=0",
@@ -3256,6 +3256,26 @@
           "doublesRanking": 49,
           "tour": "ATP",
           "atpPlayerId": "V576"
+        }
+      ]
+    },
+    {
+      "id": "1-pista-10-atp-04-30-pm-05-30-pm-flavio-cobolli",
+      "dayOffset": 1,
+      "dayLabel": "Tue, Apr 28, 2026",
+      "court": "PISTA 10 (ATP)",
+      "timeRange": "04:30 PM - 05:30 PM",
+      "tour": "ATP",
+      "players": [
+        {
+          "id": "flavio-cobolli",
+          "name": "Flavio Cobolli",
+          "country": "ITA",
+          "ranking": 13,
+          "singlesRanking": 13,
+          "doublesRanking": 360,
+          "tour": "ATP",
+          "atpPlayerId": "C0E9"
         }
       ]
     },
