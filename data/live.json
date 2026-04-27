@@ -4,7 +4,7 @@
     "track": "live",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-27T21:39:51.518701+00:00",
+    "updatedAt": "2026-04-27T22:32:05.036206+00:00",
     "sources": {
       "matches": {
         "wta": "https://api.wtatennis.com/tennis/tournaments/1038/2026/matches",
@@ -1191,8 +1191,9 @@
     },
     {
       "id": "LS015",
-      "status": "P",
-      "score": "7-6(8),2-3",
+      "status": "F",
+      "score": "7-6(8),6-4",
+      "result": "A. Potapova d [2]E. Rybakina 7-6(8),6-4",
       "startTime": "2026-04-27T19:58:05.1+00:00",
       "court": "Court 1"
     },
