@@ -4,7 +4,7 @@
     "track": "live",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-27T18:16:16.592802+00:00",
+    "updatedAt": "2026-04-27T19:49:30.986024+00:00",
     "sources": {
       "matches": {
         "wta": "https://api.wtatennis.com/tennis/tournaments/1038/2026/matches",
@@ -1182,6 +1182,14 @@
       "court": "Court 4"
     },
     {
+      "id": "LS012",
+      "status": "F",
+      "score": "6-2,6-3",
+      "result": "[26]M. Kostyuk d C. McNally 6-2,6-3",
+      "startTime": "2026-04-27T16:48:06.197+00:00",
+      "court": "Court 2"
+    },
+    {
       "id": "LS015",
       "status": "U",
       "startTime": "2026-04-27T21:00+02:00",
@@ -1242,6 +1250,14 @@
       "result": "63 62",
       "startTime": "2026-04-27T00:00:00",
       "court": "Arantxa Sanchez Stadium"
+    },
+    {
+      "id": "ATP-MS029",
+      "status": "F",
+      "score": "63 62",
+      "result": "63 62",
+      "startTime": "2026-04-27T00:00:00",
+      "court": "Stadium 3"
     },
     {
       "id": "ATP-MS022",
