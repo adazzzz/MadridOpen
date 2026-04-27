@@ -4,7 +4,7 @@
     "track": "players",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-26T05:50:15.601640+00:00",
+    "updatedAt": "2026-04-27T06:16:14.588685+00:00",
     "sources": {
       "players": "https://mutuamadridopen.com/jugadores-2026/",
       "rankings": {
@@ -17,12 +17,12 @@
     },
     "playerRankingDate": "23/03/2026",
     "audit": {
-      "doublesMatches": 38,
-      "atpDrawFallbackMatches": 16,
+      "doublesMatches": 42,
+      "atpDrawFallbackMatches": 9,
       "wtaDrawFallbackMatches": 0,
-      "doublesPlayers": 128,
-      "doublesPlayersMissingDoublesRanking": 3,
-      "playersMissingTour": 2,
+      "doublesPlayers": 124,
+      "doublesPlayersMissingDoublesRanking": 1,
+      "playersMissingTour": 3,
       "atpDrawEvents": [
         "MS",
         "QS",
@@ -72,14 +72,14 @@
       "doublesRanking": 1574
     },
     {
-      "id": "olivetti-albano",
+      "id": "albano-olivetti",
       "name": "Albano Olivetti",
       "country": "FRA",
+      "atpPlayerId": "O411",
+      "tour": "ATP",
       "doublesRanking": 26,
       "ranking": 26,
-      "rankingTag": "D",
-      "tour": "ATP",
-      "atpPlayerId": "O411"
+      "rankingTag": "D"
     },
     {
       "id": "aldila-sutjiadi",
@@ -193,14 +193,14 @@
       "doublesRanking": 601
     },
     {
-      "id": "erler-alexander",
+      "id": "alexander-erler",
       "name": "Alexander Erler",
       "country": "AUT",
+      "atpPlayerId": "E928",
+      "tour": "ATP",
       "doublesRanking": 34,
       "ranking": 34,
-      "rankingTag": "D",
-      "tour": "ATP",
-      "atpPlayerId": "E928"
+      "rankingTag": "D"
     },
     {
       "id": "alexander-shevchenko",
@@ -1244,14 +1244,14 @@
       "doublesRanking": 559
     },
     {
-      "id": "cabral-francisco",
+      "id": "francisco-cabral",
       "name": "Francisco Cabral",
       "country": "POR",
+      "atpPlayerId": "CL84",
+      "tour": "ATP",
       "doublesRanking": 21,
       "ranking": 21,
-      "rankingTag": "D",
-      "tour": "ATP",
-      "atpPlayerId": "CL84"
+      "rankingTag": "D"
     },
     {
       "id": "francisco-cerundolo",
@@ -1365,14 +1365,14 @@
       "rankingTag": "D"
     },
     {
-      "id": "heliovaara-harri",
+      "id": "harri-heliovaara",
       "name": "Harri Heliovaara",
       "country": "FIN",
+      "atpPlayerId": "H808",
+      "tour": "ATP",
       "doublesRanking": 6,
       "ranking": 6,
-      "rankingTag": "D",
-      "tour": "ATP",
-      "atpPlayerId": "H808"
+      "rankingTag": "D"
     },
     {
       "id": "henrique-rocha",
@@ -1385,24 +1385,24 @@
       "doublesRanking": 325
     },
     {
-      "id": "patten-henry",
+      "id": "henry-patten",
       "name": "Henry Patten",
       "country": "GBR",
+      "atpPlayerId": "P0G6",
+      "tour": "ATP",
       "doublesRanking": 6,
       "ranking": 6,
-      "rankingTag": "D",
-      "tour": "ATP",
-      "atpPlayerId": "P0G6"
+      "rankingTag": "D"
     },
     {
-      "id": "zeballos-horacio",
+      "id": "horacio-zeballos",
       "name": "Horacio Zeballos",
       "country": "ARG",
+      "atpPlayerId": "Z184",
+      "tour": "ATP",
       "doublesRanking": 1,
       "ranking": 1,
-      "rankingTag": "D",
-      "tour": "ATP",
-      "atpPlayerId": "Z184"
+      "rankingTag": "D"
     },
     {
       "id": "hubert-hurkacz",
@@ -1453,14 +1453,14 @@
       "ranking": 58
     },
     {
-      "id": "cervantes-inigo",
+      "id": "inigo-cervantes",
       "name": "Inigo Cervantes",
       "country": "ESP",
+      "atpPlayerId": "CA33",
+      "tour": "ATP",
       "doublesRanking": 173,
       "ranking": 173,
-      "rankingTag": "D",
-      "tour": "ATP",
-      "atpPlayerId": "CA33"
+      "rankingTag": "D"
     },
     {
       "id": "irina-khromacheva",
@@ -1503,13 +1503,14 @@
       "doublesRanking": 414
     },
     {
-      "id": "schnaitter-jakob",
+      "id": "jakob-schnaitter",
       "name": "Jakob Schnaitter",
-      "country": "",
+      "country": "GER",
+      "atpPlayerId": "SY05",
+      "tour": "ATP",
       "doublesRanking": 36,
       "ranking": 36,
-      "rankingTag": "D",
-      "tour": "ATP"
+      "rankingTag": "D"
     },
     {
       "id": "jakub-mensik",
@@ -1681,14 +1682,14 @@
       "doublesRanking": 162
     },
     {
-      "id": "salisbury-joe",
+      "id": "joe-salisbury",
       "name": "Joe Salisbury",
       "country": "GBR",
+      "atpPlayerId": "SO70",
+      "tour": "ATP",
       "doublesRanking": 8,
       "ranking": 8,
-      "rankingTag": "D",
-      "tour": "ATP",
-      "atpPlayerId": "SO70"
+      "rankingTag": "D"
     },
     {
       "id": "juan-manuel-cerundolo",
@@ -1730,12 +1731,6 @@
       "singlesRanking": 364,
       "ranking": 364,
       "doublesRanking": 1493
-    },
-    {
-      "id": "jodar-rafa",
-      "name": "Jódar Rafa",
-      "country": "",
-      "tour": "ATP"
     },
     {
       "id": "kaitlin-quevedo",
@@ -1830,14 +1825,14 @@
       "doublesRanking": 1242
     },
     {
-      "id": "krawietz-kevin",
+      "id": "kevin-krawietz",
       "name": "Kevin Krawietz",
       "country": "GER",
+      "atpPlayerId": "KB92",
+      "tour": "ATP",
       "doublesRanking": 11,
       "ranking": 11,
-      "rankingTag": "D",
-      "tour": "ATP",
-      "atpPlayerId": "KB92"
+      "rankingTag": "D"
     },
     {
       "id": "kimberly-birrell",
@@ -2039,14 +2034,14 @@
       "ranking": 98
     },
     {
-      "id": "miedler-lucas",
+      "id": "lucas-miedler",
       "name": "Lucas Miedler",
       "country": "AUT",
+      "atpPlayerId": "MO55",
+      "tour": "ATP",
       "doublesRanking": 24,
       "ranking": 24,
-      "rankingTag": "D",
-      "tour": "ATP",
-      "atpPlayerId": "MO55"
+      "rankingTag": "D"
     },
     {
       "id": "luciano-darderi",
@@ -2167,44 +2162,44 @@
       "atpPlayerId": "GH33"
     },
     {
-      "id": "polmans-marc",
+      "id": "marc-polmans",
       "name": "Marc Polmans",
       "country": "AUS",
+      "atpPlayerId": "PG94",
+      "tour": "ATP",
       "singlesRanking": 340,
       "ranking": 340,
-      "tour": "ATP",
-      "doublesRanking": 52,
-      "atpPlayerId": "PG94"
+      "doublesRanking": 52
     },
     {
-      "id": "granollers-marcel",
+      "id": "marcel-granollers",
       "name": "Marcel Granollers",
       "country": "ESP",
+      "atpPlayerId": "G710",
+      "tour": "ATP",
       "doublesRanking": 2,
       "ranking": 2,
-      "rankingTag": "D",
-      "tour": "ATP",
-      "atpPlayerId": "G710"
+      "rankingTag": "D"
     },
     {
-      "id": "arevalo-marcelo",
+      "id": "marcelo-arevalo",
       "name": "Marcelo Arevalo",
       "country": "ESA",
+      "atpPlayerId": "A853",
+      "tour": "ATP",
       "doublesRanking": 9,
       "ranking": 9,
-      "rankingTag": "D",
-      "tour": "ATP",
-      "atpPlayerId": "A853"
+      "rankingTag": "D"
     },
     {
-      "id": "melo-marcelo",
+      "id": "marcelo-melo",
       "name": "Marcelo Melo",
       "country": "BRA",
+      "atpPlayerId": "M919",
+      "tour": "ATP",
       "doublesRanking": 43,
       "ranking": 43,
-      "rankingTag": "D",
-      "tour": "ATP",
-      "atpPlayerId": "M919"
+      "rankingTag": "D"
     },
     {
       "id": "marco-trungelliti",
@@ -2288,13 +2283,14 @@
       "doublesRanking": 633
     },
     {
-      "id": "wallner-mark",
+      "id": "mark-wallner",
       "name": "Mark Wallner",
-      "country": "",
+      "country": "GER",
+      "atpPlayerId": "W0E2",
+      "tour": "ATP",
       "doublesRanking": 36,
       "ranking": 36,
-      "rankingTag": "D",
-      "tour": "ATP"
+      "rankingTag": "D"
     },
     {
       "id": "marta-kostyuk",
@@ -2345,14 +2341,14 @@
       "ranking": 54
     },
     {
-      "id": "pavic-mate",
+      "id": "mate-pavic",
       "name": "Mate Pavic",
       "country": "CRO",
+      "atpPlayerId": "PF00",
+      "tour": "ATP",
       "doublesRanking": 9,
       "ranking": 9,
-      "rankingTag": "D",
-      "tour": "ATP",
-      "atpPlayerId": "PF00"
+      "rankingTag": "D"
     },
     {
       "id": "matteo-arnaldi",
@@ -2397,25 +2393,19 @@
       "atpPlayerId": "G585"
     },
     {
-      "id": "mcnally-catherine",
-      "name": "McNally Catherine",
+      "id": "merida-aguilar-daniel",
+      "name": "Merida Aguilar Daniel",
       "country": ""
     },
     {
-      "id": "merida-aguilar-daniel",
-      "name": "Merida Aguilar Daniel",
-      "country": "",
-      "tour": "ATP"
-    },
-    {
-      "id": "venus-michael",
+      "id": "michael-venus",
       "name": "Michael Venus",
       "country": "NZL",
+      "atpPlayerId": "V576",
+      "tour": "ATP",
       "doublesRanking": 49,
       "ranking": 49,
-      "rankingTag": "D",
-      "tour": "ATP",
-      "atpPlayerId": "V576"
+      "rankingTag": "D"
     },
     {
       "id": "miomir-kecmanovic",
@@ -2638,8 +2628,11 @@
       "id": "orlando-luz",
       "name": "Orlando Luz",
       "country": "BRA",
+      "atpPlayerId": "LF26",
       "tour": "ATP",
-      "atpPlayerId": "LF26"
+      "singlesRanking": 1031,
+      "ranking": 1031,
+      "doublesRanking": 29
     },
     {
       "id": "otto-virtanen",
@@ -2774,8 +2767,11 @@
       "id": "rafael-matos",
       "name": "Rafael Matos",
       "country": "BRA",
+      "atpPlayerId": "MO41",
       "tour": "ATP",
-      "atpPlayerId": "MO41"
+      "doublesRanking": 31,
+      "ranking": 31,
+      "rankingTag": "D"
     },
     {
       "id": "rebecca-sramkova",
@@ -2838,6 +2834,15 @@
       "atpPlayerId": "C0E0"
     },
     {
+      "id": "galloway-robert",
+      "name": "Robert Galloway",
+      "country": "USA",
+      "doublesRanking": 40,
+      "ranking": 40,
+      "rankingTag": "D",
+      "tour": "ATP"
+    },
+    {
       "id": "roberto-bautista-agut",
       "name": "Roberto Bautista Agut",
       "country": "ESP",
@@ -2858,14 +2863,14 @@
       "doublesRanking": 365
     },
     {
-      "id": "arneodo-romain",
+      "id": "romain-arneodo",
       "name": "Romain Arneodo",
       "country": "MON",
+      "atpPlayerId": "AA81",
+      "tour": "ATP",
       "doublesRanking": 71,
       "ranking": 71,
-      "rankingTag": "D",
-      "tour": "ATP",
-      "atpPlayerId": "AA81"
+      "rankingTag": "D"
     },
     {
       "id": "ruth-roura-llaverias",
@@ -2896,6 +2901,15 @@
       "rankingTag": "D",
       "tour": "ATP",
       "atpPlayerId": "AC55"
+    },
+    {
+      "id": "gonzalez-santiago",
+      "name": "Santiago Gonzalez",
+      "country": "MEX",
+      "doublesRanking": 48,
+      "ranking": 48,
+      "rankingTag": "D",
+      "tour": "ATP"
     },
     {
       "id": "sara-errani",
@@ -3152,14 +3166,14 @@
       "doublesRanking": 478
     },
     {
-      "id": "arribage-theo",
+      "id": "theo-arribage",
       "name": "Theo Arribage",
       "country": "FRA",
+      "atpPlayerId": "A0E5",
+      "tour": "ATP",
       "doublesRanking": 27,
       "ranking": 27,
-      "rankingTag": "D",
-      "tour": "ATP",
-      "atpPlayerId": "A0E5"
+      "rankingTag": "D"
     },
     {
       "id": "thiago-agustin-tirante",
@@ -3172,14 +3186,14 @@
       "doublesRanking": 425
     },
     {
-      "id": "puetz-tim",
+      "id": "tim-puetz",
       "name": "Tim Puetz",
       "country": "GER",
+      "atpPlayerId": "PC68",
+      "tour": "ATP",
       "doublesRanking": 12,
       "ranking": 12,
-      "rankingTag": "D",
-      "tour": "ATP",
-      "atpPlayerId": "PC68"
+      "rankingTag": "D"
     },
     {
       "id": "titouan-droguet",
@@ -3237,8 +3251,7 @@
     {
       "id": "tracy-james",
       "name": "Tracy James",
-      "country": "",
-      "tour": "ATP"
+      "country": ""
     },
     {
       "id": "tyra-caterina-grant",
@@ -3301,6 +3314,15 @@
       "singlesRanking": 17,
       "ranking": 17,
       "doublesRanking": 139
+    },
+    {
+      "id": "vallejo-daniel",
+      "name": "Vallejo Daniel",
+      "country": "",
+      "atpPlayerId": "V0DP",
+      "tour": "ATP",
+      "singlesRanking": 97,
+      "ranking": 97
     },
     {
       "id": "venus-williams",
@@ -3444,14 +3466,14 @@
       "rankingTag": "D"
     },
     {
-      "id": "bhambri-yuki",
+      "id": "yuki-bhambri",
       "name": "Yuki Bhambri",
       "country": "IND",
+      "atpPlayerId": "BF55",
+      "tour": "ATP",
       "doublesRanking": 25,
       "ranking": 25,
-      "rankingTag": "D",
-      "tour": "ATP",
-      "atpPlayerId": "BF55"
+      "rankingTag": "D"
     },
     {
       "id": "yulia-putintseva",

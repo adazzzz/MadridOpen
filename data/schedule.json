@@ -4,7 +4,7 @@
     "track": "schedule",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-27T05:42:45.530433+00:00",
+    "updatedAt": "2026-04-27T06:16:14.588685+00:00",
     "sources": {
       "schedules": {
         "wta": "https://wta-webapi-prod-apimanagement.azure-api.net/atpjoint-api/v1/Scores/Schedule?eventId=1038&eventYear=2026",
@@ -10871,7 +10871,7 @@
       "scheduleDisplay": "Starts At 11:00",
       "players": [
         {
-          "id": "arneodo-romain",
+          "id": "romain-arneodo",
           "name": "Romain Arneodo",
           "country": "MON",
           "side": "A",
@@ -10893,7 +10893,7 @@
           "atpPlayerId": "VA25"
         },
         {
-          "id": "granollers-marcel",
+          "id": "marcel-granollers",
           "name": "Marcel Granollers",
           "country": "ESP",
           "side": "B",
@@ -10904,7 +10904,7 @@
           "atpPlayerId": "G710"
         },
         {
-          "id": "zeballos-horacio",
+          "id": "horacio-zeballos",
           "name": "Horacio Zeballos",
           "country": "ARG",
           "side": "B",
@@ -10933,7 +10933,7 @@
       "scheduleDisplay": "Followed By",
       "players": [
         {
-          "id": "heliovaara-harri",
+          "id": "harri-heliovaara",
           "name": "Harri Heliovaara",
           "country": "FIN",
           "side": "A",
@@ -10944,7 +10944,7 @@
           "atpPlayerId": "H808"
         },
         {
-          "id": "patten-henry",
+          "id": "henry-patten",
           "name": "Henry Patten",
           "country": "GBR",
           "side": "A",
@@ -10996,7 +10996,7 @@
       "scheduleDisplay": "Starts At 11:00",
       "players": [
         {
-          "id": "arevalo-marcelo",
+          "id": "marcelo-arevalo",
           "name": "Marcelo Arevalo",
           "country": "ESA",
           "side": "A",
@@ -11007,7 +11007,7 @@
           "atpPlayerId": "A853"
         },
         {
-          "id": "pavic-mate",
+          "id": "mate-pavic",
           "name": "Mate Pavic",
           "country": "CRO",
           "side": "A",
@@ -11081,7 +11081,7 @@
           "atpPlayerId": "N0AE"
         },
         {
-          "id": "krawietz-kevin",
+          "id": "kevin-krawietz",
           "name": "Kevin Krawietz",
           "country": "GER",
           "side": "B",
@@ -11092,7 +11092,7 @@
           "atpPlayerId": "KB92"
         },
         {
-          "id": "puetz-tim",
+          "id": "tim-puetz",
           "name": "Tim Puetz",
           "country": "GER",
           "side": "B",
@@ -11122,7 +11122,7 @@
       "scheduleDisplay": "Not Before 17:15",
       "players": [
         {
-          "id": "cabral-francisco",
+          "id": "francisco-cabral",
           "name": "Francisco Cabral",
           "country": "POR",
           "side": "A",
@@ -11133,7 +11133,7 @@
           "atpPlayerId": "CL84"
         },
         {
-          "id": "salisbury-joe",
+          "id": "joe-salisbury",
           "name": "Joe Salisbury",
           "country": "GBR",
           "side": "A",
@@ -11148,6 +11148,9 @@
           "name": "Jakob Schnaitter",
           "country": "GER",
           "side": "B",
+          "ranking": 36,
+          "rankingTag": "D",
+          "doublesRanking": 36,
           "tour": "ATP",
           "atpPlayerId": "SY05"
         },
@@ -11156,6 +11159,9 @@
           "name": "Mark Wallner",
           "country": "GER",
           "side": "B",
+          "ranking": 36,
+          "rankingTag": "D",
+          "doublesRanking": 36,
           "tour": "ATP",
           "atpPlayerId": "W0E2"
         }
@@ -11178,7 +11184,7 @@
       "scheduleDisplay": "Followed By",
       "players": [
         {
-          "id": "arribage-theo",
+          "id": "theo-arribage",
           "name": "Theo Arribage",
           "country": "FRA",
           "side": "A",
@@ -11189,7 +11195,7 @@
           "atpPlayerId": "A0E5"
         },
         {
-          "id": "olivetti-albano",
+          "id": "albano-olivetti",
           "name": "Albano Olivetti",
           "country": "FRA",
           "side": "A",
@@ -11210,7 +11216,7 @@
           "atpPlayerId": "CD85"
         },
         {
-          "id": "cervantes-inigo",
+          "id": "inigo-cervantes",
           "name": "Inigo Cervantes",
           "country": "ESP",
           "side": "B",
@@ -11239,7 +11245,7 @@
       "scheduleDisplay": "Followed By",
       "players": [
         {
-          "id": "bhambri-yuki",
+          "id": "yuki-bhambri",
           "name": "Yuki Bhambri",
           "country": "IND",
           "side": "A",
@@ -11250,7 +11256,7 @@
           "atpPlayerId": "BF55"
         },
         {
-          "id": "venus-michael",
+          "id": "michael-venus",
           "name": "Michael Venus",
           "country": "NZL",
           "side": "A",
@@ -11261,7 +11267,7 @@
           "atpPlayerId": "V576"
         },
         {
-          "id": "erler-alexander",
+          "id": "alexander-erler",
           "name": "Alexander Erler",
           "country": "AUT",
           "side": "B",
@@ -11272,7 +11278,7 @@
           "atpPlayerId": "E928"
         },
         {
-          "id": "miedler-lucas",
+          "id": "lucas-miedler",
           "name": "Lucas Miedler",
           "country": "AUT",
           "side": "B",
@@ -11313,7 +11319,7 @@
           "atpPlayerId": "BK92"
         },
         {
-          "id": "polmans-marc",
+          "id": "marc-polmans",
           "name": "Marc Polmans",
           "country": "AUS",
           "side": "A",
@@ -11328,6 +11334,9 @@
           "name": "Orlando Luz",
           "country": "BRA",
           "side": "B",
+          "ranking": 1031,
+          "singlesRanking": 1031,
+          "doublesRanking": 29,
           "tour": "ATP",
           "atpPlayerId": "LF26"
         },
@@ -11336,6 +11345,9 @@
           "name": "Rafael Matos",
           "country": "BRA",
           "side": "B",
+          "ranking": 31,
+          "rankingTag": "D",
+          "doublesRanking": 31,
           "tour": "ATP",
           "atpPlayerId": "MO41"
         }
@@ -11381,7 +11393,7 @@
           "atpPlayerId": "TE51"
         },
         {
-          "id": "melo-marcelo",
+          "id": "marcelo-melo",
           "name": "Marcelo Melo",
           "country": "BRA",
           "side": "B",

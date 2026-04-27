@@ -4,7 +4,7 @@
     "track": "training",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-27T05:42:45.530433+00:00",
+    "updatedAt": "2026-04-27T06:16:14.588685+00:00",
     "sources": {
       "training": [
         "https://practice.tmstennis.com/api/iframe?runid=702&public=1&day=0&mode=0",
@@ -273,8 +273,7 @@
         {
           "id": "tracy-james",
           "name": "Tracy James",
-          "country": "",
-          "tour": "ATP"
+          "country": ""
         },
         {
           "id": "cash-robert",
@@ -599,6 +598,8 @@
           "id": "vallejo-daniel",
           "name": "Vallejo Daniel",
           "country": "",
+          "ranking": 97,
+          "singlesRanking": 97,
           "tour": "ATP",
           "atpPlayerId": "V0DP"
         }
@@ -744,7 +745,7 @@
       ]
     },
     {
-      "id": "0-pista-9-wta-03-00-pm-04-30-pm-arribage-theo-olivetti-albano",
+      "id": "0-pista-9-wta-03-00-pm-04-30-pm-albano-olivetti-theo-arribage",
       "dayOffset": 0,
       "dayLabel": "Mon, Apr 27, 2026",
       "court": "PISTA 9 (WTA)",
@@ -752,7 +753,7 @@
       "tour": "WTA",
       "players": [
         {
-          "id": "olivetti-albano",
+          "id": "albano-olivetti",
           "name": "Albano Olivetti",
           "country": "FRA",
           "ranking": 26,
@@ -762,7 +763,7 @@
           "atpPlayerId": "O411"
         },
         {
-          "id": "arribage-theo",
+          "id": "theo-arribage",
           "name": "Theo Arribage",
           "country": "FRA",
           "ranking": 27,
@@ -770,6 +771,26 @@
           "doublesRanking": 27,
           "tour": "ATP",
           "atpPlayerId": "A0E5"
+        }
+      ]
+    },
+    {
+      "id": "0-pista-9-wta-06-00-pm-06-30-pm-jakub-mensik",
+      "dayOffset": 0,
+      "dayLabel": "Mon, Apr 27, 2026",
+      "court": "PISTA 9 (WTA)",
+      "timeRange": "06:00 PM - 06:30 PM",
+      "tour": "WTA",
+      "players": [
+        {
+          "id": "jakub-mensik",
+          "name": "Jakub Mensik",
+          "country": "CZE",
+          "ranking": 27,
+          "singlesRanking": 27,
+          "doublesRanking": 359,
+          "tour": "ATP",
+          "atpPlayerId": "M0NI"
         }
       ]
     },
@@ -1102,7 +1123,7 @@
       ]
     },
     {
-      "id": "0-pista-12-wta-02-00-pm-03-30-pm-bhambri-yuki-venus-michael",
+      "id": "0-pista-12-wta-02-00-pm-03-30-pm-michael-venus-yuki-bhambri",
       "dayOffset": 0,
       "dayLabel": "Mon, Apr 27, 2026",
       "court": "PISTA 12 (WTA)",
@@ -1110,7 +1131,7 @@
       "tour": "WTA",
       "players": [
         {
-          "id": "venus-michael",
+          "id": "michael-venus",
           "name": "Michael Venus",
           "country": "NZL",
           "ranking": 49,
@@ -1120,7 +1141,7 @@
           "atpPlayerId": "V576"
         },
         {
-          "id": "bhambri-yuki",
+          "id": "yuki-bhambri",
           "name": "Yuki Bhambri",
           "country": "IND",
           "ranking": 25,
@@ -1262,20 +1283,26 @@
       "players": [
         {
           "id": "gonzalez-santiago",
-          "name": "Gonzalez Santiago",
+          "name": "Santiago Gonzalez",
           "country": "MEX",
+          "ranking": 48,
+          "rankingTag": "D",
+          "doublesRanking": 48,
           "tour": "ATP"
         },
         {
           "id": "galloway-robert",
-          "name": "Galloway Robert",
+          "name": "Robert Galloway",
           "country": "USA",
+          "ranking": 40,
+          "rankingTag": "D",
+          "doublesRanking": 40,
           "tour": "ATP"
         }
       ]
     },
     {
-      "id": "0-pista-14-atp-12-00-pm-01-00-pm-arevalo-marcelo-pavic-mate",
+      "id": "0-pista-14-atp-12-00-pm-01-00-pm-marcelo-arevalo-mate-pavic",
       "dayOffset": 0,
       "dayLabel": "Mon, Apr 27, 2026",
       "court": "PISTA 14 (ATP)",
@@ -1283,7 +1310,7 @@
       "tour": "ATP",
       "players": [
         {
-          "id": "arevalo-marcelo",
+          "id": "marcelo-arevalo",
           "name": "Marcelo Arevalo",
           "country": "ESA",
           "ranking": 9,
@@ -1293,7 +1320,7 @@
           "atpPlayerId": "A853"
         },
         {
-          "id": "pavic-mate",
+          "id": "mate-pavic",
           "name": "Mate Pavic",
           "country": "CRO",
           "ranking": 9,
@@ -1513,7 +1540,7 @@
       ]
     },
     {
-      "id": "0-pista-17-atp-12-00-pm-01-00-pm-arneodo-romain-valentin-vacherot",
+      "id": "0-pista-17-atp-12-00-pm-01-00-pm-romain-arneodo-valentin-vacherot",
       "dayOffset": 0,
       "dayLabel": "Mon, Apr 27, 2026",
       "court": "PISTA 17 -ATP",
@@ -1531,7 +1558,7 @@
           "atpPlayerId": "VA25"
         },
         {
-          "id": "arneodo-romain",
+          "id": "romain-arneodo",
           "name": "Romain Arneodo",
           "country": "MON",
           "ranking": 71,
@@ -1543,7 +1570,7 @@
       ]
     },
     {
-      "id": "0-pista-17-atp-01-00-pm-02-00-pm-arneodo-romain",
+      "id": "0-pista-17-atp-01-00-pm-02-00-pm-romain-arneodo",
       "dayOffset": 0,
       "dayLabel": "Mon, Apr 27, 2026",
       "court": "PISTA 17 -ATP",
@@ -1551,7 +1578,7 @@
       "tour": "ATP",
       "players": [
         {
-          "id": "arneodo-romain",
+          "id": "romain-arneodo",
           "name": "Romain Arneodo",
           "country": "MON",
           "ranking": 71,
@@ -1563,7 +1590,7 @@
       ]
     },
     {
-      "id": "0-pista-18-wta-01-00-pm-02-00-pm-heliovaara-harri-patten-henry",
+      "id": "0-pista-18-wta-01-00-pm-02-00-pm-harri-heliovaara-henry-patten",
       "dayOffset": 0,
       "dayLabel": "Mon, Apr 27, 2026",
       "court": "PISTA 18 -WTA",
@@ -1571,7 +1598,7 @@
       "tour": "WTA",
       "players": [
         {
-          "id": "heliovaara-harri",
+          "id": "harri-heliovaara",
           "name": "Harri Heliovaara",
           "country": "FIN",
           "ranking": 6,
@@ -1581,7 +1608,7 @@
           "atpPlayerId": "H808"
         },
         {
-          "id": "patten-henry",
+          "id": "henry-patten",
           "name": "Henry Patten",
           "country": "GBR",
           "ranking": 6,
@@ -1593,7 +1620,7 @@
       ]
     },
     {
-      "id": "0-pista-18-wta-03-00-pm-04-00-pm-cabral-francisco-salisbury-joe",
+      "id": "0-pista-18-wta-03-00-pm-04-00-pm-francisco-cabral-joe-salisbury",
       "dayOffset": 0,
       "dayLabel": "Mon, Apr 27, 2026",
       "court": "PISTA 18 -WTA",
@@ -1601,7 +1628,7 @@
       "tour": "WTA",
       "players": [
         {
-          "id": "cabral-francisco",
+          "id": "francisco-cabral",
           "name": "Francisco Cabral",
           "country": "POR",
           "ranking": 21,
@@ -1611,7 +1638,7 @@
           "atpPlayerId": "CL84"
         },
         {
-          "id": "salisbury-joe",
+          "id": "joe-salisbury",
           "name": "Joe Salisbury",
           "country": "GBR",
           "ranking": 8,
@@ -1623,7 +1650,7 @@
       ]
     },
     {
-      "id": "0-pista-19-atp-01-00-pm-02-00-pm-polmans-marc",
+      "id": "0-pista-19-atp-01-00-pm-02-00-pm-marc-polmans",
       "dayOffset": 0,
       "dayLabel": "Mon, Apr 27, 2026",
       "court": "PISTA 19 (ATP)",
@@ -1631,7 +1658,7 @@
       "tour": "ATP",
       "players": [
         {
-          "id": "polmans-marc",
+          "id": "marc-polmans",
           "name": "Marc Polmans",
           "country": "AUS",
           "ranking": 340,
@@ -1901,6 +1928,8 @@
           "id": "vallejo-daniel",
           "name": "Vallejo Daniel",
           "country": "",
+          "ranking": 97,
+          "singlesRanking": 97,
           "tour": "ATP",
           "atpPlayerId": "V0DP"
         }
@@ -1957,26 +1986,6 @@
       ]
     },
     {
-      "id": "0-pista-22-warmup-06-00-pm-06-30-pm-jakub-mensik",
-      "dayOffset": 0,
-      "dayLabel": "Mon, Apr 27, 2026",
-      "court": "PISTA 22 (WARMUP)",
-      "timeRange": "06:00 PM - 06:30 PM",
-      "tour": "",
-      "players": [
-        {
-          "id": "jakub-mensik",
-          "name": "Jakub Mensik",
-          "country": "CZE",
-          "ranking": 27,
-          "singlesRanking": 27,
-          "doublesRanking": 359,
-          "tour": "ATP",
-          "atpPlayerId": "M0NI"
-        }
-      ]
-    },
-    {
       "id": "0-pista-23-warmup-10-30-am-11-00-am-merida-aguilar-daniel",
       "dayOffset": 0,
       "dayLabel": "Mon, Apr 27, 2026",
@@ -1987,8 +1996,7 @@
         {
           "id": "merida-aguilar-daniel",
           "name": "Merida Aguilar Daniel",
-          "country": "",
-          "tour": "ATP"
+          "country": ""
         }
       ]
     },
@@ -2058,6 +2066,26 @@
           "doublesRanking": 112,
           "tour": "WTA",
           "wtaPlayerId": "316956"
+        }
+      ]
+    },
+    {
+      "id": "0-pista-24-warmup-02-00-pm-03-30-pm-julieta-pareja",
+      "dayOffset": 0,
+      "dayLabel": "Mon, Apr 27, 2026",
+      "court": "PISTA 24 (WARMUP)",
+      "timeRange": "02:00 PM - 03:30 PM",
+      "tour": "",
+      "players": [
+        {
+          "id": "julieta-pareja",
+          "name": "Julieta Pareja",
+          "country": "USA",
+          "ranking": 364,
+          "singlesRanking": 364,
+          "doublesRanking": 1493,
+          "tour": "WTA",
+          "wtaPlayerId": "333685"
         }
       ]
     }
