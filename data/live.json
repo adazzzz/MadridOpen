@@ -4,7 +4,7 @@
     "track": "live",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-27T15:30:38.238249+00:00",
+    "updatedAt": "2026-04-27T17:06:04.097482+00:00",
     "sources": {
       "matches": {
         "wta": "https://api.wtatennis.com/tennis/tournaments/1038/2026/matches",
@@ -1159,30 +1159,33 @@
     },
     {
       "id": "LS011",
-      "status": "P",
-      "score": "6-7(5),6-3,5-2",
+      "status": "F",
+      "score": "6-7(5),6-3,7-6(5)",
+      "result": "[9]M. Andreeva d A. Bondar 6-7(5),6-3,7-6(5)",
       "startTime": "2026-04-27T12:53:44.843+00:00",
       "court": "Court 3"
     },
     {
       "id": "LS013",
-      "status": "P",
-      "score": "6-4,1-6,1-2",
+      "status": "F",
+      "score": "6-4,1-6,7-6(5)",
+      "result": "[13]L. Noskova d [3]C. Gauff 6-4,1-6,7-6(5)",
       "startTime": "2026-04-27T13:48:00.43+00:00",
       "court": "Court 1"
     },
     {
       "id": "LD012",
-      "status": "P",
-      "score": "3-2",
+      "status": "F",
+      "score": "6-4,6-4",
+      "result": "[7]S. Hsieh / S. Kenin d K. Boulter / V. Williams 6-4,6-4",
       "startTime": "2026-04-27T14:51:08.527+00:00",
       "court": "Court 4"
     },
     {
       "id": "LS012",
-      "status": "U",
-      "startTime": "2026-04-27T19:00+02:00",
-      "court": "Arantxa Sanchez Stadium"
+      "status": "W",
+      "startTime": "2026-04-27T16:48:06.197+00:00",
+      "court": "Court 2"
     },
     {
       "id": "LS015",
