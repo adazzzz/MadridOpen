@@ -4,7 +4,7 @@
     "track": "live",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-27T11:58:34.336643+00:00",
+    "updatedAt": "2026-04-27T13:50:59.288269+00:00",
     "sources": {
       "matches": {
         "wta": "https://api.wtatennis.com/tennis/tournaments/1038/2026/matches",
@@ -1143,22 +1143,32 @@
     },
     {
       "id": "LS014",
-      "status": "P",
-      "score": "6-4,0-1",
+      "status": "F",
+      "score": "6-4,6-3",
+      "result": "K. Pliskova d S. Sierra 6-4,6-3",
       "startTime": "2026-04-27T10:48:17.657+00:00",
       "court": "Court 3"
     },
     {
+      "id": "LS008",
+      "status": "F",
+      "score": "6-7(1),6-3,6-2",
+      "result": "[1]A. Sabalenka d [14]N. Osaka 6-7(1),6-3,6-2",
+      "startTime": "2026-04-27T10:49:54.723+00:00",
+      "court": "Court 1"
+    },
+    {
       "id": "LS011",
-      "status": "U",
-      "startTime": "2026-04-27T15:00+02:00",
-      "court": "Stadium 3"
+      "status": "P",
+      "score": "5-5",
+      "startTime": "2026-04-27T12:53:44.843+00:00",
+      "court": "Court 3"
     },
     {
       "id": "LS013",
-      "status": "U",
-      "startTime": "2026-04-27T16:00+02:00",
-      "court": "Manolo Santana Stadium"
+      "status": "C",
+      "startTime": "2026-04-27T13:48:00.43+00:00",
+      "court": "Court 1"
     },
     {
       "id": "LD012",
@@ -1249,6 +1259,14 @@
       "result": "76(4) 46 61",
       "startTime": "2026-04-26T00:00:00",
       "court": "Manolo Santana Stadium"
+    },
+    {
+      "id": "ATP-MS024",
+      "status": "F",
+      "score": "64 62",
+      "result": "64 62",
+      "startTime": "2026-04-27T00:00:00",
+      "court": "Arantxa Sanchez Stadium"
     },
     {
       "id": "ATP-MS032",
@@ -2067,6 +2085,14 @@
       "court": "Court 6"
     },
     {
+      "id": "ATP-MD020",
+      "status": "F",
+      "score": "63 36 10-7",
+      "result": "63 36 10-7",
+      "startTime": "2026-04-27T00:00:00",
+      "court": "Court 5"
+    },
+    {
       "id": "ATP-MD024",
       "status": "F",
       "score": "64 76(6)",
@@ -2089,6 +2115,14 @@
       "result": "63 76(3)",
       "startTime": "2026-04-26T00:00:00",
       "court": "Court 4"
+    },
+    {
+      "id": "ATP-MD019",
+      "status": "F",
+      "score": "63 76(3)",
+      "result": "63 76(3)",
+      "startTime": "2026-04-27T00:00:00",
+      "court": "Court 6"
     },
     {
       "id": "ATP-MD026",
@@ -2137,6 +2171,22 @@
       "result": "64 16 10-4",
       "startTime": "2026-04-27T00:00:00",
       "court": "Court 5"
+    },
+    {
+      "id": "ATP-MD029",
+      "status": "F",
+      "score": "63 63",
+      "result": "63 63",
+      "startTime": "2026-04-27T00:00:00",
+      "court": "Court 5"
+    },
+    {
+      "id": "ATP-MD030",
+      "status": "F",
+      "score": "63 67(5) 12-10",
+      "result": "63 67(5) 12-10",
+      "startTime": "2026-04-27T00:00:00",
+      "court": "Court 4"
     }
   ]
 }
