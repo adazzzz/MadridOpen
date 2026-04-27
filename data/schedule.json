@@ -4,7 +4,7 @@
     "track": "schedule",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-27T17:06:04.097482+00:00",
+    "updatedAt": "2026-04-27T18:16:16.592802+00:00",
     "sources": {
       "schedules": {
         "wta": "https://wta-webapi-prod-apimanagement.azure-api.net/atpjoint-api/v1/Scores/Schedule?eventId=1038&eventYear=2026",
@@ -6502,47 +6502,6 @@
       ]
     },
     {
-      "id": "LS012",
-      "tour": "WTA",
-      "draw": "MS",
-      "discipline": "singles",
-      "round": "R4",
-      "roundCode": "R4",
-      "roundLabel": "16强",
-      "startTime": "2026-04-27T16:48:06.197+00:00",
-      "court": "Court 2",
-      "scheduleDay": "2026-04-27",
-      "scheduleOrder": 5,
-      "scheduleType": "not_before",
-      "scheduleText": "Not Before",
-      "scheduleTime": "19:00+0200",
-      "scheduleDisplay": "Not Before 7:00 PM",
-      "players": [
-        {
-          "id": "marta-kostyuk",
-          "name": "Marta Kostyuk",
-          "country": "UKR",
-          "side": "A",
-          "ranking": 23,
-          "singlesRanking": 23,
-          "doublesRanking": 158,
-          "tour": "WTA",
-          "wtaPlayerId": "326482"
-        },
-        {
-          "id": "caty-mcnally",
-          "name": "Caty McNally",
-          "country": "USA",
-          "side": "B",
-          "ranking": 73,
-          "singlesRanking": 73,
-          "doublesRanking": 52,
-          "tour": "WTA",
-          "wtaPlayerId": "325725"
-        }
-      ]
-    },
-    {
       "id": "LS015",
       "tour": "WTA",
       "draw": "MS",
@@ -6674,6 +6633,17 @@
           "doublesRanking": 75,
           "tour": "WTA",
           "wtaPlayerId": "326735"
+        },
+        {
+          "id": "mirra-andreeva",
+          "name": "Mirra Andreeva",
+          "country": "RUS",
+          "side": "B",
+          "ranking": 8,
+          "singlesRanking": 8,
+          "doublesRanking": 33,
+          "tour": "WTA",
+          "wtaPlayerId": "331809"
         }
       ]
     },
@@ -6816,6 +6786,46 @@
           "singlesRanking": 169,
           "tour": "ATP",
           "atpPlayerId": "M0K4"
+        }
+      ]
+    },
+    {
+      "id": "ATP-MS027",
+      "tour": "ATP",
+      "draw": "MS",
+      "discipline": "singles",
+      "round": "R32",
+      "roundCode": "R32",
+      "roundLabel": "第三轮",
+      "startTime": "2026-04-27T00:00:00",
+      "court": "Stadium 3",
+      "scheduleDay": "2026-04-27",
+      "scheduleOrder": 4,
+      "scheduleType": "followed_by",
+      "scheduleText": "Followed By",
+      "scheduleDisplay": "Followed By",
+      "players": [
+        {
+          "id": "alexander-blockx",
+          "name": "Alexander Blockx",
+          "country": "BEL",
+          "side": "A",
+          "ranking": 69,
+          "singlesRanking": 69,
+          "doublesRanking": 880,
+          "tour": "ATP",
+          "atpPlayerId": "B0PG"
+        },
+        {
+          "id": "felix-auger-aliassime",
+          "name": "Felix Auger-Aliassime",
+          "country": "CAN",
+          "side": "B",
+          "ranking": 5,
+          "singlesRanking": 5,
+          "doublesRanking": 254,
+          "tour": "ATP",
+          "atpPlayerId": "AG37"
         }
       ]
     },
