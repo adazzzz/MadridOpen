@@ -4,7 +4,7 @@
     "track": "training",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-27T20:45:11.682720+00:00",
+    "updatedAt": "2026-04-27T21:39:51.518701+00:00",
     "sources": {
       "training": [
         "https://practice.tmstennis.com/api/iframe?runid=702&public=1&day=0&mode=0",
@@ -3117,6 +3117,26 @@
           "name": "Jódar Rafa",
           "country": "",
           "tour": "WTA"
+        }
+      ]
+    },
+    {
+      "id": "1-pista-9-wta-06-00-pm-07-30-pm-alexander-zverev",
+      "dayOffset": 1,
+      "dayLabel": "Tue, Apr 28, 2026",
+      "court": "PISTA 9 (WTA)",
+      "timeRange": "06:00 PM - 07:30 PM",
+      "tour": "WTA",
+      "players": [
+        {
+          "id": "alexander-zverev",
+          "name": "Alexander Zverev",
+          "country": "GER",
+          "ranking": 3,
+          "singlesRanking": 3,
+          "doublesRanking": 126,
+          "tour": "ATP",
+          "atpPlayerId": "Z355"
         }
       ]
     },
