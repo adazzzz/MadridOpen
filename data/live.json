@@ -4,7 +4,7 @@
     "track": "live",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-27T13:50:59.288269+00:00",
+    "updatedAt": "2026-04-27T15:30:38.238249+00:00",
     "sources": {
       "matches": {
         "wta": "https://api.wtatennis.com/tennis/tournaments/1038/2026/matches",
@@ -1160,20 +1160,22 @@
     {
       "id": "LS011",
       "status": "P",
-      "score": "5-5",
+      "score": "6-7(5),6-3,5-2",
       "startTime": "2026-04-27T12:53:44.843+00:00",
       "court": "Court 3"
     },
     {
       "id": "LS013",
-      "status": "C",
+      "status": "P",
+      "score": "6-4,1-6,1-2",
       "startTime": "2026-04-27T13:48:00.43+00:00",
       "court": "Court 1"
     },
     {
       "id": "LD012",
-      "status": "U",
-      "startTime": "2026-04-27T17:00+02:00",
+      "status": "P",
+      "score": "3-2",
+      "startTime": "2026-04-27T14:51:08.527+00:00",
       "court": "Court 4"
     },
     {
@@ -1187,6 +1189,30 @@
       "status": "U",
       "startTime": "2026-04-27T21:00+02:00",
       "court": "Manolo Santana Stadium"
+    },
+    {
+      "id": "LD004",
+      "status": "U",
+      "startTime": "2026-04-28T11:00+02:00",
+      "court": "Stadium 3"
+    },
+    {
+      "id": "LS005",
+      "status": "U",
+      "startTime": "2026-04-28T13:00+02:00",
+      "court": "Manolo Santana Stadium"
+    },
+    {
+      "id": "LS004",
+      "status": "U",
+      "startTime": "2026-04-28T20:00+02:00",
+      "court": "Manolo Santana Stadium"
+    },
+    {
+      "id": "LD007",
+      "status": "U",
+      "startTime": "2026-04-28T23:59+02:00",
+      "court": "Stadium 3"
     },
     {
       "id": "ATP-MS016",
@@ -1205,6 +1231,14 @@
       "court": "Manolo Santana Stadium"
     },
     {
+      "id": "ATP-MS028",
+      "status": "F",
+      "score": "63 62",
+      "result": "63 62",
+      "startTime": "2026-04-27T00:00:00",
+      "court": "Arantxa Sanchez Stadium"
+    },
+    {
       "id": "ATP-MS022",
       "status": "F",
       "score": "64 62",
@@ -1219,6 +1253,14 @@
       "result": "63 61",
       "startTime": "2026-04-27T00:00:00",
       "court": "Manolo Santana Stadium"
+    },
+    {
+      "id": "ATP-MS026",
+      "status": "F",
+      "score": "62 63",
+      "result": "62 63",
+      "startTime": "2026-04-27T00:00:00",
+      "court": "Court 4"
     },
     {
       "id": "ATP-MS017",
@@ -2075,6 +2117,14 @@
       "result": "26 61 10-6",
       "startTime": "2026-04-26T00:00:00",
       "court": "Court 5"
+    },
+    {
+      "id": "ATP-MD031",
+      "status": "F",
+      "score": "63 63",
+      "result": "63 63",
+      "startTime": "2026-04-27T00:00:00",
+      "court": "Court 6"
     },
     {
       "id": "ATP-MD027",
