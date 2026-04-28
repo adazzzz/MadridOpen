@@ -4,7 +4,7 @@
     "track": "training",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-28T06:18:44.164221+00:00",
+    "updatedAt": "2026-04-28T06:39:32.569841+00:00",
     "sources": {
       "training": [
         "https://practice.tmstennis.com/api/iframe?runid=702&public=1&day=0&mode=0",
@@ -299,6 +299,26 @@
           "doublesRanking": 33,
           "tour": "WTA",
           "wtaPlayerId": "331809"
+        }
+      ]
+    },
+    {
+      "id": "0-pista-6-09-00-am-09-30-am-arthur-fils",
+      "dayOffset": 0,
+      "dayLabel": "Tue, Apr 28, 2026",
+      "court": "PISTA 6",
+      "timeRange": "09:00 AM - 09:30 AM",
+      "tour": "",
+      "players": [
+        {
+          "id": "arthur-fils",
+          "name": "Arthur Fils",
+          "country": "FRA",
+          "ranking": 25,
+          "singlesRanking": 25,
+          "doublesRanking": 345,
+          "tour": "ATP",
+          "atpPlayerId": "F0F1"
         }
       ]
     },
