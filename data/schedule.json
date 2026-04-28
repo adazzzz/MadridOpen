@@ -4,7 +4,7 @@
     "track": "schedule",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-28T06:39:32.569841+00:00",
+    "updatedAt": "2026-04-28T09:07:10.061812+00:00",
     "sources": {
       "schedules": {
         "wta": "https://wta-webapi-prod-apimanagement.azure-api.net/atpjoint-api/v1/Scores/Schedule?eventId=1038&eventYear=2026",
@@ -6592,8 +6592,8 @@
       "round": "QF",
       "roundCode": "QF",
       "roundLabel": "8强",
-      "startTime": "2026-04-28T11:00+02:00",
-      "court": "Stadium 3",
+      "startTime": "2026-04-28T08:47:32.51+00:00",
+      "court": "Court 3",
       "scheduleDay": "2026-04-28",
       "scheduleOrder": 1,
       "scheduleType": "starts_at",
