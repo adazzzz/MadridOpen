@@ -4,7 +4,7 @@
     "track": "training",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-28T04:04:44.755311+00:00",
+    "updatedAt": "2026-04-28T06:18:44.164221+00:00",
     "sources": {
       "training": [
         "https://practice.tmstennis.com/api/iframe?runid=702&public=1&day=0&mode=0",
@@ -23,6 +23,26 @@
     ]
   },
   "trainingSessions": [
+    {
+      "id": "0-manolo-santana-09-00-am-09-30-am-cameron-norrie",
+      "dayOffset": 0,
+      "dayLabel": "Tue, Apr 28, 2026",
+      "court": "MANOLO SANTANA",
+      "timeRange": "09:00 AM - 09:30 AM",
+      "tour": "",
+      "players": [
+        {
+          "id": "cameron-norrie",
+          "name": "Cameron Norrie",
+          "country": "GBR",
+          "ranking": 23,
+          "singlesRanking": 23,
+          "doublesRanking": 255,
+          "tour": "ATP",
+          "atpPlayerId": "N771"
+        }
+      ]
+    },
     {
       "id": "0-manolo-santana-09-30-am-10-00-am-cameron-norrie-jannik-sinner",
       "dayOffset": 0,
@@ -53,7 +73,7 @@
       ]
     },
     {
-      "id": "0-arantxa-sanchez-08-00-am-09-00-am-doumbia-sadio-reboul-fabien",
+      "id": "0-arantxa-sanchez-08-00-am-09-00-am-fabien-reboul-sadio-doumbia",
       "dayOffset": 0,
       "dayLabel": "Tue, Apr 28, 2026",
       "court": "ARANTXA SANCHEZ",
@@ -61,7 +81,7 @@
       "tour": "",
       "players": [
         {
-          "id": "reboul-fabien",
+          "id": "fabien-reboul",
           "name": "Fabien Reboul",
           "country": "FRA",
           "ranking": 23,
@@ -71,7 +91,7 @@
           "atpPlayerId": "RE45"
         },
         {
-          "id": "doumbia-sadio",
+          "id": "sadio-doumbia",
           "name": "Sadio Doumbia",
           "country": "FRA",
           "ranking": 22,
@@ -827,7 +847,7 @@
       ]
     },
     {
-      "id": "0-pista-10-atp-01-00-pm-02-00-pm-johnson-luke-zielinski-jan",
+      "id": "0-pista-10-atp-01-00-pm-02-00-pm-jan-zielinski-luke-johnson",
       "dayOffset": 0,
       "dayLabel": "Tue, Apr 28, 2026",
       "court": "PISTA 10 (ATP)",
@@ -835,7 +855,7 @@
       "tour": "ATP",
       "players": [
         {
-          "id": "zielinski-jan",
+          "id": "jan-zielinski",
           "name": "Jan Zielinski",
           "country": "POL",
           "ranking": 33,
@@ -845,7 +865,7 @@
           "atpPlayerId": "Z423"
         },
         {
-          "id": "johnson-luke",
+          "id": "luke-johnson",
           "name": "Luke Johnson",
           "country": "GBR",
           "ranking": 47,
@@ -857,7 +877,7 @@
       ]
     },
     {
-      "id": "0-pista-10-atp-02-00-pm-02-30-pm-johnson-luke-zielinski-jan",
+      "id": "0-pista-10-atp-02-00-pm-02-30-pm-jan-zielinski-luke-johnson",
       "dayOffset": 0,
       "dayLabel": "Tue, Apr 28, 2026",
       "court": "PISTA 10 (ATP)",
@@ -865,7 +885,7 @@
       "tour": "ATP",
       "players": [
         {
-          "id": "zielinski-jan",
+          "id": "jan-zielinski",
           "name": "Jan Zielinski",
           "country": "POL",
           "ranking": 33,
@@ -875,7 +895,7 @@
           "atpPlayerId": "Z423"
         },
         {
-          "id": "johnson-luke",
+          "id": "luke-johnson",
           "name": "Luke Johnson",
           "country": "GBR",
           "ranking": 47,
@@ -937,7 +957,7 @@
       ]
     },
     {
-      "id": "0-pista-11-atp-11-00-am-12-00-pm-gonzalez-maximo-molteni-andres",
+      "id": "0-pista-11-atp-11-00-am-12-00-pm-andres-molteni-maximo-gonzalez",
       "dayOffset": 0,
       "dayLabel": "Tue, Apr 28, 2026",
       "court": "PISTA 11 (ATP)",
@@ -945,7 +965,7 @@
       "tour": "ATP",
       "players": [
         {
-          "id": "molteni-andres",
+          "id": "andres-molteni",
           "name": "Andres Molteni",
           "country": "ARG",
           "ranking": 38,
@@ -955,7 +975,7 @@
           "atpPlayerId": "ME56"
         },
         {
-          "id": "gonzalez-maximo",
+          "id": "maximo-gonzalez",
           "name": "Maximo Gonzalez",
           "country": "ARG",
           "ranking": 50,
@@ -997,7 +1017,7 @@
       ]
     },
     {
-      "id": "0-pista-11-atp-02-00-pm-04-00-pm-harrison-christian-skupski-neal",
+      "id": "0-pista-11-atp-02-00-pm-04-00-pm-christian-harrison-neal-skupski",
       "dayOffset": 0,
       "dayLabel": "Tue, Apr 28, 2026",
       "court": "PISTA 11 (ATP)",
@@ -1005,7 +1025,7 @@
       "tour": "ATP",
       "players": [
         {
-          "id": "skupski-neal",
+          "id": "neal-skupski",
           "name": "Neal Skupski",
           "country": "GBR",
           "ranking": 3,
@@ -1015,7 +1035,7 @@
           "atpPlayerId": "SL22"
         },
         {
-          "id": "harrison-christian",
+          "id": "christian-harrison",
           "name": "Christian Harrison",
           "country": "USA",
           "ranking": 13,
@@ -1117,7 +1137,7 @@
       ]
     },
     {
-      "id": "0-pista-14-atp-11-30-am-12-00-pm-king-evan",
+      "id": "0-pista-14-atp-11-30-am-12-00-pm-evan-king",
       "dayOffset": 0,
       "dayLabel": "Tue, Apr 28, 2026",
       "court": "PISTA 14 (ATP)",
@@ -1125,7 +1145,7 @@
       "tour": "ATP",
       "players": [
         {
-          "id": "king-evan",
+          "id": "evan-king",
           "name": "Evan King",
           "country": "USA",
           "ranking": 28,
@@ -1137,7 +1157,7 @@
       ]
     },
     {
-      "id": "0-pista-14-atp-12-00-pm-01-00-pm-goransson-andre-king-evan",
+      "id": "0-pista-14-atp-12-00-pm-01-00-pm-andre-goransson-evan-king",
       "dayOffset": 0,
       "dayLabel": "Tue, Apr 28, 2026",
       "court": "PISTA 14 (ATP)",
@@ -1145,7 +1165,7 @@
       "tour": "ATP",
       "players": [
         {
-          "id": "king-evan",
+          "id": "evan-king",
           "name": "Evan King",
           "country": "USA",
           "ranking": 28,
@@ -1155,7 +1175,7 @@
           "atpPlayerId": "KB37"
         },
         {
-          "id": "goransson-andre",
+          "id": "andre-goransson",
           "name": "Andre Goransson",
           "country": "SWE",
           "ranking": 42,
@@ -1207,7 +1227,7 @@
       ]
     },
     {
-      "id": "0-pista-15-atp-11-30-am-12-00-pm-pablo-llamas-ruiz-winter-lopez-benjamin",
+      "id": "0-pista-15-atp-11-30-am-12-00-pm-benjamin-winter-lopez-pablo-llamas-ruiz",
       "dayOffset": 0,
       "dayLabel": "Tue, Apr 28, 2026",
       "court": "PISTA 15 -ATP",
@@ -1215,7 +1235,7 @@
       "tour": "ATP",
       "players": [
         {
-          "id": "winter-lopez-benjamin",
+          "id": "benjamin-winter-lopez",
           "name": "Benjamin Winter Lopez",
           "country": "ESP",
           "ranking": 1013,
@@ -1237,7 +1257,7 @@
       ]
     },
     {
-      "id": "0-pista-15-atp-12-00-pm-01-00-pm-andreozzi-guido-guinard-manuel",
+      "id": "0-pista-15-atp-12-00-pm-01-00-pm-guido-andreozzi-manuel-guinard",
       "dayOffset": 0,
       "dayLabel": "Tue, Apr 28, 2026",
       "court": "PISTA 15 -ATP",
@@ -1245,7 +1265,7 @@
       "tour": "ATP",
       "players": [
         {
-          "id": "andreozzi-guido",
+          "id": "guido-andreozzi",
           "name": "Guido Andreozzi",
           "country": "ARG",
           "ranking": 16,
@@ -1255,7 +1275,7 @@
           "atpPlayerId": "A887"
         },
         {
-          "id": "guinard-manuel",
+          "id": "manuel-guinard",
           "name": "Manuel Guinard",
           "country": "FRA",
           "ranking": 1536,
@@ -1267,7 +1287,7 @@
       ]
     },
     {
-      "id": "0-pista-15-atp-01-00-pm-01-30-pm-andreozzi-guido-guinard-manuel",
+      "id": "0-pista-15-atp-01-00-pm-01-30-pm-guido-andreozzi-manuel-guinard",
       "dayOffset": 0,
       "dayLabel": "Tue, Apr 28, 2026",
       "court": "PISTA 15 -ATP",
@@ -1275,7 +1295,7 @@
       "tour": "ATP",
       "players": [
         {
-          "id": "andreozzi-guido",
+          "id": "guido-andreozzi",
           "name": "Guido Andreozzi",
           "country": "ARG",
           "ranking": 16,
@@ -1285,7 +1305,7 @@
           "atpPlayerId": "A887"
         },
         {
-          "id": "guinard-manuel",
+          "id": "manuel-guinard",
           "name": "Manuel Guinard",
           "country": "FRA",
           "ranking": 1536,
