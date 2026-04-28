@@ -4,7 +4,7 @@
     "track": "training",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-28T11:11:52.501430+00:00",
+    "updatedAt": "2026-04-28T12:58:05.010914+00:00",
     "sources": {
       "training": [
         "https://practice.tmstennis.com/api/iframe?runid=702&public=1&day=0&mode=0",
@@ -69,6 +69,26 @@
           "doublesRanking": 255,
           "tour": "ATP",
           "atpPlayerId": "N771"
+        }
+      ]
+    },
+    {
+      "id": "0-manolo-santana-08-30-pm-09-00-pm-jiri-lehecka",
+      "dayOffset": 0,
+      "dayLabel": "Tue, Apr 28, 2026",
+      "court": "MANOLO SANTANA",
+      "timeRange": "08:30 PM - 09:00 PM",
+      "tour": "",
+      "players": [
+        {
+          "id": "jiri-lehecka",
+          "name": "Jiri Lehecka",
+          "country": "CZE",
+          "ranking": 14,
+          "singlesRanking": 14,
+          "doublesRanking": 176,
+          "tour": "ATP",
+          "atpPlayerId": "L0BV"
         }
       ]
     },
@@ -600,6 +620,36 @@
       ]
     },
     {
+      "id": "0-pista-7-03-30-pm-05-00-pm-fabien-reboul-sadio-doumbia",
+      "dayOffset": 0,
+      "dayLabel": "Tue, Apr 28, 2026",
+      "court": "PISTA 7",
+      "timeRange": "03:30 PM - 05:00 PM",
+      "tour": "",
+      "players": [
+        {
+          "id": "sadio-doumbia",
+          "name": "Sadio Doumbia",
+          "country": "FRA",
+          "ranking": 22,
+          "rankingTag": "D",
+          "doublesRanking": 22,
+          "tour": "ATP",
+          "atpPlayerId": "D917"
+        },
+        {
+          "id": "fabien-reboul",
+          "name": "Fabien Reboul",
+          "country": "FRA",
+          "ranking": 23,
+          "rankingTag": "D",
+          "doublesRanking": 23,
+          "tour": "ATP",
+          "atpPlayerId": "RE45"
+        }
+      ]
+    },
+    {
       "id": "0-pista-7-05-30-pm-06-30-pm-aryna-sabalenka",
       "dayOffset": 0,
       "dayLabel": "Tue, Apr 28, 2026",
@@ -760,6 +810,25 @@
       ]
     },
     {
+      "id": "0-pista-8-03-00-pm-04-30-pm-karolina-pliskova",
+      "dayOffset": 0,
+      "dayLabel": "Tue, Apr 28, 2026",
+      "court": "PISTA 8",
+      "timeRange": "03:00 PM - 04:30 PM",
+      "tour": "",
+      "players": [
+        {
+          "id": "karolina-pliskova",
+          "name": "Karolina Pliskova",
+          "country": "CZE",
+          "ranking": 41,
+          "singlesRanking": 41,
+          "tour": "WTA",
+          "wtaPlayerId": "313974"
+        }
+      ]
+    },
+    {
       "id": "0-pista-8-05-00-pm-06-00-pm-daniil-medvedev",
       "dayOffset": 0,
       "dayLabel": "Tue, Apr 28, 2026",
@@ -860,23 +929,32 @@
       ]
     },
     {
-      "id": "0-pista-9-wta-03-00-pm-04-00-pm-anastasia-potapova",
+      "id": "0-pista-9-wta-02-00-pm-03-00-pm-michael-venus-yuki-bhambri",
       "dayOffset": 0,
       "dayLabel": "Tue, Apr 28, 2026",
       "court": "PISTA 9 (WTA)",
-      "timeRange": "03:00 PM - 04:00 PM",
+      "timeRange": "02:00 PM - 03:00 PM",
       "tour": "WTA",
       "players": [
         {
-          "id": "anastasia-potapova",
-          "name": "Anastasia Potapova",
-          "country": "AUT",
-          "ranking": 56,
-          "singlesRanking": 56,
-          "doublesRanking": 141,
-          "tour": "WTA",
-          "wtaPlayerId": "325601",
-          "singlesEntryType": "LL"
+          "id": "yuki-bhambri",
+          "name": "Yuki Bhambri",
+          "country": "IND",
+          "ranking": 25,
+          "rankingTag": "D",
+          "doublesRanking": 25,
+          "tour": "ATP",
+          "atpPlayerId": "BF55"
+        },
+        {
+          "id": "michael-venus",
+          "name": "Michael Venus",
+          "country": "NZL",
+          "ranking": 49,
+          "rankingTag": "D",
+          "doublesRanking": 49,
+          "tour": "ATP",
+          "atpPlayerId": "V576"
         }
       ]
     },
@@ -1017,36 +1095,6 @@
           "doublesRanking": 47,
           "tour": "ATP",
           "atpPlayerId": "J543"
-        }
-      ]
-    },
-    {
-      "id": "0-pista-10-atp-02-30-pm-03-30-pm-michael-venus-yuki-bhambri",
-      "dayOffset": 0,
-      "dayLabel": "Tue, Apr 28, 2026",
-      "court": "PISTA 10 (ATP)",
-      "timeRange": "02:30 PM - 03:30 PM",
-      "tour": "ATP",
-      "players": [
-        {
-          "id": "yuki-bhambri",
-          "name": "Yuki Bhambri",
-          "country": "IND",
-          "ranking": 25,
-          "rankingTag": "D",
-          "doublesRanking": 25,
-          "tour": "ATP",
-          "atpPlayerId": "BF55"
-        },
-        {
-          "id": "michael-venus",
-          "name": "Michael Venus",
-          "country": "NZL",
-          "ranking": 49,
-          "rankingTag": "D",
-          "doublesRanking": 49,
-          "tour": "ATP",
-          "atpPlayerId": "V576"
         }
       ]
     },
@@ -1277,6 +1325,47 @@
       ]
     },
     {
+      "id": "0-pista-13-wta-03-00-pm-04-30-pm-julieta-pareja",
+      "dayOffset": 0,
+      "dayLabel": "Tue, Apr 28, 2026",
+      "court": "PISTA 13 (WTA)",
+      "timeRange": "03:00 PM - 04:30 PM",
+      "tour": "WTA",
+      "players": [
+        {
+          "id": "julieta-pareja",
+          "name": "Julieta Pareja",
+          "country": "USA",
+          "ranking": 364,
+          "singlesRanking": 364,
+          "doublesRanking": 1493,
+          "tour": "WTA",
+          "wtaPlayerId": "333685"
+        }
+      ]
+    },
+    {
+      "id": "0-pista-13-wta-04-30-pm-06-00-pm-anastasia-pavlyuchenkova",
+      "dayOffset": 0,
+      "dayLabel": "Tue, Apr 28, 2026",
+      "court": "PISTA 13 (WTA)",
+      "timeRange": "04:30 PM - 06:00 PM",
+      "tour": "WTA",
+      "players": [
+        {
+          "id": "anastasia-pavlyuchenkova",
+          "name": "Anastasia Pavlyuchenkova",
+          "country": "RUS",
+          "ranking": 116,
+          "singlesRanking": 116,
+          "doublesRanking": 298,
+          "tour": "WTA",
+          "wtaPlayerId": "313796",
+          "singlesEntryType": "Q"
+        }
+      ]
+    },
+    {
       "id": "0-pista-14-atp-11-30-am-12-00-pm-evan-king",
       "dayOffset": 0,
       "dayLabel": "Tue, Apr 28, 2026",
@@ -1363,6 +1452,36 @@
           "doublesRanking": 202,
           "tour": "ATP",
           "atpPlayerId": "GJ37"
+        }
+      ]
+    },
+    {
+      "id": "0-pista-14-atp-05-00-pm-06-30-pm-andre-goransson-evan-king",
+      "dayOffset": 0,
+      "dayLabel": "Tue, Apr 28, 2026",
+      "court": "PISTA 14 (ATP)",
+      "timeRange": "05:00 PM - 06:30 PM",
+      "tour": "ATP",
+      "players": [
+        {
+          "id": "andre-goransson",
+          "name": "Andre Goransson",
+          "country": "SWE",
+          "ranking": 42,
+          "rankingTag": "D",
+          "doublesRanking": 42,
+          "tour": "ATP",
+          "atpPlayerId": "GE03"
+        },
+        {
+          "id": "evan-king",
+          "name": "Evan King",
+          "country": "USA",
+          "ranking": 28,
+          "rankingTag": "D",
+          "doublesRanking": 28,
+          "tour": "ATP",
+          "atpPlayerId": "KB37"
         }
       ]
     },
@@ -1577,11 +1696,11 @@
       ]
     },
     {
-      "id": "0-pista-21-warmup-01-00-pm-02-00-pm-zhizhen-zhang",
+      "id": "0-pista-21-warmup-01-00-pm-03-00-pm-zhizhen-zhang",
       "dayOffset": 0,
       "dayLabel": "Tue, Apr 28, 2026",
       "court": "PISTA 21 (WARMUP)",
-      "timeRange": "01:00 PM - 02:00 PM",
+      "timeRange": "01:00 PM - 03:00 PM",
       "tour": "",
       "players": [
         {
@@ -1632,6 +1751,45 @@
           "doublesRanking": 13,
           "tour": "WTA",
           "wtaPlayerId": "310053"
+        }
+      ]
+    },
+    {
+      "id": "1-manolo-santana-10-30-am-11-00-am-karolina-pliskova",
+      "dayOffset": 1,
+      "dayLabel": "Wed, Apr 29, 2026",
+      "court": "MANOLO SANTANA",
+      "timeRange": "10:30 AM - 11:00 AM",
+      "tour": "",
+      "players": [
+        {
+          "id": "karolina-pliskova",
+          "name": "Karolina Pliskova",
+          "country": "CZE",
+          "ranking": 41,
+          "singlesRanking": 41,
+          "tour": "WTA",
+          "wtaPlayerId": "313974"
+        }
+      ]
+    },
+    {
+      "id": "1-pista-12-wta-05-30-pm-06-00-pm-marta-kostyuk",
+      "dayOffset": 1,
+      "dayLabel": "Wed, Apr 29, 2026",
+      "court": "PISTA 12 (WTA)",
+      "timeRange": "05:30 PM - 06:00 PM",
+      "tour": "WTA",
+      "players": [
+        {
+          "id": "marta-kostyuk",
+          "name": "Marta Kostyuk",
+          "country": "UKR",
+          "ranking": 23,
+          "singlesRanking": 23,
+          "doublesRanking": 158,
+          "tour": "WTA",
+          "wtaPlayerId": "326482"
         }
       ]
     },

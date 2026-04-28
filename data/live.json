@@ -4,7 +4,7 @@
     "track": "live",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-28T11:11:52.501430+00:00",
+    "updatedAt": "2026-04-28T12:58:05.010914+00:00",
     "sources": {
       "matches": {
         "wta": "https://api.wtatennis.com/tennis/tournaments/1038/2026/matches",
@@ -1199,17 +1199,25 @@
     },
     {
       "id": "LD004",
-      "status": "P",
-      "score": "5-7,7-5,0-0(0)",
+      "status": "F",
+      "score": "5-7,7-5,1-0(8)",
+      "result": "L. Siegemund / V. Zvonareva d A. Sutjiadi / J. Tjen 5-7,7-5,1-0(8)",
       "startTime": "2026-04-28T08:47:32.51+00:00",
       "court": "Court 3"
     },
     {
       "id": "LS005",
-      "status": "P",
-      "score": "1-0",
+      "status": "F",
+      "score": "7-6(1),6-3",
+      "result": "[9]M. Andreeva d [24]L. Fernandez 7-6(1),6-3",
       "startTime": "2026-04-28T10:45:38.76+00:00",
       "court": "Court 1"
+    },
+    {
+      "id": "LD007",
+      "status": "C",
+      "startTime": "2026-04-28T12:52:40.7+00:00",
+      "court": "Court 3"
     },
     {
       "id": "LS004",
@@ -1218,18 +1226,20 @@
       "court": "Manolo Santana Stadium"
     },
     {
-      "id": "LD007",
-      "status": "U",
-      "startTime": "2026-04-28T23:59+02:00",
-      "court": "Stadium 3"
-    },
-    {
       "id": "ATP-MS008",
       "status": "F",
       "score": "62 75",
       "result": "62 75",
       "startTime": "2026-04-28T00:00:00",
       "court": "Manolo Santana Stadium"
+    },
+    {
+      "id": "ATP-MS011",
+      "status": "F",
+      "score": "63 63",
+      "result": "63 63",
+      "startTime": "2026-04-28T00:00:00",
+      "court": "Arantxa Sanchez Stadium"
     },
     {
       "id": "ATP-MS010",
@@ -2166,6 +2176,14 @@
       "result": "60 76(5)",
       "startTime": "2026-04-20T00:00:00",
       "court": "Court 7"
+    },
+    {
+      "id": "ATP-MD012",
+      "status": "F",
+      "score": "64 64",
+      "result": "64 64",
+      "startTime": "2026-04-28T00:00:00",
+      "court": "Stadium 3"
     },
     {
       "id": "ATP-MD016",
