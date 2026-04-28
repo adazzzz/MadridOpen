@@ -4,7 +4,7 @@
     "track": "live",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-28T12:58:05.010914+00:00",
+    "updatedAt": "2026-04-28T15:39:09.072014+00:00",
     "sources": {
       "matches": {
         "wta": "https://api.wtatennis.com/tennis/tournaments/1038/2026/matches",
@@ -1215,7 +1215,9 @@
     },
     {
       "id": "LD007",
-      "status": "C",
+      "status": "F",
+      "score": "7-6(4),6-1",
+      "result": "[2]K. Siniakova / T. Townsend d U. Eikeri / Q. Gleason 7-6(4),6-1",
       "startTime": "2026-04-28T12:52:40.7+00:00",
       "court": "Court 3"
     },
@@ -1224,6 +1226,30 @@
       "status": "U",
       "startTime": "2026-04-28T20:00+02:00",
       "court": "Manolo Santana Stadium"
+    },
+    {
+      "id": "LS007",
+      "status": "U",
+      "startTime": "2026-04-29T13:00+02:00",
+      "court": "Manolo Santana Stadium"
+    },
+    {
+      "id": "LD005",
+      "status": "U",
+      "startTime": "2026-04-29T16:00+02:00",
+      "court": "Arantxa Sanchez Stadium"
+    },
+    {
+      "id": "LS006",
+      "status": "U",
+      "startTime": "2026-04-29T20:00+02:00",
+      "court": "Manolo Santana Stadium"
+    },
+    {
+      "id": "LD006",
+      "status": "U",
+      "startTime": "2026-04-29T23:59+02:00",
+      "court": "Arantxa Sanchez Stadium"
     },
     {
       "id": "ATP-MS008",
@@ -1242,12 +1268,28 @@
       "court": "Arantxa Sanchez Stadium"
     },
     {
+      "id": "ATP-MS012",
+      "status": "F",
+      "score": "67(4) 76(2) 76(3)",
+      "result": "67(4) 76(2) 76(3)",
+      "startTime": "2026-04-28T00:00:00",
+      "court": "Arantxa Sanchez Stadium"
+    },
+    {
       "id": "ATP-MS010",
       "status": "F",
       "score": "63 64",
       "result": "63 64",
       "startTime": "2026-04-28T00:00:00",
       "court": "Arantxa Sanchez Stadium"
+    },
+    {
+      "id": "ATP-MS009",
+      "status": "F",
+      "score": "75 60",
+      "result": "75 60",
+      "startTime": "2026-04-28T00:00:00",
+      "court": "Manolo Santana Stadium"
     },
     {
       "id": "ATP-MS016",
