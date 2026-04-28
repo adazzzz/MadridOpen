@@ -4,7 +4,7 @@
     "track": "training",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-28T18:50:09.596706+00:00",
+    "updatedAt": "2026-04-28T20:07:07.053615+00:00",
     "sources": {
       "training": [
         "https://practice.tmstennis.com/api/iframe?runid=702&public=1&day=0&mode=0",
@@ -1835,6 +1835,22 @@
       ]
     },
     {
+      "id": "1-manolo-santana-11-30-am-12-00-pm-jodar-rafa",
+      "dayOffset": 1,
+      "dayLabel": "Wed, Apr 29, 2026",
+      "court": "MANOLO SANTANA",
+      "timeRange": "11:30 AM - 12:00 PM",
+      "tour": "",
+      "players": [
+        {
+          "id": "jodar-rafa",
+          "name": "Jódar Rafa",
+          "country": "",
+          "tour": "WTA"
+        }
+      ]
+    },
+    {
       "id": "1-manolo-santana-12-00-pm-12-30-pm-jannik-sinner",
       "dayOffset": 1,
       "dayLabel": "Wed, Apr 29, 2026",
@@ -1874,11 +1890,41 @@
       ]
     },
     {
-      "id": "1-arantxa-sanchez-10-00-am-11-00-am-fabien-reboul-sadio-doumbia",
+      "id": "1-arantxa-sanchez-10-00-am-10-30-am-fabien-reboul-sadio-doumbia",
       "dayOffset": 1,
       "dayLabel": "Wed, Apr 29, 2026",
       "court": "ARANTXA SANCHEZ",
-      "timeRange": "10:00 AM - 11:00 AM",
+      "timeRange": "10:00 AM - 10:30 AM",
+      "tour": "",
+      "players": [
+        {
+          "id": "sadio-doumbia",
+          "name": "Sadio Doumbia",
+          "country": "FRA",
+          "ranking": 22,
+          "rankingTag": "D",
+          "doublesRanking": 22,
+          "tour": "ATP",
+          "atpPlayerId": "D917"
+        },
+        {
+          "id": "fabien-reboul",
+          "name": "Fabien Reboul",
+          "country": "FRA",
+          "ranking": 23,
+          "rankingTag": "D",
+          "doublesRanking": 23,
+          "tour": "ATP",
+          "atpPlayerId": "RE45"
+        }
+      ]
+    },
+    {
+      "id": "1-arantxa-sanchez-10-30-am-11-00-am-fabien-reboul-sadio-doumbia",
+      "dayOffset": 1,
+      "dayLabel": "Wed, Apr 29, 2026",
+      "court": "ARANTXA SANCHEZ",
+      "timeRange": "10:30 AM - 11:00 AM",
       "tour": "",
       "players": [
         {
@@ -2344,6 +2390,26 @@
       ]
     },
     {
+      "id": "1-pista-11-atp-06-00-pm-07-00-pm-jiri-lehecka",
+      "dayOffset": 1,
+      "dayLabel": "Wed, Apr 29, 2026",
+      "court": "PISTA 11 (ATP)",
+      "timeRange": "06:00 PM - 07:00 PM",
+      "tour": "ATP",
+      "players": [
+        {
+          "id": "jiri-lehecka",
+          "name": "Jiri Lehecka",
+          "country": "CZE",
+          "ranking": 14,
+          "singlesRanking": 14,
+          "doublesRanking": 176,
+          "tour": "ATP",
+          "atpPlayerId": "L0BV"
+        }
+      ]
+    },
+    {
       "id": "1-pista-12-wta-11-30-am-12-00-pm-luciano-darderi-stefanos-tsitsipas",
       "dayOffset": 1,
       "dayLabel": "Wed, Apr 29, 2026",
@@ -2520,26 +2586,6 @@
           "doublesRanking": 6,
           "tour": "ATP",
           "atpPlayerId": "P0G6"
-        }
-      ]
-    },
-    {
-      "id": "1-pista-13-wta-06-00-pm-07-00-pm-jiri-lehecka",
-      "dayOffset": 1,
-      "dayLabel": "Wed, Apr 29, 2026",
-      "court": "PISTA 13 (WTA)",
-      "timeRange": "06:00 PM - 07:00 PM",
-      "tour": "WTA",
-      "players": [
-        {
-          "id": "jiri-lehecka",
-          "name": "Jiri Lehecka",
-          "country": "CZE",
-          "ranking": 14,
-          "singlesRanking": 14,
-          "doublesRanking": 176,
-          "tour": "ATP",
-          "atpPlayerId": "L0BV"
         }
       ]
     },
