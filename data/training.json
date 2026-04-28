@@ -4,7 +4,7 @@
     "track": "training",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-28T20:07:07.053615+00:00",
+    "updatedAt": "2026-04-28T21:16:31.062656+00:00",
     "sources": {
       "training": [
         "https://practice.tmstennis.com/api/iframe?runid=702&public=1&day=0&mode=0",
@@ -2440,26 +2440,6 @@
       ]
     },
     {
-      "id": "1-pista-12-wta-12-00-pm-01-00-pm-aldila-sutjiadi",
-      "dayOffset": 1,
-      "dayLabel": "Wed, Apr 29, 2026",
-      "court": "PISTA 12 (WTA)",
-      "timeRange": "12:00 PM - 01:00 PM",
-      "tour": "WTA",
-      "players": [
-        {
-          "id": "aldila-sutjiadi",
-          "name": "Aldila Sutjiadi",
-          "country": "INA",
-          "ranking": 51,
-          "rankingTag": "D",
-          "doublesRanking": 51,
-          "tour": "WTA",
-          "wtaPlayerId": "318390"
-        }
-      ]
-    },
-    {
       "id": "1-pista-12-wta-01-00-pm-03-00-pm-alexander-bublik",
       "dayOffset": 1,
       "dayLabel": "Wed, Apr 29, 2026",
@@ -2560,6 +2540,26 @@
       ]
     },
     {
+      "id": "1-pista-13-wta-01-30-pm-03-00-pm-leylah-fernandez",
+      "dayOffset": 1,
+      "dayLabel": "Wed, Apr 29, 2026",
+      "court": "PISTA 13 (WTA)",
+      "timeRange": "01:30 PM - 03:00 PM",
+      "tour": "WTA",
+      "players": [
+        {
+          "id": "leylah-fernandez",
+          "name": "Leylah Fernandez",
+          "country": "CAN",
+          "ranking": 25,
+          "singlesRanking": 25,
+          "doublesRanking": 75,
+          "tour": "WTA",
+          "wtaPlayerId": "326735"
+        }
+      ]
+    },
+    {
       "id": "1-pista-13-wta-04-00-pm-05-00-pm-harri-heliovaara-henry-patten",
       "dayOffset": 1,
       "dayLabel": "Wed, Apr 29, 2026",
@@ -2606,6 +2606,25 @@
           "doublesRanking": 44,
           "tour": "WTA",
           "wtaPlayerId": "317547"
+        }
+      ]
+    },
+    {
+      "id": "1-pista-14-atp-01-30-pm-02-30-pm-casper-ruud",
+      "dayOffset": 1,
+      "dayLabel": "Wed, Apr 29, 2026",
+      "court": "PISTA 14 (ATP)",
+      "timeRange": "01:30 PM - 02:30 PM",
+      "tour": "ATP",
+      "players": [
+        {
+          "id": "casper-ruud",
+          "name": "Casper Ruud",
+          "country": "NOR",
+          "ranking": 15,
+          "singlesRanking": 15,
+          "tour": "ATP",
+          "atpPlayerId": "RH16"
         }
       ]
     },

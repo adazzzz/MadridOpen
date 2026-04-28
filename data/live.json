@@ -4,7 +4,7 @@
     "track": "live",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-28T20:07:07.053615+00:00",
+    "updatedAt": "2026-04-28T21:16:31.062656+00:00",
     "sources": {
       "matches": {
         "wta": "https://api.wtatennis.com/tennis/tournaments/1038/2026/matches",
@@ -1223,8 +1223,9 @@
     },
     {
       "id": "LS004",
-      "status": "P",
-      "score": "6-2,2-6,4-4",
+      "status": "F",
+      "score": "2-6,6-2,7-6(6)",
+      "result": "[30]H. Baptiste d [1]A. Sabalenka 2-6,6-2,7-6(6)",
       "startTime": "2026-04-28T17:47:50.19+00:00",
       "court": "Court 1"
     },
