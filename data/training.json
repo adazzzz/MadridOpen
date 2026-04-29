@@ -4,7 +4,7 @@
     "track": "training",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-29T03:57:09.190587+00:00",
+    "updatedAt": "2026-04-29T06:12:24.748142+00:00",
     "sources": {
       "training": [
         "https://practice.tmstennis.com/api/iframe?runid=702&public=1&day=0&mode=0",
@@ -74,8 +74,7 @@
         {
           "id": "jodar-rafa",
           "name": "Jódar Rafa",
-          "country": "",
-          "tour": "WTA"
+          "country": ""
         }
       ]
     },
