@@ -4,7 +4,7 @@
     "track": "live",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-29T12:00:28.378178+00:00",
+    "updatedAt": "2026-04-29T14:08:49.494199+00:00",
     "sources": {
       "matches": {
         "wta": "https://api.wtatennis.com/tennis/tournaments/1038/2026/matches",
@@ -1231,8 +1231,9 @@
     },
     {
       "id": "LS007",
-      "status": "P",
-      "score": "6-1,5-3",
+      "status": "F",
+      "score": "6-1,6-7(4),6-3",
+      "result": "A. Potapova d K. Pliskova 6-1,6-7(4),6-3",
       "startTime": "2026-04-29T10:48:31.43+00:00",
       "court": "Court 1"
     },
@@ -1253,6 +1254,18 @@
       "status": "U",
       "startTime": "2026-04-29T23:59+02:00",
       "court": "Arantxa Sanchez Stadium"
+    },
+    {
+      "id": "LS002",
+      "status": "U",
+      "startTime": "2026-04-30T16:00+02:00",
+      "court": "Manolo Santana Stadium"
+    },
+    {
+      "id": "LS003",
+      "status": "U",
+      "startTime": "2026-04-30T21:30+02:00",
+      "court": "Manolo Santana Stadium"
     },
     {
       "id": "ATP-MS008",
@@ -2263,11 +2276,35 @@
       "court": "Stadium 3"
     },
     {
+      "id": "ATP-MD011",
+      "status": "F",
+      "score": "60 64",
+      "result": "60 64",
+      "startTime": "2026-04-29T00:00:00",
+      "court": "Stadium 3"
+    },
+    {
+      "id": "ATP-MD009",
+      "status": "F",
+      "score": "57 61 11-9",
+      "result": "57 61 11-9",
+      "startTime": "2026-04-29T00:00:00",
+      "court": "Arantxa Sanchez Stadium"
+    },
+    {
       "id": "ATP-MD008",
       "status": "F",
       "score": "76(3) 36 10-2",
       "result": "76(3) 36 10-2",
       "startTime": "2026-04-28T00:00:00",
+      "court": "Stadium 3"
+    },
+    {
+      "id": "ATP-MD014",
+      "status": "F",
+      "score": "62 46 10-3",
+      "result": "62 46 10-3",
+      "startTime": "2026-04-29T00:00:00",
       "court": "Stadium 3"
     },
     {
