@@ -4,7 +4,7 @@
     "track": "training",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-29T20:13:50.923341+00:00",
+    "updatedAt": "2026-04-29T20:52:08.467080+00:00",
     "sources": {
       "training": [
         "https://practice.tmstennis.com/api/iframe?runid=702&public=1&day=0&mode=0",
@@ -1526,6 +1526,58 @@
       ]
     },
     {
+      "id": "1-pista-5-12-00-pm-01-00-pm-anastasia-pavlyuchenkova",
+      "dayOffset": 1,
+      "dayLabel": "Thu, Apr 30, 2026",
+      "court": "PISTA 5",
+      "timeRange": "12:00 PM - 01:00 PM",
+      "tour": "",
+      "players": [
+        {
+          "id": "anastasia-pavlyuchenkova",
+          "name": "Anastasia Pavlyuchenkova",
+          "country": "RUS",
+          "ranking": 116,
+          "singlesRanking": 116,
+          "doublesRanking": 298,
+          "tour": "WTA",
+          "wtaPlayerId": "313796",
+          "singlesEntryType": "Q"
+        }
+      ]
+    },
+    {
+      "id": "1-pista-5-01-00-pm-03-00-pm-alexander-bublik-anastasia-pavlyuchenkova",
+      "dayOffset": 1,
+      "dayLabel": "Thu, Apr 30, 2026",
+      "court": "PISTA 5",
+      "timeRange": "01:00 PM - 03:00 PM",
+      "tour": "",
+      "players": [
+        {
+          "id": "anastasia-pavlyuchenkova",
+          "name": "Anastasia Pavlyuchenkova",
+          "country": "RUS",
+          "ranking": 116,
+          "singlesRanking": 116,
+          "doublesRanking": 298,
+          "tour": "WTA",
+          "wtaPlayerId": "313796",
+          "singlesEntryType": "Q"
+        },
+        {
+          "id": "alexander-bublik",
+          "name": "Alexander Bublik",
+          "country": "KAZ",
+          "ranking": 11,
+          "singlesRanking": 11,
+          "doublesRanking": 601,
+          "tour": "ATP",
+          "atpPlayerId": "BK92"
+        }
+      ]
+    },
+    {
       "id": "1-pista-9-wta-12-00-pm-01-30-pm-zhaoxuan-yang",
       "dayOffset": 1,
       "dayLabel": "Thu, Apr 30, 2026",
@@ -1722,6 +1774,26 @@
           "doublesRanking": 126,
           "tour": "ATP",
           "atpPlayerId": "Z355"
+        }
+      ]
+    },
+    {
+      "id": "1-pista-14-atp-07-00-pm-07-30-pm-marta-kostyuk",
+      "dayOffset": 1,
+      "dayLabel": "Thu, Apr 30, 2026",
+      "court": "PISTA 14 (ATP)",
+      "timeRange": "07:00 PM - 07:30 PM",
+      "tour": "ATP",
+      "players": [
+        {
+          "id": "marta-kostyuk",
+          "name": "Marta Kostyuk",
+          "country": "UKR",
+          "ranking": 23,
+          "singlesRanking": 23,
+          "doublesRanking": 158,
+          "tour": "WTA",
+          "wtaPlayerId": "326482"
         }
       ]
     }
