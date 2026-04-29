@@ -4,7 +4,7 @@
     "track": "training",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-29T17:46:17.147429+00:00",
+    "updatedAt": "2026-04-29T20:13:50.923341+00:00",
     "sources": {
       "training": [
         "https://practice.tmstennis.com/api/iframe?runid=702&public=1&day=0&mode=0",
@@ -1436,6 +1436,25 @@
       ]
     },
     {
+      "id": "1-estadio-3-04-00-pm-05-30-pm-jannik-sinner",
+      "dayOffset": 1,
+      "dayLabel": "Thu, Apr 30, 2026",
+      "court": "ESTADIO 3",
+      "timeRange": "04:00 PM - 05:30 PM",
+      "tour": "",
+      "players": [
+        {
+          "id": "jannik-sinner",
+          "name": "Jannik Sinner",
+          "country": "ITA",
+          "ranking": 1,
+          "singlesRanking": 1,
+          "tour": "ATP",
+          "atpPlayerId": "S0AG"
+        }
+      ]
+    },
+    {
       "id": "1-estadio-3-07-30-pm-08-00-pm-anastasia-potapova",
       "dayOffset": 1,
       "dayLabel": "Thu, Apr 30, 2026",
@@ -1483,6 +1502,26 @@
           "doublesRanking": 43,
           "tour": "WTA",
           "wtaPlayerId": "260142"
+        }
+      ]
+    },
+    {
+      "id": "1-pista-5-11-00-am-12-00-pm-julieta-pareja",
+      "dayOffset": 1,
+      "dayLabel": "Thu, Apr 30, 2026",
+      "court": "PISTA 5",
+      "timeRange": "11:00 AM - 12:00 PM",
+      "tour": "",
+      "players": [
+        {
+          "id": "julieta-pareja",
+          "name": "Julieta Pareja",
+          "country": "USA",
+          "ranking": 364,
+          "singlesRanking": 364,
+          "doublesRanking": 1493,
+          "tour": "WTA",
+          "wtaPlayerId": "333685"
         }
       ]
     },
@@ -1613,6 +1652,36 @@
           "doublesRanking": 23,
           "tour": "ATP",
           "atpPlayerId": "RE45"
+        }
+      ]
+    },
+    {
+      "id": "1-pista-12-wta-12-00-pm-02-00-pm-aleksandra-krunic-kristina-mladenovic",
+      "dayOffset": 1,
+      "dayLabel": "Thu, Apr 30, 2026",
+      "court": "PISTA 12 (WTA)",
+      "timeRange": "12:00 PM - 02:00 PM",
+      "tour": "WTA",
+      "players": [
+        {
+          "id": "aleksandra-krunic",
+          "name": "Aleksandra Krunic",
+          "country": "SRB",
+          "ranking": 850,
+          "singlesRanking": 850,
+          "doublesRanking": 8,
+          "tour": "WTA",
+          "wtaPlayerId": "316344"
+        },
+        {
+          "id": "kristina-mladenovic",
+          "name": "Kristina Mladenovic",
+          "country": "FRA",
+          "ranking": 859,
+          "singlesRanking": 859,
+          "doublesRanking": 73,
+          "tour": "WTA",
+          "wtaPlayerId": "315616"
         }
       ]
     },

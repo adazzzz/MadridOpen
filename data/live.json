@@ -4,7 +4,7 @@
     "track": "live",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-29T17:46:17.147429+00:00",
+    "updatedAt": "2026-04-29T20:13:50.923341+00:00",
     "sources": {
       "matches": {
         "wta": "https://api.wtatennis.com/tennis/tournaments/1038/2026/matches",
@@ -1255,9 +1255,11 @@
     },
     {
       "id": "LS006",
-      "status": "U",
-      "startTime": "2026-04-29T20:00+02:00",
-      "court": "Manolo Santana Stadium"
+      "status": "F",
+      "score": "7-6(1),6-0",
+      "result": "[26]M. Kostyuk d [13]L. Noskova 7-6(1),6-0",
+      "startTime": "2026-04-29T17:48:13.257+00:00",
+      "court": "Court 1"
     },
     {
       "id": "LS002",
