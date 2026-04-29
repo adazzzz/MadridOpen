@@ -4,7 +4,7 @@
     "track": "schedule",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-29T21:05:07.156911+00:00",
+    "updatedAt": "2026-04-29T21:19:24.129240+00:00",
     "sources": {
       "schedules": {
         "wta": "https://wta-webapi-prod-apimanagement.azure-api.net/atpjoint-api/v1/Scores/Schedule?eventId=1038&eventYear=2026",
@@ -7118,6 +7118,47 @@
           "doublesRanking": 346,
           "tour": "ATP",
           "atpPlayerId": "J0DZ"
+        }
+      ]
+    },
+    {
+      "id": "ATP-MS005",
+      "tour": "ATP",
+      "draw": "MS",
+      "discipline": "singles",
+      "round": "QF",
+      "roundCode": "QF",
+      "roundLabel": "8强",
+      "startTime": "2026-04-29T00:00:00",
+      "court": "Manolo Santana Stadium",
+      "scheduleDay": "2026-04-29",
+      "scheduleOrder": 5,
+      "scheduleType": "not_before",
+      "scheduleText": "Not Before",
+      "scheduleTime": "21:30+0200",
+      "scheduleDisplay": "Not Before 21:30",
+      "players": [
+        {
+          "id": "arthur-fils",
+          "name": "Arthur Fils",
+          "country": "FRA",
+          "side": "A",
+          "ranking": 25,
+          "singlesRanking": 25,
+          "doublesRanking": 345,
+          "tour": "ATP",
+          "atpPlayerId": "F0F1"
+        },
+        {
+          "id": "jiri-lehecka",
+          "name": "Jiri Lehecka",
+          "country": "CZE",
+          "side": "B",
+          "ranking": 14,
+          "singlesRanking": 14,
+          "doublesRanking": 176,
+          "tour": "ATP",
+          "atpPlayerId": "L0BV"
         }
       ]
     },
