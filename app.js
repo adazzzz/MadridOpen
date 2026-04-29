@@ -1623,7 +1623,7 @@ function isDisciplineEliminated(player, matches) {
   }
 
   return matches.some((match) => {
-    return isPreQuarterRound(match) && getPlayerOutcome(player, match) === "lose";
+    return isEliminationRound(match) && getPlayerOutcome(player, match) === "lose";
   });
 }
 
@@ -1682,29 +1682,54 @@ function isQualifyingMatch(match) {
   const label = String(match?.roundLabel || "").trim();
   const code = String(match?.roundCode || match?.round || "").trim().toUpperCase();
 
-  return draw === "QS" || draw === "RS" || label.startsWith("资格赛") || code.startsWith("Q");
+  return draw === "QS" || draw === "RS" || label.startsWith("资格赛") || isQualifyingRoundCode(code);
 }
 
-function isPreQuarterRound(match) {
+function isQualifyingRoundCode(code) {
+  return ["Q", "Q1", "Q2", "Q3"].includes(String(code || "").trim().toUpperCase());
+}
+
+function isEliminationRound(match) {
   const label = String(match?.roundLabel || "").trim();
   const code = String(match?.roundCode || match?.round || "").trim().toUpperCase();
 
-  if (label) {
-    return [
-      "资格赛第一轮",
-      "资格赛第二轮",
-      "资格赛第三轮",
-      "第一轮",
-      "第二轮",
-      "第三轮",
-      "正赛第一轮",
-      "正赛第二轮",
-      "正赛第三轮",
-      "16强"
-    ].includes(label);
+  if ([
+    "资格赛第一轮",
+    "资格赛第二轮",
+    "资格赛第三轮",
+    "第一轮",
+    "第二轮",
+    "第三轮",
+    "正赛第一轮",
+    "正赛第二轮",
+    "正赛第三轮",
+    "16强",
+    "8强",
+    "半决赛",
+    "决赛"
+  ].includes(label)) {
+    return true;
   }
 
-  return ["Q1", "Q2", "Q3", "R1", "R2", "R3", "R4", "R6", "R16", "R32", "R64", "R128"].includes(code);
+  return [
+    "Q1",
+    "Q2",
+    "Q3",
+    "R1",
+    "R2",
+    "R3",
+    "R4",
+    "R5",
+    "R6",
+    "R16",
+    "R32",
+    "R64",
+    "R128",
+    "RQ",
+    "QF",
+    "SF",
+    "F"
+  ].includes(code);
 }
 
 function getPlayerOutcome(player, match) {
