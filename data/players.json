@@ -4,7 +4,7 @@
     "track": "players",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-29T06:12:24.748142+00:00",
+    "updatedAt": "2026-04-30T06:16:42.531770+00:00",
     "sources": {
       "players": "https://mutuamadridopen.com/jugadores-2026/",
       "rankings": {
@@ -17,12 +17,12 @@
     },
     "playerRankingDate": "23/03/2026",
     "audit": {
-      "doublesMatches": 53,
-      "atpDrawFallbackMatches": 6,
+      "doublesMatches": 56,
+      "atpDrawFallbackMatches": 4,
       "wtaDrawFallbackMatches": 0,
       "doublesPlayers": 128,
       "doublesPlayersMissingDoublesRanking": 0,
-      "playersMissingTour": 2,
+      "playersMissingTour": 1,
       "atpDrawEvents": [
         "MS",
         "QS",
@@ -1726,11 +1726,6 @@
       "singlesRanking": 364,
       "ranking": 364,
       "doublesRanking": 1493
-    },
-    {
-      "id": "jodar-rafa",
-      "name": "Jódar Rafa",
-      "country": ""
     },
     {
       "id": "kaitlin-quevedo",
