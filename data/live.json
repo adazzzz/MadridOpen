@@ -4,7 +4,7 @@
     "track": "live",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-30T15:30:32.780579+00:00",
+    "updatedAt": "2026-04-30T17:00:05.865755+00:00",
     "sources": {
       "matches": {
         "wta": "https://api.wtatennis.com/tennis/tournaments/1038/2026/matches",
@@ -1263,8 +1263,9 @@
     },
     {
       "id": "LS002",
-      "status": "P",
-      "score": "6-4,5-5",
+      "status": "F",
+      "score": "6-4,7-6(8)",
+      "result": "[9]M. Andreeva d [30]H. Baptiste 6-4,7-6(8)",
       "startTime": "2026-04-30T13:51:10.607+00:00",
       "court": "Court 1"
     },
@@ -2307,6 +2308,14 @@
       "status": "F",
       "score": "63 76(3)",
       "result": "63 76(3)",
+      "startTime": "2026-04-30T00:00:00",
+      "court": "Arantxa Sanchez Stadium"
+    },
+    {
+      "id": "ATP-MD004",
+      "status": "F",
+      "score": "64 36 10-6",
+      "result": "64 36 10-6",
       "startTime": "2026-04-30T00:00:00",
       "court": "Arantxa Sanchez Stadium"
     },

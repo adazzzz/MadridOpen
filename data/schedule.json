@@ -4,7 +4,7 @@
     "track": "schedule",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-30T15:30:32.780579+00:00",
+    "updatedAt": "2026-04-30T17:00:05.865755+00:00",
     "sources": {
       "schedules": {
         "wta": "https://wta-webapi-prod-apimanagement.azure-api.net/atpjoint-api/v1/Scores/Schedule?eventId=1038&eventYear=2026",
@@ -12295,6 +12295,68 @@
           "doublesRanking": 9,
           "tour": "ATP",
           "atpPlayerId": "PF00"
+        }
+      ]
+    },
+    {
+      "id": "ATP-MD004",
+      "tour": "ATP",
+      "draw": "MD",
+      "discipline": "doubles",
+      "round": "QF",
+      "roundCode": "QF",
+      "roundLabel": "8强",
+      "startTime": "2026-04-30T00:00:00",
+      "court": "Arantxa Sanchez Stadium",
+      "scheduleDay": "2026-04-30",
+      "scheduleOrder": 3,
+      "scheduleType": "followed_by",
+      "scheduleText": "Followed By",
+      "scheduleDisplay": "Followed By",
+      "players": [
+        {
+          "id": "guido-andreozzi",
+          "name": "Guido Andreozzi",
+          "country": "ARG",
+          "side": "A",
+          "ranking": 16,
+          "rankingTag": "D",
+          "doublesRanking": 16,
+          "tour": "ATP",
+          "atpPlayerId": "A887"
+        },
+        {
+          "id": "manuel-guinard",
+          "name": "Manuel Guinard",
+          "country": "FRA",
+          "side": "A",
+          "ranking": 1536,
+          "singlesRanking": 1536,
+          "doublesRanking": 20,
+          "tour": "ATP",
+          "atpPlayerId": "GH33"
+        },
+        {
+          "id": "romain-arneodo",
+          "name": "Romain Arneodo",
+          "country": "MON",
+          "side": "B",
+          "ranking": 71,
+          "rankingTag": "D",
+          "doublesRanking": 71,
+          "tour": "ATP",
+          "atpPlayerId": "AA81"
+        },
+        {
+          "id": "valentin-vacherot",
+          "name": "Valentin Vacherot",
+          "country": "MON",
+          "side": "B",
+          "ranking": 17,
+          "singlesRanking": 17,
+          "doublesRanking": 139,
+          "tour": "ATP",
+          "atpPlayerId": "VA25"
         }
       ]
     },
