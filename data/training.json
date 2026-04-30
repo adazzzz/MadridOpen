@@ -4,7 +4,7 @@
     "track": "training",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-30T08:38:42.998232+00:00",
+    "updatedAt": "2026-04-30T10:28:36.276054+00:00",
     "sources": {
       "training": [
         "https://practice.tmstennis.com/api/iframe?runid=702&public=1&day=0&mode=0",
@@ -462,6 +462,26 @@
       ]
     },
     {
+      "id": "0-estadio-3-07-00-pm-07-30-pm-marta-kostyuk",
+      "dayOffset": 0,
+      "dayLabel": "Thu, Apr 30, 2026",
+      "court": "ESTADIO 3",
+      "timeRange": "07:00 PM - 07:30 PM",
+      "tour": "",
+      "players": [
+        {
+          "id": "marta-kostyuk",
+          "name": "Marta Kostyuk",
+          "country": "UKR",
+          "ranking": 23,
+          "singlesRanking": 23,
+          "doublesRanking": 158,
+          "tour": "WTA",
+          "wtaPlayerId": "326482"
+        }
+      ]
+    },
+    {
       "id": "0-estadio-3-07-30-pm-08-00-pm-anastasia-potapova",
       "dayOffset": 0,
       "dayLabel": "Thu, Apr 30, 2026",
@@ -479,36 +499,6 @@
           "tour": "WTA",
           "wtaPlayerId": "325601",
           "singlesEntryType": "LL"
-        }
-      ]
-    },
-    {
-      "id": "0-pista-4-12-00-pm-01-30-pm-laura-siegemund-vera-zvonareva",
-      "dayOffset": 0,
-      "dayLabel": "Thu, Apr 30, 2026",
-      "court": "PISTA 4",
-      "timeRange": "12:00 PM - 01:30 PM",
-      "tour": "",
-      "players": [
-        {
-          "id": "laura-siegemund",
-          "name": "Laura Siegemund",
-          "country": "GER",
-          "ranking": 47,
-          "singlesRanking": 47,
-          "doublesRanking": 21,
-          "tour": "WTA",
-          "wtaPlayerId": "310926"
-        },
-        {
-          "id": "vera-zvonareva",
-          "name": "Vera Zvonareva",
-          "country": "RUS",
-          "ranking": 323,
-          "singlesRanking": 323,
-          "doublesRanking": 43,
-          "tour": "WTA",
-          "wtaPlayerId": "260142"
         }
       ]
     },
@@ -603,31 +593,11 @@
       ]
     },
     {
-      "id": "0-pista-10-atp-01-00-pm-03-00-pm-karen-khachanov",
-      "dayOffset": 0,
-      "dayLabel": "Thu, Apr 30, 2026",
-      "court": "PISTA 10 (ATP)",
-      "timeRange": "01:00 PM - 03:00 PM",
-      "tour": "ATP",
-      "players": [
-        {
-          "id": "karen-khachanov",
-          "name": "Karen Khachanov",
-          "country": "RUS",
-          "ranking": 16,
-          "singlesRanking": 16,
-          "doublesRanking": 114,
-          "tour": "ATP",
-          "atpPlayerId": "KE29"
-        }
-      ]
-    },
-    {
-      "id": "0-pista-11-atp-12-00-pm-01-00-pm-diana-shnaider",
+      "id": "0-pista-11-atp-11-00-am-01-00-pm-diana-shnaider",
       "dayOffset": 0,
       "dayLabel": "Thu, Apr 30, 2026",
       "court": "PISTA 11 (ATP)",
-      "timeRange": "12:00 PM - 01:00 PM",
+      "timeRange": "11:00 AM - 01:00 PM",
       "tour": "ATP",
       "players": [
         {
@@ -693,11 +663,11 @@
       ]
     },
     {
-      "id": "0-pista-12-wta-12-00-pm-02-00-pm-aleksandra-krunic-kristina-mladenovic",
+      "id": "0-pista-12-wta-01-00-pm-02-00-pm-aleksandra-krunic-kristina-mladenovic",
       "dayOffset": 0,
       "dayLabel": "Thu, Apr 30, 2026",
       "court": "PISTA 12 (WTA)",
-      "timeRange": "12:00 PM - 02:00 PM",
+      "timeRange": "01:00 PM - 02:00 PM",
       "tour": "WTA",
       "players": [
         {
@@ -813,22 +783,52 @@
       ]
     },
     {
-      "id": "0-pista-14-atp-07-00-pm-07-30-pm-marta-kostyuk",
-      "dayOffset": 0,
-      "dayLabel": "Thu, Apr 30, 2026",
-      "court": "PISTA 14 (ATP)",
-      "timeRange": "07:00 PM - 07:30 PM",
+      "id": "1-pista-10-atp-10-00-am-11-00-am-tomas-martin-etcheverry",
+      "dayOffset": 1,
+      "dayLabel": "Fri, May 1, 2026",
+      "court": "PISTA 10 (ATP)",
+      "timeRange": "10:00 AM - 11:00 AM",
       "tour": "ATP",
       "players": [
         {
-          "id": "marta-kostyuk",
-          "name": "Marta Kostyuk",
-          "country": "UKR",
-          "ranking": 23,
-          "singlesRanking": 23,
-          "doublesRanking": 158,
-          "tour": "WTA",
-          "wtaPlayerId": "326482"
+          "id": "tomas-martin-etcheverry",
+          "name": "Tomas Martin Etcheverry",
+          "country": "ARG",
+          "ranking": 29,
+          "singlesRanking": 29,
+          "doublesRanking": 164,
+          "tour": "ATP",
+          "atpPlayerId": "EA24"
+        }
+      ]
+    },
+    {
+      "id": "1-pista-10-atp-11-00-am-01-00-pm-karen-khachanov-tomas-martin-etcheverry",
+      "dayOffset": 1,
+      "dayLabel": "Fri, May 1, 2026",
+      "court": "PISTA 10 (ATP)",
+      "timeRange": "11:00 AM - 01:00 PM",
+      "tour": "ATP",
+      "players": [
+        {
+          "id": "karen-khachanov",
+          "name": "Karen Khachanov",
+          "country": "RUS",
+          "ranking": 16,
+          "singlesRanking": 16,
+          "doublesRanking": 114,
+          "tour": "ATP",
+          "atpPlayerId": "KE29"
+        },
+        {
+          "id": "tomas-martin-etcheverry",
+          "name": "Tomas Martin Etcheverry",
+          "country": "ARG",
+          "ranking": 29,
+          "singlesRanking": 29,
+          "doublesRanking": 164,
+          "tour": "ATP",
+          "atpPlayerId": "EA24"
         }
       ]
     },
@@ -848,6 +848,26 @@
           "singlesRanking": 10,
           "tour": "ATP",
           "atpPlayerId": "MM58"
+        }
+      ]
+    },
+    {
+      "id": "1-pista-14-atp-12-00-pm-02-00-pm-francisco-cerundolo",
+      "dayOffset": 1,
+      "dayLabel": "Fri, May 1, 2026",
+      "court": "PISTA 14 (ATP)",
+      "timeRange": "12:00 PM - 02:00 PM",
+      "tour": "ATP",
+      "players": [
+        {
+          "id": "francisco-cerundolo",
+          "name": "Francisco Cerundolo",
+          "country": "ARG",
+          "ranking": 20,
+          "singlesRanking": 20,
+          "doublesRanking": 258,
+          "tour": "ATP",
+          "atpPlayerId": "C0AU"
         }
       ]
     }
