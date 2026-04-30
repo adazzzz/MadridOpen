@@ -4,7 +4,7 @@
     "track": "training",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-30T10:28:36.276054+00:00",
+    "updatedAt": "2026-04-30T11:58:36.446367+00:00",
     "sources": {
       "training": [
         "https://practice.tmstennis.com/api/iframe?runid=702&public=1&day=0&mode=0",
@@ -523,11 +523,11 @@
       ]
     },
     {
-      "id": "0-pista-5-01-00-pm-03-00-pm-alexander-bublik-karen-khachanov",
+      "id": "0-pista-5-01-00-pm-04-00-pm-alexander-bublik-karen-khachanov",
       "dayOffset": 0,
       "dayLabel": "Thu, Apr 30, 2026",
       "court": "PISTA 5",
-      "timeRange": "01:00 PM - 03:00 PM",
+      "timeRange": "01:00 PM - 04:00 PM",
       "tour": "",
       "players": [
         {
@@ -633,11 +633,11 @@
       ]
     },
     {
-      "id": "0-pista-11-atp-02-00-pm-03-00-pm-fabien-reboul-sadio-doumbia",
+      "id": "0-pista-11-atp-02-00-pm-03-30-pm-fabien-reboul-sadio-doumbia",
       "dayOffset": 0,
       "dayLabel": "Thu, Apr 30, 2026",
       "court": "PISTA 11 (ATP)",
-      "timeRange": "02:00 PM - 03:00 PM",
+      "timeRange": "02:00 PM - 03:30 PM",
       "tour": "ATP",
       "players": [
         {
@@ -848,6 +848,26 @@
           "singlesRanking": 10,
           "tour": "ATP",
           "atpPlayerId": "MM58"
+        }
+      ]
+    },
+    {
+      "id": "1-pista-13-wta-01-00-pm-02-00-pm-arthur-fils",
+      "dayOffset": 1,
+      "dayLabel": "Fri, May 1, 2026",
+      "court": "PISTA 13 (WTA)",
+      "timeRange": "01:00 PM - 02:00 PM",
+      "tour": "WTA",
+      "players": [
+        {
+          "id": "arthur-fils",
+          "name": "Arthur Fils",
+          "country": "FRA",
+          "ranking": 25,
+          "singlesRanking": 25,
+          "doublesRanking": 345,
+          "tour": "ATP",
+          "atpPlayerId": "F0F1"
         }
       ]
     },
