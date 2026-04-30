@@ -4,7 +4,7 @@
     "track": "live",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-30T20:44:29.691453+00:00",
+    "updatedAt": "2026-04-30T21:40:48.773515+00:00",
     "sources": {
       "matches": {
         "wta": "https://api.wtatennis.com/tennis/tournaments/1038/2026/matches",
@@ -1271,8 +1271,8 @@
     },
     {
       "id": "LS003",
-      "status": "D",
-      "score": "6-2,0-0",
+      "status": "P",
+      "score": "6-2,1-6,4-1",
       "startTime": "2026-04-30T19:51:04.843+00:00",
       "court": "Court 1"
     },
