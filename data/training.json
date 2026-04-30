@@ -4,7 +4,7 @@
     "track": "training",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-30T18:09:07.655266+00:00",
+    "updatedAt": "2026-04-30T19:47:04.191359+00:00",
     "sources": {
       "training": [
         "https://practice.tmstennis.com/api/iframe?runid=702&public=1&day=0&mode=0",
@@ -902,36 +902,6 @@
       ]
     },
     {
-      "id": "1-arantxa-sanchez-10-30-am-11-00-am-diana-shnaider-mirra-andreeva",
-      "dayOffset": 1,
-      "dayLabel": "Fri, May 1, 2026",
-      "court": "ARANTXA SANCHEZ",
-      "timeRange": "10:30 AM - 11:00 AM",
-      "tour": "",
-      "players": [
-        {
-          "id": "diana-shnaider",
-          "name": "Diana Shnaider",
-          "country": "RUS",
-          "ranking": 19,
-          "singlesRanking": 19,
-          "doublesRanking": 28,
-          "tour": "WTA",
-          "wtaPlayerId": "330482"
-        },
-        {
-          "id": "mirra-andreeva",
-          "name": "Mirra Andreeva",
-          "country": "RUS",
-          "ranking": 8,
-          "singlesRanking": 8,
-          "doublesRanking": 33,
-          "tour": "WTA",
-          "wtaPlayerId": "331809"
-        }
-      ]
-    },
-    {
       "id": "1-arantxa-sanchez-11-00-am-11-30-am-jan-zielinski-luke-johnson",
       "dayOffset": 1,
       "dayLabel": "Fri, May 1, 2026",
@@ -962,7 +932,7 @@
       ]
     },
     {
-      "id": "1-arantxa-sanchez-11-30-am-12-00-pm-harri-heliovaara-henry-patten",
+      "id": "1-arantxa-sanchez-11-30-am-12-00-pm-andres-molteni-harri-heliovaara-henry-patten-maximo-gonzalez",
       "dayOffset": 1,
       "dayLabel": "Fri, May 1, 2026",
       "court": "ARANTXA SANCHEZ",
@@ -988,6 +958,26 @@
           "doublesRanking": 6,
           "tour": "ATP",
           "atpPlayerId": "H808"
+        },
+        {
+          "id": "maximo-gonzalez",
+          "name": "Maximo Gonzalez",
+          "country": "ARG",
+          "ranking": 50,
+          "rankingTag": "D",
+          "doublesRanking": 50,
+          "tour": "ATP",
+          "atpPlayerId": "G585"
+        },
+        {
+          "id": "andres-molteni",
+          "name": "Andres Molteni",
+          "country": "ARG",
+          "ranking": 38,
+          "rankingTag": "D",
+          "doublesRanking": 38,
+          "tour": "ATP",
+          "atpPlayerId": "ME56"
         }
       ]
     },
@@ -1098,6 +1088,36 @@
           "doublesRanking": 880,
           "tour": "ATP",
           "atpPlayerId": "B0PG"
+        }
+      ]
+    },
+    {
+      "id": "1-pista-6-10-30-am-11-30-am-diana-shnaider-mirra-andreeva",
+      "dayOffset": 1,
+      "dayLabel": "Fri, May 1, 2026",
+      "court": "PISTA 6",
+      "timeRange": "10:30 AM - 11:30 AM",
+      "tour": "",
+      "players": [
+        {
+          "id": "diana-shnaider",
+          "name": "Diana Shnaider",
+          "country": "RUS",
+          "ranking": 19,
+          "singlesRanking": 19,
+          "doublesRanking": 28,
+          "tour": "WTA",
+          "wtaPlayerId": "330482"
+        },
+        {
+          "id": "mirra-andreeva",
+          "name": "Mirra Andreeva",
+          "country": "RUS",
+          "ranking": 8,
+          "singlesRanking": 8,
+          "doublesRanking": 33,
+          "tour": "WTA",
+          "wtaPlayerId": "331809"
         }
       ]
     },

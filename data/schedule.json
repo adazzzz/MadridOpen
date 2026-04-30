@@ -4,7 +4,7 @@
     "track": "schedule",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-30T18:09:07.655266+00:00",
+    "updatedAt": "2026-04-30T19:47:04.191359+00:00",
     "sources": {
       "schedules": {
         "wta": "https://wta-webapi-prod-apimanagement.azure-api.net/atpjoint-api/v1/Scores/Schedule?eventId=1038&eventYear=2026",
@@ -7248,6 +7248,47 @@
       ]
     },
     {
+      "id": "ATP-MS007",
+      "tour": "ATP",
+      "draw": "MS",
+      "discipline": "singles",
+      "round": "QF",
+      "roundCode": "QF",
+      "roundLabel": "8强",
+      "startTime": "2026-04-30T00:00:00",
+      "court": "Manolo Santana Stadium",
+      "scheduleDay": "2026-04-30",
+      "scheduleOrder": 4,
+      "scheduleType": "not_before",
+      "scheduleText": "Not Before",
+      "scheduleTime": "20:00+0200",
+      "scheduleDisplay": "Not Before 20:00",
+      "players": [
+        {
+          "id": "alexander-zverev",
+          "name": "Alexander Zverev",
+          "country": "GER",
+          "side": "A",
+          "ranking": 3,
+          "singlesRanking": 3,
+          "doublesRanking": 126,
+          "tour": "ATP",
+          "atpPlayerId": "Z355"
+        },
+        {
+          "id": "flavio-cobolli",
+          "name": "Flavio Cobolli",
+          "country": "ITA",
+          "side": "B",
+          "ranking": 13,
+          "singlesRanking": 13,
+          "doublesRanking": 360,
+          "tour": "ATP",
+          "atpPlayerId": "C0E9"
+        }
+      ]
+    },
+    {
       "id": "ATP-MS005",
       "tour": "ATP",
       "draw": "MS",
@@ -12357,6 +12398,68 @@
           "doublesRanking": 139,
           "tour": "ATP",
           "atpPlayerId": "VA25"
+        }
+      ]
+    },
+    {
+      "id": "ATP-MD005",
+      "tour": "ATP",
+      "draw": "MD",
+      "discipline": "doubles",
+      "round": "QF",
+      "roundCode": "QF",
+      "roundLabel": "8强",
+      "startTime": "2026-04-30T00:00:00",
+      "court": "Arantxa Sanchez Stadium",
+      "scheduleDay": "2026-04-30",
+      "scheduleOrder": 4,
+      "scheduleType": "followed_by",
+      "scheduleText": "Followed By",
+      "scheduleDisplay": "Followed By",
+      "players": [
+        {
+          "id": "maximo-gonzalez",
+          "name": "Maximo Gonzalez",
+          "country": "ARG",
+          "side": "A",
+          "ranking": 50,
+          "rankingTag": "D",
+          "doublesRanking": 50,
+          "tour": "ATP",
+          "atpPlayerId": "G585"
+        },
+        {
+          "id": "andres-molteni",
+          "name": "Andres Molteni",
+          "country": "ARG",
+          "side": "A",
+          "ranking": 38,
+          "rankingTag": "D",
+          "doublesRanking": 38,
+          "tour": "ATP",
+          "atpPlayerId": "ME56"
+        },
+        {
+          "id": "andre-goransson",
+          "name": "Andre Goransson",
+          "country": "SWE",
+          "side": "B",
+          "ranking": 42,
+          "rankingTag": "D",
+          "doublesRanking": 42,
+          "tour": "ATP",
+          "atpPlayerId": "GE03"
+        },
+        {
+          "id": "evan-king",
+          "name": "Evan King",
+          "country": "USA",
+          "side": "B",
+          "ranking": 28,
+          "rankingTag": "D",
+          "doublesRanking": 28,
+          "tour": "ATP",
+          "atpPlayerId": "KB37"
         }
       ]
     },
