@@ -4,7 +4,7 @@
     "track": "training",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-30T17:00:05.865755+00:00",
+    "updatedAt": "2026-04-30T18:09:07.655266+00:00",
     "sources": {
       "training": [
         "https://practice.tmstennis.com/api/iframe?runid=702&public=1&day=0&mode=0",
@@ -992,6 +992,36 @@
       ]
     },
     {
+      "id": "1-arantxa-sanchez-12-00-pm-12-30-pm-guido-andreozzi-manuel-guinard",
+      "dayOffset": 1,
+      "dayLabel": "Fri, May 1, 2026",
+      "court": "ARANTXA SANCHEZ",
+      "timeRange": "12:00 PM - 12:30 PM",
+      "tour": "",
+      "players": [
+        {
+          "id": "manuel-guinard",
+          "name": "Manuel Guinard",
+          "country": "FRA",
+          "ranking": 1536,
+          "singlesRanking": 1536,
+          "doublesRanking": 20,
+          "tour": "ATP",
+          "atpPlayerId": "GH33"
+        },
+        {
+          "id": "guido-andreozzi",
+          "name": "Guido Andreozzi",
+          "country": "ARG",
+          "ranking": 16,
+          "rankingTag": "D",
+          "doublesRanking": 16,
+          "tour": "ATP",
+          "atpPlayerId": "A887"
+        }
+      ]
+    },
+    {
       "id": "1-pista-5-10-00-am-11-00-am-taylor-townsend",
       "dayOffset": 1,
       "dayLabel": "Fri, May 1, 2026",
@@ -1008,6 +1038,26 @@
           "doublesRanking": 5,
           "tour": "WTA",
           "wtaPlayerId": "318609"
+        }
+      ]
+    },
+    {
+      "id": "1-pista-5-11-00-am-12-00-pm-marc-polmans",
+      "dayOffset": 1,
+      "dayLabel": "Fri, May 1, 2026",
+      "court": "PISTA 5",
+      "timeRange": "11:00 AM - 12:00 PM",
+      "tour": "",
+      "players": [
+        {
+          "id": "marc-polmans",
+          "name": "Marc Polmans",
+          "country": "AUS",
+          "ranking": 340,
+          "singlesRanking": 340,
+          "doublesRanking": 52,
+          "tour": "ATP",
+          "atpPlayerId": "PG94"
         }
       ]
     },
