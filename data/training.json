@@ -4,7 +4,7 @@
     "track": "training",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-05-01T11:43:35.980654+00:00",
+    "updatedAt": "2026-05-01T12:41:36.495605+00:00",
     "sources": {
       "training": [
         "https://practice.tmstennis.com/api/iframe?runid=702&public=1&day=0&mode=0",
@@ -548,6 +548,26 @@
           "doublesRanking": 258,
           "tour": "ATP",
           "atpPlayerId": "C0AU"
+        }
+      ]
+    },
+    {
+      "id": "1-pista-4-12-00-pm-01-30-pm-zhaoxuan-yang",
+      "dayOffset": 1,
+      "dayLabel": "Sat, May 2, 2026",
+      "court": "PISTA 4",
+      "timeRange": "12:00 PM - 01:30 PM",
+      "tour": "",
+      "players": [
+        {
+          "id": "zhaoxuan-yang",
+          "name": "Zhaoxuan Yang",
+          "country": "CHN",
+          "ranking": 44,
+          "rankingTag": "D",
+          "doublesRanking": 44,
+          "tour": "WTA",
+          "wtaPlayerId": "317547"
         }
       ]
     }

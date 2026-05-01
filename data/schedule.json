@@ -4,7 +4,7 @@
     "track": "schedule",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-05-01T11:43:35.980654+00:00",
+    "updatedAt": "2026-05-01T12:41:36.495605+00:00",
     "sources": {
       "schedules": {
         "wta": "https://wta-webapi-prod-apimanagement.azure-api.net/atpjoint-api/v1/Scores/Schedule?eventId=1038&eventYear=2026",
@@ -12314,6 +12314,69 @@
           "doublesRanking": 516,
           "tour": "ATP",
           "atpPlayerId": "PH64"
+        }
+      ]
+    },
+    {
+      "id": "ATP-MD003",
+      "tour": "ATP",
+      "draw": "MD",
+      "discipline": "doubles",
+      "round": "SF",
+      "roundCode": "SF",
+      "roundLabel": "半决赛",
+      "startTime": "2026-05-01T00:00:00",
+      "court": "Arantxa Sanchez Stadium",
+      "scheduleDay": "2026-05-01",
+      "scheduleOrder": 1,
+      "scheduleType": "starts_at",
+      "scheduleText": "Starts At",
+      "scheduleTime": "13:30+0200",
+      "scheduleDisplay": "Starts At 13:30",
+      "players": [
+        {
+          "id": "harri-heliovaara",
+          "name": "Harri Heliovaara",
+          "country": "FIN",
+          "side": "A",
+          "ranking": 6,
+          "rankingTag": "D",
+          "doublesRanking": 6,
+          "tour": "ATP",
+          "atpPlayerId": "H808"
+        },
+        {
+          "id": "henry-patten",
+          "name": "Henry Patten",
+          "country": "GBR",
+          "side": "A",
+          "ranking": 6,
+          "rankingTag": "D",
+          "doublesRanking": 6,
+          "tour": "ATP",
+          "atpPlayerId": "P0G6"
+        },
+        {
+          "id": "luke-johnson",
+          "name": "Luke Johnson",
+          "country": "GBR",
+          "side": "B",
+          "ranking": 47,
+          "rankingTag": "D",
+          "doublesRanking": 47,
+          "tour": "ATP",
+          "atpPlayerId": "J543"
+        },
+        {
+          "id": "jan-zielinski",
+          "name": "Jan Zielinski",
+          "country": "POL",
+          "side": "B",
+          "ranking": 33,
+          "rankingTag": "D",
+          "doublesRanking": 33,
+          "tour": "ATP",
+          "atpPlayerId": "Z423"
         }
       ]
     },
