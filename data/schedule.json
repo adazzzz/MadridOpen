@@ -4,7 +4,7 @@
     "track": "schedule",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-05-01T09:15:02.184557+00:00",
+    "updatedAt": "2026-05-01T10:43:39.002344+00:00",
     "sources": {
       "schedules": {
         "wta": "https://wta-webapi-prod-apimanagement.azure-api.net/atpjoint-api/v1/Scores/Schedule?eventId=1038&eventYear=2026",
@@ -7204,6 +7204,47 @@
           "doublesRanking": 5,
           "tour": "WTA",
           "wtaPlayerId": "318609"
+        }
+      ]
+    },
+    {
+      "id": "LS001",
+      "tour": "WTA",
+      "draw": "MS",
+      "discipline": "singles",
+      "round": "F",
+      "roundCode": "F",
+      "roundLabel": "决赛",
+      "startTime": "2026-05-02T17:00+02:00",
+      "court": "Manolo Santana Stadium",
+      "scheduleDay": "2026-05-02",
+      "scheduleOrder": 2,
+      "scheduleType": "not_before",
+      "scheduleText": "Not Before",
+      "scheduleTime": "17:00+0200",
+      "scheduleDisplay": "Not Before 5:00 PM",
+      "players": [
+        {
+          "id": "mirra-andreeva",
+          "name": "Mirra Andreeva",
+          "country": "RUS",
+          "side": "A",
+          "ranking": 8,
+          "singlesRanking": 8,
+          "doublesRanking": 33,
+          "tour": "WTA",
+          "wtaPlayerId": "331809"
+        },
+        {
+          "id": "marta-kostyuk",
+          "name": "Marta Kostyuk",
+          "country": "UKR",
+          "side": "B",
+          "ranking": 23,
+          "singlesRanking": 23,
+          "doublesRanking": 158,
+          "tour": "WTA",
+          "wtaPlayerId": "326482"
         }
       ]
     },
