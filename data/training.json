@@ -4,7 +4,7 @@
     "track": "training",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-05-01T12:41:36.495605+00:00",
+    "updatedAt": "2026-05-01T14:04:31.090906+00:00",
     "sources": {
       "training": [
         "https://practice.tmstennis.com/api/iframe?runid=702&public=1&day=0&mode=0",
@@ -393,6 +393,26 @@
       ]
     },
     {
+      "id": "0-pista-9-wta-05-00-pm-06-30-pm-alexander-zverev",
+      "dayOffset": 0,
+      "dayLabel": "Fri, May 1, 2026",
+      "court": "PISTA 9 (WTA)",
+      "timeRange": "05:00 PM - 06:30 PM",
+      "tour": "WTA",
+      "players": [
+        {
+          "id": "alexander-zverev",
+          "name": "Alexander Zverev",
+          "country": "GER",
+          "ranking": 3,
+          "singlesRanking": 3,
+          "doublesRanking": 126,
+          "tour": "ATP",
+          "atpPlayerId": "Z355"
+        }
+      ]
+    },
+    {
       "id": "0-pista-10-atp-10-00-am-11-00-am-tomas-martin-etcheverry",
       "dayOffset": 0,
       "dayLabel": "Fri, May 1, 2026",
@@ -568,6 +588,26 @@
           "doublesRanking": 44,
           "tour": "WTA",
           "wtaPlayerId": "317547"
+        }
+      ]
+    },
+    {
+      "id": "1-pista-11-atp-01-00-pm-03-00-pm-diana-shnaider",
+      "dayOffset": 1,
+      "dayLabel": "Sat, May 2, 2026",
+      "court": "PISTA 11 (ATP)",
+      "timeRange": "01:00 PM - 03:00 PM",
+      "tour": "ATP",
+      "players": [
+        {
+          "id": "diana-shnaider",
+          "name": "Diana Shnaider",
+          "country": "RUS",
+          "ranking": 19,
+          "singlesRanking": 19,
+          "doublesRanking": 28,
+          "tour": "WTA",
+          "wtaPlayerId": "330482"
         }
       ]
     }
