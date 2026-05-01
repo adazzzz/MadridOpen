@@ -4,7 +4,7 @@
     "track": "schedule",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-05-01T19:36:38.670268+00:00",
+    "updatedAt": "2026-05-01T20:29:41.336770+00:00",
     "sources": {
       "schedules": {
         "wta": "https://wta-webapi-prod-apimanagement.azure-api.net/atpjoint-api/v1/Scores/Schedule?eventId=1038&eventYear=2026",
@@ -7152,8 +7152,8 @@
       "round": "SF",
       "roundCode": "SF",
       "roundLabel": "半决赛",
-      "startTime": "2026-05-01T21:00+02:00",
-      "court": "Manolo Santana Stadium",
+      "startTime": "2026-05-01T19:56:24.987+00:00",
+      "court": "Court 1",
       "scheduleDay": "2026-05-01",
       "scheduleOrder": 5,
       "scheduleType": "not_before",
@@ -7285,6 +7285,47 @@
           "doublesRanking": 345,
           "tour": "ATP",
           "atpPlayerId": "F0F1"
+        }
+      ]
+    },
+    {
+      "id": "ATP-MS003",
+      "tour": "ATP",
+      "draw": "MS",
+      "discipline": "singles",
+      "round": "SF",
+      "roundCode": "SF",
+      "roundLabel": "半决赛",
+      "startTime": "2026-05-01T00:00:00",
+      "court": "Manolo Santana Stadium",
+      "scheduleDay": "2026-05-01",
+      "scheduleOrder": 4,
+      "scheduleType": "not_before",
+      "scheduleText": "Not Before",
+      "scheduleTime": "20:00+0200",
+      "scheduleDisplay": "Not Before 20:00",
+      "players": [
+        {
+          "id": "alexander-zverev",
+          "name": "Alexander Zverev",
+          "country": "GER",
+          "side": "A",
+          "ranking": 3,
+          "singlesRanking": 3,
+          "doublesRanking": 126,
+          "tour": "ATP",
+          "atpPlayerId": "Z355"
+        },
+        {
+          "id": "alexander-blockx",
+          "name": "Alexander Blockx",
+          "country": "BEL",
+          "side": "B",
+          "ranking": 69,
+          "singlesRanking": 69,
+          "doublesRanking": 880,
+          "tour": "ATP",
+          "atpPlayerId": "B0PG"
         }
       ]
     },
