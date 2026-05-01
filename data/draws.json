@@ -4,7 +4,7 @@
     "track": "draws",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-04-30T06:16:42.531770+00:00",
+    "updatedAt": "2026-05-01T06:25:36.023014+00:00",
     "sources": {
       "draws": {
         "wta": "https://wta-webapi-prod-apimanagement.azure-api.net/api/v1/VwEventDrawxmls/2026/1038",
@@ -12,8 +12,8 @@
       }
     },
     "audit": {
-      "doublesMatches": 56,
-      "atpDrawFallbackMatches": 4,
+      "doublesMatches": 60,
+      "atpDrawFallbackMatches": 2,
       "wtaDrawFallbackMatches": 0,
       "doublesPlayers": 128,
       "doublesPlayersMissingDoublesRanking": 0,
@@ -29,43 +29,21 @@
   },
   "matches": [
     {
-      "id": "ATP-MD004",
+      "id": "ATP-MD002",
       "tour": "ATP",
       "draw": "MD",
       "discipline": "doubles",
-      "round": "QF",
-      "roundCode": "QF",
-      "roundLabel": "8强",
+      "round": "SF",
+      "roundCode": "SF",
+      "roundLabel": "半决赛",
       "status": "U",
       "source": "atpDraw",
       "players": [
         {
-          "id": "romain-arneodo",
-          "name": "Romain Arneodo",
-          "country": "MON",
-          "side": "A",
-          "ranking": 71,
-          "rankingTag": "D",
-          "doublesRanking": 71,
-          "tour": "ATP",
-          "atpPlayerId": "AA81"
-        },
-        {
-          "id": "valentin-vacherot",
-          "name": "Valentin Vacherot",
-          "country": "MON",
-          "side": "A",
-          "ranking": 17,
-          "singlesRanking": 17,
-          "doublesRanking": 139,
-          "tour": "ATP",
-          "atpPlayerId": "VA25"
-        },
-        {
           "id": "guido-andreozzi",
           "name": "Guido Andreozzi",
           "country": "ARG",
-          "side": "B",
+          "side": "A",
           "ranking": 16,
           "rankingTag": "D",
           "doublesRanking": 16,
@@ -76,47 +54,12 @@
           "id": "manuel-guinard",
           "name": "Manuel Guinard",
           "country": "FRA",
-          "side": "B",
+          "side": "A",
           "ranking": 1536,
           "singlesRanking": 1536,
           "doublesRanking": 20,
           "tour": "ATP",
           "atpPlayerId": "GH33"
-        }
-      ]
-    },
-    {
-      "id": "ATP-MD005",
-      "tour": "ATP",
-      "draw": "MD",
-      "discipline": "doubles",
-      "round": "QF",
-      "roundCode": "QF",
-      "roundLabel": "8强",
-      "status": "U",
-      "source": "atpDraw",
-      "players": [
-        {
-          "id": "andre-goransson",
-          "name": "Andre Goransson",
-          "country": "SWE",
-          "side": "A",
-          "ranking": 42,
-          "rankingTag": "D",
-          "doublesRanking": 42,
-          "tour": "ATP",
-          "atpPlayerId": "GE03"
-        },
-        {
-          "id": "evan-king",
-          "name": "Evan King",
-          "country": "USA",
-          "side": "A",
-          "ranking": 28,
-          "rankingTag": "D",
-          "doublesRanking": 28,
-          "tour": "ATP",
-          "atpPlayerId": "KB37"
         },
         {
           "id": "maximo-gonzalez",
@@ -143,43 +86,21 @@
       ]
     },
     {
-      "id": "ATP-MD006",
+      "id": "ATP-MD003",
       "tour": "ATP",
       "draw": "MD",
       "discipline": "doubles",
-      "round": "QF",
-      "roundCode": "QF",
-      "roundLabel": "8强",
+      "round": "SF",
+      "roundCode": "SF",
+      "roundLabel": "半决赛",
       "status": "U",
       "source": "atpDraw",
       "players": [
         {
-          "id": "marcelo-arevalo",
-          "name": "Marcelo Arevalo",
-          "country": "ESA",
-          "side": "A",
-          "ranking": 9,
-          "rankingTag": "D",
-          "doublesRanking": 9,
-          "tour": "ATP",
-          "atpPlayerId": "A853"
-        },
-        {
-          "id": "mate-pavic",
-          "name": "Mate Pavic",
-          "country": "CRO",
-          "side": "A",
-          "ranking": 9,
-          "rankingTag": "D",
-          "doublesRanking": 9,
-          "tour": "ATP",
-          "atpPlayerId": "PF00"
-        },
-        {
           "id": "harri-heliovaara",
           "name": "Harri Heliovaara",
           "country": "FIN",
-          "side": "B",
+          "side": "A",
           "ranking": 6,
           "rankingTag": "D",
           "doublesRanking": 6,
@@ -190,31 +111,18 @@
           "id": "henry-patten",
           "name": "Henry Patten",
           "country": "GBR",
-          "side": "B",
+          "side": "A",
           "ranking": 6,
           "rankingTag": "D",
           "doublesRanking": 6,
           "tour": "ATP",
           "atpPlayerId": "P0G6"
-        }
-      ]
-    },
-    {
-      "id": "ATP-MD007",
-      "tour": "ATP",
-      "draw": "MD",
-      "discipline": "doubles",
-      "round": "QF",
-      "roundCode": "QF",
-      "roundLabel": "8强",
-      "status": "U",
-      "source": "atpDraw",
-      "players": [
+        },
         {
           "id": "luke-johnson",
           "name": "Luke Johnson",
           "country": "GBR",
-          "side": "A",
+          "side": "B",
           "ranking": 47,
           "rankingTag": "D",
           "doublesRanking": 47,
@@ -225,34 +133,12 @@
           "id": "jan-zielinski",
           "name": "Jan Zielinski",
           "country": "POL",
-          "side": "A",
+          "side": "B",
           "ranking": 33,
           "rankingTag": "D",
           "doublesRanking": 33,
           "tour": "ATP",
           "atpPlayerId": "Z423"
-        },
-        {
-          "id": "sadio-doumbia",
-          "name": "Sadio Doumbia",
-          "country": "FRA",
-          "side": "B",
-          "ranking": 22,
-          "rankingTag": "D",
-          "doublesRanking": 22,
-          "tour": "ATP",
-          "atpPlayerId": "D917"
-        },
-        {
-          "id": "fabien-reboul",
-          "name": "Fabien Reboul",
-          "country": "FRA",
-          "side": "B",
-          "ranking": 23,
-          "rankingTag": "D",
-          "doublesRanking": 23,
-          "tour": "ATP",
-          "atpPlayerId": "RE45"
         }
       ]
     }
