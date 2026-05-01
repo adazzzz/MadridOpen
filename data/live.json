@@ -4,7 +4,7 @@
     "track": "live",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-05-01T21:25:45.741570+00:00",
+    "updatedAt": "2026-05-01T22:09:51.420590+00:00",
     "sources": {
       "matches": {
         "wta": "https://api.wtatennis.com/tennis/tournaments/1038/2026/matches",
@@ -1287,8 +1287,9 @@
     },
     {
       "id": "LD003",
-      "status": "P",
-      "score": "6-4,4-4",
+      "status": "F",
+      "score": "6-4,7-5",
+      "result": "[2]K. Siniakova / T. Townsend d A. Krunic / K. Mladenovic 6-4,7-5",
       "startTime": "2026-05-01T19:56:24.987+00:00",
       "court": "Court 1"
     },
