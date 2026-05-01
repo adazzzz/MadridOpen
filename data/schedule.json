@@ -4,7 +4,7 @@
     "track": "schedule",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-05-01T10:43:39.002344+00:00",
+    "updatedAt": "2026-05-01T11:43:35.980654+00:00",
     "sources": {
       "schedules": {
         "wta": "https://wta-webapi-prod-apimanagement.azure-api.net/atpjoint-api/v1/Scores/Schedule?eventId=1038&eventYear=2026",
@@ -7089,8 +7089,8 @@
       "round": "SF",
       "roundCode": "SF",
       "roundLabel": "半决赛",
-      "startTime": "2026-05-01T13:30+02:00",
-      "court": "Manolo Santana Stadium",
+      "startTime": "2026-05-01T11:22:20.243+00:00",
+      "court": "Court 1",
       "scheduleDay": "2026-05-01",
       "scheduleOrder": 1,
       "scheduleType": "starts_at",
