@@ -4,7 +4,7 @@
     "track": "schedule",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-05-01T14:04:31.090906+00:00",
+    "updatedAt": "2026-05-01T15:09:06.503876+00:00",
     "sources": {
       "schedules": {
         "wta": "https://wta-webapi-prod-apimanagement.azure-api.net/atpjoint-api/v1/Scores/Schedule?eventId=1038&eventYear=2026",
@@ -12377,6 +12377,69 @@
           "doublesRanking": 33,
           "tour": "ATP",
           "atpPlayerId": "Z423"
+        }
+      ]
+    },
+    {
+      "id": "ATP-MD002",
+      "tour": "ATP",
+      "draw": "MD",
+      "discipline": "doubles",
+      "round": "SF",
+      "roundCode": "SF",
+      "roundLabel": "半决赛",
+      "startTime": "2026-05-01T00:00:00",
+      "court": "Arantxa Sanchez Stadium",
+      "scheduleDay": "2026-05-01",
+      "scheduleOrder": 2,
+      "scheduleType": "not_before",
+      "scheduleText": "Not Before",
+      "scheduleTime": "15:00+0200",
+      "scheduleDisplay": "Not Before 15:00",
+      "players": [
+        {
+          "id": "guido-andreozzi",
+          "name": "Guido Andreozzi",
+          "country": "ARG",
+          "side": "A",
+          "ranking": 16,
+          "rankingTag": "D",
+          "doublesRanking": 16,
+          "tour": "ATP",
+          "atpPlayerId": "A887"
+        },
+        {
+          "id": "manuel-guinard",
+          "name": "Manuel Guinard",
+          "country": "FRA",
+          "side": "A",
+          "ranking": 1536,
+          "singlesRanking": 1536,
+          "doublesRanking": 20,
+          "tour": "ATP",
+          "atpPlayerId": "GH33"
+        },
+        {
+          "id": "maximo-gonzalez",
+          "name": "Maximo Gonzalez",
+          "country": "ARG",
+          "side": "B",
+          "ranking": 50,
+          "rankingTag": "D",
+          "doublesRanking": 50,
+          "tour": "ATP",
+          "atpPlayerId": "G585"
+        },
+        {
+          "id": "andres-molteni",
+          "name": "Andres Molteni",
+          "country": "ARG",
+          "side": "B",
+          "ranking": 38,
+          "rankingTag": "D",
+          "doublesRanking": 38,
+          "tour": "ATP",
+          "atpPlayerId": "ME56"
         }
       ]
     },
