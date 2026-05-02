@@ -4,7 +4,7 @@
     "track": "training",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-05-02T12:06:13.460730+00:00",
+    "updatedAt": "2026-05-02T14:33:14.317768+00:00",
     "sources": {
       "training": [
         "https://practice.tmstennis.com/api/iframe?runid=702&public=1&day=0&mode=0",
@@ -299,6 +299,25 @@
           "doublesRanking": 5,
           "tour": "WTA",
           "wtaPlayerId": "318609"
+        }
+      ]
+    },
+    {
+      "id": "1-manolo-santana-01-00-pm-01-30-pm-jannik-sinner",
+      "dayOffset": 1,
+      "dayLabel": "Sun, May 3, 2026",
+      "court": "MANOLO SANTANA",
+      "timeRange": "01:00 PM - 01:30 PM",
+      "tour": "",
+      "players": [
+        {
+          "id": "jannik-sinner",
+          "name": "Jannik Sinner",
+          "country": "ITA",
+          "ranking": 1,
+          "singlesRanking": 1,
+          "tour": "ATP",
+          "atpPlayerId": "S0AG"
         }
       ]
     }
