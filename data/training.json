@@ -4,7 +4,7 @@
     "track": "training",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-05-02T10:35:54.219303+00:00",
+    "updatedAt": "2026-05-02T11:27:19.313718+00:00",
     "sources": {
       "training": [
         "https://practice.tmstennis.com/api/iframe?runid=702&public=1&day=0&mode=0",
@@ -80,36 +80,6 @@
           "doublesRanking": 33,
           "tour": "ATP",
           "atpPlayerId": "Z423"
-        }
-      ]
-    },
-    {
-      "id": "0-manolo-santana-01-00-pm-01-30-pm-katerina-siniakova-taylor-townsend",
-      "dayOffset": 0,
-      "dayLabel": "Sat, May 2, 2026",
-      "court": "MANOLO SANTANA",
-      "timeRange": "01:00 PM - 01:30 PM",
-      "tour": "",
-      "players": [
-        {
-          "id": "katerina-siniakova",
-          "name": "Katerina Siniakova",
-          "country": "CZE",
-          "ranking": 42,
-          "singlesRanking": 42,
-          "doublesRanking": 2,
-          "tour": "WTA",
-          "wtaPlayerId": "320301"
-        },
-        {
-          "id": "taylor-townsend",
-          "name": "Taylor Townsend",
-          "country": "USA",
-          "ranking": 90,
-          "singlesRanking": 90,
-          "doublesRanking": 5,
-          "tour": "WTA",
-          "wtaPlayerId": "318609"
         }
       ]
     },
@@ -223,26 +193,6 @@
       ]
     },
     {
-      "id": "0-pista-12-wta-12-00-pm-01-30-pm-zhaoxuan-yang",
-      "dayOffset": 0,
-      "dayLabel": "Sat, May 2, 2026",
-      "court": "PISTA 12 (WTA)",
-      "timeRange": "12:00 PM - 01:30 PM",
-      "tour": "WTA",
-      "players": [
-        {
-          "id": "zhaoxuan-yang",
-          "name": "Zhaoxuan Yang",
-          "country": "CHN",
-          "ranking": 44,
-          "rankingTag": "D",
-          "doublesRanking": 44,
-          "tour": "WTA",
-          "wtaPlayerId": "317547"
-        }
-      ]
-    },
-    {
       "id": "0-pista-12-wta-02-30-pm-03-00-pm-marta-kostyuk",
       "dayOffset": 0,
       "dayLabel": "Sat, May 2, 2026",
@@ -299,6 +249,36 @@
           "doublesRanking": 52,
           "tour": "ATP",
           "atpPlayerId": "PG94"
+        }
+      ]
+    },
+    {
+      "id": "1-manolo-santana-12-00-pm-12-30-pm-katerina-siniakova-taylor-townsend",
+      "dayOffset": 1,
+      "dayLabel": "Sun, May 3, 2026",
+      "court": "MANOLO SANTANA",
+      "timeRange": "12:00 PM - 12:30 PM",
+      "tour": "",
+      "players": [
+        {
+          "id": "katerina-siniakova",
+          "name": "Katerina Siniakova",
+          "country": "CZE",
+          "ranking": 42,
+          "singlesRanking": 42,
+          "doublesRanking": 2,
+          "tour": "WTA",
+          "wtaPlayerId": "320301"
+        },
+        {
+          "id": "taylor-townsend",
+          "name": "Taylor Townsend",
+          "country": "USA",
+          "ranking": 90,
+          "singlesRanking": 90,
+          "doublesRanking": 5,
+          "tour": "WTA",
+          "wtaPlayerId": "318609"
         }
       ]
     }
