@@ -4,7 +4,7 @@
     "track": "draws",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-05-01T06:25:36.023014+00:00",
+    "updatedAt": "2026-05-02T05:48:33.046983+00:00",
     "sources": {
       "draws": {
         "wta": "https://wta-webapi-prod-apimanagement.azure-api.net/api/v1/VwEventDrawxmls/2026/1038",
@@ -12,8 +12,8 @@
       }
     },
     "audit": {
-      "doublesMatches": 60,
-      "atpDrawFallbackMatches": 2,
+      "doublesMatches": 61,
+      "atpDrawFallbackMatches": 1,
       "wtaDrawFallbackMatches": 0,
       "doublesPlayers": 128,
       "doublesPlayersMissingDoublesRanking": 0,
@@ -29,13 +29,13 @@
   },
   "matches": [
     {
-      "id": "ATP-MD002",
+      "id": "ATP-MD001",
       "tour": "ATP",
       "draw": "MD",
       "discipline": "doubles",
-      "round": "SF",
-      "roundCode": "SF",
-      "roundLabel": "半决赛",
+      "round": "F",
+      "roundCode": "F",
+      "roundLabel": "决赛",
       "status": "U",
       "source": "atpDraw",
       "players": [
@@ -62,45 +62,10 @@
           "atpPlayerId": "GH33"
         },
         {
-          "id": "maximo-gonzalez",
-          "name": "Maximo Gonzalez",
-          "country": "ARG",
-          "side": "B",
-          "ranking": 50,
-          "rankingTag": "D",
-          "doublesRanking": 50,
-          "tour": "ATP",
-          "atpPlayerId": "G585"
-        },
-        {
-          "id": "andres-molteni",
-          "name": "Andres Molteni",
-          "country": "ARG",
-          "side": "B",
-          "ranking": 38,
-          "rankingTag": "D",
-          "doublesRanking": 38,
-          "tour": "ATP",
-          "atpPlayerId": "ME56"
-        }
-      ]
-    },
-    {
-      "id": "ATP-MD003",
-      "tour": "ATP",
-      "draw": "MD",
-      "discipline": "doubles",
-      "round": "SF",
-      "roundCode": "SF",
-      "roundLabel": "半决赛",
-      "status": "U",
-      "source": "atpDraw",
-      "players": [
-        {
           "id": "harri-heliovaara",
           "name": "Harri Heliovaara",
           "country": "FIN",
-          "side": "A",
+          "side": "B",
           "ranking": 6,
           "rankingTag": "D",
           "doublesRanking": 6,
@@ -111,34 +76,12 @@
           "id": "henry-patten",
           "name": "Henry Patten",
           "country": "GBR",
-          "side": "A",
+          "side": "B",
           "ranking": 6,
           "rankingTag": "D",
           "doublesRanking": 6,
           "tour": "ATP",
           "atpPlayerId": "P0G6"
-        },
-        {
-          "id": "luke-johnson",
-          "name": "Luke Johnson",
-          "country": "GBR",
-          "side": "B",
-          "ranking": 47,
-          "rankingTag": "D",
-          "doublesRanking": 47,
-          "tour": "ATP",
-          "atpPlayerId": "J543"
-        },
-        {
-          "id": "jan-zielinski",
-          "name": "Jan Zielinski",
-          "country": "POL",
-          "side": "B",
-          "ranking": 33,
-          "rankingTag": "D",
-          "doublesRanking": 33,
-          "tour": "ATP",
-          "atpPlayerId": "Z423"
         }
       ]
     }
