@@ -4,7 +4,7 @@
     "track": "live",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-05-02T16:07:07.343133+00:00",
+    "updatedAt": "2026-05-02T17:03:02.678838+00:00",
     "sources": {
       "matches": {
         "wta": "https://api.wtatennis.com/tennis/tournaments/1038/2026/matches",
@@ -1295,8 +1295,9 @@
     },
     {
       "id": "LS001",
-      "status": "P",
-      "score": "6-3,3-3",
+      "status": "F",
+      "score": "6-3,7-5",
+      "result": "[26]M. Kostyuk d [9]M. Andreeva 6-3,7-5",
       "startTime": "2026-05-02T14:45:01+00:00",
       "court": "Court 1"
     },
