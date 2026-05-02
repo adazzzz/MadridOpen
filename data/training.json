@@ -4,7 +4,7 @@
     "track": "training",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-05-02T07:12:34.950233+00:00",
+    "updatedAt": "2026-05-02T08:43:42.792848+00:00",
     "sources": {
       "training": [
         "https://practice.tmstennis.com/api/iframe?runid=702&public=1&day=0&mode=0",
@@ -84,11 +84,31 @@
       ]
     },
     {
-      "id": "0-arantxa-sanchez-02-00-pm-03-30-pm-katerina-siniakova-taylor-townsend",
+      "id": "0-arantxa-sanchez-12-30-pm-02-00-pm-diana-shnaider",
       "dayOffset": 0,
       "dayLabel": "Sat, May 2, 2026",
       "court": "ARANTXA SANCHEZ",
-      "timeRange": "02:00 PM - 03:30 PM",
+      "timeRange": "12:30 PM - 02:00 PM",
+      "tour": "",
+      "players": [
+        {
+          "id": "diana-shnaider",
+          "name": "Diana Shnaider",
+          "country": "RUS",
+          "ranking": 19,
+          "singlesRanking": 19,
+          "doublesRanking": 28,
+          "tour": "WTA",
+          "wtaPlayerId": "330482"
+        }
+      ]
+    },
+    {
+      "id": "0-arantxa-sanchez-02-00-pm-03-00-pm-katerina-siniakova-taylor-townsend",
+      "dayOffset": 0,
+      "dayLabel": "Sat, May 2, 2026",
+      "court": "ARANTXA SANCHEZ",
+      "timeRange": "02:00 PM - 03:00 PM",
       "tour": "",
       "players": [
         {
@@ -110,6 +130,26 @@
           "doublesRanking": 2,
           "tour": "WTA",
           "wtaPlayerId": "320301"
+        }
+      ]
+    },
+    {
+      "id": "0-arantxa-sanchez-03-00-pm-04-00-pm-mirra-andreeva",
+      "dayOffset": 0,
+      "dayLabel": "Sat, May 2, 2026",
+      "court": "ARANTXA SANCHEZ",
+      "timeRange": "03:00 PM - 04:00 PM",
+      "tour": "",
+      "players": [
+        {
+          "id": "mirra-andreeva",
+          "name": "Mirra Andreeva",
+          "country": "RUS",
+          "ranking": 8,
+          "singlesRanking": 8,
+          "doublesRanking": 33,
+          "tour": "WTA",
+          "wtaPlayerId": "331809"
         }
       ]
     },
@@ -153,26 +193,6 @@
       ]
     },
     {
-      "id": "0-pista-11-atp-01-00-pm-03-00-pm-diana-shnaider",
-      "dayOffset": 0,
-      "dayLabel": "Sat, May 2, 2026",
-      "court": "PISTA 11 (ATP)",
-      "timeRange": "01:00 PM - 03:00 PM",
-      "tour": "ATP",
-      "players": [
-        {
-          "id": "diana-shnaider",
-          "name": "Diana Shnaider",
-          "country": "RUS",
-          "ranking": 19,
-          "singlesRanking": 19,
-          "doublesRanking": 28,
-          "tour": "WTA",
-          "wtaPlayerId": "330482"
-        }
-      ]
-    },
-    {
       "id": "0-pista-12-wta-12-00-pm-01-30-pm-zhaoxuan-yang",
       "dayOffset": 0,
       "dayLabel": "Sat, May 2, 2026",
@@ -209,26 +229,6 @@
           "doublesRanking": 158,
           "tour": "WTA",
           "wtaPlayerId": "326482"
-        }
-      ]
-    },
-    {
-      "id": "0-pista-12-wta-03-00-pm-04-00-pm-mirra-andreeva",
-      "dayOffset": 0,
-      "dayLabel": "Sat, May 2, 2026",
-      "court": "PISTA 12 (WTA)",
-      "timeRange": "03:00 PM - 04:00 PM",
-      "tour": "WTA",
-      "players": [
-        {
-          "id": "mirra-andreeva",
-          "name": "Mirra Andreeva",
-          "country": "RUS",
-          "ranking": 8,
-          "singlesRanking": 8,
-          "doublesRanking": 33,
-          "tour": "WTA",
-          "wtaPlayerId": "331809"
         }
       ]
     },
