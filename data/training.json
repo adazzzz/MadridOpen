@@ -4,7 +4,7 @@
     "track": "training",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-05-02T21:54:24.864619+00:00",
+    "updatedAt": "2026-05-02T22:27:27.828735+00:00",
     "sources": {
       "training": [
         "https://practice.tmstennis.com/api/iframe?runid=702&public=1&day=0&mode=0",
@@ -14,267 +14,18 @@
     "trainingDays": [
       {
         "dayOffset": 0,
-        "label": "Sat, May 2, 2026"
+        "label": "Sun, May 3, 2026"
       },
       {
         "dayOffset": 1,
-        "label": "Sun, May 3, 2026"
+        "label": "Mon, May 4, 2026"
       }
     ]
   },
   "trainingSessions": [
     {
-      "id": "0-manolo-santana-11-30-am-12-00-pm-guido-andreozzi-manuel-guinard",
+      "id": "0-manolo-santana-12-00-pm-12-30-pm-katerina-siniakova-taylor-townsend",
       "dayOffset": 0,
-      "dayLabel": "Sat, May 2, 2026",
-      "court": "MANOLO SANTANA",
-      "timeRange": "11:30 AM - 12:00 PM",
-      "tour": "",
-      "players": [
-        {
-          "id": "guido-andreozzi",
-          "name": "Guido Andreozzi",
-          "country": "ARG",
-          "ranking": 16,
-          "rankingTag": "D",
-          "doublesRanking": 16,
-          "tour": "ATP",
-          "atpPlayerId": "A887"
-        },
-        {
-          "id": "manuel-guinard",
-          "name": "Manuel Guinard",
-          "country": "FRA",
-          "ranking": 1536,
-          "singlesRanking": 1536,
-          "doublesRanking": 20,
-          "tour": "ATP",
-          "atpPlayerId": "GH33"
-        }
-      ]
-    },
-    {
-      "id": "0-manolo-santana-12-00-pm-12-30-pm-jan-zielinski-luke-johnson",
-      "dayOffset": 0,
-      "dayLabel": "Sat, May 2, 2026",
-      "court": "MANOLO SANTANA",
-      "timeRange": "12:00 PM - 12:30 PM",
-      "tour": "",
-      "players": [
-        {
-          "id": "luke-johnson",
-          "name": "Luke Johnson",
-          "country": "GBR",
-          "ranking": 47,
-          "rankingTag": "D",
-          "doublesRanking": 47,
-          "tour": "ATP",
-          "atpPlayerId": "J543"
-        },
-        {
-          "id": "jan-zielinski",
-          "name": "Jan Zielinski",
-          "country": "POL",
-          "ranking": 33,
-          "rankingTag": "D",
-          "doublesRanking": 33,
-          "tour": "ATP",
-          "atpPlayerId": "Z423"
-        }
-      ]
-    },
-    {
-      "id": "0-arantxa-sanchez-12-30-pm-02-00-pm-diana-shnaider",
-      "dayOffset": 0,
-      "dayLabel": "Sat, May 2, 2026",
-      "court": "ARANTXA SANCHEZ",
-      "timeRange": "12:30 PM - 02:00 PM",
-      "tour": "",
-      "players": [
-        {
-          "id": "diana-shnaider",
-          "name": "Diana Shnaider",
-          "country": "RUS",
-          "ranking": 19,
-          "singlesRanking": 19,
-          "doublesRanking": 28,
-          "tour": "WTA",
-          "wtaPlayerId": "330482"
-        }
-      ]
-    },
-    {
-      "id": "0-arantxa-sanchez-02-00-pm-03-00-pm-katerina-siniakova-taylor-townsend",
-      "dayOffset": 0,
-      "dayLabel": "Sat, May 2, 2026",
-      "court": "ARANTXA SANCHEZ",
-      "timeRange": "02:00 PM - 03:00 PM",
-      "tour": "",
-      "players": [
-        {
-          "id": "taylor-townsend",
-          "name": "Taylor Townsend",
-          "country": "USA",
-          "ranking": 90,
-          "singlesRanking": 90,
-          "doublesRanking": 5,
-          "tour": "WTA",
-          "wtaPlayerId": "318609"
-        },
-        {
-          "id": "katerina-siniakova",
-          "name": "Katerina Siniakova",
-          "country": "CZE",
-          "ranking": 42,
-          "singlesRanking": 42,
-          "doublesRanking": 2,
-          "tour": "WTA",
-          "wtaPlayerId": "320301"
-        }
-      ]
-    },
-    {
-      "id": "0-arantxa-sanchez-03-00-pm-04-00-pm-mirra-andreeva",
-      "dayOffset": 0,
-      "dayLabel": "Sat, May 2, 2026",
-      "court": "ARANTXA SANCHEZ",
-      "timeRange": "03:00 PM - 04:00 PM",
-      "tour": "",
-      "players": [
-        {
-          "id": "mirra-andreeva",
-          "name": "Mirra Andreeva",
-          "country": "RUS",
-          "ranking": 8,
-          "singlesRanking": 8,
-          "doublesRanking": 33,
-          "tour": "WTA",
-          "wtaPlayerId": "331809"
-        }
-      ]
-    },
-    {
-      "id": "0-arantxa-sanchez-04-00-pm-05-30-pm-jannik-sinner",
-      "dayOffset": 0,
-      "dayLabel": "Sat, May 2, 2026",
-      "court": "ARANTXA SANCHEZ",
-      "timeRange": "04:00 PM - 05:30 PM",
-      "tour": "",
-      "players": [
-        {
-          "id": "jannik-sinner",
-          "name": "Jannik Sinner",
-          "country": "ITA",
-          "ranking": 1,
-          "singlesRanking": 1,
-          "tour": "ATP",
-          "atpPlayerId": "S0AG"
-        }
-      ]
-    },
-    {
-      "id": "0-pista-4-12-00-pm-02-00-pm-francisco-cerundolo",
-      "dayOffset": 0,
-      "dayLabel": "Sat, May 2, 2026",
-      "court": "PISTA 4",
-      "timeRange": "12:00 PM - 02:00 PM",
-      "tour": "",
-      "players": [
-        {
-          "id": "francisco-cerundolo",
-          "name": "Francisco Cerundolo",
-          "country": "ARG",
-          "ranking": 20,
-          "singlesRanking": 20,
-          "doublesRanking": 258,
-          "tour": "ATP",
-          "atpPlayerId": "C0AU"
-        }
-      ]
-    },
-    {
-      "id": "0-pista-11-atp-01-30-pm-03-00-pm-marc-polmans",
-      "dayOffset": 0,
-      "dayLabel": "Sat, May 2, 2026",
-      "court": "PISTA 11 (ATP)",
-      "timeRange": "01:30 PM - 03:00 PM",
-      "tour": "ATP",
-      "players": [
-        {
-          "id": "marc-polmans",
-          "name": "Marc Polmans",
-          "country": "AUS",
-          "ranking": 340,
-          "singlesRanking": 340,
-          "doublesRanking": 52,
-          "tour": "ATP",
-          "atpPlayerId": "PG94"
-        }
-      ]
-    },
-    {
-      "id": "0-pista-12-wta-02-30-pm-03-00-pm-marta-kostyuk",
-      "dayOffset": 0,
-      "dayLabel": "Sat, May 2, 2026",
-      "court": "PISTA 12 (WTA)",
-      "timeRange": "02:30 PM - 03:00 PM",
-      "tour": "WTA",
-      "players": [
-        {
-          "id": "marta-kostyuk",
-          "name": "Marta Kostyuk",
-          "country": "UKR",
-          "ranking": 23,
-          "singlesRanking": 23,
-          "doublesRanking": 158,
-          "tour": "WTA",
-          "wtaPlayerId": "326482"
-        }
-      ]
-    },
-    {
-      "id": "0-pista-12-wta-03-00-pm-04-00-pm-mirra-andreeva",
-      "dayOffset": 0,
-      "dayLabel": "Sat, May 2, 2026",
-      "court": "PISTA 12 (WTA)",
-      "timeRange": "03:00 PM - 04:00 PM",
-      "tour": "WTA",
-      "players": [
-        {
-          "id": "mirra-andreeva",
-          "name": "Mirra Andreeva",
-          "country": "RUS",
-          "ranking": 8,
-          "singlesRanking": 8,
-          "doublesRanking": 33,
-          "tour": "WTA",
-          "wtaPlayerId": "331809"
-        }
-      ]
-    },
-    {
-      "id": "0-pista-12-wta-04-00-pm-06-00-pm-alexander-zverev",
-      "dayOffset": 0,
-      "dayLabel": "Sat, May 2, 2026",
-      "court": "PISTA 12 (WTA)",
-      "timeRange": "04:00 PM - 06:00 PM",
-      "tour": "WTA",
-      "players": [
-        {
-          "id": "alexander-zverev",
-          "name": "Alexander Zverev",
-          "country": "GER",
-          "ranking": 3,
-          "singlesRanking": 3,
-          "doublesRanking": 126,
-          "tour": "ATP",
-          "atpPlayerId": "Z355"
-        }
-      ]
-    },
-    {
-      "id": "1-manolo-santana-12-00-pm-12-30-pm-katerina-siniakova-taylor-townsend",
-      "dayOffset": 1,
       "dayLabel": "Sun, May 3, 2026",
       "court": "MANOLO SANTANA",
       "timeRange": "12:00 PM - 12:30 PM",
@@ -303,8 +54,8 @@
       ]
     },
     {
-      "id": "1-manolo-santana-01-00-pm-01-30-pm-jannik-sinner",
-      "dayOffset": 1,
+      "id": "0-manolo-santana-01-00-pm-01-30-pm-jannik-sinner",
+      "dayOffset": 0,
       "dayLabel": "Sun, May 3, 2026",
       "court": "MANOLO SANTANA",
       "timeRange": "01:00 PM - 01:30 PM",
@@ -322,8 +73,8 @@
       ]
     },
     {
-      "id": "1-pista-8-11-30-am-12-30-pm-diana-shnaider",
-      "dayOffset": 1,
+      "id": "0-pista-8-11-30-am-12-30-pm-diana-shnaider",
+      "dayOffset": 0,
       "dayLabel": "Sun, May 3, 2026",
       "court": "PISTA 8",
       "timeRange": "11:30 AM - 12:30 PM",
