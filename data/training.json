@@ -4,7 +4,7 @@
     "track": "training",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-05-02T08:43:42.792848+00:00",
+    "updatedAt": "2026-05-02T09:46:24.554570+00:00",
     "sources": {
       "training": [
         "https://practice.tmstennis.com/api/iframe?runid=702&public=1&day=0&mode=0",
@@ -80,6 +80,36 @@
           "doublesRanking": 33,
           "tour": "ATP",
           "atpPlayerId": "Z423"
+        }
+      ]
+    },
+    {
+      "id": "0-manolo-santana-01-00-pm-01-30-pm-katerina-siniakova-taylor-townsend",
+      "dayOffset": 0,
+      "dayLabel": "Sat, May 2, 2026",
+      "court": "MANOLO SANTANA",
+      "timeRange": "01:00 PM - 01:30 PM",
+      "tour": "",
+      "players": [
+        {
+          "id": "katerina-siniakova",
+          "name": "Katerina Siniakova",
+          "country": "CZE",
+          "ranking": 42,
+          "singlesRanking": 42,
+          "doublesRanking": 2,
+          "tour": "WTA",
+          "wtaPlayerId": "320301"
+        },
+        {
+          "id": "taylor-townsend",
+          "name": "Taylor Townsend",
+          "country": "USA",
+          "ranking": 90,
+          "singlesRanking": 90,
+          "doublesRanking": 5,
+          "tour": "WTA",
+          "wtaPlayerId": "318609"
         }
       ]
     },
