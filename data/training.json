@@ -4,7 +4,7 @@
     "track": "training",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-05-02T15:26:22.153340+00:00",
+    "updatedAt": "2026-05-02T16:07:07.343133+00:00",
     "sources": {
       "training": [
         "https://practice.tmstennis.com/api/iframe?runid=702&public=1&day=0&mode=0",
@@ -273,7 +273,37 @@
       ]
     },
     {
-      "id": "1-manolo-santana-12-00-pm-12-30-pm-katerina-siniakova-taylor-townsend",
+      "id": "1-manolo-santana-11-30-am-12-00-pm-diana-shnaider-mirra-andreeva",
+      "dayOffset": 1,
+      "dayLabel": "Sun, May 3, 2026",
+      "court": "MANOLO SANTANA",
+      "timeRange": "11:30 AM - 12:00 PM",
+      "tour": "",
+      "players": [
+        {
+          "id": "diana-shnaider",
+          "name": "Diana Shnaider",
+          "country": "RUS",
+          "ranking": 19,
+          "singlesRanking": 19,
+          "doublesRanking": 28,
+          "tour": "WTA",
+          "wtaPlayerId": "330482"
+        },
+        {
+          "id": "mirra-andreeva",
+          "name": "Mirra Andreeva",
+          "country": "RUS",
+          "ranking": 8,
+          "singlesRanking": 8,
+          "doublesRanking": 33,
+          "tour": "WTA",
+          "wtaPlayerId": "331809"
+        }
+      ]
+    },
+    {
+      "id": "1-manolo-santana-12-00-pm-12-30-pm-diana-shnaider-katerina-siniakova-mirra-andreeva-taylor-townsend",
       "dayOffset": 1,
       "dayLabel": "Sun, May 3, 2026",
       "court": "MANOLO SANTANA",
@@ -299,6 +329,26 @@
           "doublesRanking": 5,
           "tour": "WTA",
           "wtaPlayerId": "318609"
+        },
+        {
+          "id": "diana-shnaider",
+          "name": "Diana Shnaider",
+          "country": "RUS",
+          "ranking": 19,
+          "singlesRanking": 19,
+          "doublesRanking": 28,
+          "tour": "WTA",
+          "wtaPlayerId": "330482"
+        },
+        {
+          "id": "mirra-andreeva",
+          "name": "Mirra Andreeva",
+          "country": "RUS",
+          "ranking": 8,
+          "singlesRanking": 8,
+          "doublesRanking": 33,
+          "tour": "WTA",
+          "wtaPlayerId": "331809"
         }
       ]
     },
