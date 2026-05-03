@@ -4,7 +4,7 @@
     "track": "training",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-05-03T09:06:18.752749+00:00",
+    "updatedAt": "2026-05-03T10:14:02.381379+00:00",
     "sources": {
       "training": [
         "https://practice.tmstennis.com/api/iframe?runid=702&public=1&day=0&mode=0",
@@ -89,26 +89,6 @@
           "doublesRanking": 28,
           "tour": "WTA",
           "wtaPlayerId": "330482"
-        }
-      ]
-    },
-    {
-      "id": "0-pista-7-11-30-am-12-30-pm-pablo-llamas-ruiz",
-      "dayOffset": 0,
-      "dayLabel": "Sun, May 3, 2026",
-      "court": "PISTA 7",
-      "timeRange": "11:30 AM - 12:30 PM",
-      "tour": "",
-      "players": [
-        {
-          "id": "pablo-llamas-ruiz",
-          "name": "Pablo Llamas Ruiz",
-          "country": "ESP",
-          "ranking": 145,
-          "singlesRanking": 145,
-          "doublesRanking": 267,
-          "tour": "ATP",
-          "atpPlayerId": "L0CX"
         }
       ]
     }
