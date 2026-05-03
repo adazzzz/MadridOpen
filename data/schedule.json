@@ -4,7 +4,7 @@
     "track": "schedule",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-05-03T06:14:44.098088+00:00",
+    "updatedAt": "2026-05-03T07:33:05.913963+00:00",
     "sources": {
       "schedules": {
         "wta": "https://wta-webapi-prod-apimanagement.azure-api.net/atpjoint-api/v1/Scores/Schedule?eventId=1038&eventYear=2026",
