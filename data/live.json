@@ -4,7 +4,7 @@
     "track": "live",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-05-03T11:07:04.969486+00:00",
+    "updatedAt": "2026-05-03T11:55:21.141103+00:00",
     "sources": {
       "matches": {
         "wta": "https://api.wtatennis.com/tennis/tournaments/1038/2026/matches",
@@ -1303,9 +1303,9 @@
     },
     {
       "id": "LD001",
-      "status": "U",
-      "startTime": "2026-05-03T14:00+02:00",
-      "court": "Manolo Santana Stadium"
+      "status": "C",
+      "startTime": "2026-05-03T11:47:02.42+00:00",
+      "court": "Court 1"
     },
     {
       "id": "ATP-MS002",
