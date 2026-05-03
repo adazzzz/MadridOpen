@@ -555,11 +555,11 @@ function formatRefreshStatus(metadata) {
       formatTrackStatusPart("训练", tracks.training),
       formatTrackStatusPart("球员", tracks.players)
     ].filter(Boolean);
-    return `更新：${parts.join(" / ")}`;
+    return `最终快照：${parts.join(" / ")}`;
   }
 
   const updatedAt = formatDateTime(metadata?.updatedAt);
-  return `快照时间：${updatedAt}，10-20min数据刷新`;
+  return `快照时间：${updatedAt}`;
 }
 
 function formatTrackStatusPart(label, track) {
