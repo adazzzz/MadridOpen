@@ -4,7 +4,7 @@
     "track": "live",
     "tournament": "Mutua Madrid Open",
     "season": 2026,
-    "updatedAt": "2026-05-03T12:45:21.898368+00:00",
+    "updatedAt": "2026-05-03T14:01:24.185089+00:00",
     "sources": {
       "matches": {
         "wta": "https://api.wtatennis.com/tennis/tournaments/1038/2026/matches",
@@ -1303,8 +1303,9 @@
     },
     {
       "id": "LD001",
-      "status": "P",
-      "score": "5-3",
+      "status": "F",
+      "score": "7-6(2),6-2",
+      "result": "[2]K. Siniakova / T. Townsend d M. Andreeva / D. Shnaider 7-6(2),6-2",
       "startTime": "2026-05-03T11:47:02.42+00:00",
       "court": "Court 1"
     },
